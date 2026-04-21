@@ -2,7 +2,7 @@
 
 - **Layer:** 2 — Governance & Decision Logic
 - **Status:** Stub — not yet adopted
-- **RCOS reference:** §4.4, §4.7
+- **RCOS reference:** §4.2, §4.4, §4.7
 
 > Maps every decision type and domain to an authorized role or body, mechanism, threshold, and escalation path. Decisions made outside this matrix are considered invalid.
 
@@ -10,11 +10,11 @@
 
 ## Matrix
 
-| Decision Domain | Decision Type | Authorized Body | Mechanism | Threshold | Escalation |
-|---|---|---|---|---|---|
-| [To be defined] | Operational | [role] | [mechanism] | [threshold] | [escalation path] |
-| [To be defined] | Strategic | [role] | [mechanism] | [threshold] | [escalation path] |
-| [To be defined] | Constitutional | [role] | [mechanism] | [threshold] | [escalation path] |
+| Decision Domain | Decision Type | Authorized Body | Eligible Participants | Mechanism | Threshold | Blocking / Veto conditions | Escalation |
+|---|---|---|---|---|---|---|---|
+| [To be defined] | Operational | [role] | [who may participate] | [mechanism] | [threshold] | [conditions or "none"] | [escalation path] |
+| [To be defined] | Strategic | [role] | [who may participate] | [mechanism] | [threshold] | [conditions or "none"] | [escalation path] |
+| [To be defined] | Constitutional | [role] | [who may participate] | [mechanism] | [threshold] | [conditions or "none"] | [escalation path] |
 
 ## Decision Type Definitions
 

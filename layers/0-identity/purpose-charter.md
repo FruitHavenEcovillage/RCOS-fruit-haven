@@ -2,7 +2,7 @@
 
 - **Layer:** 0 — Identity & Scope
 - **Status:** Stub — not yet adopted
-- **RCOS reference:** §2.1, §2.5
+- **RCOS reference:** §2.1, §2.4, §2.5
 
 ---
 
@@ -27,6 +27,12 @@
 ## Conditions for Purpose Change
 
 > _Purpose changes require a Constitutional decision (Layer 2) and must follow the change process defined in Layer 6._
+
+[To be defined]
+
+## Identity Constraints
+
+> _§2.4 — Any identity-level constraints that materially affect participation, behavior, or governance. Must be testable and enforceable through defined processes. Must NOT be enforced implicitly or informally. Examples: ethical or behavioral boundaries, participation prerequisites, non-negotiable cultural or ecological constraints._
 
 [To be defined]
 

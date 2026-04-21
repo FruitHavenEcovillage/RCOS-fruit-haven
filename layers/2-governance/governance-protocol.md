@@ -2,7 +2,7 @@
 
 - **Layer:** 2 — Governance & Decision Logic
 - **Status:** Stub — not yet adopted
-- **RCOS reference:** §4.5, §4.7
+- **RCOS reference:** §4.5, §4.6, §4.7
 
 > Defines the full lifecycle of a collective decision — from proposal submission to documentation and appeal.
 
@@ -43,6 +43,17 @@
 > _How conflicts between decisions of the same or different types are resolved._
 
 [To be defined]
+
+## Safeguards and Failure Modes
+
+> _§4.6 — The governance system must include safeguards against concentration of decision power, informal vetoes, decision capture by subgroups, and founder or role entrenchment. Mechanisms must allow challenge and review without retaliation. Persistent governance failures must trigger a formal review or constitutional process._
+
+- Safeguard against power concentration: [To be defined]
+- Safeguard against informal vetoes: [To be defined]
+- Safeguard against decision capture by subgroups: [To be defined]
+- Safeguard against founder/role entrenchment: [To be defined]
+- Challenge and review without retaliation: [To be defined]
+- Persistent failure trigger: [To be defined — what constitutes a persistent failure and what process it triggers]
 
 ---
 
