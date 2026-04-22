@@ -4,6 +4,20 @@ Features and flows required for full RCOS compliance that are not yet implemente
 
 ---
 
+## 7. Voluntary exit request flow in ecohubsOS
+
+**Required by:** Layer 1 — Exit & Separation Protocol (Voluntary Exit)
+**Priority:** High
+
+A self-service exit flow must be available to members in ecohubsOS:
+- Exit request form with an optional reason field
+- A message asking the member to consider doing a handover if they hold any roles
+- On submission: notify admin via email with member name, reason (if provided), and any roles held
+- Admin panel: show a confirm-exit button for the admin to finalise the exit within 24 hours
+- On confirmation: revoke access, transition state to Exited Member, send exit confirmation email to the member
+
+---
+
 ## 1. Member exit flow in ecohubsOS
 
 **Required by:** Layer 1 — Exit & Separation Protocol, Membership State Registry  
@@ -27,6 +41,41 @@ A formal offboarding workflow does not currently exist. Required functionality:
 The onboarding flow in ecohubsOS must include direct links to all Layer 0–6 artifacts so members can review them before consenting. Currently no such links exist in the onboarding UI.
 
 Required: add links to the RCOS artifact repository (this repo) at the start of the onboarding flow, with a checklist confirming the member has reviewed them.
+
+---
+
+## 4. Onboarding reminder emails and expiry notifications
+
+**Required by:** Layer 1 — Onboarding Protocol (Trial and Evaluation)
+**Priority:** High
+
+The following automated emails must be sent during the onboarding window:
+- **Day 7:** Reminder that onboarding is incomplete; link to resume
+- **Day 15:** Warning that the grace period has started; member has 15 days remaining before automatic exit; note that failure to complete results in a 6-month re-application block
+- **Day 30:** Exit triggered — notification sent to the member explaining the exit reason and the 6-month re-application block
+
+---
+
+## 5. 6-month re-application block after rejection or incomplete onboarding exit
+
+**Required by:** Layer 1 — Onboarding Protocol (Admission Criteria, Trial and Evaluation)
+**Priority:** High
+
+Members who are rejected via Snapshot vote or exited due to incomplete onboarding must be blocked from re-applying for 6 months. Required:
+- Record rejection/exit date and reason in ecohubsOS
+- Block re-submission of application form for 6 months from that date
+- Display a clear message if a blocked applicant attempts to re-apply
+
+---
+
+## 6. Onboarding expiry actions in ecohubsOS admin panel
+
+**Required by:** Layer 1 — Onboarding Protocol (Trial and Evaluation)
+**Priority:** High
+
+At 30 days post-vote-approval with incomplete onboarding, the admin panel must surface:
+- A button to trigger immediate member exit
+- A button to grant a one-time 30-day extension
 
 ---
 
