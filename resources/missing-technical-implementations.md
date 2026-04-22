@@ -4,6 +4,22 @@ Features and flows required for full RCOS compliance that are not yet implemente
 
 ---
 
+## 8. Snapshot proposal template
+
+**Required by:** Layer 2 — Governance Protocol (Proposal Submission)
+**Priority:** High
+
+A predefined proposal template must be created in the EcoHubs Snapshot space so all Strategic and Constitutional proposals follow a consistent, auditable format. The template must include fields for:
+- Summary of the change
+- Affected layers and artifacts (with links to this repository)
+- Decision type (Strategic / Constitutional)
+- Rationale
+- Risks and mitigations
+- Rollback plan
+- Proposed effective date
+
+---
+
 ## 7. Voluntary exit request flow in ecohubsOS
 
 **Required by:** Layer 1 — Exit & Separation Protocol (Voluntary Exit)

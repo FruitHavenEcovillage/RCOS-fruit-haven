@@ -8,7 +8,16 @@ Priorities: **High** — address soon; **Medium** — important but not urgent; 
 
 ## High Priority
 
-_Nothing yet._
+### Treasury spending thresholds
+- **Context:** EcoHubs currently has no community funds — all expenses are covered by the founding member. The delegated Admin spending limit is set to €0, meaning all expenditure requires a Full Member vote. Once community funding exists (grants, partnerships, etc.), explicit spending thresholds must be adopted.
+- **Trigger:** When EcoHubs receives its first community funds
+- **Proposed action:** Strategic proposal to define: delegated Admin limit, strategic vote threshold, treasury transparency reporting cadence
+- **Layers affected:** Layer 2 (Decision Matrix), Layer 3 (Treasury Ruleset)
+
+### Consent-based decision making for Strategic decisions
+- **Context:** The current system uses simple majority Snapshot voting for Strategic decisions. A future upgrade would move to consent-based decision-making — a proposal passes if no Full Member raises a reasoned objection within the deliberation period, without requiring an active vote.
+- **Blocker:** Requires tooling that supports consent-based voting or a modified Snapshot workflow
+- **Layers affected:** Layer 2 (Decision Matrix, Governance Protocol)
 
 ---
 
