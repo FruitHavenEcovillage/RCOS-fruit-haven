@@ -27,7 +27,7 @@
 3. _Treasury and shared resource allocation (Layer 3)_
 4. _The RCOS specification and its evolution_
 5. _EcoHubs-owned platforms, websites, and public channels_
-6. _Pilot community structures explicitly operating under community governance_
+6. _Support and facilitation offered to existing and emerging communities applying RCOS (meetings, guidance, resources)_
 7. _Partnerships, external collaborations, and use of the EcoHubs brand_
 
 ## In-Scope Activities and Responsibilities
