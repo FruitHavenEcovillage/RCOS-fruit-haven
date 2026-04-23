@@ -20,7 +20,7 @@ Any Full Member may propose a change to any RCOS artifact. Proposals are submitt
 
 ## How Proposals Are Classified
 
-- **Operational:** wording corrections, formatting, and minor content updates to artifacts — no vote required; executed by Admin within delegated limits
+- **Operational:** wording corrections, formatting, and minor content updates to artifacts — no vote required; executed by Membership Admin within delegated limits
 - **Strategic:** changes to Layer 1–5 content that affect member rights, processes, or structures
 - **Constitutional:** changes to Layer 0 (purpose, scope, invariants) or to the governance system itself (Layer 2)
 
@@ -61,7 +61,7 @@ Any passed decision can be reversed through the same process as the original dec
 
 ## Emergency Changes
 
-An emergency operational change may be made by Admin only if all of the following conditions are met:
+An emergency operational change may be made by Membership Admin only if all of the following conditions are met:
 
 1. Immediate action is required to prevent safety harm or platform failure
 2. A Full Member vote cannot be convened in time
@@ -77,10 +77,16 @@ Emergency changes must be:
 Any Full Member may propose a time-bounded experiment via Strategic decision. Every experiment must define:
 - Scope (what is being tried and what it affects)
 - Duration (maximum 90 days)
+- Review checkpoints within the experiment duration (at minimum one midpoint check-in)
 - Success and failure criteria
-- Rollback conditions
+- Rollback conditions and rollback process
+- Authorized decision path for starting, extending, modifying, or terminating the experiment
 
-Experiments expire automatically at the end of their defined duration unless explicitly renewed via a new proposal. Results and learnings are recorded in the Learning Log (`layers/6-evolution/learning-log.md`).
+Experiments expire automatically at the end of their defined duration unless explicitly renewed via a new proposal. Renewal requires a new Strategic vote. Results and learnings are recorded in the Learning Log (`layers/6-evolution/learning-log.md`).
+
+All artifacts affected by an experiment MUST be explicitly labeled as experimental for the duration.
+
+**Safety suspension:** If an experiment introduces a credible safety risk, coercion, or sustained harm, the Membership Admin may suspend the experiment immediately as an emergency protective action. The suspension must be reported to all Full Members within 48 hours and reviewed at the next community meeting. Post-hoc ratification or rollback follows the emergency change process above.
 
 ---
 

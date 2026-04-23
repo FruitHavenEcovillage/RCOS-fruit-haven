@@ -36,7 +36,7 @@ Potential future income interfaces: grants and foundations, Web3 ecosystem fundi
 
 **Safe multi-sig (primary treasury):** All Full Members hold at minimum Proposer access on the Safe, giving them real-time visibility of the balance and transaction history via safe.global at any time. No periodic reporting obligation is required for Safe funds.
 
-**Fiat or other declared accounts:** If the account supports multi-user read access, Full Members must be granted it. If not, Admin publishes a balance and transaction summary to Full Members at least every 6 months.
+**Fiat or other declared accounts:** If the account supports multi-user read access, Full Members must be granted it. If not, Finance Steward publishes a balance and transaction summary to Full Members at least every 6 months.
 
 All spending decisions must reference the linked governance record (Snapshot vote or delegated decision log).
 
@@ -51,7 +51,7 @@ All spending decisions must reference the linked governance record (Snapshot vot
 
 - A requester may not approve their own spending request
 - Any member with a direct financial interest in a spending decision must declare it and abstain from the vote
-- Admin may not authorize any treasury spending unilaterally while the delegated limit is €0
+- Finance Steward may not authorize any treasury spending unilaterally while the delegated limit is €0
 
 ---
 

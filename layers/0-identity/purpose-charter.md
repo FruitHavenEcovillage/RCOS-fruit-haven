@@ -33,7 +33,7 @@ To make regenerative community living — rooted in care for people, land, and l
 
 > _Purpose changes require a Constitutional decision (Layer 2) and must follow the change process defined in Layer 6._
 
-The primary purpose may only be changed through a Constitutional decision as defined in the Decision Matrix (Layer 2), requiring a simple majority of Full Members (>50% of votes cast), followed by a ratification period of no less than 30 days. Secondary purposes may be changed through a Strategic decision. Any change must be recorded in the Version History (Layer 6).
+The primary purpose may only be changed through a Constitutional decision as defined in the Decision Matrix (Layer 2), requiring a supermajority of Full Members (≥⅔ of votes cast), followed by a ratification period of no less than 30 days. Secondary purposes may be changed through a Strategic decision. Any change must be recorded in the Version History (Layer 6).
 
 ## Identity Constraints
 

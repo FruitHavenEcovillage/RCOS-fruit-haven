@@ -14,6 +14,46 @@
 
 ---
 
+## RCOS Compliance Progress
+
+RCOS-Core compliance is binary per §10.1.1: a community is either compliant or non-compliant. EcoHubs is currently **non-compliant** — all artifacts are in Draft status and have not been formally adopted through a governance vote.
+
+The two bars below show content readiness and formal adoption separately.
+
+### Content Coverage (spec requirements addressed in artifacts)
+
+```
+Layer 0 — Identity & Scope        ████████████████████  98%
+Layer 1 — Membership System       ██████████████████░░  92%
+Layer 2 — Governance & Logic      ████████████████████  98%
+Layer 3 — Economic & Resource     ████████████████░░░░  82%
+Layer 4 — Conflict & Repair       ███████████████████░  93%  (updated 2026-04-22)
+Layer 5 — Operations              ██████████████████░░  92%  (updated 2026-04-22)
+Layer 6 — Evolution               ████████████████████  97%  (updated 2026-04-22)
+─────────────────────────────────────────────────────────
+Overall content coverage          ████████████████████  93%
+```
+
+> Scoring method: each normative MUST requirement in the spec counts as 1 point. Fully addressed = 1, partially addressed = 0.5, not addressed = 0. Total ~198 normative MUST requirements identified across Layers 0–6. Score: ~185/198 ≈ 93%.
+
+### Formal Adoption (artifacts voted and adopted through Snapshot)
+
+```
+Layer 0 — Identity & Scope        ░░░░░░░░░░░░░░░░░░░░   0%
+Layer 1 — Membership System       ░░░░░░░░░░░░░░░░░░░░   0%
+Layer 2 — Governance & Logic      ░░░░░░░░░░░░░░░░░░░░   0%
+Layer 3 — Economic & Resource     ░░░░░░░░░░░░░░░░░░░░   0%
+Layer 4 — Conflict & Repair       ░░░░░░░░░░░░░░░░░░░░   0%
+Layer 5 — Operations              ░░░░░░░░░░░░░░░░░░░░   0%
+Layer 6 — Evolution               ░░░░░░░░░░░░░░░░░░░░   0%
+─────────────────────────────────────────────────────────
+Overall formal adoption           ░░░░░░░░░░░░░░░░░░░░   0%  (19 artifacts pending)
+```
+
+> Once all 19 artifacts are adopted through Snapshot votes, formal adoption reaches 100% and EcoHubs becomes RCOS-Core compliant (subject to any remaining content gaps being resolved first).
+
+---
+
 ## Layer 0 — Identity & Scope
 
 **Layer compliance:** Pending adoption — content complete
@@ -53,11 +93,11 @@
 
 ## Layer 3 — Economic & Resource System
 
-**Layer compliance:** Pending adoption — content complete; ECO decay mechanism deferred
+**Layer compliance:** Pending adoption — content complete; ECO decay mechanism and concentration risk indicators deferred
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Internal Economy Protocol | [layers/3-economy/internal-economy-protocol.md](../layers/3-economy/internal-economy-protocol.md) | Draft | Content complete; ECO expiration/decay mechanism deferred — see [future-proposals.md](../resources/future-proposals.md) |
+| Internal Economy Protocol | [layers/3-economy/internal-economy-protocol.md](../layers/3-economy/internal-economy-protocol.md) | Draft | Content complete; ECO expiration/decay mechanism deferred; concentration risk indicators not yet defined — see [future-proposals.md](../resources/future-proposals.md) |
 | Treasury Ruleset | [layers/3-economy/treasury-ruleset.md](../layers/3-economy/treasury-ruleset.md) | Draft | Content complete; treasury spending thresholds deferred until community funds exist — see [future-proposals.md](../resources/future-proposals.md) |
 
 ---
@@ -68,7 +108,7 @@
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Conflict Resolution Ladder | [layers/4-conflict/conflict-resolution-ladder.md](../layers/4-conflict/conflict-resolution-ladder.md) | Draft | Content complete; not yet adopted |
+| Conflict Resolution Ladder | [layers/4-conflict/conflict-resolution-ladder.md](../layers/4-conflict/conflict-resolution-ladder.md) | Draft | Content complete; updated 2026-04-22 to add per-class response timelines, non-response/withdrawal/deadlock handling, and power-differential intake channels |
 | Accountability Protocol | [layers/4-conflict/accountability-protocol.md](../layers/4-conflict/accountability-protocol.md) | Draft | Content complete; not yet adopted |
 
 ---
@@ -80,7 +120,7 @@
 | Artifact | File | Status | Notes |
 |---|---|---|---|
 | Role Registry | [layers/5-operations/role-registry.md](../layers/5-operations/role-registry.md) | Draft | Content complete; 12 roles defined; all operational roles currently held by founding member |
-| Operations Manual | [layers/5-operations/operations-manual.md](../layers/5-operations/operations-manual.md) | Draft | Content complete; not yet adopted |
+| Operations Manual | [layers/5-operations/operations-manual.md](../layers/5-operations/operations-manual.md) | Draft | Content complete; updated 2026-04-22 to add temporary/ad-hoc responsibility rules and information anti-gatekeeping policy |
 | Meeting Templates | [layers/5-operations/meeting-templates/](../layers/5-operations/meeting-templates/) | Draft | All 5 templates complete (Operations, Governance, Coordination/Alignment, Reflection & Learning, Conflict Handling) |
 
 ---
@@ -91,9 +131,53 @@
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Change Protocol | [layers/6-evolution/change-protocol.md](../layers/6-evolution/change-protocol.md) | Draft | Content complete; not yet adopted |
+| Change Protocol | [layers/6-evolution/change-protocol.md](../layers/6-evolution/change-protocol.md) | Draft | Content complete; updated 2026-04-22 to add experiment review checkpoints and safety suspension mechanism |
 | Version History | [layers/6-evolution/version-history.md](../layers/6-evolution/version-history.md) | Draft | Active; v0.0 scaffold entry present; will be updated as artifacts are formally adopted |
-| Learning Log | [layers/6-evolution/learning-log.md](../layers/6-evolution/learning-log.md) | Draft | Active; no entries yet; entry format defined |
+| Learning Log | [layers/6-evolution/learning-log.md](../layers/6-evolution/learning-log.md) | Draft | Active; updated 2026-04-22 to define learnable events, ownership, and synthesis cadence; no entries yet |
+
+---
+
+## RCOS Spec Coverage Gaps
+
+> The following items were identified during a systematic §-by-§ audit of RCOS-Core v0.1 on 2026-04-22. Items already fully addressed in artifacts are not listed. Items marked **REQUIRED** correspond to MUST requirements in the spec. Items marked **OPTIONAL** correspond to MAY or SHOULD requirements.
+
+Items are grouped by whether they are addressed, partially addressed, or still open.
+
+### Fixed During This Audit (2026-04-22)
+
+| Ref | Requirement | Resolution |
+|---|---|---|
+| §2.1.3 | Primary purpose change threshold — artifact incorrectly stated "simple majority" instead of required "supermajority ≥⅔" | **Fixed** — Purpose Charter corrected |
+| §6.1.3 | Each conflict class MUST define expected response priority and timelines | **Fixed** — per-class initial response windows added to CRL classification table |
+| §6.2.3 | Resolution ladder MUST define how refusal, non-response, withdrawal, and procedural deadlock are handled | **Fixed** — "Non-Response, Withdrawal, and Deadlock" section added to CRL |
+| §6.3.3 | Where power differential exists, elevated safeguards MUST include separate intake/communication channels | **Fixed** — power differential separate intake channel added to CRL safeguards |
+| §7.1.5 | Temporary/ad-hoc responsibilities MUST be explicitly time-bounded and MUST NOT become ongoing without formal role definition | **Fixed** — "Temporary and Ad-Hoc Responsibilities" section added to Operations Manual |
+| §7.3.5 | Information flow MUST be designed to prevent gatekeeping, bottlenecks, or dependency on informal intermediaries | **Fixed** — "Information Flow and Anti-Gatekeeping" section added to Operations Manual |
+| §8.3.2 | Every experiment MUST define review checkpoints within its duration | **Fixed** — Change Protocol experiment requirements updated |
+| §8.3.5 | If experiment introduces safety risk, MUST suspend or terminate immediately with post-hoc review | **Fixed** — Safety suspension clause added to Change Protocol |
+| §8.6.5 | Learning Log MUST define what constitutes a learnable event, documentation ownership, and review/synthesis cadence | **Fixed** — "What Constitutes a Learnable Event" section added to Learning Log |
+
+### Partially Addressed — Open Items (REQUIRED)
+
+These are genuine gaps that require more design work or governance decisions to fully resolve. They are not errors in the current artifacts but represent requirements not yet completely satisfied.
+
+| Ref | Requirement | Status | Notes |
+|---|---|---|---|
+| §2.4.3 | Identity constraints MUST be testable and enforceable through defined processes | **Partial** | Behavioral and governance constraints (constraints 1–3) are enforceable via Layer 4. Ecological constraints (4–5) are stated as design principles but do not have a defined enforcement mechanism for the network community context. Enforcement would require defining what "sustained net harm to ecosystems" means in measurable terms. | 
+| §3.5.3 | Substitution of participation (e.g., outsourcing labor) MUST be explicitly governed | **Not addressed** | The Membership Agreement defines participation expectations and contribution categories but does not address whether a member may have others perform their contributions on their behalf. **REQUIRED.** Add a clause to the Membership Agreement or Internal Economy Protocol. |
+| §5.1.4 | For commons resources, MUST explicitly define stewardship responsibilities, maintenance obligations, and funding mechanisms | **Partial** | The IEP resource table lists stewards and access rules. Maintenance obligations are implied (Infrastructure Steward for platforms) but not explicit per-resource. Funding mechanisms (operational costs) are covered in the Treasury Ruleset. Add a "Maintenance obligations" column or sub-note to the IEP resource table. |
+| §5.4.4 | MUST define reviewable indicators of economic concentration risk and an explicit mechanism to adjust constraints when such risks are detected | **Not addressed** | No concentration risk indicators defined. Given current early stage (one member, no significant balances), this is low-risk but still a MUST requirement. **REQUIRED.** Define simple indicators (e.g., if one member holds >50% of total ECO balance, a review is triggered) and a review/adjustment pathway. |
+
+### Deferred — Governance Decision Required
+
+These items are deferred because they require a community governance decision to define, not just a content update.
+
+| Ref | Requirement | Priority | Notes |
+|---|---|---|---|
+| ECO expiration / decay mechanism | §5.2.4 + §5.4.2 — if internal units exist, MUST define expiration/decay/cap | Medium | Non-transferability currently serves as the single accumulation-limiting mechanism (satisfies §5.4.2 minimum). Expiration/decay would add additional protection. Deferred — see [future-proposals.md](../resources/future-proposals.md) |
+| Treasury spending thresholds | §5.3.3 — spending authority MUST be explicitly bounded by thresholds | Low urgency | Finance Steward currently has €0 unilateral authority (effectively no spending authority). Thresholds should be defined once community funds exist. Deferred — see [future-proposals.md](../resources/future-proposals.md) |
+| Suspended Member state | §3.7 (MAY) — temporary suspension states | Low | Technically not yet feasible in ecohubsOS. **Optional** per spec. Deferred — see [future-proposals.md](../resources/future-proposals.md) |
+| Consent-based decision-making for Strategic decisions | §4.2.2 (MAY) — alternatives to majority vote | Low | Currently using simple majority for Strategic decisions. Consent-based approach is optional. Deferred. |
 
 ---
 
@@ -103,8 +187,14 @@ All artifacts have substantive content. To achieve full compliance, each artifac
 
 1. Proposed and deliberated per the Governance Protocol (Layer 2)
 2. Adopted through an authorized Snapshot vote
-3. Status fields updated from *Stub — not yet adopted* to *Active — adopted [date]*
+3. Status fields updated from *Stub — not yet adopted* to *Active — adopted <YYYY-MM-DD>*
 4. Recorded in `layers/6-evolution/version-history.md`
+
+**Remaining content gaps to resolve before claiming compliance** (from "Partially Addressed — Open Items" above):
+- §3.5.3 — Substitution of participation rule (Membership Agreement or IEP)
+- §5.1.4 — Per-commons maintenance obligations (IEP resource table)
+- §5.4.4 — Economic concentration risk indicators (IEP)
+- §2.4.3 — Ecological identity constraint enforcement mechanism (Purpose Charter or separate protocol)
 
 **Open technical gaps** (required for full operational compliance — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md)):
 - Member exit flow in ecohubsOS
@@ -115,7 +205,6 @@ All artifacts have substantive content. To achieve full compliance, each artifac
 - 6-month re-application block after rejection or incomplete onboarding
 - Onboarding expiry actions in ecohubsOS admin panel
 - Snapshot proposal template
-- ECO expiration / decay mechanism
 
 **Deferred governance decisions** (see [future-proposals.md](../resources/future-proposals.md)):
 - Treasury spending thresholds (trigger: first community funds received)

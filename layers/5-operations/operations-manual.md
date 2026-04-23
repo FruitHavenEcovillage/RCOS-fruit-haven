@@ -20,6 +20,19 @@
 | Treasury management | Finance Steward | Ensures all Full Members have Safe Proposer access; publishes fiat account summaries at least every 6 months if the account does not support direct member access — see Treasury Ruleset (Layer 3) |
 | Platform access review | Infrastructure Steward | Reviews platform permissions quarterly; revokes access for exited members within 24 hours |
 
+## Temporary and Ad-Hoc Responsibilities
+
+> Temporary responsibilities must not silently become ongoing.
+
+When a task or responsibility is assigned temporarily (e.g. covering for an absent role holder, handling a one-off project), it must be:
+- Explicitly time-bounded from the outset (a specific end date or completion condition must be stated)
+- Documented as a temporary assignment (in Discord or the relevant task tool) at the time of assignment
+- Reviewed before the end date; if the need continues beyond the original scope, the responsibility must be formally assigned through the Role Registry process
+
+No temporary or ad-hoc responsibility may persist beyond 90 days without being converted into a formally defined role or terminated. If a temporary responsibility has no owner after its end date, it lapses — it does not transfer implicitly to any other member or role.
+
+---
+
 ## Role and Domain Interfaces
 
 > How roles, domains, and meeting types connect and hand off to each other.
@@ -50,6 +63,20 @@
 - **Current state:** All operational roles are held by the founding member (Stefan). This is an acknowledged single point of failure; active recruitment of role holders is ongoing to reduce concentration.
 - **Handover mechanisms:** Handover requirements for each role are defined in the Role Registry (Layer 5). Handover must be completed before a role is vacated.
 - **Continuity review cadence:** Operational continuity is reviewed quarterly at a Reflection & Learning meeting, or at any community meeting when a role change occurs.
+
+## Information Flow and Anti-Gatekeeping
+
+> Information access rules must be explicit and enforceable. No single person or role may act as an informal gatekeeper for information that members are entitled to access.
+
+- All governance decisions (passed and rejected proposals) are filed in this repository and are accessible to all Full Members
+- Meeting notes are published in Discord within 48 hours of each meeting and are accessible to all Full Members
+- Membership state and role assignment information is maintained in ecohubsOS and accessible to all Full Members (individual states visible to the member and Membership Admin; aggregate member list visible to all Full Members)
+- Contribution records are accessible in ecohubsOS to all Full Members
+- Any Full Member may request access to any document they are entitled to see under the access rules in this manual; requests must be responded to within 72 hours
+- If a role holder controls access to information that other members are entitled to receive, they may not withhold or delay it; doing so is an accountability trigger under Layer 4
+- No role or individual may be the sole point of access for information required by other role holders to perform their responsibilities
+
+---
 
 ## Documentation Locations and Update Procedures
 

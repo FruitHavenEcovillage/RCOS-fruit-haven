@@ -12,7 +12,7 @@
 
 > _Requirements for submitting a proposal. Who may submit, what must be included, where it is filed._
 
-- **Operational decisions** do not require a proposal — Admin executes within defined limits
+- **Operational decisions** do not require a proposal — the relevant operational role holder executes within delegated limits per the Role Registry (Layer 5)
 - **Strategic and Constitutional decisions:** Any Full Member may submit a proposal directly on Snapshot using the predefined proposal template (see [Missing Technical Implementations](../../resources/missing-technical-implementations.md))
 - Every proposal must include: summary of the change, affected layers and artifacts, decision type, rationale, risks and mitigations, rollback plan, and proposed effective date
 - Decision type must be declared in the proposal; if unclear, defaults to the higher-impact type
@@ -32,7 +32,7 @@
 
 > _How adopted decisions are enacted. Who is responsible for implementation._
 
-- On **passing:** the proposer or an Admin adds the proposal file to `proposals/passed/` in this repository and applies the change to the affected artifact(s) in `layers/`; `layers/6-evolution/version-history.md` is updated
+- On **passing:** the proposer or Membership Admin adds the proposal file to `proposals/passed/` in this repository and applies the change to the affected artifact(s) in `layers/`; `layers/6-evolution/version-history.md` is updated
 - On **rejection:** the proposal file is added to `proposals/rejected/` for archive
 - Artifact updates must reflect the adopted decision accurately and completely
 
@@ -65,7 +65,7 @@
 
 > _§4.6 — The governance system must include safeguards against concentration of decision power, informal vetoes, decision capture by subgroups, and founder or role entrenchment. Mechanisms must allow challenge and review without retaliation. Persistent governance failures must trigger a formal review or constitutional process._
 
-- **Power concentration:** All decisions above Operational level require a Full Member vote; no individual or role has unilateral authority beyond the delegated Admin limit
+- **Power concentration:** All decisions above Operational level require a Full Member vote; no individual or role has unilateral authority beyond the delegated operational role limits defined in the Role Registry (Layer 5)
 - **Informal vetoes:** Only written, reasoned objections submitted via the defined process may trigger a re-vote; social pressure or private objections have no governance weight
 - **Decision capture:** Snapshot voting is open to all Full Members simultaneously; no quorum requirement beyond votes cast (any participation level is valid)
 - **Founder/role entrenchment:** No role grants permanent authority; all roles are defined in the Role Registry with explicit terms and removal processes; founders hold no special governance authority beyond their membership state

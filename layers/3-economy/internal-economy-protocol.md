@@ -10,14 +10,14 @@
 
 > All resources within the declared governed scope must be explicitly classified.
 
-| Resource                                          | Classification | Steward                                  | Access rules                                                   | Transfer constraints                                         |
-| ------------------------------------------------- | -------------- | ---------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------ |
-| RCOS specification and artifacts (this repo)      | Commons        | Admin                                    | Public read; Full Members write via governance process         | Cannot be privatised; forks permitted                        |
-| Shared treasury (Safe multi-sig)                  | Commons        | Admin (Finance Steward in future)        | Transparent to all Full Members                                | Governed by Treasury Ruleset                                 |
-| ecohubsOS (os.ecohubs.community)                  | Commons        | Admin (Infrastructure Steward in future) | Full Members; public-facing features open                      | Cannot be sold or privatised without Constitutional decision |
-| EcoHubs website (ecohubs.community)               | Commons        | Admin                                    | Public read; Admin writes                                      | Cannot be sold without Constitutional decision               |
-| RCOS hosted website (blueprint.ecohubs.community) | Commons        | Admin                                    | Public read; Admin writes                                      | Cannot be sold without Constitutional decision               |
-| Brand, domain names, social media accounts        | Commons        | Admin (Social Media Steward in future)   | Admin manages; Full Members may contribute via defined process | Cannot be transferred without Constitutional decision        |
+| Resource                                          | Classification | Steward                                        | Access rules                                                                | Transfer constraints                                         |
+| ------------------------------------------------- | -------------- | ---------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| RCOS specification and artifacts (this repo)      | Commons        | Blueprint Steward                              | Public read; Full Members write via governance process                      | Cannot be privatised; forks permitted                        |
+| Shared treasury (Safe multi-sig)                  | Commons        | Finance Steward                                | Transparent to all Full Members (real-time via Safe)                        | Governed by Treasury Ruleset                                 |
+| ecohubsOS (os.ecohubs.community)                  | Commons        | Infrastructure Steward                         | Full Members; public-facing features open                                   | Cannot be sold or privatised without Constitutional decision |
+| EcoHubs website (ecohubs.community)               | Commons        | Infrastructure Steward                         | Public read; Infrastructure Steward and Communications Steward write        | Cannot be sold without Constitutional decision               |
+| RCOS hosted website (blueprint.ecohubs.community) | Commons        | Infrastructure Steward / Blueprint Steward     | Public read; Blueprint Steward writes; Infrastructure Steward manages       | Cannot be sold without Constitutional decision               |
+| Brand, domain names, social media accounts        | Commons        | Communications Steward                         | Communications Steward manages; Full Members may contribute via defined process | Cannot be transferred without Constitutional decision     |
 
 > Any unclassified resource must not be allocated, encumbered, monetized, or transferred until classification is completed.
 
@@ -44,9 +44,9 @@
 - **How contributions are recorded:**
   - Structured: automatically via Puckstack task completion → XP/ECO credited via Offcoin
   - Informal/other: self-reported by the member in ecohubsOS or Discord; no validation required for informal participation
-- **Who validates:** Structured contributions validated automatically by Puckstack/Offcoin; significant contributions (e.g. major artifacts, facilitation work) may be nominated by any member for additional XP via Admin
+- **Who validates:** Structured contributions validated automatically by Puckstack/Offcoin; significant contributions (e.g. major artifacts, facilitation work) may be nominated by any member for additional XP via the Membership Admin
 - **Effect on access/privileges:** Contribution recognition affects XP and ECO balance only — it does not grant additional governance rights beyond what the membership state defines
-- **Dispute:** Any member may contest a contribution record within 30 days; disputes resolved by Admin with right of appeal to Full Members
+- **Dispute:** Any member may contest a contribution record within 30 days; disputes resolved by Membership Admin with right of appeal to Full Members
 
 ## Internal Units
 
@@ -55,7 +55,7 @@ Two internal units are in use: **XP** (experience points) and **ECO** (community
 | Property | XP | ECO |
 |---|---|---|
 | **Purpose** | Activity and progress indicator | Contribution recognition; may unlock certain Puckstack permissions |
-| **Issuance** | Automatic via Puckstack task completion; manual via Admin for nominated informal contributions | Same as XP |
+| **Issuance** | Automatic via Puckstack task completion; manual via Membership Admin for nominated informal contributions | Same as XP |
 | **Transferability** | Non-transferable between members | Non-transferable between members; not traded on external markets |
 | **Expiration / decay** | None currently | None currently — see [Missing Technical Implementations](../../resources/missing-technical-implementations.md) |
 | **Hard cap** | None currently | None currently |

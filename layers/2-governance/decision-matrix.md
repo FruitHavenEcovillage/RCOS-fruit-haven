@@ -44,7 +44,7 @@
 
 ## Decision Type Definitions
 
-- **Operational** — Day-to-day functioning within existing rules; executed by Admin without a vote; no proposal or deliberation period required
+- **Operational** — Day-to-day functioning within existing rules; executed by the relevant operational role holder (per Role Registry, Layer 5) without a vote; no proposal or deliberation period required
 - **Strategic** — Long-term direction, significant resource allocation, creation or removal of major structures; requires a Full Member Snapshot vote; minimum 5-day deliberation period
 - **Constitutional** — Changes to Layer 0 (purpose, scope, invariants) or the governance system itself; requires a Full Member Snapshot vote, supermajority (≥⅔), and a 30-day ratification period; minimum 15-day deliberation period
 
