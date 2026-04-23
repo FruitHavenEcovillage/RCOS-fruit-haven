@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProposalList from '../../../components/ProposalList.astro';
+import { getCollection } from 'astro:content';
+
+const all = await getCollection('proposals', (e) => e.data.status === 'rejected');
+const entries = all.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout
+  title="Rejected proposals"
+  description="Proposals the EcoHubs community decided not to adopt."
+>
+  <article class="prose">
+    <p class="eyebrow">Governance</p>
+    <h1>Rejected proposals</h1>
+    <p>Proposals the community declined, sorted by decision date.</p>
+  </article>
+  <ProposalList
+    entries={entries}
+    status="rejected"
+    emptyText="No rejected proposals yet."
+  />
+</BaseLayout>
+
+<style>
+  .eyebrow {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+    margin: 0 0 0.25rem;
+  }
+</style>

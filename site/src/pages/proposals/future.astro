@@ -1,0 +1,16 @@
+---
+import DocLayout from '../../layouts/DocLayout.astro';
+import { getEntry, render } from 'astro:content';
+
+const entry = await getEntry('future', 'future');
+if (!entry) throw new Error('proposals/future.md not found');
+const { Content } = await render(entry);
+---
+
+<DocLayout
+  title="Future proposals"
+  description="Ideas deferred for future governance decisions."
+  eyebrow="Governance"
+>
+  <Content />
+</DocLayout>

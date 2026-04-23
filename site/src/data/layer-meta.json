@@ -1,0 +1,51 @@
+[
+  {
+    "number": 0,
+    "slug": "0-identity",
+    "title": "Identity",
+    "summary": "Who the community is. Purpose, scope, and invariants that cannot be changed without a constitutional decision.",
+    "icon": "◉"
+  },
+  {
+    "number": 1,
+    "slug": "1-membership",
+    "title": "Membership",
+    "summary": "Who belongs. States, onboarding, agreements, and how members exit.",
+    "icon": "◎"
+  },
+  {
+    "number": 2,
+    "slug": "2-governance",
+    "title": "Governance",
+    "summary": "How decisions are made. Authority, decision matrix, and governance protocol.",
+    "icon": "◈"
+  },
+  {
+    "number": 3,
+    "slug": "3-economy",
+    "title": "Economy",
+    "summary": "How value flows. Internal economy protocol and treasury ruleset.",
+    "icon": "◆"
+  },
+  {
+    "number": 4,
+    "slug": "4-conflict",
+    "title": "Conflict",
+    "summary": "How disputes are handled. Accountability protocol and conflict resolution ladder.",
+    "icon": "◇"
+  },
+  {
+    "number": 5,
+    "slug": "5-operations",
+    "title": "Operations",
+    "summary": "How the community runs day-to-day. Roles, manual, and meeting templates.",
+    "icon": "◍"
+  },
+  {
+    "number": 6,
+    "slug": "6-evolution",
+    "title": "Evolution",
+    "summary": "How the system changes itself. Change protocol, learning log, version history.",
+    "icon": "◉"
+  }
+]

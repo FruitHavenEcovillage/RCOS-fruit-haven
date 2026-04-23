@@ -1,0 +1,43 @@
+---
+import DocLayout from '../../../layouts/DocLayout.astro';
+import layerMeta from '../../../data/layer-meta.json';
+import { getCollection, render } from 'astro:content';
+import { slugToTitle } from '../../../lib/titleCase';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('layers');
+  return entries.map((entry) => {
+    const [layer, ...rest] = entry.id.split('/');
+    return {
+      params: { layer, slug: rest.join('/') },
+      props: { entry },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const [layerSlug, ...rest] = entry.id.split('/');
+const slug = rest.join('/');
+const layer = layerMeta.find((l) => l.slug === layerSlug);
+const firstH1 = entry.body?.match(/^#\s+(.+)$/m)?.[1]?.trim();
+const title = entry.data.title ?? firstH1 ?? slugToTitle(slug);
+---
+
+<DocLayout
+  title={title}
+  eyebrow={layer ? `Layer ${layer.number} · ${layer.title}` : undefined}
+>
+  <Content />
+
+  <hr />
+  <p class="back">
+    <a href={`/layers/${layerSlug}`}>← Back to {layer?.title ?? 'layer'}</a>
+  </p>
+</DocLayout>
+
+<style>
+  .back {
+    font-size: 0.9rem;
+  }
+</style>

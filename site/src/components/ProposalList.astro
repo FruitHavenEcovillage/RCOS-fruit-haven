@@ -1,0 +1,113 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entries: CollectionEntry<'proposals'>[];
+  status: 'passed' | 'rejected';
+  emptyText: string;
+}
+const { entries, status, emptyText } = Astro.props;
+---
+
+{entries.length === 0 ? (
+  <p class="empty">{emptyText}</p>
+) : (
+  <ul class="proposal-list">
+    {entries.map((p) => {
+      const slug = p.id.split('/').pop();
+      return (
+        <li>
+          <a href={`/proposals/${status}/${slug}`} class="proposal-card">
+            <div class="row">
+              <h3>{p.data.title}</h3>
+              <time>{p.data.date.toISOString().slice(0, 10)}</time>
+            </div>
+            <p>{p.data.summary}</p>
+            <div class="meta">
+              <span class="chip type-{p.data.decision_type}">{p.data.decision_type}</span>
+              {p.data.layers.map((n) => (
+                <span class="chip">L{n}</span>
+              ))}
+              {p.data.vote_result && <span class="chip">Vote: {p.data.vote_result}</span>}
+            </div>
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+)}
+
+<style>
+  .empty {
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+  .proposal-list {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .proposal-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1rem 1.15rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease;
+  }
+  .proposal-card:hover {
+    border-color: var(--color-primary);
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  time {
+    color: var(--color-text-muted);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.85rem;
+  }
+  p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+  .meta {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+  .chip {
+    display: inline-block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+  }
+  .type-strategic {
+    color: var(--color-primary);
+    border-color: color-mix(in srgb, var(--color-primary) 40%, transparent);
+  }
+  .type-constitutional {
+    color: var(--color-accent);
+    border-color: color-mix(in srgb, var(--color-accent) 50%, transparent);
+  }
+</style>

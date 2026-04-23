@@ -1,0 +1,19 @@
+{
+  "tiles": [
+    {
+      "layer": 2,
+      "title": "Snapshot-based governance live",
+      "body": "Governance workflow now triggers on on-chain Snapshot proposals; compliance transitions automatically to draft state."
+    },
+    {
+      "layer": 5,
+      "title": "Meeting templates complete",
+      "body": "All five meeting templates drafted and in review: governance, coordination, operations, conflict, reflection."
+    },
+    {
+      "layer": 6,
+      "title": "Change protocol added",
+      "body": "Layer 6 now specifies how RCOS artifacts themselves can be amended."
+    }
+  ]
+}
