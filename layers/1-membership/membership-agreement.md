@@ -44,7 +44,7 @@
 - **Minimum contribution:** At least one recognized contribution per 6 months (any category — labor, care, knowledge, stewardship, coordination, or informal community participation including Discord activity)
 - **Recognized categories:** As defined in the Internal Economy Protocol (Layer 3); informal participation such as community discussion counts as coordination
 - **Substitution:** A member may delegate or substitute participation in a specific task but remains responsible for meeting their overall contribution expectations
-- **Extended absence:** A member expecting absence of more than 6 months must notify the community; contribution expectations are paused for the notified period up to 6 months
+- **Extended absence:** A member expecting absence of more than 6 months must notify the community; contribution expectations are paused for the full notified period, up to a maximum of 12 months. If the expected absence exceeds 12 months, the member should either initiate a voluntary exit or agree an arrangement with Admin
 - **Non-participation trigger:** Absence of recognized contribution for 6 consecutive months without prior notice triggers an accountability check as defined in Layer 4
 
 ## Due Process Reference
@@ -61,7 +61,7 @@ By entering the community through the defined onboarding process, the member exp
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Strategic
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>

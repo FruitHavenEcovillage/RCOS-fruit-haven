@@ -17,6 +17,8 @@ An accountability check is initiated when:
 
 ## Investigation and Review
 
+> **Breach severity guidance:** A breach is **medium** if it involves non-compliance with a Membership Agreement obligation (e.g. participation expectations, notification requirements, or process obligations) without threatening member safety or community integrity. A breach is **serious** if it involves a Layer 0 invariant violation, a credible safety concern, persistent bad-faith conduct, or any action that fundamentally undermines the governance system.
+
 - **Inactivity (soft breach):** Admin contacts the member privately. The member has 30 days to respond. If no response: exit is triggered per the Exit & Separation Protocol. If the member responds and commits to re-engagement: outcome documented and monitored for 3 months.
 - **Obligation breach (medium):** Admin contacts the member privately with a written notice of the concern. Member has 30 days to respond and address the breach. If resolved privately: written record kept by Admin. If unresolved: escalated to Conflict Resolution Ladder Step 3.
 - **Serious breach / invariant violation:** Admin may escalate directly to Conflict Resolution Ladder Step 4 or 5, bypassing the private check-in.
@@ -57,7 +59,7 @@ All forced exits and temporary access restrictions must follow the Exit & Separa
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Strategic
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>

@@ -57,7 +57,7 @@
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Constitutional
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>

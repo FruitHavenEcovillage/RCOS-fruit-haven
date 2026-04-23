@@ -52,7 +52,7 @@ The following separation steps apply to both voluntary and forced exits:
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Strategic
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>

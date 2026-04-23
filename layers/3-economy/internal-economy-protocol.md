@@ -87,7 +87,7 @@ Any member may contest a contribution record or internal unit balance within 30 
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Strategic
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>

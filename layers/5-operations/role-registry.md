@@ -14,6 +14,8 @@ This registry defines all recognized roles within EcoHubs. Roles are either **op
 
 All operational roles are currently held by the founding member (Stefan) as a transitional necessity during the early phase of the community. The community actively seeks to distribute these roles as more members join. One person may hold multiple roles simultaneously.
 
+> **"In good standing"** means a Full Member who has met their participation expectations in the last 6 months and is not currently subject to an active accountability process or conflict review under Layer 4.
+
 > Once adopted, this registry supersedes the "Admin" placeholder in the Authority Registry (Layer 2) and the Decision Matrix (Layer 2). Those documents will be updated to reference the specific operational roles defined here.
 
 ---
@@ -221,7 +223,7 @@ Functional roles define a member's contribution scope. They carry no delegated g
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Strategic
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>

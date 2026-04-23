@@ -16,6 +16,7 @@
 - **Strategic and Constitutional decisions:** Any Full Member may submit a proposal directly on Snapshot using the predefined proposal template (see [Missing Technical Implementations](../../resources/missing-technical-implementations.md))
 - Every proposal must include: summary of the change, affected layers and artifacts, decision type, rationale, risks and mitigations, rollback plan, and proposed effective date
 - Decision type must be declared in the proposal; if unclear, defaults to the higher-impact type
+- **Withdrawal:** A proposer may withdraw their proposal at any point before the Snapshot vote opens by notifying the community via Discord or forum. Once the vote has opened, withdrawal is not possible.
 
 ## Review and Deliberation
 
@@ -75,7 +76,7 @@
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Constitutional
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>

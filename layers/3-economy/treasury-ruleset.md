@@ -24,7 +24,7 @@ Potential future income interfaces: grants and foundations, Web3 ecosystem fundi
 
 | Amount | Decision Type | Authorized Body | Mechanism |
 |---:|---|---|---|
-| Up to delegated limit (currently €0) | Operational | Admin | Delegated — not currently active |
+| Up to delegated limit (currently €0) | Operational | Finance Steward | Delegated — not currently active |
 | Any amount above delegated limit | Strategic | Full Members | Snapshot vote |
 | Multi-year contracts, debt, or structural financial obligations | Constitutional | Full Members | Snapshot vote + supermajority + 30-day ratification |
 
@@ -57,7 +57,7 @@ All spending decisions must reference the linked governance record (Snapshot vot
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Strategic
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>

@@ -38,7 +38,7 @@
 
 > _§3.3 — The community must define a probationary period for new members. Must include a defined duration, explicit evaluation criteria, and a clear transition decision process. Failure to transition must trigger a defined exit or extension process. During probation, rights may be limited but obligations must be explicit._
 
-- **Duration:** 15 days from vote approval to complete all onboarding steps
+- **Duration:** 30 days total from vote approval — a 15-day initial period to complete all onboarding steps, followed by a 15-day grace period if the initial period expires without completion
 - **Evaluation criteria:** All onboarding steps completed and recorded in ecohubsOS
 - **Transition decision:** Automatic — onboarding completion triggers Full Member state; no additional vote required
 - **Grace period:** If onboarding is not completed after 15 days, a 15-day grace period begins and a notification is sent to the member
@@ -57,7 +57,7 @@ Onboarding completion is recorded automatically in ecohubsOS upon completion of 
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Strategic
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>

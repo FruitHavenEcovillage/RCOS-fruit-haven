@@ -20,6 +20,8 @@
 
 > **Note:** All four operational roles are currently held by the founding member (Stefan) during the early phase of the community. Role definitions, responsibilities, and handover requirements are fully specified in the Role Registry (Layer 5).
 
+> **Conflict-of-interest recusal:** An operational role holder may not exercise their delegated authority in any decision where they have a direct personal interest (e.g. Membership Admin may not process their own admission, exit, or accountability check; Finance Steward may not approve their own reimbursement). In such cases, the decision is escalated to Full Members via the governance process.
+
 > Authority must not be derived from charisma, seniority, ownership, or informal influence.  
 > Temporary or emergency authority must be explicitly defined, time-bounded, and subject to review.
 
@@ -27,7 +29,7 @@
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Constitutional
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>

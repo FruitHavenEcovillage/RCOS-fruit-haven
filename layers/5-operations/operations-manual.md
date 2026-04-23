@@ -17,8 +17,8 @@
 | Proposal publication | Proposing member + Membership Admin | Proposing member submits to Snapshot; Membership Admin adds proposal file to `proposals/passed/` or `proposals/rejected/` within 7 days of vote conclusion; affected artifacts updated within 7 days — see Governance Protocol (Layer 2) |
 | Contribution recording | Member (self-reported) / Puckstack (automatic) | Structured contributions credited automatically via Puckstack/Offcoin; informal contributions self-reported in ecohubsOS — see Internal Economy Protocol (Layer 3) |
 | Weekly meeting | Facilitator | Publishes agenda in Discord ≥24 hours in advance; posts meeting notes in Discord after the meeting; action items tracked until resolved |
-| Treasury management | Finance Steward | Ensures all Full Members have Safe Proposer access; publishes fiat account summaries when required — see Treasury Ruleset (Layer 3) |
-| Platform access review | Infrastructure Steward | Reviews platform permissions quarterly; revokes access for exited members promptly |
+| Treasury management | Finance Steward | Ensures all Full Members have Safe Proposer access; publishes fiat account summaries at least every 6 months if the account does not support direct member access — see Treasury Ruleset (Layer 3) |
+| Platform access review | Infrastructure Steward | Reviews platform permissions quarterly; revokes access for exited members within 24 hours |
 
 ## Role and Domain Interfaces
 
@@ -68,7 +68,7 @@
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Strategic
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>

@@ -38,7 +38,7 @@ When a proposal passes:
 1. Membership Admin adds the proposal file to `proposals/passed/` within 7 days
 2. Affected artifacts in `layers/` are updated within 7 days
 3. `layers/6-evolution/version-history.md` is updated to record the change
-4. Status fields in affected artifacts are updated from *Stub — not yet adopted* to *Active — adopted [date]*
+4. Status fields in affected artifacts are updated from *Stub — not yet adopted* to *Active — adopted <YYYY-MM-DD>*
 
 ## Rejection
 
@@ -86,7 +86,7 @@ Experiments expire automatically at the end of their defined duration unless exp
 
 ## Ratification Record
 
-- **Adopted:** [date]
+- **Adopted:** <YYYY-MM-DD>
 - **Decision type:** Constitutional
-- **Version:** [version]
-- **Decision record:** [link to proposal]
+- **Version:** <version>
+- **Decision record:** <link to decision record>
