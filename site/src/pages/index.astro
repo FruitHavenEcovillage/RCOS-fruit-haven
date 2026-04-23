@@ -46,12 +46,28 @@ const faqItems = faqEntry?.data.items ?? [];
         >
           About EcoHubs <span class="arrow">↗</span>
         </a>
+        <a
+          href="https://github.com/ecohubs-community/RCOS-ecohubs"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-ghost"
+        >
+          View on GitHub <span class="arrow">↗</span>
+        </a>
       </div>
     </div>
   </section>
 
   <section class="context-grid">
     <article class="context-card">
+      <img
+        src="/rcos-blueprint.webp"
+        alt=""
+        class="card-image"
+        loading="lazy"
+        width="600"
+        height="450"
+      />
       <p class="card-eyebrow">What is RCOS?</p>
       <h2>A shared operating system for intentional communities.</h2>
       <p>
@@ -72,6 +88,14 @@ const faqItems = faqEntry?.data.items ?? [];
     </article>
 
     <article class="context-card">
+      <img
+        src="/ecohubs-network.webp"
+        alt=""
+        class="card-image"
+        loading="lazy"
+        width="600"
+        height="340"
+      />
       <p class="card-eyebrow">What is EcoHubs?</p>
       <h2>The community building the blueprint — and living it.</h2>
       <p>
@@ -257,6 +281,14 @@ const faqItems = faqEntry?.data.items ?? [];
     flex-direction: column;
     gap: 0.9rem;
     box-shadow: var(--shadow-sm);
+  }
+  .card-image {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin: -0.25rem 0 0.25rem;
   }
   .card-eyebrow {
     font-size: 0.75rem;

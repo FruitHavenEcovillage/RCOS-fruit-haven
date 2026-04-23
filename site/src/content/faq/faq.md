@@ -13,5 +13,5 @@ items:
   - q: How do I propose a change?
     a: Full Members submit proposals through the governance protocol defined in Layer 2. Passed and rejected proposals appear on this site once decided; drafts live in the governance repo.
   - q: Can I fork this site for my own community?
-    a: Yes — both RCOS itself and this site are designed to be forked and adapted. Swap the content, override the theme variables in a single CSS file, and rebrand.
+    a: "Yes — both RCOS itself and this site are designed to be forked and adapted. The source lives at https://github.com/ecohubs-community/RCOS-ecohubs. Swap the content, override the theme variables in a single CSS file, and rebrand."
 ---
