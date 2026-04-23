@@ -12,9 +12,14 @@ Never summarize a change without recording it. Never update an artifact without 
 
 ---
 
-## 1. When a Proposal PR Is Merged (Passed)
+## 1. When a Snapshot Vote Passes
 
-When a proposal is merged into `proposals/passed/`, do all of the following in the same commit or a direct follow-up:
+The authoritative trigger for all repository updates is a **passed Snapshot vote** — not a PR merge. The workflow is:
+1. A Full Member submits a proposal to Snapshot and opens deliberation (Discord / forum)
+2. The Snapshot vote runs for the required period
+3. On passing: the Membership Admin adds the proposal file to `proposals/passed/` and triggers the updates below
+
+When a proposal passes, do all of the following in the same commit or a direct follow-up:
 
 ### 1a. Update the affected artifact(s) in `layers/`
 
@@ -48,11 +53,11 @@ If the merged proposal adds a previously missing mandatory artifact, or fixes a 
 
 ---
 
-## 2. When a Proposal Is Rejected
+## 2. When a Snapshot Vote Fails (Rejected)
 
-When a proposal PR is closed as rejected:
+When a Snapshot vote fails:
 
-1. Add the proposal file to `proposals/rejected/` with a note at the top:
+1. The Membership Admin adds the proposal file to `proposals/rejected/` with a note at the top:
 
 ```markdown
 > **Status: Rejected**
@@ -92,6 +97,8 @@ Use this format (append at top of file):
 ---
 
 ## 4. Proposal File Format
+
+This is the **repository archive format** for proposals — the record filed to the repo after a Snapshot vote concludes. The Snapshot submission itself is a separate step done directly on Snapshot before the vote opens (a Snapshot proposal template is tracked as a missing technical implementation).
 
 All proposal files must follow this template. Save new proposals as:
 `proposals/<status>/<YYYY-MM-DD>_<short-kebab-title>.md`
@@ -162,6 +169,7 @@ All proposal files must follow this template. Save new proposals as:
 `compliance/checklist.md` tracks the current compliance state per layer.
 
 - **Present** = file exists AND contains substantive, adopted content (not a stub)
+- **Draft** = file exists with substantive content but has not yet been formally adopted through a governance vote
 - **Stub** = file exists but is empty or placeholder only
 - **Missing** = file does not exist
 - **Non-compliant** = artifact exists but systematically violates RCOS requirements
