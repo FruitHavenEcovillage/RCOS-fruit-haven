@@ -8,23 +8,22 @@
 
 ## Meeting Type: Coordination & Alignment
 
-- **Purpose:** Synchronize work across roles, domains, or circles; surface dependencies and blockers; align on priorities
-- **Decision scope:** Operational decisions only — cannot make strategic or constitutional decisions
-- **Required participants:** [To be defined]
-- **Optional participants:** [To be defined]
-- **Cadence:** [To be defined]
-- **Duration limit:** [To be defined]
-- **Facilitation:** [How facilitator is selected or rotated]
+- **Purpose:** Synchronize work across roles and initiatives; surface dependencies and blockers; align on priorities
+- **Decision scope:** Operational decisions only — cannot make Strategic or Constitutional decisions
+- **Required participants:** Role holders with active initiatives
+- **Optional participants:** All Full Members welcome
+- **Cadence:** Monthly or as needed when cross-role coordination is required
+- **Duration limit:** 60 minutes maximum
+- **Facilitation:** Facilitator role holder; may be facilitated by any role holder if the Facilitator is unavailable
 
 ---
 
 ## Agenda Structure
 
-1. **Check-in** (time-boxed: [X] min)
-2. **Cross-role / cross-domain updates** — what each area is working on, what it needs from others
-3. **Dependencies and blockers** — flag anything stalling progress across boundaries
-4. **Alignment check** — confirm shared understanding of current priorities
-5. **Next actions and owners**
+1. **Check-in** (5 min) — one word or sentence from each participant
+2. **Initiative status updates** (30 min) — each role holder briefly covers: what's in progress, what's completed since last time, what's needed from other roles
+3. **Blockers and dependencies** (15 min) — flag anything stalling progress across role boundaries; agree on owners and timelines for resolution
+4. **Next steps** (10 min) — confirm priorities and next actions with explicit owners
 
 ---
 
@@ -33,14 +32,14 @@
 - **Date:**
 - **Facilitator:**
 - **Attendees:**
-- **Notes:** [Summary or link]
+- **Notes:** [Summary posted to Discord after the meeting]
 
 ---
 
 ## Decision Record (if applicable)
 
 - **Decision type:** Operational
-- **Authority:** [Role or body]
-- **Mechanism / threshold:** [e.g. consent, delegated authority]
+- **Authority:** [Role holder per Decision Matrix]
+- **Mechanism / threshold:** Delegated authority
 - **Outcome:** [What was decided]
 - **Effective date:**

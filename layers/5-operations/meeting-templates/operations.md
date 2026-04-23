@@ -8,24 +8,25 @@
 
 ## Meeting Type: Operations
 
-- **Purpose:** Review active work, coordinate tasks, surface blockers
-- **Decision scope:** Operational decisions only — cannot make strategic or constitutional decisions
-- **Required participants:** [To be defined]
-- **Optional participants:** [To be defined]
-- **Cadence:** [To be defined]
-- **Duration limit:** [To be defined]
-- **Facilitation:** [How facilitator is selected or rotated]
+- **Purpose:** Review active work, coordinate tasks, surface blockers, and make operational decisions
+- **Decision scope:** Operational decisions only — cannot make Strategic or Constitutional decisions
+- **Required participants:** All Full Members invited; minimum quorum: Facilitator + at least one other Full Member
+- **Optional participants:** Trial Members or Applicants may be invited to specific agenda items by the Facilitator
+- **Cadence:** Weekly
+- **Duration limit:** 90 minutes maximum
+- **Facilitation:** Facilitator role holder; any Full Member may step in if the Facilitator is absent
 
 ---
 
 ## Agenda Structure
 
-1. **Check-in** (time-boxed: [X] min)
-2. **Review last actions** — what was committed, what was completed
-3. **Operational updates** — by role or domain
-4. **Decisions** (operational scope only — record below if any)
-5. **Next actions and owners**
-6. **Check-out** (optional, time-boxed)
+1. **Check-in** (5 min) — one word or sentence from each participant
+2. **Review last actions** (10 min) — what was committed at the last meeting; what was completed, what is outstanding
+3. **Role and domain updates** (30 min) — brief update from each active role holder; what's in progress, what's needed
+4. **Active agenda items** (30 min) — items submitted in advance; Facilitator prioritises
+5. **Operational decisions** (10 min) — any decisions to make or record within Operational scope
+6. **Next actions and owners** (10 min) — explicit owners and timelines for all open actions
+7. **Check-out** (5 min) — optional; one word or sentence from each participant
 
 ---
 
@@ -34,15 +35,15 @@
 - **Date:**
 - **Facilitator:**
 - **Attendees:**
-- **Notes:** [Summary or link]
+- **Notes:** [Summary posted to Discord after the meeting]
 
 ---
 
 ## Decision Record (if applicable)
 
 - **Decision type:** Operational
-- **Authority:** [Role or body]
-- **Mechanism / threshold:** [e.g. consent, delegated authority]
+- **Authority:** [Role holder per Decision Matrix]
+- **Mechanism / threshold:** Delegated authority
 - **Outcome:** [What was decided]
 - **Effective date:**
-- **Filed to:** `proposals/passed/` or noted in version history if minor
+- **Filed to:** Brief note in Discord by the relevant role holder
