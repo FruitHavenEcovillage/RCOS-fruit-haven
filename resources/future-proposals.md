@@ -23,6 +23,11 @@ Priorities: **High** — address soon; **Medium** — important but not urgent; 
 
 ## Medium Priority
 
+### ECO accumulation limits and decay
+- **Context:** ECO currently has no expiration, decay, or hard cap. As ECO gains more utility (unlocking permissions, future features), uncapped accumulation could create informal power imbalances. A decay or expiration mechanism would keep ECO meaningful as a contribution signal.
+- **Trigger:** When ECO utility expands beyond Puckstack permissions, or when accumulation disparities become visible
+- **Layers affected:** Layer 3 (Internal Economy Protocol — Internal Units, Accumulation Constraints)
+
 ### Suspended Member state
 - **Context:** A Suspended membership state was discussed during the Layer 1 definition process. It would allow members to temporarily pause their membership (e.g. due to illness, life events, or a conflict under review in Layer 4) without fully exiting, with a generous duration cap of up to 12 months renewable once.
 - **Blocker:** ecohubsOS currently has no technical differentiation between Full Member and Suspended Member — Discord permissions, voting eligibility, and platform access would all need to support a distinct suspended state.

@@ -4,6 +4,21 @@ Features and flows required for full RCOS compliance that are not yet implemente
 
 ---
 
+## 9. ECO expiration / decay mechanism
+
+**Required by:** Layer 3 — Internal Economy Protocol (Internal Units, Accumulation Constraints)
+**Priority:** Medium
+
+Consider designing and implementing an expiration or decay mechanism for ECO to prevent passive accumulation by inactive members and keep the unit meaningful as a contribution signal. Design questions to resolve first:
+- Should ECO expire after a fixed period (e.g. 12 months of inactivity)?
+- Should it decay gradually or expire in full?
+- Should expired ECO be redistributed, burned, or simply zeroed?
+- Should the mechanism trigger only when ECO has real utility (unlocks, access, etc.)?
+
+This is a design decision before a technical one — open a governance proposal once the future utility of ECO is clearer.
+
+---
+
 ## 8. Snapshot proposal template
 
 **Required by:** Layer 2 — Governance Protocol (Proposal Submission)
