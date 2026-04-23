@@ -8,52 +8,51 @@
 
 ## Conflict Classification
 
-| Class | Entry criteria | Priority | Resolution pathways | Documentation |
-|---|---|---|---|---|
-| Interpersonal | [criteria] | [priority] | [pathways] | [requirements] |
-| Role-based | [criteria] | [priority] | [pathways] | [requirements] |
-| Structural | [criteria] | [priority] | [pathways] | [requirements] |
-| Ethical / boundary violation | [criteria] | [priority] | [pathways] | [requirements] |
-| **Safety-critical** | Credible safety risk, coercion, abuse, or threats | Immediate | Elevated safeguards (§6.3) | [requirements] |
+| Class | Entry criteria | Entry point | Documentation |
+|---|---|---|---|
+| **Interpersonal** | Member-to-member friction, communication issues, personal disagreements | Step 1 | None required until Step 3 |
+| **Role-based** | Disputes about how a role was performed, task scope disagreements | Step 2 | None required until Step 3 |
+| **Structural** | Disputes about whether a governance process was followed correctly | Step 2 | None required until Step 3 |
+| **Ethical / obligation breach** | Breach of Membership Agreement obligations or Layer 0 principles (non-severe) | Step 3 | Written record from intake |
+| **Safety-critical** | Credible safety risk, coercion, abuse, or threats | Step 4 (bypasses Steps 1–3) | Written record from intake; immediate action permitted |
 
 > Safety-critical conflicts override participation rights, role continuity, and operational convenience.
 
 ## Resolution Ladder Steps
 
-> Each step must define: how conflict is raised, how parties are notified, how non-response is handled, how facilitators are selected, time expectations, and documentation requirements.
+1. **Direct conversation** — Parties attempt to resolve privately between themselves. No facilitator involved. 14-day window. If resolved: no record required. If unresolved or either party requests escalation: move to Step 2.
 
-1. **Direct conversation** — [To be defined]
-2. **Facilitated mediation** — [To be defined]
-3. **Accountability intake** — [To be defined]
-4. **Accountability review** — [To be defined]
-5. **Governance decision** — [To be defined]
-6. **Separation process** — [To be defined, coordinated with Layer 1 exit protocol]
+2. **Facilitated dialogue** — Either party requests facilitated dialogue via the Facilitator (Admin). Facilitator hosts one or more conversations. Confidential: parties and Facilitator only. 14-day window. If resolved: brief written record kept by Facilitator. If unresolved: move to Step 3.
+
+3. **Accountability intake** — Facilitator opens a formal written record. Parties submit written statements (optional but encouraged). Facilitator reviews and may propose a resolution. Confidential. 21-day window. If resolved: written record of outcome kept by Facilitator. If unresolved: move to Step 4.
+
+4. **Accountability review** — Structured review led by Facilitator. Both parties have a full opportunity to present their position. Facilitator issues a written recommendation. Confidential. 21-day window. If all parties accept: outcome implemented and record kept. If not accepted or forced exit is required: move to Step 5.
+
+5. **Governance decision** — Minimum necessary information is disclosed to Full Members; parties are notified before disclosure. Full Members deliberate (minimum 5 days) and vote via Snapshot. Strategic decision threshold.
+
+6. **Separation process** — If Full Members vote for forced exit: coordinated with the Exit & Separation Protocol (Layer 1). Minimum 6-month re-application block applies.
 
 ## Facilitator Selection and Replacement
 
-> _§6.2.3 — How mediators or facilitators are selected, replaced, or declined at each ladder step. Must not require social status or proximity to decision-makers._
-
-- Facilitator pool / selection method: [To be defined]
-- How a party may decline a facilitator: [To be defined]
-- How a replacement facilitator is selected: [To be defined]
-- Conditions for external or independent facilitation: [To be defined]
+- **Current facilitator:** Admin
+- **If Admin is a party to the conflict:** a neutral facilitator is nominated from Full Members by mutual agreement of the parties; if no agreement is reached, any willing Full Member with no declared conflict of interest may serve
+- **Declining a facilitator:** any party may decline a facilitator by stating a conflict of interest in writing; both parties then agree on a replacement
+- **External facilitation:** may be requested by mutual agreement of all parties at any step
 
 ## Privacy and Information Access Boundaries
 
-> _§6.1.3, §6.2.3 — Documentation requirements and privacy boundaries must be explicit for each conflict class. Defines what information is recorded, who may access it, under what conditions, and what remains private._
-
-- What is recorded at each ladder step: [To be defined]
-- Who has access to conflict records: [To be defined]
-- Conditions for restricted access: [To be defined]
-- Conditions under which records may be shared outside the parties: [To be defined]
+- **Steps 1–4:** fully confidential; only parties and Facilitator may access records or be aware of the process
+- **Steps 5–6:** minimum necessary information is disclosed to Full Members; parties are notified before any disclosure
+- **Record retention:** records from Steps 3–4 are retained by Admin for 2 years, then destroyed; accessible only to parties and Facilitator during that period
+- **Non-disclosure:** no participant may share information about the process outside the defined participants without the written consent of all parties
 
 ## Safeguards
 
-> The process must be accessible without requiring social status, seniority, or informal proximity to decision-makers.
-
-- Anti-retaliation protections: [To be defined]
-- Power asymmetry provisions: [To be defined]
-- Safety-critical immediate actions: [To be defined]
+- **Anti-retaliation:** Any member who raises a conflict or participates in a process in good faith is protected from retaliation. Retaliation is itself grounds for an accountability process.
+- **Bad-faith complaints:** A complaint found to be deliberately false or intended to harm a member may trigger an accountability process against the complainant.
+- **Admin conflict of interest:** If Admin is a party to the conflict, a substitute Facilitator must be appointed (see Facilitator Selection and Replacement above).
+- **Process pause:** Either party may pause the process once for up to 14 days by written notice to the Facilitator, for personal reasons.
+- **Safety-critical immediate action:** The Facilitator may recommend an immediate, temporary access restriction pending review. This does not constitute exit and must be reviewed within 14 days.
 
 ---
 
