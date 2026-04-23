@@ -8,57 +8,79 @@
 
 ## How Changes Are Proposed
 
-> Who may propose. Where proposals are filed. What must be included (see proposal template in AGENTS.md).
+Any Full Member may propose a change to any RCOS artifact. Proposals are submitted via Snapshot first (per the Governance Protocol, Layer 2) — not as repository PRs. After the vote concludes, the Membership Admin adds the proposal file to the repository. Every proposal must include:
 
-[To be defined] — Proposals are submitted as PRs to this repository using the template in [AGENTS.md](../../AGENTS.md).
+- Summary of the change
+- Affected layers and artifacts (with links)
+- Decision type (Operational / Strategic / Constitutional)
+- Rationale
+- Risks and mitigations
+- Rollback plan
+- Proposed effective date
 
 ## How Proposals Are Classified
 
-> Every proposal must be classified as Operational, Strategic, or Constitutional before review begins. If classification is unclear, it defaults to the higher-impact type.
+- **Operational:** wording corrections, formatting, and minor content updates to artifacts — no vote required; executed by Admin within delegated limits
+- **Strategic:** changes to Layer 1–5 content that affect member rights, processes, or structures
+- **Constitutional:** changes to Layer 0 (purpose, scope, invariants) or to the governance system itself (Layer 2)
 
-[To be defined]
+> If classification is unclear, it defaults to the higher-impact type.
 
 ## Review and Deliberation
 
-> Who reviews. Where deliberation happens. Minimum deliberation period.
-
-[To be defined]
+- **Operational:** no deliberation required
+- **Strategic:** minimum 5-day deliberation period; deliberation happens in Discord or forum; a Governance meeting may be called per the meeting template (Layer 5)
+- **Constitutional:** minimum 15-day deliberation period; deliberation in Discord and forum; a Governance meeting is strongly recommended; 30-day ratification period after the vote passes
 
 ## Adoption and Publication
 
-> How a passed proposal becomes official. Who updates artifacts. Publication timeline.
-
-[To be defined] — Passed proposals are merged to `proposals/passed/`; artifacts in `layers/` are updated; `version-history.md` is updated.
+When a proposal passes:
+1. Membership Admin adds the proposal file to `proposals/passed/` within 7 days
+2. Affected artifacts in `layers/` are updated within 7 days
+3. `layers/6-evolution/version-history.md` is updated to record the change
+4. Status fields in affected artifacts are updated from *Stub — not yet adopted* to *Active — adopted [date]*
 
 ## Rejection
 
-> What happens to rejected proposals. Archive process.
-
-[To be defined] — Rejected proposals are moved to `proposals/rejected/`.
+When a proposal is rejected:
+1. Membership Admin adds the proposal file to `proposals/rejected/` within 7 days
+2. No artifact changes are made
+3. The re-vote mechanism applies if new information emerges (per the Decision Matrix, Layer 2)
 
 ## Transition and Migration
 
-> How existing roles, agreements, or records are migrated when a rule changes.
-
-[To be defined]
+When a rule change affects existing roles, agreements, or records:
+- Existing role holders are notified of any changes to their scope before the change takes effect
+- Existing members' rights may not be reduced without their consent or a Constitutional vote
+- Records that predate the change are not retroactively altered unless explicitly part of the proposal
+- A transition period may be defined in the proposal itself
 
 ## Rollback
 
-> How an adopted change can be reverted. Triggers for rollback. Decision path for rollback.
-
-[To be defined]
+Any passed decision can be reversed through the same process as the original decision. Any Full Member may trigger a re-vote by submitting a written reasoned objection that was not considered during the original deliberation (per the Decision Matrix, Layer 2). Rollback uses the same decision type as the original decision.
 
 ## Emergency Changes
 
-> Permitted only under explicitly defined conditions. Must be time-bounded. Must not override Layer 0 invariants. Subject to mandatory post-hoc review and ratification or rollback.
+An emergency operational change may be made by Admin only if all of the following conditions are met:
 
-[To be defined]
+1. Immediate action is required to prevent safety harm or platform failure
+2. A Full Member vote cannot be convened in time
+3. The change does not override a Layer 0 invariant
+
+Emergency changes must be:
+- Reported to all Full Members within 48 hours
+- Reviewed at the next community meeting
+- Ratified via the appropriate decision type within 30 days, or automatically rolled back
 
 ## Experiments
 
-> Time-bounded, reversible deviations adopted for learning. Must define scope, duration, success/failure criteria, and rollback conditions. Must expire unless explicitly renewed.
+Any Full Member may propose a time-bounded experiment via Strategic decision. Every experiment must define:
+- Scope (what is being tried and what it affects)
+- Duration (maximum 90 days)
+- Success and failure criteria
+- Rollback conditions
 
-[To be defined]
+Experiments expire automatically at the end of their defined duration unless explicitly renewed via a new proposal. Results and learnings are recorded in the Learning Log (`layers/6-evolution/learning-log.md`).
 
 ---
 
