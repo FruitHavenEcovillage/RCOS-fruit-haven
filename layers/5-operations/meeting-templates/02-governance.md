@@ -4,11 +4,20 @@
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.2, §7.6
 
-> Used during the deliberation period of an active proposal, before or alongside the Snapshot vote. The meeting itself does not make binding decisions — it is a structured space for the community to understand, question, and discuss a proposal before voting. Required for Constitutional decisions; recommended for Strategic ones.
+:::rationale{title="Why a separate deliberation meeting?"}
+A good vote depends on a shared understanding of what's actually being voted on. The Governance meeting gives members a structured space to question, probe, and discuss a proposal before the Snapshot vote — so that Strategic and Constitutional decisions are made with real comprehension, not just reaction. The meeting itself makes no binding decisions; the vote does.
+:::
 
 ---
 
 ## Meeting Type: Governance
+
+:::rcos{clauses="7.2.1, 7.2.2, 7.2.3, 7.6.4"}
+:::
+
+:::rationale{title="Why separate deliberation from the binding decision?"}
+If a meeting can both discuss and decide, whoever is in the room that day gets to decide — regardless of quorum or authority rules. Keeping deliberation separate from the Snapshot vote preserves the integrity of the Decision Matrix and ensures absent members still get a vote.
+:::
 
 - **Purpose:** Deliberate on an active proposal during its deliberation period, ahead of or alongside a Snapshot vote
 - **Decision scope:** Deliberation only — the binding decision is made via Snapshot vote per the Decision Matrix; no governance decisions are made in the meeting itself
@@ -21,6 +30,10 @@
 ---
 
 ## Agenda Structure
+
+:::rationale{title="Why separate clarifying questions from deliberation?"}
+Mixing factual questions with advocacy is how discussions go sideways — people argue past each other before they've even agreed on what the proposal says. Splitting clarification from deliberation keeps the conversation grounded in the proposal itself.
+:::
 
 1. **Check-in** (5 min) — one word or sentence from each participant
 2. **Proposal summary** (10 min) — proposer presents the proposal: what it changes, why, and what the alternatives considered were

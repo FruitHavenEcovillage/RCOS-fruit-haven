@@ -8,7 +8,12 @@
 
 ## Admission Criteria
 
-> _Must be explicit and documented. Informal, implicit, or retroactive membership is not permitted._
+:::rcos{clauses="3.2.3, 3.2.4"}
+:::
+
+:::rationale{title="Why write down who gets in?"}
+Admission is the moment a stranger becomes bound by — and protected by — the community's rules. If the criteria are informal, the decision collapses into whoever happens to like the applicant. Written criteria make admission a governance act, not a social favor, and make rejection defensible on grounds the community can point to.
+:::
 
 1. _Alignment with the primary purpose and Layer 0 identity constraints_
 2. _Willingness to actively contribute in at least one recognized category_
@@ -17,7 +22,12 @@
 
 ## Onboarding Steps
 
-> _Must include: review of all RCOS-Core artifacts, explicit consent to Layer 0 and Layer 1 rules, declaration of initial membership state._
+:::rcos{clauses="3.2.1, 3.2.2"}
+:::
+
+:::rationale{title="Why make the process a fixed sequence?"}
+Consent to governance only means something if the member has actually seen the governance. A fixed sequence — review, consent, technical setup — ensures every Full Member crossed the same threshold in the same order, so nobody slips into full rights without having encountered the constraints that come with them.
+:::
 
 1. _Review all Layer 0–6 artifacts and this onboarding protocol (link provided in ecohubsOS)_
 2. _Explicitly consent to the Membership Agreement and Layer 0 identity constraints (in-app consent)_
@@ -29,14 +39,24 @@
 
 ## Initial Membership State
 
-> _Each new member must be assigned a declared membership state at the end of onboarding._
+:::rcos{clauses="3.1.2, 3.1.4"}
+:::
+
+:::rationale{title="Why assign a state at the end of onboarding?"}
+Between "applicant approved" and "fully integrated" there is a real gap — permissions, access, and expectations all change. Declaring the exact state a new member holds at each step removes ambiguity about what they can do right now, and prevents unintentional grants of rights before onboarding is complete.
+:::
 
 - On vote approval: **Trial Member**
 - On onboarding completion: **Full Member** (automatic, recorded in ecohubsOS)
 
 ## Trial and Evaluation
 
-> _§3.3 — The community must define a probationary period for new members. Must include a defined duration, explicit evaluation criteria, and a clear transition decision process. Failure to transition must trigger a defined exit or extension process. During probation, rights may be limited but obligations must be explicit._
+:::rcos{clauses="3.3.1, 3.3.2, 3.3.3, 3.3.4"}
+:::
+
+:::rationale{title="Why bound the trial period?"}
+An unbounded trial is a second-class membership that never ends — all obligations, fewer rights. Fixing the duration, the criteria, and the failure path forces a decision point: either the new member transitions into full standing or a defined exit runs. It prevents the trial state from becoming a permanent holding pen.
+:::
 
 - **Duration:** 30 days total from vote approval — a 15-day initial period to complete all onboarding steps, followed by a 15-day grace period if the initial period expires without completion
 - **Evaluation criteria:** All onboarding steps completed and recorded in ecohubsOS
@@ -49,7 +69,12 @@
 
 ## Completion Record
 
-> _Onboarding completion must be recorded in the Membership State Registry._
+:::rcos{clauses="3.8.2"}
+:::
+
+:::rationale{title="Why keep the record permanent?"}
+The completion record is the evidence that a member consented to a specific version of the rules on a specific date. Losing or editing it would make it impossible to answer, months or years later, "what exactly did they agree to?" — which is the only question that matters when a dispute arrives.
+:::
 
 Onboarding completion is recorded automatically in ecohubsOS upon completion of all steps, including a timestamp and the artifact versions consented to. This record is permanent and retained even after exit.
 

@@ -8,7 +8,12 @@
 
 ## Core Operational Processes
 
-> Critical processes must be documented such that continuity does not depend on knowledge held by specific individuals.
+:::rcos{clauses="7.3.4, 7.7.2, 7.6.3"}
+:::
+
+:::rationale{title="Why document critical processes?"}
+If a process only lives in one person's head, the community depends on that person showing up — forever. Writing the critical processes down, with named owners, is what converts private knowledge into a community asset that survives handovers, absences, and exits.
+:::
 
 | Process | Who | Detail |
 |---|---|---|
@@ -22,7 +27,12 @@
 
 ## Temporary and Ad-Hoc Responsibilities
 
-> Temporary responsibilities must not silently become ongoing.
+:::rcos{clauses="7.1.5, 7.1.4, 7.7.1"}
+:::
+
+:::rationale{title="Why cap temporary responsibilities?"}
+Ad-hoc tasks quietly calcify into permanent unpaid jobs — usually on whoever said yes once. A hard time-box and a forced review make the difference between "I covered for a week" and "apparently this is my role now."
+:::
 
 When a task or responsibility is assigned temporarily (e.g. covering for an absent role holder, handling a one-off project), it must be:
 - Explicitly time-bounded from the outset (a specific end date or completion condition must be stated)
@@ -35,7 +45,12 @@ No temporary or ad-hoc responsibility may persist beyond 90 days without being c
 
 ## Role and Domain Interfaces
 
-> How roles, domains, and meeting types connect and hand off to each other.
+:::rcos{clauses="7.6.3, 7.3.4"}
+:::
+
+:::rationale{title="Why map handoffs explicitly?"}
+Most operational failures happen not inside a role but between roles — at the boundaries where work moves from one owner to the next. Naming the handoffs turns invisible dependencies into reviewable ones, and prevents "I thought you had it" failures.
+:::
 
 | From | To | Handoff |
 |---|---|---|
@@ -49,7 +64,12 @@ No temporary or ad-hoc responsibility may persist beyond 90 days without being c
 
 ## Workload Boundaries
 
-> Time, attention, and emotional labor are finite resources. Limits must be explicit and reviewable.
+:::rcos{clauses="7.4.1, 7.4.2, 7.4.3, 7.7.3"}
+:::
+
+:::rationale{title="Why make workload limits explicit?"}
+Unbounded coordination load is the default failure mode of volunteer communities — it quietly burns out the most committed members until they leave. Explicit, reviewable limits make capacity a shared concern rather than a private burden.
+:::
 
 - **Meeting load:** One weekly community meeting, 90 minutes maximum. Extraordinary meetings may be called by any Full Member but should be the exception.
 - **Role load:** No formal cap currently. Role holders are responsible for flagging overload at any community meeting or in Discord. Any overload concern must be addressed within 14 days; roles may be redistributed via the governance process.
@@ -58,7 +78,12 @@ No temporary or ad-hoc responsibility may persist beyond 90 days without being c
 
 ## Operational Continuity
 
-> No single individual may be a critical single point of failure for core operations.
+:::rcos{clauses="7.5.1, 7.5.2, 7.5.3"}
+:::
+
+:::rationale{title="Why plan for continuity now?"}
+A community that depends on one irreplaceable person is one illness, one conflict, or one exit away from collapse. Naming the single points of failure — honestly — and building handover into every role is what keeps the community surviving its founders.
+:::
 
 - **Current state:** All operational roles are held by the founding member (Stefan). This is an acknowledged single point of failure; active recruitment of role holders is ongoing to reduce concentration.
 - **Handover mechanisms:** Handover requirements for each role are defined in the Role Registry (Layer 5). Handover must be completed before a role is vacated.
@@ -66,7 +91,12 @@ No temporary or ad-hoc responsibility may persist beyond 90 days without being c
 
 ## Information Flow and Anti-Gatekeeping
 
-> Information access rules must be explicit and enforceable. No single person or role may act as an informal gatekeeper for information that members are entitled to access.
+:::rcos{clauses="7.3.5, 7.7.4, 7.3.2"}
+:::
+
+:::rationale{title="Why treat information access as a governance issue?"}
+Whoever controls access to information controls the community, whether they mean to or not. Making access rules explicit — and disallowing sole points of access — is what prevents informal gatekeepers from accumulating the kind of power the governance system is supposed to check.
+:::
 
 - All governance decisions (passed and rejected proposals) are filed in this repository and are accessible to all Full Members
 - Meeting notes are published in Discord within 48 hours of each meeting and are accessible to all Full Members
@@ -79,6 +109,13 @@ No temporary or ad-hoc responsibility may persist beyond 90 days without being c
 ---
 
 ## Documentation Locations and Update Procedures
+
+:::rcos{clauses="7.3.1, 7.3.2, 7.3.3"}
+:::
+
+:::rationale{title="Why name where every document lives?"}
+If no one can say where the canonical version of something lives, there is no canonical version. Naming the location, owner, and review cadence for each document type is what makes the community's memory auditable rather than folkloric.
+:::
 
 | Document type | Location | Owner | Review cadence |
 |---|---|---|---|

@@ -8,7 +8,12 @@
 
 ## In-Scope Assets
 
-> _All assets governed by the community. Anything not listed here is treated as out of scope._
+:::rcos{clauses="2.2.1, 2.2.2, 2.2.4"}
+:::
+
+:::rationale{title="Why enumerate every governed asset?"}
+If the community has not explicitly named an asset as in-scope, it isn't — full stop. Listing assets by name closes the gap where informal claims of authority grow over undeclared resources, and gives members a concrete checklist to verify what the community actually controls.
+:::
 
 1. _The RCOS specification and all versioned artifacts in this repository_
 2. _The shared treasury (currently held in the Safe multi-sig wallet)_
@@ -20,7 +25,12 @@
 
 ## In-Scope Decision Domains
 
-> _Domains of decision-making authority under collective control._
+:::rcos{clauses="2.2.1, 2.2.2"}
+:::
+
+:::rationale{title="Why name decision domains, not just assets?"}
+Scope isn't only about stuff — it's about which kinds of questions the community gets to answer collectively. Naming decision domains makes it unambiguous where collective authority applies and where an individual or external party still decides, preventing quiet capture of decision territory.
+:::
 
 1. _Governance rules and decision processes (Layer 2)_
 2. _Membership rules, states, and admission (Layer 1)_
@@ -32,7 +42,12 @@
 
 ## In-Scope Activities and Responsibilities
 
-> _Activities and responsibilities the community collectively governs._
+:::rcos{clauses="2.2.1, 2.2.2"}
+:::
+
+:::rationale{title="Why declare the work the community owns?"}
+Authority without owned responsibility produces paralysis; responsibility without declared authority produces burnout and blame. Listing the activities the community collectively governs makes the work visible, assignable, and accountable — and makes it obvious when something important has no owner.
+:::
 
 1. _Maintaining and evolving the RCOS specification_
 2. _Reviewing and admitting new members_
@@ -45,7 +60,12 @@
 
 ## Explicitly Out of Scope
 
-> _Must be explicitly listed. The community must not exercise authority over anything listed here._
+:::rcos{clauses="2.2.3, 2.2.4, 2.2.5"}
+:::
+
+:::rationale{title="Why name what the community must not touch?"}
+An unstated boundary is no boundary at all. Explicit out-of-scope items protect members from the community reaching into their private lives and finances, and protect independent communities from EcoHubs presuming authority over their internal governance. If it isn't named here, the default rule of "not in-scope means out of scope" still applies — but naming the big ones removes any room for argument.
+:::
 
 1. _Underlying server infrastructure, hosting accounts, and third-party service contracts_
 2. _Personal income, private finances, and private bank accounts of members_

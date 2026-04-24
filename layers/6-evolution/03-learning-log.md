@@ -10,6 +10,13 @@
 
 ## What Constitutes a Learnable Event
 
+:::rcos{clauses="8.4.1, 8.4.4, 8.6.5, 8.7.4"}
+:::
+
+:::rationale{title="Why define the trigger explicitly?"}
+If "we should learn from this" is left to individual judgement, the hardest lessons — the ones involving conflict, failure, or embarrassment — are the ones most likely to go unrecorded. Naming the specific events that MUST produce an entry takes the question out of the moment, and makes sure uncomfortable learnings are captured rather than quietly dropped.
+:::
+
 An entry MUST be added when any of the following occur:
 
 - A governance decision is reversed, rolled back, or found to contradict another adopted rule
@@ -33,6 +40,13 @@ _No entries yet. First entry will be added when the first learnable event occurs
 ---
 
 ## Entry Format
+
+:::rcos{clauses="8.4.2, 8.4.3, 8.6.5"}
+:::
+
+:::rationale{title="Why a fixed entry template?"}
+Free-form reflection is valuable, but it does not aggregate. A consistent schema — trigger, signals, what changed, outcome, follow-up owner — makes it possible to scan years of entries for recurring patterns and to turn isolated incidents into structural evidence. It also forces each entry to name an owner, so learning does not stop at "we noticed."
+:::
 
 ```markdown
 ## <YYYY-MM-DD> — <Short title>

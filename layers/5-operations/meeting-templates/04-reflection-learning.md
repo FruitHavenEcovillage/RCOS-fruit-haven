@@ -4,11 +4,20 @@
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.2, §7.6
 
-> The quarterly retrospective. Used to look back across the period, identify what worked and what didn't, capture learnings in the Learning Log (Layer 6), and surface items that should become future proposals. Supports the RCOS requirement that major failures and adaptations are documented as shared learning, not ignored.
+:::rationale{title="Why a quarterly retrospective?"}
+Communities that don't pause to learn repeat their failures with new vocabulary. Reflection & Learning is the structured pause — a cadence where experience becomes pattern, pattern becomes Learning Log entry, and learning becomes future proposal. Without it, the Learning Log (Layer 6) stays empty and the framework stops evolving.
+:::
 
 ---
 
 ## Meeting Type: Reflection & Learning
+
+:::rcos{clauses="7.2.1, 7.2.2, 7.2.3, 7.6.4"}
+:::
+
+:::rationale{title="Why give reflection its own meeting type?"}
+Reflection that happens only when time allows never happens. A named meeting type with a quarterly cadence makes space for looking back — and keeps retrospection from getting squeezed out by operational urgency.
+:::
 
 - **Purpose:** Review recent experience, surface patterns, capture learnings, and feed insights back into the RCOS framework and community practice
 - **Decision scope:** May produce proposals for change; no direct decision authority unless specified in the Decision Matrix
@@ -21,6 +30,10 @@
 ---
 
 ## Agenda Structure
+
+:::rationale{title="Why separate what worked from what didn't?"}
+If both are discussed together, failures dominate and successes get underweighted — or the reverse, if the group is conflict-averse. Separating the two ensures both patterns get named, and that the Learning Log captures a full picture rather than just grievances.
+:::
 
 1. **Check-in** (10 min) — one word or sentence from each participant; how are you arriving?
 2. **Review period highlights** (15 min) — what has the community done and experienced since the last reflection meeting?

@@ -8,6 +8,13 @@
 
 ## Defined Membership States
 
+:::rcos{clauses="3.1.1, 3.1.2, 3.1.3, 3.1.4, 3.1.5"}
+:::
+
+:::rationale{title="Why a single table of states?"}
+Rights and obligations scattered across documents drift apart. Collecting every state, its rights, its obligations, and its transitions into one table makes the membership system auditable at a glance — you can see every door into and out of the community, and what each one grants. If two documents ever disagree, this registry is the tiebreaker.
+:::
+
 | State | Rights | Obligations | Entry condition | Exit condition |
 |---|---|---|---|---|
 | Applicant | Access to public EcoHubs information and application process; access to public Discord channels; can join public calls as listener; may request permission to speak; right to withdraw at any time | Honest and complete application submission | Completed application submitted via ecohubs.community; no prior forced exit, rejection, or incomplete-onboarding exit within the last 6 months (see Onboarding Protocol) | Vote approved → Trial Member; vote rejected → Exited Member |
@@ -20,12 +27,23 @@
 
 ## Technical Notes
 
+:::rationale{title="Why preserve data after exit?"}
+The community's history belongs to the community, not to any individual account. Retaining contribution records after exit protects the integrity of audit trails, governance history, and XP/ECO accounting — while revoking access and removing the person from active listings respects the finality of their departure.
+:::
+
 - Contribution history and XP are retained in ecohubsOS after exit — records are preserved for audit and transparency purposes.
 - Exited members have their access blocked; they are removed from all member listings.
 - Depending on platform capabilities, exited members may be blocked or fully removed from ecohubsOS-related platforms (Discord, forum, etc.).
 - A formal member exit flow in ecohubsOS is not yet implemented — see [Future Proposals](../../resources/future-proposals.md).
 
 ## Current Member List
+
+:::rcos{clauses="3.8.2"}
+:::
+
+:::rationale{title="Why separate the definition from the list?"}
+This document defines what the states mean; the live registry tracks who is in which state today. Keeping them separate means the definitions are stable and governable while the assignments stay current — and nobody has to change a ratified artifact every time a member joins or leaves.
+:::
 
 > The live member list is maintained in ecohubsOS. This document defines the states; the registry tool holds the current assignments.
 

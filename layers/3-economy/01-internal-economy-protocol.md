@@ -8,7 +8,12 @@
 
 ## Commons vs. Private Classification
 
-> All resources within the declared governed scope must be explicitly classified.
+:::rcos{clauses="5.1.1, 5.1.2, 5.1.3, 5.1.4, 5.1.5, 5.6.2"}
+:::
+
+:::rationale{title="Why classify every resource?"}
+Unclassified resources are where quiet privatization happens — someone starts treating a shared asset as personal, or a private asset gets quietly absorbed into community obligations, and by the time anyone notices the norm has shifted. Explicit classification, with stewards and transfer rules named up front, makes any change to that status a visible governance act rather than a creeping fact.
+:::
 
 | Resource                                          | Classification | Steward                                        | Access rules                                                                | Transfer constraints                                         |
 | ------------------------------------------------- | -------------- | ---------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -23,7 +28,12 @@
 
 ## Recognized Contribution Categories
 
-> The community must not structurally depend on unpaid or invisible labor without explicit recognition.
+:::rcos{clauses="5.2.1, 5.2.3, 5.6.3"}
+:::
+
+:::rationale{title="Why name the kinds of work that count?"}
+If the community never says out loud which kinds of work it depends on, the invisible work — care, facilitation, moderation, stewardship — stays invisible, and the people doing it burn out or leave. Enumerating categories converts "someone just does this" into recognized labour the system has to account for.
+:::
 
 | Category                      | Examples                                                                                                                                                                                  |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,7 +48,12 @@
 
 ## Contribution Recognition Mechanism
 
-> Defines what qualifies, how contributions are recorded, who validates, and whether recognition affects access or privileges.
+:::rcos{clauses="5.2.2, 5.2.5"}
+:::
+
+:::rationale{title="Why pin down how recognition actually works?"}
+Without a defined mechanism, "who gets credit" becomes a matter of who is loudest or closest to whoever decides. Specifying what qualifies, how it's recorded, who validates, and how to dispute it turns recognition into something a member can actually rely on — and blocks recognition from silently mutating into governance influence.
+:::
 
 - **What qualifies:** Any activity falling into one of the recognized categories above; informal participation counts at the member's own declaration
 - **How contributions are recorded:**
@@ -49,6 +64,13 @@
 - **Dispute:** Any member may contest a contribution record within 30 days; disputes resolved by Membership Admin with right of appeal to Full Members
 
 ## Internal Units
+
+:::rcos{clauses="5.2.4, 5.2.5"}
+:::
+
+:::rationale{title="Why define XP and ECO this precisely?"}
+Internal units tend to grow powers no one voted for — decay, caps, transferability, governance weight — unless each property is nailed down in writing. Listing issuance, transfer rules, privacy, and explicit non-governance status makes the units tools of recognition rather than quiet shadow currencies.
+:::
 
 Two internal units are in use: **XP** (experience points) and **ECO** (community currency). Both are tracked via Offcoin / ecohubsOS.
 
@@ -67,7 +89,12 @@ Two internal units are in use: **XP** (experience points) and **ECO** (community
 
 ## Accumulation Constraints
 
-> Internal economic systems must prevent unbounded concentration of internal influence.
+:::rcos{clauses="5.4.1, 5.4.2, 5.4.3, 5.4.4, 5.6.4"}
+:::
+
+:::rationale{title="Why constrain accumulation at all?"}
+Any internal unit that can pile up without limit eventually becomes leverage — a few members with large balances gain informal sway the governance system never granted them. Stating accumulation rules explicitly, even when the current rule is "none yet," keeps the question open and forces a visible decision before concentration becomes a structural problem.
+:::
 
 - No hard cap on XP or ECO currently — accumulation is unlimited
 - Neither unit can be converted into governance authority or used to bypass the Decision Matrix
@@ -75,11 +102,22 @@ Two internal units are in use: **XP** (experience points) and **ECO** (community
 
 ## External Income Interfaces
 
+:::rcos{clauses="5.3.2"}
+:::
+
+:::rationale{title="Why require approval before money arrives?"}
+Once funds are in hand, the conversation shifts from "should we accept this?" to "what do we do with it?" — and the conditions attached to the income (grant terms, partnership obligations, service commitments) are often already locked in. Requiring a Strategic decision before any new income channel opens keeps the community in control of what it takes on.
+:::
+
 - **Current:** No external income; all operational costs are covered by the founding member as personal contributions
 - **Potential future interfaces:** Grants and foundations, Web3 ecosystem funding, partnerships, paid services (tooling, onboarding support, educational programs)
 - **Rule:** Any new external income interface must be declared and approved via a Strategic decision before funds are received or commitments made
 
 ## Dispute Resolution for Economic Records
+
+:::rationale{title="Why time-box economic disputes?"}
+Contribution and balance records accumulate fast; if disputes could be raised indefinitely, the ledger would never settle and every historical credit would stay contestable. A 30-day window with a named resolver and an appeal path gives members a real chance to correct errors without leaving the whole economic history perpetually unstable.
+:::
 
 Any member may contest a contribution record or internal unit balance within 30 days of the record being created. See Contribution Recognition Mechanism above for the full dispute process. Appeals beyond Admin resolution are handled by Full Members via the governance process (Layer 2).
 

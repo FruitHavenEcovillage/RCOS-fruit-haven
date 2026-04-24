@@ -1,0 +1,237 @@
+{
+  "0": {
+    "url": "https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-0-identity-scope",
+    "sections": [
+      {
+        "heading": "2.1 Purpose Definition",
+        "anchor": "21-purpose-definition"
+      },
+      {
+        "heading": "2.2 Scope Declaration",
+        "anchor": "22-scope-declaration"
+      },
+      {
+        "heading": "2.3 Invariants",
+        "anchor": "23-invariants"
+      },
+      {
+        "heading": "2.4 Identity Constraints",
+        "anchor": "24-identity-constraints"
+      },
+      {
+        "heading": "2.5 Artifacts",
+        "anchor": "25-artifacts"
+      }
+    ]
+  },
+  "1": {
+    "url": "https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-1-membership-system",
+    "sections": [
+      {
+        "heading": "3.1 Membership States",
+        "anchor": "31-membership-states"
+      },
+      {
+        "heading": "3.2 Entry and Onboarding",
+        "anchor": "32-entry-and-onboarding"
+      },
+      {
+        "heading": "3.3 Trial and Evaluation",
+        "anchor": "33-trial-and-evaluation"
+      },
+      {
+        "heading": "3.4 Rights and Obligations",
+        "anchor": "34-rights-and-obligations"
+      },
+      {
+        "heading": "3.5 Participation and Contribution",
+        "anchor": "35-participation-and-contribution"
+      },
+      {
+        "heading": "3.6 Exit and Separation",
+        "anchor": "36-exit-and-separation"
+      },
+      {
+        "heading": "3.7 Suspension and Temporary Status",
+        "anchor": "37-suspension-and-temporary-status"
+      },
+      {
+        "heading": "3.8 Artifacts",
+        "anchor": "38-artifacts"
+      }
+    ]
+  },
+  "2": {
+    "url": "https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-2-governance-decision-logic",
+    "sections": [
+      {
+        "heading": "4.1 Decision Types",
+        "anchor": "41-decision-types"
+      },
+      {
+        "heading": "4.2 Decision Mechanisms",
+        "anchor": "42-decision-mechanisms"
+      },
+      {
+        "heading": "4.3 Authority Boundaries",
+        "anchor": "43-authority-boundaries"
+      },
+      {
+        "heading": "4.4 Decision Matrix",
+        "anchor": "44-decision-matrix"
+      },
+      {
+        "heading": "4.5 Governance Protocol",
+        "anchor": "45-governance-protocol"
+      },
+      {
+        "heading": "4.6 Safeguards and Failure Modes",
+        "anchor": "46-safeguards-and-failure-modes"
+      },
+      {
+        "heading": "4.7 Artifacts",
+        "anchor": "47-artifacts"
+      }
+    ]
+  },
+  "3": {
+    "url": "https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-3-economic-resource-system",
+    "sections": [
+      {
+        "heading": "5.1 Commons vs Private Resources",
+        "anchor": "51-commons-vs-private-resources"
+      },
+      {
+        "heading": "5.2 Contribution Recognition",
+        "anchor": "52-contribution-recognition"
+      },
+      {
+        "heading": "5.3 Treasury Management",
+        "anchor": "53-treasury-management"
+      },
+      {
+        "heading": "5.4 Accumulation Constraints",
+        "anchor": "54-accumulation-constraints"
+      },
+      {
+        "heading": "5.5 Artifacts",
+        "anchor": "55-artifacts"
+      },
+      {
+        "heading": "5.6 Layer Invariants",
+        "anchor": "56-layer-invariants"
+      },
+      {
+        "heading": "5.7 Explicitness Rules",
+        "anchor": "57-explicitness-rules"
+      }
+    ]
+  },
+  "4": {
+    "url": "https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-4-conflict-repair-accountability",
+    "sections": [
+      {
+        "heading": "6.1 Conflict Classification",
+        "anchor": "61-conflict-classification"
+      },
+      {
+        "heading": "6.2 Resolution Pathways",
+        "anchor": "62-resolution-pathways"
+      },
+      {
+        "heading": "6.3 Safeguards",
+        "anchor": "63-safeguards"
+      },
+      {
+        "heading": "6.4 Sanctions, Repair, and Separation",
+        "anchor": "64-sanctions-repair-and-separation"
+      },
+      {
+        "heading": "6.5 Artifacts",
+        "anchor": "65-artifacts"
+      },
+      {
+        "heading": "6.6 Layer Invariants",
+        "anchor": "66-layer-invariants"
+      },
+      {
+        "heading": "6.7 Explicitness Rules",
+        "anchor": "67-explicitness-rules"
+      }
+    ]
+  },
+  "5": {
+    "url": "https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-5-operations-coordination",
+    "sections": [
+      {
+        "heading": "7.1 Roles and Responsibilities",
+        "anchor": "71-roles-and-responsibilities"
+      },
+      {
+        "heading": "7.2 Meeting System",
+        "anchor": "72-meeting-system"
+      },
+      {
+        "heading": "7.3 Documentation and Information Flow",
+        "anchor": "73-documentation-and-information-flow"
+      },
+      {
+        "heading": "7.4 Workload and Capacity Boundaries",
+        "anchor": "74-workload-and-capacity-boundaries"
+      },
+      {
+        "heading": "7.5 Operational Continuity",
+        "anchor": "75-operational-continuity"
+      },
+      {
+        "heading": "7.6 Artifacts",
+        "anchor": "76-artifacts"
+      },
+      {
+        "heading": "7.7 Layer Invariants",
+        "anchor": "77-layer-invariants"
+      },
+      {
+        "heading": "7.8 Explicitness Rules",
+        "anchor": "78-explicitness-rules"
+      }
+    ]
+  },
+  "6": {
+    "url": "https://blueprint.ecohubs.community/articles/rcos-core/v0-1/layer-6-evolution-adaptation",
+    "sections": [
+      {
+        "heading": "8.1 Change Mechanisms",
+        "anchor": "81-change-mechanisms"
+      },
+      {
+        "heading": "8.2 Versioning and Authority",
+        "anchor": "82-versioning-and-authority"
+      },
+      {
+        "heading": "8.3 Experiments",
+        "anchor": "83-experiments"
+      },
+      {
+        "heading": "8.4 Learning and Feedback Capture",
+        "anchor": "84-learning-and-feedback-capture"
+      },
+      {
+        "heading": "8.5 Change Safety and Reversibility",
+        "anchor": "85-change-safety-and-reversibility"
+      },
+      {
+        "heading": "8.6 Artifacts",
+        "anchor": "86-artifacts"
+      },
+      {
+        "heading": "8.7 Layer Invariants",
+        "anchor": "87-layer-invariants"
+      },
+      {
+        "heading": "8.8 Explicitness Rules",
+        "anchor": "88-explicitness-rules"
+      }
+    ]
+  }
+}

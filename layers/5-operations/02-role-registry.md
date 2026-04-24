@@ -4,11 +4,16 @@
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.1, §7.6
 
-> All ongoing responsibilities must be assigned to explicit, named roles. No ongoing responsibility may exist without an explicit role entry here.
-
 ---
 
 ## Overview
+
+:::rcos{clauses="7.1.1, 7.1.2, 7.1.4, 7.7.1"}
+:::
+
+:::rationale{title="Why require every responsibility to have a named role?"}
+Ongoing responsibilities without explicit roles become invisible labor — done by whoever notices, resented silently, and impossible to hand over. Making every ongoing responsibility a named, accountable role is what prevents the community from running on the unpaid goodwill of a few members.
+:::
 
 This registry defines all recognized roles within EcoHubs. Roles are either **operational** (carrying delegated authority per the Decision Matrix) or **functional** (contribution-scoped, no special governance authority beyond Full Member rights).
 
@@ -41,11 +46,25 @@ All operational roles are currently held by the founding member (Stefan) as a tr
 
 ## Operational Roles
 
+:::rcos{clauses="7.1.2, 7.1.3"}
+:::
+
+:::rationale{title="Why define accountability for delegated authority?"}
+Operational roles carry real power — they can act without a community vote within their scope. That power only stays safe if each role has a clear accountability mechanism: who can raise concerns, how review happens, and how a role can be reassigned when trust breaks.
+:::
+
 Operational roles carry delegated authority to act within explicitly defined limits without a Full Member vote, as defined in the Decision Matrix (Layer 2). All operational role holders are accountable to Full Members collectively. Any Full Member may raise a concern about how a role is being performed; reassignment requires a Strategic vote.
 
 ---
 
 ### Membership Admin
+
+:::rcos{clauses="7.1.2, 7.1.3"}
+:::
+
+:::rationale{title="Why a dedicated membership role?"}
+The membership lifecycle is the community's front door and its exit. If it runs informally, applications stall, trial periods drift, and exits become messy. A single accountable holder keeps the lifecycle fair, visible, and timely.
+:::
 
 - **Purpose:** Ensure the membership lifecycle operates smoothly, fairly, and in compliance with Layer 1 protocols.
 - **Scope of responsibility:** Application processing, onboarding flow management, exit processing, Membership State Registry, Safe Proposer access for new members.
@@ -61,6 +80,13 @@ Operational roles carry delegated authority to act within explicitly defined lim
 
 ### Finance Steward
 
+:::rcos{clauses="7.1.2, 7.1.3"}
+:::
+
+:::rationale{title="Why a dedicated finance role?"}
+Treasury integrity depends on someone being accountable for it — not just for signing transactions, but for making sure money flows are visible to members who are entitled to see them. Without a named holder, treasury transparency quietly decays.
+:::
+
 - **Purpose:** Maintain transparency and compliance over the community treasury.
 - **Scope of responsibility:** Safe multi-sig management, declared treasury account records, spending compliance, treasury reporting for non-Safe accounts.
 - **Decision authority:** Operational treasury administration within the spending limit defined in the Decision Matrix (currently €0 — no unilateral spending authority); all expenditure requires a Strategic vote until a threshold is adopted.
@@ -74,6 +100,13 @@ Operational roles carry delegated authority to act within explicitly defined lim
 ---
 
 ### Infrastructure Steward
+
+:::rcos{clauses="7.1.2, 7.1.3"}
+:::
+
+:::rationale{title="Why a dedicated infrastructure role?"}
+Platforms, credentials, and integrations are the invisible scaffolding the rest of the community depends on. When they break, they break everything. A named holder keeps access, uptime, and platform changes from being handled "whenever someone has time."
+:::
 
 - **Purpose:** Keep EcoHubs platforms running, accessible, and aligned with community governance.
 - **Scope of responsibility:** ecohubsOS (os.ecohubs.community) and all integrations (Snapshot, Safe, Offcoin, Puckstack, Discord, Flarum), ecohubs.community, blueprint.ecohubs.community, platform credentials and access permissions, technical implementation tracking.
@@ -89,6 +122,13 @@ Operational roles carry delegated authority to act within explicitly defined lim
 
 ### Communications Steward
 
+:::rcos{clauses="7.1.2, 7.1.3"}
+:::
+
+:::rationale{title="Why a dedicated communications role?"}
+Communications is where the community meets the world — and where drift from values shows up first. A named holder ensures announcements, brand use, and social channels stay coherent with what the community actually stands for, rather than drifting with whoever posted last.
+:::
+
 - **Purpose:** Ensure EcoHubs communicates consistently, transparently, and in line with community values across internal and public channels.
 - **Scope of responsibility:** Newsletters and announcements, internal communications (Discord, forum), social media accounts, brand compliance.
 - **Decision authority:** All Operational communications and routine channel changes as defined in the Decision Matrix; partnerships and brand-use decisions require a Strategic vote.
@@ -103,11 +143,25 @@ Operational roles carry delegated authority to act within explicitly defined lim
 
 ## Functional Roles
 
+:::rcos{clauses="7.1.1, 7.1.2"}
+:::
+
+:::rationale{title="Why separate functional from operational roles?"}
+Not every contribution needs delegated authority — most work is about doing, not deciding. Functional roles name contribution scopes without bundling in governance power, so members can opt into work without an authority transfer, and so the governance system stays clear about who can act on behalf of the community.
+:::
+
 Functional roles define a member's contribution scope. They carry no delegated governance authority beyond Full Member rights. Any Full Member may take on a functional role by declaring it to the Membership Admin; no vote is required. Roles may be vacated at any time by notifying the Membership Admin.
 
 ---
 
 ### Facilitator
+
+:::rcos{clauses="7.1.2"}
+:::
+
+:::rationale{title="Why a Facilitator role?"}
+Meetings and conflicts need someone holding the container who isn't a party to the content. Naming this role — and defining a substitute when the Facilitator is a party — keeps facilitation from becoming either invisible labor or an accidental power base.
+:::
 
 - **Purpose:** Hold space for productive conversations, workshops, and collaborative processes — internally, externally, and in support of communities applying RCOS.
 - **Scope of responsibility:** Internal meetings and workshops, external RCOS sessions, blueprint workshops, and default conflict facilitation per Layer 4.
@@ -125,6 +179,13 @@ Functional roles define a member's contribution scope. They carry no delegated g
 
 ### Community Connector
 
+:::rcos{clauses="7.1.2"}
+:::
+
+:::rationale{title="Why a Community Connector role?"}
+Relationships across communities don't maintain themselves. Naming this role makes the work of building and sustaining the wider web legible — rather than leaving it to whoever happens to be extroverted that month.
+:::
+
 - **Purpose:** Grow and strengthen the web of relationships between EcoHubs members, communities, and aligned organizations.
 - **Scope of responsibility:** External relationship cultivation, cross-community representation, member-to-member connection support.
 - **Decision authority:** Full Member rights only.
@@ -138,6 +199,13 @@ Functional roles define a member's contribution scope. They carry no delegated g
 ---
 
 ### Content Creator
+
+:::rcos{clauses="7.1.2"}
+:::
+
+:::rationale{title="Why a Content Creator role?"}
+The community's story gets told whether or not anyone is in charge of telling it. Naming this role makes narrative work visible and handover-able, rather than depending on whoever is currently inspired.
+:::
 
 - **Purpose:** Bring EcoHubs' shared vision to life through stories, articles, and content that resonates with the wider world.
 - **Scope of responsibility:** Articles, long-form content, social media content, narrative work for public channels.
@@ -153,6 +221,13 @@ Functional roles define a member's contribution scope. They carry no delegated g
 
 ### Blueprint Steward
 
+:::rcos{clauses="7.1.2"}
+:::
+
+:::rationale{title="Why a Blueprint Steward role?"}
+RCOS only stays useful if someone is tracking how the framework meets practice and where it needs to evolve. A named holder is what keeps the governance system from ossifying into rules no one reviews.
+:::
+
 - **Purpose:** Maintain the coherence and continuous improvement of the RCOS framework as EcoHubs applies and learns from it.
 - **Scope of responsibility:** RCOS improvement proposals, artifact version awareness, framework support for other communities.
 - **Decision authority:** Full Member rights only; RCOS layer changes require a Strategic vote per the Decision Matrix.
@@ -166,6 +241,13 @@ Functional roles define a member's contribution scope. They carry no delegated g
 ---
 
 ### Digital Builder
+
+:::rcos{clauses="7.1.2"}
+:::
+
+:::rationale{title="Why a Digital Builder role?"}
+Platform features and tooling are downstream of RCOS requirements — someone has to build them. Naming the role separates doing the building from running the infrastructure, so both responsibilities have an owner.
+:::
 
 - **Purpose:** Build and maintain the digital infrastructure that powers the EcoHubs ecosystem.
 - **Scope of responsibility:** ecohubsOS development, open-source tools, technical implementation of RCOS artifact requirements.
@@ -181,6 +263,13 @@ Functional roles define a member's contribution scope. They carry no delegated g
 
 ### Strategy & Initiatives Facilitator
 
+:::rcos{clauses="7.1.2"}
+:::
+
+:::rationale{title="Why facilitate strategy instead of owning it?"}
+Strategic direction belongs to Full Members collectively — but someone has to help translate shared intent into concrete, coordinated plans. This role does that work without concentrating strategic authority in any one person.
+:::
+
 - **Purpose:** Help translate community vision and values into structured, actionable plans and initiatives — without holding unilateral strategic authority.
 - **Scope of responsibility:** Strategic planning facilitation, initiative proposals and roadmaps, cross-role coordination for active initiatives.
 - **Decision authority:** Full Member rights only; all strategic direction requires Full Member decision via the governance process.
@@ -195,6 +284,13 @@ Functional roles define a member's contribution scope. They carry no delegated g
 
 ### Research Steward
 
+:::rcos{clauses="7.1.2"}
+:::
+
+:::rationale{title="Why a Research Steward role?"}
+Without someone whose job it is to bring in evidence, the community improves itself only from its own experience — which is a narrow sample. This role connects EcoHubs to the wider body of work on regenerative community.
+:::
+
 - **Purpose:** Ground EcoHubs' work in evidence by investigating regenerative models and contributing knowledge that improves the community and the RCOS framework.
 - **Scope of responsibility:** Regenerative community research, community analysis, accessible research summaries.
 - **Decision authority:** Full Member rights only.
@@ -208,6 +304,13 @@ Functional roles define a member's contribution scope. They carry no delegated g
 ---
 
 ### Regenerative Workshop Curator
+
+:::rcos{clauses="7.1.2"}
+:::
+
+:::rationale{title="Why a Workshop Curator role?"}
+A curated workshop directory only exists if someone is curating it. This role turns "we should list good workshops somewhere" into an actual, maintained resource with a named owner.
+:::
 
 - **Purpose:** Build a curated ecosystem of in-person regenerative workshops hosted by land stewards and community practitioners.
 - **Scope of responsibility:** Host identification and outreach, workshop creation guidance, curated workshop directory on the EcoHubs website.

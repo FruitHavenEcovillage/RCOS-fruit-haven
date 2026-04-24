@@ -10,6 +10,13 @@
 
 ## Current Version: v0.0 — Repository Initialized
 
+:::rcos{clauses="8.2.1, 8.2.2, 8.2.3, 8.2.4, 8.2.5, 8.6.4, 8.7.2"}
+:::
+
+:::rationale{title="Why record every adopted change?"}
+Governance that cannot point to "what changed, when, and why" is indistinguishable from governance by whoever speaks loudest. A single append-only ledger of adopted changes — with the superseded versions preserved in git — makes the current state of the rules unambiguous and gives members, auditors, and future stewards a way to reconstruct the path that got us here.
+:::
+
 - **Effective date:** 2026-04-21
 - **Decision record:** N/A — initial scaffold
 - **Decision type:** N/A

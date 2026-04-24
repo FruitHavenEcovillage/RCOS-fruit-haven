@@ -10,6 +10,13 @@
 
 ## Registered Authorities
 
+:::rcos{clauses="4.3.1, 4.3.2, 4.3.3, 4.3.4, 4.3.5"}
+:::
+
+:::rationale{title="Why write every authority down?"}
+Authority that is not explicitly registered gets filled in by default — by whoever has been around longest, speaks loudest, or controls the keys. A single registry that names every role, bounds its scope, caps its limits, and ties its basis to a delegation act makes unauthorized action detectable and prevents authority from being derived from charisma, seniority, or ownership.
+:::
+
 | Role / Body | Scope of authority | Limits | Term / Duration | Basis |
 |---|---|---|---|---|
 | Full Members (collective) | All Strategic and Constitutional decisions as defined in the Decision Matrix | Cannot act outside the Decision Matrix; cannot override invariants; no individual Full Member has unilateral authority | Ongoing — any Full Member in good standing | Membership state (Layer 1) |

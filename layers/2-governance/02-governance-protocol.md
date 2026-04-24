@@ -10,7 +10,12 @@
 
 ## Proposal Submission
 
-> _Requirements for submitting a proposal. Who may submit, what must be included, where it is filed._
+:::rcos{clauses="4.5.1, 4.5.2"}
+:::
+
+:::rationale{title="Why formalize how proposals enter the system?"}
+A decision process that accepts proposals informally — a message, a verbal suggestion, a founder's idea — has no reliable way to tell what is actually on the table. Requiring a standard submission format, filing location, and mandatory content fields means every proposal arrives with the same information, visible to everyone, traceable from day one.
+:::
 
 - **Operational decisions** do not require a proposal — the relevant operational role holder executes within delegated limits per the Role Registry (Layer 5)
 - **Strategic and Constitutional decisions:** Any Full Member may submit a proposal directly on Snapshot using the predefined proposal template (see [Missing Technical Implementations](../../resources/missing-technical-implementations.md))
@@ -20,7 +25,12 @@
 
 ## Review and Deliberation
 
-> _How proposals are reviewed. Where deliberation happens. Time bounds._
+:::rcos{clauses="4.5.1, 4.5.2"}
+:::
+
+:::rationale{title="Why enforce a minimum deliberation window?"}
+Rushed votes favor whoever is already paying attention and disadvantage everyone else. A mandatory deliberation period, tied to the weight of the decision, gives members time to read, respond, and surface concerns before the vote opens — so the vote reflects considered judgment, not speed of reaction.
+:::
 
 - Deliberation happens in the community forum (discussions.ecohubs.community) or Discord before and during the Snapshot vote window
 - **Minimum deliberation period before a vote opens:**
@@ -30,7 +40,12 @@
 
 ## Decision Execution
 
-> _How adopted decisions are enacted. Who is responsible for implementation._
+:::rcos{clauses="4.5.1, 4.5.4"}
+:::
+
+:::rationale{title="Why tie execution to the record?"}
+A passed proposal that never reaches the affected artifact is a decision in name only — the rules on the ground still say what they said before. Binding execution to a concrete artifact update and version-history entry closes the gap between what was decided and what is actually in force.
+:::
 
 - On **passing:** the proposer or Membership Admin adds the proposal file to `proposals/passed/` in this repository and applies the change to the affected artifact(s) in `layers/`; `layers/6-evolution/02-version-history.md` is updated
 - On **rejection:** the proposal file is added to `proposals/rejected/` for archive
@@ -38,7 +53,12 @@
 
 ## Documentation and Publication
 
-> _Where decisions are recorded. Who publishes them. By when._
+:::rcos{clauses="4.5.4"}
+:::
+
+:::rationale{title="Why document every outcome, including rejections?"}
+Keeping a record of only the decisions that passed erases the reasoning history — members lose track of what was already considered and rejected, and the same debates get re-litigated indefinitely. Archiving both passed and rejected proposals, with a time bound and a verifiable decision record, preserves institutional memory and makes the governance system auditable.
+:::
 
 - All passed and rejected proposals are filed in this repository within 7 days of the vote closing
 - The Snapshot vote link is included in the proposal file as the decision record
@@ -46,7 +66,12 @@
 
 ## Appeal and Review
 
-> _How a decided outcome can be challenged. Who may appeal. What process applies._
+:::rcos{clauses="4.5.2, 4.6.2"}
+:::
+
+:::rationale{title="Why make re-votes possible but bounded?"}
+A governance system with no appeal route hardens mistakes into permanent rules; one with unlimited informal appeal paths never settles anything. Allowing any Full Member to trigger a re-vote — but only with a written, reasoned objection raising something not already addressed — keeps the system self-correcting without turning every decision into a standing referendum.
+:::
 
 - Any Full Member may trigger a re-vote on any passed decision by submitting a written, reasoned objection via the community forum or Discord
 - The objection must raise a consideration that was not addressed during deliberation
@@ -55,7 +80,12 @@
 
 ## Conflict Between Decisions
 
-> _How conflicts between decisions of the same or different types are resolved._
+:::rcos{clauses="4.5.3"}
+:::
+
+:::rationale{title="Why predefine conflict resolution?"}
+When two decisions point in different directions, someone has to choose which one counts — and if that choice is made ad hoc, it reduces to whoever has the authority or energy to enforce their reading. A fixed precedence rule (higher type wins; more recent wins at the same type) resolves conflicts mechanically, without a judgment call.
+:::
 
 - If two decisions conflict, the higher-impact decision type prevails (Constitutional > Strategic > Operational)
 - If two decisions of the same type conflict, the more recent decision prevails unless the earlier decision explicitly locked future changes
@@ -63,7 +93,12 @@
 
 ## Safeguards and Failure Modes
 
-> _§4.6 — The governance system must include safeguards against concentration of decision power, informal vetoes, decision capture by subgroups, and founder or role entrenchment. Mechanisms must allow challenge and review without retaliation. Persistent governance failures must trigger a formal review or constitutional process._
+:::rcos{clauses="4.6.1, 4.6.2, 4.6.3"}
+:::
+
+:::rationale{title="Why plan for governance failure up front?"}
+Every governance system fails somewhere — captured by a subgroup, frozen by informal vetoes, drifted by a role holder who quietly expanded their remit. Naming the specific failure modes in advance, wiring in challenge routes that cannot be retaliated against, and requiring a formal review when failures accumulate, is what keeps governance from slowly hollowing out while no one is watching.
+:::
 
 - **Power concentration:** All decisions above Operational level require a Full Member vote; no individual or role has unilateral authority beyond the delegated operational role limits defined in the Role Registry (Layer 5)
 - **Informal vetoes:** Only written, reasoned objections submitted via the defined process may trigger a re-vote; social pressure or private objections have no governance weight
