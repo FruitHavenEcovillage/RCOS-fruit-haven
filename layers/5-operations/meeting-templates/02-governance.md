@@ -4,6 +4,8 @@
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.2, §7.6
 
+> Used during the deliberation period of an active proposal, before or alongside the Snapshot vote. The meeting itself does not make binding decisions — it is a structured space for the community to understand, question, and discuss a proposal before voting. Required for Constitutional decisions; recommended for Strategic ones.
+
 ---
 
 ## Meeting Type: Governance

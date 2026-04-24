@@ -25,7 +25,7 @@ When a proposal passes, do all of the following in the same commit or a direct f
 
 Edit the relevant file(s) in `layers/` to reflect the adopted change. The proposal file itself records the decision; the artifact file records the current authoritative state.
 
-### 1b. Update `layers/6-evolution/version-history.md`
+### 1b. Update `layers/6-evolution/02-version-history.md`
 
 Append a new entry at the top of the log using this format:
 
@@ -73,7 +73,7 @@ When a Snapshot vote fails:
 
 ## 3. When to Add a Learning Log Entry
 
-Add an entry to `layers/6-evolution/learning-log.md` when any of the following occur:
+Add an entry to `layers/6-evolution/03-learning-log.md` when any of the following occur:
 - A proposal is rejected due to a structural gap (not just disagreement)
 - An experiment ends — whether it succeeded, failed, or was extended
 - A governance failure or process breakdown is identified

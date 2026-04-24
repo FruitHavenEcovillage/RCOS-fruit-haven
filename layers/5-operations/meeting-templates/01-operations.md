@@ -4,6 +4,8 @@
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.2, §7.6
 
+> The weekly coordination meeting. Used to review active work, surface blockers, hand off between roles, and make day-to-day operational decisions. The only binding decisions that may be made here are Operational — all Strategic and Constitutional decisions go through Snapshot.
+
 ---
 
 ## Meeting Type: Operations

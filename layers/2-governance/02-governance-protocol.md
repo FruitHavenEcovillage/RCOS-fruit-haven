@@ -32,7 +32,7 @@
 
 > _How adopted decisions are enacted. Who is responsible for implementation._
 
-- On **passing:** the proposer or Membership Admin adds the proposal file to `proposals/passed/` in this repository and applies the change to the affected artifact(s) in `layers/`; `layers/6-evolution/version-history.md` is updated
+- On **passing:** the proposer or Membership Admin adds the proposal file to `proposals/passed/` in this repository and applies the change to the affected artifact(s) in `layers/`; `layers/6-evolution/02-version-history.md` is updated
 - On **rejection:** the proposal file is added to `proposals/rejected/` for archive
 - Artifact updates must reflect the adopted decision accurately and completely
 

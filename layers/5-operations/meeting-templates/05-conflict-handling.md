@@ -4,6 +4,8 @@
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.2, §7.6; see also Layer 4 — Conflict Resolution Ladder
 
+> The facilitated session template for Conflict Resolution Ladder Steps 2–4. Triggered by a conflict intake, not scheduled. Fully confidential — records are restricted to parties and Facilitator only, and are not published to the general member record. The Facilitator is selected per the Conflict Resolution Ladder rules (Layer 4), not chosen by the parties.
+
 ---
 
 ## Meeting Type: Conflict Handling

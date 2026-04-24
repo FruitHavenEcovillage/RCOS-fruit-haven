@@ -4,6 +4,8 @@
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.2, §7.6
 
+> Used when cross-role work needs explicit synchronization — dependencies, handoffs, or competing priorities. Held monthly or triggered when a blocker spans more than one role. Not a substitute for the weekly Operations meeting; used for deeper coordination when the regular cadence isn't enough.
+
 ---
 
 ## Meeting Type: Coordination & Alignment

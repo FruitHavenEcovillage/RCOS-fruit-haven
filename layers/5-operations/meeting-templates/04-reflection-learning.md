@@ -4,6 +4,8 @@
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.2, §7.6
 
+> The quarterly retrospective. Used to look back across the period, identify what worked and what didn't, capture learnings in the Learning Log (Layer 6), and surface items that should become future proposals. Supports the RCOS requirement that major failures and adaptations are documented as shared learning, not ignored.
+
 ---
 
 ## Meeting Type: Reflection & Learning
@@ -36,5 +38,5 @@
 - **Facilitator:**
 - **Attendees:**
 - **Notes:** [Summary posted to Discord after the meeting]
-- **Learning Log entries triggered:** [List or "none" — Blueprint Steward updates `layers/6-evolution/learning-log.md`]
+- **Learning Log entries triggered:** [List or "none" — Blueprint Steward updates `layers/6-evolution/03-learning-log.md`]
 - **Future proposals added:** [Links or titles, or "none"]

@@ -37,7 +37,7 @@ Any Full Member may propose a change to any RCOS artifact. Proposals are submitt
 When a proposal passes:
 1. Membership Admin adds the proposal file to `proposals/passed/` within 7 days
 2. Affected artifacts in `layers/` are updated within 7 days
-3. `layers/6-evolution/version-history.md` is updated to record the change
+3. `layers/6-evolution/02-version-history.md` is updated to record the change
 4. Status fields in affected artifacts are updated from *Stub — not yet adopted* to *Active — adopted <YYYY-MM-DD>*
 
 ## Rejection
@@ -82,7 +82,7 @@ Any Full Member may propose a time-bounded experiment via Strategic decision. Ev
 - Rollback conditions and rollback process
 - Authorized decision path for starting, extending, modifying, or terminating the experiment
 
-Experiments expire automatically at the end of their defined duration unless explicitly renewed via a new proposal. Renewal requires a new Strategic vote. Results and learnings are recorded in the Learning Log (`layers/6-evolution/learning-log.md`).
+Experiments expire automatically at the end of their defined duration unless explicitly renewed via a new proposal. Renewal requires a new Strategic vote. Results and learnings are recorded in the Learning Log (`layers/6-evolution/03-learning-log.md`).
 
 All artifacts affected by an experiment MUST be explicitly labeled as experimental for the duration.
 

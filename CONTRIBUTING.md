@@ -103,7 +103,7 @@ Discussion happens in the PR comments and/or on the community forum. The deliber
 
 | Outcome | What happens |
 |---|---|
-| **Passed** | PR is merged into `proposals/passed/`; the affected artifact(s) in `layers/` are updated; `layers/6-evolution/version-history.md` is updated |
+| **Passed** | PR is merged into `proposals/passed/`; the affected artifact(s) in `layers/` are updated; `layers/6-evolution/02-version-history.md` is updated |
 | **Rejected** | PR is closed; proposal file (if any) is moved to `proposals/rejected/` for archive |
 
 ---
