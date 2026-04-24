@@ -7,14 +7,112 @@
   let layersOpen = $state(pathname.startsWith("/layers"));
   let proposalsOpen = $state(pathname.startsWith("/proposals"));
 
+  let drawerOpen = $state(false);
+  let isMobile = $state(false);
+  let hamburgerEl: HTMLButtonElement | undefined = $state();
+  let drawerEl: HTMLElement | undefined = $state();
+
   function isActive(href: string): boolean {
     if (href === "/") return pathname === "/";
     return pathname === href || pathname.startsWith(href + "/");
   }
+
+  function openDrawer() {
+    drawerOpen = true;
+  }
+  function closeDrawer() {
+    drawerOpen = false;
+  }
+
+  function onLinkClick() {
+    if (isMobile) closeDrawer();
+  }
+
+  $effect(() => {
+    const mql = window.matchMedia("(max-width: 767.99px)");
+    const update = () => {
+      isMobile = mql.matches;
+      if (!isMobile) drawerOpen = false;
+    };
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  });
+
+  $effect(() => {
+    if (!isMobile) return;
+    if (drawerOpen) {
+      document.body.style.overflow = "hidden";
+      const onKey = (e: KeyboardEvent) => {
+        if (e.key === "Escape") {
+          closeDrawer();
+          hamburgerEl?.focus();
+        }
+      };
+      window.addEventListener("keydown", onKey);
+      const firstLink = drawerEl?.querySelector<HTMLElement>("a, button");
+      firstLink?.focus();
+      return () => {
+        document.body.style.overflow = "";
+        window.removeEventListener("keydown", onKey);
+      };
+    } else {
+      document.body.style.overflow = "";
+    }
+  });
 </script>
 
-<nav aria-label="Primary" class="sidebar">
-  <a href="/" class="brand" aria-label="Home">
+<div class="mobile-bar">
+  <a href="/" class="mobile-brand" aria-label="Home">
+    <img src="/logo.webp" alt="" width="32" height="32" />
+    <span>EcoHubs</span>
+  </a>
+  <button
+    bind:this={hamburgerEl}
+    type="button"
+    class="hamburger"
+    aria-expanded={drawerOpen}
+    aria-controls="primary-nav"
+    aria-label={drawerOpen ? "Close navigation" : "Open navigation"}
+    onclick={() => (drawerOpen ? closeDrawer() : openDrawer())}
+  >
+    {#if drawerOpen}
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+        <path
+          d="M6 6l12 12M18 6L6 18"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    {:else}
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+        <path
+          d="M4 7h16M4 12h16M4 17h16"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    {/if}
+  </button>
+</div>
+
+{#if drawerOpen}
+  <!-- svelte-ignore a11y_click_events_have_key_events -->
+  <!-- svelte-ignore a11y_no_static_element_interactions -->
+  <div class="backdrop" onclick={closeDrawer} aria-hidden="true"></div>
+{/if}
+
+<nav
+  bind:this={drawerEl}
+  id="primary-nav"
+  aria-label="Primary"
+  class="sidebar"
+  class:drawer-open={drawerOpen}
+  aria-hidden={isMobile && !drawerOpen}
+>
+  <a href="/" class="brand" aria-label="Home" onclick={onLinkClick}>
     <img src="/logo.webp" alt="" class="brand-mark" width="40" height="40" />
     <span class="brand-stack">
       <span class="brand-text">EcoHubs</span>
@@ -24,7 +122,12 @@
 
   <ul class="nav-list">
     <li>
-      <a href="/" class="nav-link" class:active={isActive("/")}>Home</a>
+      <a
+        href="/"
+        class="nav-link"
+        class:active={isActive("/")}
+        onclick={onLinkClick}>Home</a
+      >
     </li>
 
     <li>
@@ -43,7 +146,8 @@
             <a
               href="/layers"
               class="nav-sublink"
-              class:active={pathname === "/layers"}>Overview</a
+              class:active={pathname === "/layers"}
+              onclick={onLinkClick}>Overview</a
             >
           </li>
           {#each layerMeta as layer (layer.slug)}
@@ -52,6 +156,7 @@
                 href={`/layers/${layer.slug}`}
                 class="nav-sublink"
                 class:active={isActive(`/layers/${layer.slug}`)}
+                onclick={onLinkClick}
               >
                 <span class="num">{layer.number}</span>
                 {layer.title}
@@ -78,21 +183,24 @@
             <a
               href="/proposals/passed"
               class="nav-sublink"
-              class:active={isActive("/proposals/passed")}>Passed</a
+              class:active={isActive("/proposals/passed")}
+              onclick={onLinkClick}>Passed</a
             >
           </li>
           <li>
             <a
               href="/proposals/rejected"
               class="nav-sublink"
-              class:active={isActive("/proposals/rejected")}>Rejected</a
+              class:active={isActive("/proposals/rejected")}
+              onclick={onLinkClick}>Rejected</a
             >
           </li>
           <li>
             <a
               href="/proposals/future"
               class="nav-sublink"
-              class:active={isActive("/proposals/future")}>Future</a
+              class:active={isActive("/proposals/future")}
+              onclick={onLinkClick}>Future</a
             >
           </li>
         </ul>
@@ -103,12 +211,13 @@
       <a
         href="/compliance"
         class="nav-link"
-        class:active={isActive("/compliance")}>Compliance</a
+        class:active={isActive("/compliance")}
+        onclick={onLinkClick}>Compliance</a
       >
     </li>
 
     <li>
-      <a href="/#faq" class="nav-link">FAQ</a>
+      <a href="/#faq" class="nav-link" onclick={onLinkClick}>FAQ</a>
     </li>
   </ul>
 
@@ -120,6 +229,10 @@
 </nav>
 
 <style>
+  .mobile-bar {
+    display: none;
+  }
+
   .sidebar {
     position: sticky;
     top: 0;
@@ -266,5 +379,81 @@
   }
   .sidebar-footer a:hover {
     color: var(--color-primary);
+  }
+
+  @media (max-width: 767.99px) {
+    .mobile-bar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0.6rem 0.9rem;
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .mobile-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-text);
+      text-decoration: none;
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    .mobile-brand img {
+      width: 1.8rem;
+      height: 1.8rem;
+      object-fit: contain;
+    }
+    .hamburger {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      padding: 0;
+      background: transparent;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      color: var(--color-text);
+      cursor: pointer;
+    }
+    .hamburger:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+
+    .backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgb(0 0 0 / 40%);
+      z-index: 40;
+    }
+
+    .sidebar {
+      position: fixed;
+      inset: 0 auto 0 0;
+      height: 100dvh;
+      width: min(85vw, 20rem);
+      z-index: 50;
+      transform: translateX(-100%);
+      transition: transform 200ms ease;
+      border-right: 1px solid var(--color-border);
+      box-shadow: 0 0 0 transparent;
+    }
+    .sidebar.drawer-open {
+      transform: translateX(0);
+      box-shadow: 0 20px 40px -10px rgb(0 0 0 / 30%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sidebar {
+      transition: none;
+    }
   }
 </style>

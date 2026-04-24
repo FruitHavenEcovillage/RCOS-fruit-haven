@@ -160,6 +160,15 @@ const faqItems = faqEntry?.data.items ?? [];
       padding: 2.5rem 1.25rem 2rem;
     }
   }
+  @media (max-width: 500px) {
+    .cta-row {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .cta-row .btn {
+      justify-content: center;
+    }
+  }
 
   .eyebrow {
     font-size: 0.78rem;
@@ -289,6 +298,17 @@ const faqItems = faqEntry?.data.items ?? [];
     object-fit: cover;
     border-radius: var(--radius);
     margin: -0.25rem 0 0.25rem;
+  }
+  @media (max-width: 640px) {
+    .context-card {
+      padding: 1.1rem;
+    }
+    .context-card h2 {
+      font-size: 1.2rem;
+    }
+    .card-image {
+      height: 120px;
+    }
   }
   .card-eyebrow {
     font-size: 0.75rem;

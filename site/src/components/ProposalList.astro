@@ -110,4 +110,11 @@ const { entries, status, emptyText } = Astro.props;
     color: var(--color-accent);
     border-color: color-mix(in srgb, var(--color-accent) 50%, transparent);
   }
+  @media (max-width: 500px) {
+    .row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.2rem;
+    }
+  }
 </style>

@@ -39,6 +39,11 @@ const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
     align-items: flex-start;
     min-height: 100dvh;
   }
+  /* Let the Svelte sidebar island's children participate directly in the
+     shell flex container so the mobile top-bar can span full width. */
+  .shell > :global(astro-island) {
+    display: contents;
+  }
   .main {
     flex: 1;
     min-width: 0;
@@ -51,9 +56,20 @@ const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
   @media (max-width: 768px) {
     .shell {
       flex-direction: column;
+      align-items: stretch;
+    }
+    .main {
+      width: 100%;
+      min-width: 0;
     }
     .main-inner {
-      padding: 1.75rem 1.25rem 3rem;
+      padding: 1.5rem 1.25rem 3rem;
+      min-width: 0;
+    }
+  }
+  @media (max-width: 480px) {
+    .main-inner {
+      padding: 1.25rem 1rem 2.5rem;
     }
   }
 </style>
