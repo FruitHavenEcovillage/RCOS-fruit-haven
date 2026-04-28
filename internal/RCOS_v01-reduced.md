@@ -1,3 +1,38 @@
+**RCOS — Regenerative Community Operating System**
+
+# RCOS Core Specification — v0.1
+
+- **Generated:** 2026-04-27
+- **Source (latest version):** [https://blueprint.ecohubs.community/articles/rcos-core/v0-1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1)
+
+- Status: Draft
+- Version: RCOS-Core v0.1
+- Audience: Community founders, practitioners, auditors, implementers
+- Normative keywords: `MUST`, `MUST NOT`, `SHOULD`, `MAY` (RFC-style)
+
+## Table of Contents
+
+- [About RCOS Core](#about-rcos-core)
+- [0. Introduction](#0-introduction)
+- [1. RCOS Compliance Model](#1-rcos-compliance-model)
+- [2. Layer 0 — Identity & Scope](#2-layer-0-identity-scope)
+- [3. Layer 1 — Membership System](#3-layer-1-membership-system)
+- [4. Layer 2 — Governance & Decision Logic](#4-layer-2-governance-decision-logic)
+- [5. Layer 3 — Economic & Resource System](#5-layer-3-economic-resource-system)
+- [6. Layer 4 — Conflict, Repair & Accountability](#6-layer-4-conflict-repair-accountability)
+- [7. Layer 5 — Operations & Coordination](#7-layer-5-operations-coordination)
+- [8. Layer 6 — Evolution & Adaptation](#8-layer-6-evolution-adaptation)
+- [9. Non-Normative Sections](#9-non-normative-sections)
+- [10. Compliance & Auditing](#10-compliance-auditing)
+- [11. Versioning & Governance of the Standard](#11-versioning-governance-of-the-standard)
+- [Appendix A — Glossary](#appendix-a-glossary)
+- [Appendix B — Example Artifacts (Non-Normative)](#appendix-b-example-artifacts-non-normative)
+- [Appendix C — Reference Implementation Summary](#appendix-c-reference-implementation-summary)
+
+---
+
+# About RCOS Core
+
 ## What RCOS Is
 
 The **Regenerative Community Operating System (RCOS)** is a formal, layered specification for designing, operating, and evolving intentional communities without relying on charisma, ideology, or informal power.
@@ -185,7 +220,7 @@ RCOS turns:
 
 ### Known Failure Modes RCOS Is Designed to Prevent
 
-See [RCOS Stress Tests](/articles/rcos-stress-tests?id=6acbe9a7)
+See [RCOS Stress Tests](https://blueprint.ecohubs.community/articles/rcos-stress-tests?id=6acbe9a7)
 
 ## Reference Implementations
 
@@ -253,19 +288,11 @@ so that care, autonomy, and regeneration have something solid to stand on.
 
 ## Change Log
 
-- [v0.1](/articles/rcos-core/v0-1?id=e6de7a5d) — Initial version
+- [v0.1](https://blueprint.ecohubs.community/articles/rcos-core/v0-1?id=e6de7a5d) — Initial version
 
+---
 
-
-# Regenerative Community Operating System (RCOS)
-
-## Core Specification
-
-- Status: Draft
-- Version: RCOS-Core v0.1
-- Audience: Community founders, practitioners, auditors, implementers
-- Normative keywords: `MUST`, `MUST NOT`, `SHOULD`, `MAY` (RFC-style)
-
+# 0. Introduction
 
 ## 0.1 Purpose of RCOS
 
@@ -294,6 +321,9 @@ This specification defines the **mandatory core layers** required for RCOS compl
 - Decision Type
 - Compliance
 
+---
+
+# 1. RCOS Compliance Model
 
 ## 1.1 Compliance Levels
 
@@ -308,10 +338,11 @@ Any mechanism affecting power, resources, obligations, or exit `MUST` be explici
 
 If it is not written and adopted, it does not exist.
 
+---
 
-# Layer 0 — Identity & Scope
+# 2. Layer 0 — Identity & Scope
 
-Layer 0 defines the constitutional identity of the community. It establishes what the community *is*, what it *is not*, and the non-negotiable constraints under which all other layers operate. No rule, decision, or practice in higher layers may contradict Layer 0.
+Layer 0 defines the constitutional identity of the community. It establishes what the community _is_, what it _is not_, and the non-negotiable constraints under which all other layers operate. No rule, decision, or practice in higher layers may contradict Layer 0.
 
 ## 2.1 Purpose Definition
 
@@ -330,15 +361,16 @@ Layer 0 defines the constitutional identity of the community. It establishes wha
 2.2.1 The community MUST explicitly declare the scope of what it governs.
 
 2.2.2 The scope declaration MUST include, at minimum:
+
 - Assets governed by the community
 - Domains of decision-making authority
 - Activities and responsibilities under collective control
 
-2.2.3 The scope declaration MUST explicitly list what is out of scope.
+  2.2.3 The scope declaration MUST explicitly list what is out of scope.
 
-2.2.4 Anything not explicitly declared as in scope MUST be treated as out of scope.
+  2.2.4 Anything not explicitly declared as in scope MUST be treated as out of scope.
 
-2.2.5 The community MUST NOT exercise authority over persons, assets, or domains that are declared out of scope.
+  2.2.5 The community MUST NOT exercise authority over persons, assets, or domains that are declared out of scope.
 
 ## 2.3 Invariants
 
@@ -359,30 +391,35 @@ Layer 0 defines the constitutional identity of the community. It establishes wha
 2.4.1 The community MUST declare any identity-level constraints that materially affect participation, behavior, or governance.
 
 2.4.2 Identity constraints MAY include, but are not limited to:
+
 - Ethical or behavioral boundaries
 - Participation prerequisites
 - Non-negotiable cultural or ecological constraints
 
-2.4.3 Identity constraints MUST be testable and enforceable through defined processes.
+  2.4.3 Identity constraints MUST be testable and enforceable through defined processes.
 
-2.4.4 Identity constraints MUST NOT be enforced implicitly or informally.
+  2.4.4 Identity constraints MUST NOT be enforced implicitly or informally.
 
 ## 2.5 Artifacts
 
 2.5.1 The following artifacts are mandatory for Layer 0 compliance:
+
 - Purpose Charter
 - Scope Declaration
 - Invariants Register
+- Identity Constraints Register
 
-2.5.2 Layer 0 artifacts MUST be:
+  2.5.2 Layer 0 artifacts MUST be:
+
 - Publicly accessible to all members
 - Versioned
 - Adopted through a formal ratification process
 
-2.5.3 If Layer 0 artifacts are missing, ambiguous, or internally contradictory, the community MUST be considered non-compliant with RCOS-Core.
+  2.5.3 If Layer 0 artifacts are missing, ambiguous, or internally contradictory, the community MUST be considered non-compliant with RCOS-Core.
 
+---
 
-# Layer 1 — Membership System
+# 3. Layer 1 — Membership System
 
 Layer 1 defines how individuals enter, participate in, and exit the community. It establishes the explicit relationship between the individual and the collective, including rights, obligations, and due process. No person may be treated as a member without passing through the mechanisms defined in this layer.
 
@@ -391,42 +428,45 @@ Layer 1 defines how individuals enter, participate in, and exit the community. I
 3.1.1 The community MUST define explicit membership states.
 
 3.1.2 At minimum, the following membership states MUST exist:
+
 - Applicant
 - Trial / Probationary Member
 - Full Member
 - Exited Member
 
-3.1.3 Each membership state MUST have clearly defined rights, obligations, and limitations.
+  3.1.3 Each membership state MUST have clearly defined rights, obligations, and limitations.
 
-3.1.4 No individual MAY hold multiple membership states simultaneously.
+  3.1.4 No individual MAY hold multiple membership states simultaneously.
 
-3.1.5 No rights or obligations MAY be assumed outside of the individual’s current membership state.
+  3.1.5 No rights or obligations MAY be assumed outside of the individual’s current membership state.
 
 ## 3.2 Entry and Onboarding
 
 3.2.1 Entry into the community MUST follow an explicit onboarding process.
 
 3.2.2 The onboarding process MUST include:
+
 - Review of all RCOS-Core artifacts
 - Explicit consent to Layer 0 and Layer 1 rules
 - Declaration of initial membership state
 
-3.2.3 Admission criteria MUST be explicit and documented.
+  3.2.3 Admission criteria MUST be explicit and documented.
 
-3.2.4 Informal, implicit, or retroactive membership MUST NOT be permitted.
+  3.2.4 Informal, implicit, or retroactive membership MUST NOT be permitted.
 
 ## 3.3 Trial and Evaluation
 
 3.3.1 The community MUST define a probationary period for new members.
 
 3.3.2 The probationary period MUST have:
+
 - A defined duration
 - Explicit evaluation criteria
 - A clear transition decision process
 
-3.3.3 During probation, rights MAY be limited but obligations MUST be explicit.
+  3.3.3 During probation, rights MAY be limited but obligations MUST be explicit.
 
-3.3.4 Failure to transition from probation MUST trigger a defined exit or extension process.
+  3.3.4 Failure to transition from probation MUST trigger a defined exit or extension process.
 
 ## 3.4 Rights and Obligations
 
@@ -473,77 +513,85 @@ Layer 1 defines how individuals enter, participate in, and exit the community. I
 ## 3.8 Artifacts
 
 3.8.1 The following artifacts are mandatory for Layer 1 compliance:
+
 - Membership Agreement
 - Onboarding Protocol
 - Exit & Separation Protocol
 - Membership State Registry
 
-3.8.2 Layer 1 artifacts MUST be:
+  3.8.2 Layer 1 artifacts MUST be:
+
 - Explicit and unambiguous
 - Versioned
 - Accessible to all members
 
-3.8.3 Absence, ambiguity, or systematic violation of Layer 1 artifacts MUST result in loss of RCOS-Core compliance.
+  3.8.3 Absence, ambiguity, or systematic violation of Layer 1 artifacts MUST result in loss of RCOS-Core compliance.
 
+---
 
-# Layer 2 — Governance & Decision Logic
+# 4. Layer 2 — Governance & Decision Logic
 
 Layer 2 defines how collective decisions are made, who is authorized to make them, and how authority is constrained. Governance under RCOS is designed to make power explicit, bounded, reviewable, and reversible.
 
 ## 4.1 Decision Types
 
 4.1.1 All collective decisions MUST be classified into exactly one of the following decision types:
+
 - Operational Decisions
 - Strategic Decisions
 - Constitutional Decisions
 
-4.1.2 Operational Decisions concern day-to-day functioning and execution within existing rules.
+  4.1.2 Operational Decisions concern day-to-day functioning and execution within existing rules.
 
-4.1.3 Strategic Decisions concern long-term direction, allocation of significant resources, or creation/removal of major structures.
+  4.1.3 Strategic Decisions concern long-term direction, allocation of significant resources, or creation/removal of major structures.
 
-4.1.4 Constitutional Decisions concern changes to Layer 0 invariants, purpose, scope, or the governance system itself.
+  4.1.4 Constitutional Decisions concern changes to Layer 0 invariants, purpose, scope, or the governance system itself.
 
-4.1.5 If a decision cannot be clearly classified, it MUST default to the higher-impact decision type.
+  4.1.5 If a decision cannot be clearly classified, it MUST default to the higher-impact decision type.
 
 ## 4.2 Decision Mechanisms
 
 4.2.1 Each decision type MUST have an explicitly defined decision-making mechanism.
 
 4.2.2 Decision mechanisms MAY include, but are not limited to:
+
 - Consent-based decision-making
 - Majority vote
 - Supermajority vote
 - Delegated authority
 - Randomized or rotational assignment
 
-4.2.3 Decision mechanisms MUST specify:
+  4.2.3 Decision mechanisms MUST specify:
+
 - Eligible participants
 - Decision thresholds
 - Blocking or veto conditions, if any
 - Time constraints
 
-4.2.4 No informal or ad hoc decision mechanism MAY be used for collective decisions.
+  4.2.4 No informal or ad hoc decision mechanism MAY be used for collective decisions.
 
 ## 4.3 Authority Boundaries
 
 4.3.1 All authority MUST be assigned to explicitly defined roles, circles, or bodies.
 
 4.3.2 Authority assignments MUST include:
+
 - Scope of authority
 - Limits of authority
 - Duration or term, if applicable
 
-4.3.3 No individual or body MAY exercise authority outside its explicitly assigned scope.
+  4.3.3 No individual or body MAY exercise authority outside its explicitly assigned scope.
 
-4.3.4 Authority MUST NOT be derived from charisma, seniority, ownership, or informal influence.
+  4.3.4 Authority MUST NOT be derived from charisma, seniority, ownership, or informal influence.
 
-4.3.5 Temporary or emergency authority MUST be explicitly defined, time-bounded, and subject to review.
+  4.3.5 Temporary or emergency authority MUST be explicitly defined, time-bounded, and subject to review.
 
 ## 4.4 Decision Matrix
 
 4.4.1 The community MUST maintain a Decision Matrix as a core governance artifact.
 
 4.4.2 The Decision Matrix MUST map, at minimum:
+
 - Decision type
 - Decision domain
 - Authorized role or body
@@ -551,54 +599,58 @@ Layer 2 defines how collective decisions are made, who is authorized to make the
 - Approval threshold
 - Escalation path
 
-4.4.3 The Decision Matrix MUST be publicly accessible to all members.
+  4.4.3 The Decision Matrix MUST be publicly accessible to all members.
 
-4.4.4 Decisions made outside the Decision Matrix MUST be considered invalid.
+  4.4.4 Decisions made outside the Decision Matrix MUST be considered invalid.
 
 ## 4.5 Governance Protocol
 
 4.5.1 The community MUST define a Governance Protocol describing the full lifecycle of a decision.
 
 4.5.2 The Governance Protocol MUST include:
+
 - Proposal submission requirements
 - Review and deliberation process
 - Decision execution
 - Documentation and publication
 - Appeal and review mechanisms
 
-4.5.3 The Governance Protocol MUST define how conflicts between decisions are resolved.
+  4.5.3 The Governance Protocol MUST define how conflicts between decisions are resolved.
 
-4.5.4 All governance actions MUST be documented according to Layer 5 documentation rules.
+  4.5.4 All governance actions MUST be documented according to Layer 5 documentation rules.
 
 ## 4.6 Safeguards and Failure Modes
 
 4.6.1 The governance system MUST include safeguards against:
+
 - Concentration of decision power
 - Informal vetoes
 - Decision capture by subgroups
 - Founder or role entrenchment
 
-4.6.2 Governance mechanisms MUST allow for challenge and review without retaliation.
+  4.6.2 Governance mechanisms MUST allow for challenge and review without retaliation.
 
-4.6.3 Persistent governance failures MUST trigger a formal review or constitutional process.
+  4.6.3 Persistent governance failures MUST trigger a formal review or constitutional process.
 
 ## 4.7 Artifacts
 
 4.7.1 The following artifacts are mandatory for Layer 2 compliance:
+
 - Decision Matrix
 - Governance Protocol
 - Authority Registry
 
-4.7.2 Layer 2 artifacts MUST be:
+  4.7.2 Layer 2 artifacts MUST be:
+
 - Explicit and unambiguous
 - Versioned
 - Accessible to all members
 
-4.7.3 Absence, ambiguity, or systematic violation of Layer 2 artifacts MUST result in loss of RCOS-Core compliance.
+  4.7.3 Absence, ambiguity, or systematic violation of Layer 2 artifacts MUST result in loss of RCOS-Core compliance.
 
+---
 
-
-# Layer 3 — Economic & Resource System
+# 5. Layer 3 — Economic & Resource System
 
 Layer 3 defines how value, resources, and obligations flow inside the community.  
 Its purpose is to make economic power explicit, bounded, reviewable, and subordinate to governance, preventing hidden accumulation, dependency, or coercion.
@@ -608,47 +660,52 @@ Its purpose is to make economic power explicit, bounded, reviewable, and subordi
 5.1.1 All resources within the declared governed scope MUST be explicitly classified as either **commons** or **private**.
 
 5.1.2 The community MUST maintain a single, explicit, and versioned registry of governed resources, including at minimum:
-- Resource name or unique identifier  
-- Classification (commons or private)  
-- Steward or owner (as applicable)  
-- Access and use rules  
+
+- Resource name or unique identifier
+- Classification (commons or private)
+- Steward or owner (as applicable)
+- Access and use rules
 - Transfer, sale, or privatization constraints (if any)
 
-5.1.3 Any resource not explicitly classified MUST be treated as **unclassified**, and the community MUST NOT allocate, encumber, monetize, or transfer it until classification is completed through an authorized decision.
+  5.1.3 Any resource not explicitly classified MUST be treated as **unclassified**, and the community MUST NOT allocate, encumber, monetize, or transfer it until classification is completed through an authorized decision.
 
-5.1.4 For commons resources, the community MUST explicitly define:
-- Stewardship responsibilities  
-- The authorized decision-making body or role  
-- Maintenance obligations  
+  5.1.4 For commons resources, the community MUST explicitly define:
+
+- Stewardship responsibilities
+- The authorized decision-making body or role
+- Maintenance obligations
 - Funding or contribution mechanisms (if any)
 
-5.1.5 For private resources, the community MUST NOT exercise authority beyond what is explicitly declared in the scope, membership agreements, or other governed artifacts.
+  5.1.5 For private resources, the community MUST NOT exercise authority beyond what is explicitly declared in the scope, membership agreements, or other governed artifacts.
 
 ## 5.2 Contribution Recognition
 
 5.2.1 The community MUST explicitly define which contribution categories are recognized. These MAY include, but are not limited to:
-- Labor  
-- Care and emotional work  
-- Knowledge and education  
-- Stewardship and maintenance  
-- Administrative or coordination work  
 
-5.2.2 The community MUST define a contribution recognition mechanism specifying:
-- What qualifies as a contribution  
-- How contributions are recorded or acknowledged  
-- Who may record, validate, or contest contributions  
-- Whether and how contribution recognition affects access to resources, privileges, or obligations  
+- Labor
+- Care and emotional work
+- Knowledge and education
+- Stewardship and maintenance
+- Administrative or coordination work
 
-5.2.3 The community MUST NOT structurally depend on unpaid, invisible, or informal labor for system survival without explicitly defining corresponding obligations, recognition, or compensation mechanisms.
+  5.2.2 The community MUST define a contribution recognition mechanism specifying:
 
-5.2.4 If internal economic units are used (e.g. time credits, points, tokens), the Internal Economy Protocol MUST define:
-- Issuance rules  
-- Transferability rules  
-- Expiration, decay, or cap mechanisms (if any)  
-- Fraud prevention, dispute handling, and correction mechanisms  
-- Privacy and transparency rules for balances and transactions  
+- What qualifies as a contribution
+- How contributions are recorded or acknowledged
+- Who may record, validate, or contest contributions
+- Whether and how contribution recognition affects access to resources, privileges, or obligations
 
-5.2.5 Contribution recognition MUST NOT create implicit decision authority, veto power, or governance influence beyond what is defined in Layer 2.
+  5.2.3 The community MUST NOT structurally depend on unpaid, invisible, or informal labor for system survival without explicitly defining corresponding obligations, recognition, or compensation mechanisms.
+
+  5.2.4 If internal economic units are used (e.g. time credits, points, tokens), the Internal Economy Protocol MUST define:
+
+- Issuance rules
+- Transferability rules
+- Expiration, decay, or cap mechanisms (if any)
+- Fraud prevention, dispute handling, and correction mechanisms
+- Privacy and transparency rules for balances and transactions
+
+  5.2.5 Contribution recognition MUST NOT create implicit decision authority, veto power, or governance influence beyond what is defined in Layer 2.
 
 ## 5.3 Treasury Management
 
@@ -657,18 +714,20 @@ Its purpose is to make economic power explicit, bounded, reviewable, and subordi
 5.3.2 Income sources and any external income interfaces MUST be explicitly defined.
 
 5.3.3 Spending authority MUST be explicitly bounded through:
-- Clear authority assignments  
-- Thresholds by amount and/or category  
-- Approval and escalation paths  
-- Mandatory recordkeeping requirements  
 
-5.3.4 Transparency MUST be the default for treasury balances, inflows, outflows, obligations, and commitments.
+- Clear authority assignments
+- Thresholds by amount and/or category
+- Approval and escalation paths
+- Mandatory recordkeeping requirements
 
-5.3.5 Any exceptions to transparency MUST be explicitly defined, justified, time-bounded, and MUST NOT prevent members from auditing compliance.
+  5.3.4 Transparency MUST be the default for treasury balances, inflows, outflows, obligations, and commitments.
 
-5.3.6 The community MUST define reserve, risk, and liability policies, including:
-- Limits on debt  
-- Long-term obligations  
+  5.3.5 Any exceptions to transparency MUST be explicitly defined, justified, time-bounded, and MUST NOT prevent members from auditing compliance.
+
+  5.3.6 The community MUST define reserve, risk, and liability policies, including:
+
+- Limits on debt
+- Long-term obligations
 - Contingency reserves (if any)
 
 ## 5.4 Accumulation Constraints
@@ -676,41 +735,46 @@ Its purpose is to make economic power explicit, bounded, reviewable, and subordi
 5.4.1 Internal economic systems MUST prevent unbounded concentration of internal influence or control through resources, credits, or financial obligations.
 
 5.4.2 If internal units exist, the community MUST define one or more accumulation-limiting mechanisms, which MAY include:
-- Caps  
-- Decay or expiration  
-- Non-transferability  
-- Redistribution or taxation mechanisms  
-- Time-bounded validity  
 
-5.4.3 Economic mechanisms MUST NOT allow members to bypass governance authority boundaries defined in Layer 2, including through purchasing influence, creating dependency, or converting economic power into informal decision authority.
+- Caps
+- Decay or expiration
+- Non-transferability
+- Redistribution or taxation mechanisms
+- Time-bounded validity
 
-5.4.4 The community MUST define reviewable indicators of economic concentration risk and an explicit mechanism to adjust constraints when such risks are detected.
+  5.4.3 Economic mechanisms MUST NOT allow members to bypass governance authority boundaries defined in Layer 2, including through purchasing influence, creating dependency, or converting economic power into informal decision authority.
+
+  5.4.4 The community MUST define reviewable indicators of economic concentration risk and an explicit mechanism to adjust constraints when such risks are detected.
 
 ## 5.5 Artifacts
 
 5.5.1 The following artifacts are mandatory for Layer 3 compliance:
-- Internal Economy Protocol  
-- Treasury Ruleset  
 
-5.5.2 Layer 3 artifacts MUST be:
-- Explicit and unambiguous  
-- Versioned  
-- Accessible to all members (with explicit, bounded exceptions)  
-- Adopted through an authorized governance process  
+- Internal Economy Protocol
+- Treasury Ruleset
 
-5.5.3 The Internal Economy Protocol MUST define, at minimum:
-- Contribution categories and recognition mechanisms  
-- Commons vs private boundaries and allocation rules  
-- Internal units (if any) and accumulation constraints  
-- External income interfaces (if any)  
-- Dispute resolution and correction mechanisms for economic records  
+  5.5.2 Layer 3 artifacts MUST be:
 
-5.5.4 The Treasury Ruleset MUST define, at minimum:
-- Income sources  
-- Spending authority thresholds and approval paths  
-- Transparency and reporting requirements (including any bounded exceptions)  
-- Reserve, risk, and debt constraints  
-- Conflict-of-interest rules for spending and procurement  
+- Explicit and unambiguous
+- Versioned
+- Accessible to all members (with explicit, bounded exceptions)
+- Adopted through an authorized governance process
+
+  5.5.3 The Internal Economy Protocol MUST define, at minimum:
+
+- Contribution categories and recognition mechanisms
+- Commons vs private boundaries and allocation rules
+- Internal units (if any) and accumulation constraints
+- External income interfaces (if any)
+- Dispute resolution and correction mechanisms for economic records
+
+  5.5.4 The Treasury Ruleset MUST define, at minimum:
+
+- Income sources
+- Spending authority thresholds and approval paths
+- Transparency and reporting requirements (including any bounded exceptions)
+- Reserve, risk, and debt constraints
+- Conflict-of-interest rules for spending and procurement
 
 ## 5.6 Layer Invariants
 
@@ -725,24 +789,28 @@ Its purpose is to make economic power explicit, bounded, reviewable, and subordi
 ## 5.7 Explicitness Rules
 
 5.7.1 The following MUST be explicit:
-- Commons vs private classifications  
-- Allocation and access rules for shared resources  
-- Spending authority limits  
-- Transparency rules  
-- External income interfaces  
 
-5.7.2 The following MAY be explicit:
-- Contribution valuation models  
-- Internal units (tokens, hours, points)  
-- Budget categories and internal accounting structures  
+- Commons vs private classifications
+- Allocation and access rules for shared resources
+- Spending authority limits
+- Transparency rules
+- External income interfaces
 
-5.7.3 The following MUST remain optional and out of scope:
-- Attitudes toward wealth  
-- Equal vs differentiated outcomes  
+  5.7.2 The following MAY be explicit:
+
+- Contribution valuation models
+- Internal units (tokens, hours, points)
+- Budget categories and internal accounting structures
+
+  5.7.3 The following MUST remain optional and out of scope:
+
+- Attitudes toward wealth
+- Equal vs differentiated outcomes
 - Personal financial choices
 
+---
 
-# Layer 4 — Conflict, Repair & Accountability
+# 6. Layer 4 — Conflict, Repair & Accountability
 
 Layer 4 defines how the community responds when trust, coordination, or safety breaks down.  
 Its purpose is to ensure conflicts are handled explicitly, fairly, and safely, while preventing abuse of power, normalization of harm, or silent exclusion.
@@ -752,20 +820,22 @@ Its purpose is to ensure conflicts are handled explicitly, fairly, and safely, w
 6.1.1 The community MUST define an explicit conflict classification system that is known, accessible, and usable by all members.
 
 6.1.2 At minimum, the classification system MUST include the following classes:
+
 - Interpersonal conflicts (between individuals)
 - Role-based conflicts (authority, responsibility, or mandate disputes)
 - Structural conflicts (systemic incentives, rules, or resource allocation issues)
 - Ethical or boundary violations (violations of declared norms, scope, or safety boundaries)
 
-6.1.3 Each conflict class MUST explicitly define:
+  6.1.3 Each conflict class MUST explicitly define:
+
 - Entry criteria (how a situation is classified into this class)
 - Expected response priority and timelines (if any)
 - Permitted and required resolution pathways
 - Documentation requirements and privacy boundaries
 
-6.1.4 Conflicts involving credible safety risks, coercion, abuse, or threats MUST be classified as **safety-critical** and MUST trigger elevated safeguards as defined in Section 6.3.
+  6.1.4 Conflicts involving credible safety risks, coercion, abuse, or threats MUST be classified as **safety-critical** and MUST trigger elevated safeguards as defined in Section 6.3.
 
-6.1.5 Misclassification or avoidance of classification MUST be treated as a process failure subject to review.
+  6.1.5 Misclassification or avoidance of classification MUST be treated as a process failure subject to review.
 
 ## 6.2 Resolution Pathways
 
@@ -774,6 +844,7 @@ Its purpose is to ensure conflicts are handled explicitly, fairly, and safely, w
 6.2.2 The resolution process MUST include a clearly defined **resolution ladder** with explicit escalation steps.
 
 6.2.3 The resolution ladder MUST define, at minimum:
+
 - How a conflict is raised, logged, and acknowledged
 - How involved parties are notified and invited to participate
 - How refusal, non-response, or withdrawal is handled
@@ -782,76 +853,85 @@ Its purpose is to ensure conflicts are handled explicitly, fairly, and safely, w
 - Documentation requirements and access rules
 - A process for reviewing procedural failures or deadlock
 
-6.2.4 The resolution process MUST be accessible without requiring social status, seniority, charisma, or informal proximity to decision-makers.
+  6.2.4 The resolution process MUST be accessible without requiring social status, seniority, charisma, or informal proximity to decision-makers.
 
-6.2.5 Unresolved conflicts MUST escalate through defined governance pathways without bypassing the Decision Matrix defined in Layer 2.
+  6.2.5 Unresolved conflicts MUST escalate through defined governance pathways without bypassing the Decision Matrix defined in Layer 2.
 
 ## 6.3 Safeguards
 
 6.3.1 The community MUST define explicit safeguards for conflicts involving power asymmetries, dependency relationships, or safety risks.
 
 6.3.2 Safeguards MUST include protections against retaliation for:
+
 - Raising a concern
 - Requesting mediation
 - Providing testimony or evidence
 - Participating in a review or appeal
 
-6.3.3 Where a power differential exists between parties, elevated safeguards MUST be applied, which MAY include:
+  6.3.3 Where a power differential exists between parties, elevated safeguards MUST be applied, which MAY include:
+
 - Independent or external facilitation
 - Separate intake, documentation, or communication channels
 - Temporary suspension or limitation of role authority
 - Additional evidence and review thresholds prior to sanctions
 
-6.3.4 For safety-critical conflicts, the community MUST define immediate protective actions that may be taken prior to full process completion, which MAY include:
+  6.3.4 For safety-critical conflicts, the community MUST define immediate protective actions that may be taken prior to full process completion, which MAY include:
+
 - Temporary separation measures
 - Restricted access to shared spaces or resources
 - Temporary role suspension
 - Emergency escalation timelines
 
-6.3.5 Safety safeguards MUST override participation rights, role continuity, and operational convenience.
+  6.3.5 Safety safeguards MUST override participation rights, role continuity, and operational convenience.
 
 ## 6.4 Sanctions, Repair, and Separation
 
 6.4.1 The community MUST define an explicit sanctions and repair framework.
 
 6.4.2 Sanctions and repair actions MUST be:
+
 - Proportional to the violation
 - Explicitly documented
 - Time-bounded where applicable
 - Reviewable and appealable
 
-6.4.3 The framework MUST define, at minimum:
+  6.4.3 The framework MUST define, at minimum:
+
 - Available sanction and repair types
 - Preconditions and evidence standards
 - Authorized roles or bodies for application
 - Review and appeal mechanisms
 - Conditions for restoring rights, roles, or participation
 
-6.4.4 Separation, suspension, or removal actions MUST follow due process and MUST align with exit and separation rules defined in Layer 1.
+  6.4.4 Separation, suspension, or removal actions MUST follow due process and MUST align with exit and separation rules defined in Layer 1.
 
-6.4.5 Sanctions MUST NOT be applied through informal exclusion, social pressure, silence, or implicit withdrawal of rights.
+  6.4.5 Sanctions MUST NOT be applied through informal exclusion, social pressure, silence, or implicit withdrawal of rights.
 
-6.4.6 Repair-oriented actions MUST be prioritized over punitive actions except in safety-critical cases.
+  6.4.6 Repair-oriented actions MUST be prioritized over punitive actions except in safety-critical cases.
 
 ## 6.5 Artifacts
 
 6.5.1 The following artifacts are mandatory for Layer 4 compliance:
+
 - Conflict Resolution Ladder
 - Accountability Protocol
 
-6.5.2 Layer 4 artifacts MUST be:
+  6.5.2 Layer 4 artifacts MUST be:
+
 - Explicit and unambiguous
 - Versioned
 - Accessible to all members, with clearly bounded privacy protections
 - Adopted through an authorized governance process
 
-6.5.3 The Conflict Resolution Ladder MUST define, at minimum:
+  6.5.3 The Conflict Resolution Ladder MUST define, at minimum:
+
 - Conflict classification inputs and escalation thresholds
 - Resolution stages and facilitator selection rules
 - Documentation and information access boundaries
 - Safety-critical exceptions and immediate safeguards
 
-6.5.4 The Accountability Protocol MUST define, at minimum:
+  6.5.4 The Accountability Protocol MUST define, at minimum:
+
 - Investigation, review, and decision mechanisms
 - Due process guarantees and anti-retaliation protections
 - Sanction and repair options with proportionality rules
@@ -871,22 +951,26 @@ Its purpose is to ensure conflicts are handled explicitly, fairly, and safely, w
 ## 6.7 Explicitness Rules
 
 6.7.1 The following MUST be explicit:
+
 - Conflict classification system
 - Minimum resolution and escalation process
 - Safeguards and anti-retaliation protections
 - Sanction, repair, and separation thresholds
 
-6.7.2 The following MAY be explicit:
+  6.7.2 The following MAY be explicit:
+
 - Mediation styles or methodologies
 - Facilitator selection preferences beyond minimum safeguards
 - Restorative or reparative practices
 
-6.7.3 The following MUST remain optional and out of scope:
+  6.7.3 The following MUST remain optional and out of scope:
+
 - Emotional expression norms
 - Therapeutic, spiritual, or ideological framing of conflict
 
+---
 
-# Layer 5 — Operations & Coordination
+# 7. Layer 5 — Operations & Coordination
 
 Layer 5 defines how daily work, coordination, and information flow function in practice.  
 Its purpose is to ensure that operations remain legible, sustainable, and transferable, and do not collapse into informal hierarchy, dependency, or burnout.
@@ -896,112 +980,124 @@ Its purpose is to ensure that operations remain legible, sustainable, and transf
 7.1.1 All ongoing responsibilities MUST be assigned to explicit, named roles rather than implicit expectations or informal agreements.
 
 7.1.2 The community MUST maintain a **Role Registry** that includes, at minimum:
-- Role name and purpose  
-- Scope of responsibility and decision authority  
-- Explicit boundaries and interfaces with other roles, circles, or domains  
-- Eligibility criteria (if any)  
-- Term length, rotation, or review conditions (if any)  
-- Appointment, review, and removal process  
 
-7.1.3 Each role MUST include an explicit accountability mechanism defining:
-- How role performance is reviewed  
-- How underperformance, overload, or role failure is handled  
-- How handover and knowledge transfer occur  
+- Role name and purpose
+- Scope of responsibility and decision authority
+- Explicit boundaries and interfaces with other roles, circles, or domains
+- Eligibility criteria (if any)
+- Term length, rotation, or review conditions (if any)
+- Appointment, review, and removal process
 
-7.1.4 No ongoing responsibility MAY exist without an explicit role, and no person MAY be held accountable for responsibilities not formally assigned to a role.
+  7.1.3 Each role MUST include an explicit accountability mechanism defining:
 
-7.1.5 Temporary or ad-hoc responsibilities MUST be explicitly time-bounded and MUST NOT become ongoing without formal role definition.
+- How role performance is reviewed
+- How underperformance, overload, or role failure is handled
+- How handover and knowledge transfer occur
+
+  7.1.4 No ongoing responsibility MAY exist without an explicit role, and no person MAY be held accountable for responsibilities not formally assigned to a role.
+
+  7.1.5 Temporary or ad-hoc responsibilities MUST be explicitly time-bounded and MUST NOT become ongoing without formal role definition.
 
 ## 7.2 Meeting System
 
 7.2.1 The community MUST define explicit meeting types sufficient to support:
-- Operations  
-- Governance  
-- Coordination and alignment  
-- Reflection and learning  
+
+- Operations
+- Governance
+- Coordination and alignment
+- Reflection and learning
 - Conflict handling (as required by Layer 4)
 
-7.2.2 Each meeting type MUST define, at minimum:
-- Purpose and decision scope  
-- Required vs optional participants  
-- Cadence and duration boundaries  
-- Facilitation role and selection or rotation process  
-- Agenda structure  
-- Documentation and publication requirements  
-- Decision capture requirements where decisions are made  
+  7.2.2 Each meeting type MUST define, at minimum:
 
-7.2.3 Meetings MUST NOT exceed their declared decision scope or bypass authority boundaries defined in Layer 2.
+- Purpose and decision scope
+- Required vs optional participants
+- Cadence and duration boundaries
+- Facilitation role and selection or rotation process
+- Agenda structure
+- Documentation and publication requirements
+- Decision capture requirements where decisions are made
 
-7.2.4 Meeting load MUST be bounded, monitored, and reviewable as defined in Section 7.4.
+  7.2.3 Meetings MUST NOT exceed their declared decision scope or bypass authority boundaries defined in Layer 2.
+
+  7.2.4 Meeting load MUST be bounded, monitored, and reviewable as defined in Section 7.4.
 
 ## 7.3 Documentation and Information Flow
 
 7.3.1 The community MUST define explicit documentation rules for decisions, roles, operations, and shared obligations.
 
 7.3.2 Documentation rules MUST specify, at minimum:
-- What information MUST be recorded  
-- Where records are stored  
-- Who has access to which records  
-- Publication or notification timelines (if any)  
-- Privacy boundaries and conditions for restricted access  
 
-7.3.3 All decisions MUST be traceable to:
-- Decision type and domain  
-- Authorized role or body  
-- Decision mechanism and threshold  
-- Recorded outcome and effective date  
+- What information MUST be recorded
+- Where records are stored
+- Who has access to which records
+- Publication or notification timelines (if any)
+- Privacy boundaries and conditions for restricted access
 
-7.3.4 Critical operational processes MUST be documented such that continuity does not depend on tacit knowledge held by specific individuals.
+  7.3.3 All decisions MUST be traceable to:
 
-7.3.5 Information flow MUST be designed to prevent gatekeeping, bottlenecks, or dependency on informal intermediaries.
+- Decision type and domain
+- Authorized role or body
+- Decision mechanism and threshold
+- Recorded outcome and effective date
+
+  7.3.4 Critical operational processes MUST be documented such that continuity does not depend on tacit knowledge held by specific individuals.
+
+  7.3.5 Information flow MUST be designed to prevent gatekeeping, bottlenecks, or dependency on informal intermediaries.
 
 ## 7.4 Workload and Capacity Boundaries
 
 7.4.1 Time, attention, coordination capacity, and emotional labor MUST be treated as finite and limited resources.
 
 7.4.2 The community MUST define explicit workload boundaries, including:
-- Limits on meeting load (frequency, duration, or total time)  
-- Limits on role load (number of roles, scope, or expected hours)  
-- Expectations for response times and availability (if any)  
-- Mechanisms for renegotiation, relief, substitution, or redistribution  
 
-7.4.3 Workload boundaries MUST be reviewable and adjustable through an authorized governance process.
+- Limits on meeting load (frequency, duration, or total time)
+- Limits on role load (number of roles, scope, or expected hours)
+- Expectations for response times and availability (if any)
+- Mechanisms for renegotiation, relief, substitution, or redistribution
 
-7.4.4 Persistent overload, burnout risk, chronic non-participation, or dependency on over-functioning individuals MUST trigger review or repair processes as defined in Layer 4.
+  7.4.3 Workload boundaries MUST be reviewable and adjustable through an authorized governance process.
+
+  7.4.4 Persistent overload, burnout risk, chronic non-participation, or dependency on over-functioning individuals MUST trigger review or repair processes as defined in Layer 4.
 
 ## 7.5 Operational Continuity
 
 7.5.1 The community MUST ensure that no single individual is a critical single point of failure for core operations.
 
 7.5.2 Core operational roles and processes MUST include:
-- Documented procedures  
-- Clear handover mechanisms  
-- Backup or redundancy arrangements where feasible  
 
-7.5.3 Operational continuity planning MUST be reviewed periodically.
+- Documented procedures
+- Clear handover mechanisms
+- Backup or redundancy arrangements where feasible
+
+  7.5.3 Operational continuity planning MUST be reviewed periodically.
 
 ## 7.6 Artifacts
 
 7.6.1 The following artifacts are mandatory for Layer 5 compliance:
-- Operations Manual  
-- Role Registry  
-- Meeting Templates  
 
-7.6.2 Layer 5 artifacts MUST be:
-- Explicit and unambiguous  
-- Versioned  
-- Accessible to all members, with clearly bounded privacy protections  
-- Maintained as living documents with defined ownership and review cycles  
+- Operations Manual
+- Role Registry
+- Meeting Templates
 
-7.6.3 The Operations Manual MUST define, at minimum:
-- Core operational processes relied upon by the community  
-- Interfaces between roles, domains, and meeting types  
-- Documentation locations and update procedures  
+  7.6.2 Layer 5 artifacts MUST be:
 
-7.6.4 Meeting Templates MUST define, at minimum:
-- Agenda structure  
-- Notes and record format  
-- Decision capture format where applicable  
+- Explicit and unambiguous
+- Versioned
+- Accessible to all members, with clearly bounded privacy protections
+- Maintained as living documents with defined ownership and review cycles
+
+  7.6.3 The Operations Manual MUST define, at minimum:
+
+- Core operational processes relied upon by the community
+- Interfaces between roles, domains, and meeting types
+- Documentation locations and update procedures
+
+  7.6.4 Meeting Templates MUST define, at minimum:
+
+- Agenda structure
+- Notes and record format
+- Decision capture format where applicable
 
 ## 7.7 Layer Invariants
 
@@ -1016,25 +1112,28 @@ Its purpose is to ensure that operations remain legible, sustainable, and transf
 ## 7.8 Explicitness Rules
 
 7.8.1 The following MUST be explicit:
-- Roles and responsibilities  
-- Operational authority boundaries and interfaces  
-- Meeting types and scopes  
-- Decision documentation rules  
-- Information access and privacy boundaries  
 
-7.8.2 The following MAY be explicit:
-- Detailed meeting cadence beyond minimum constraints  
-- Tooling choices for documentation and coordination  
-- Role rotation or succession schedules  
+- Roles and responsibilities
+- Operational authority boundaries and interfaces
+- Meeting types and scopes
+- Decision documentation rules
+- Information access and privacy boundaries
 
-7.8.3 The following MUST remain optional and out of scope:
-- Personal work styles  
-- Aesthetic or cultural preferences  
+  7.8.2 The following MAY be explicit:
+
+- Detailed meeting cadence beyond minimum constraints
+- Tooling choices for documentation and coordination
+- Role rotation or succession schedules
+
+  7.8.3 The following MUST remain optional and out of scope:
+
+- Personal work styles
+- Aesthetic or cultural preferences
 - Informal social coordination
 
+---
 
-
-# Layer 6 — Evolution & Adaptation
+# 8. Layer 6 — Evolution & Adaptation
 
 Layer 6 defines how the system evolves without collapsing.  
 Its purpose is to ensure that change is deliberate, constrained, reversible where appropriate, and produces learnings rather than hidden damage. Evolution under RCOS is treated as a governed process, not as improvisation.
@@ -1044,111 +1143,123 @@ Its purpose is to ensure that change is deliberate, constrained, reversible wher
 8.1.1 The community MUST define explicit change mechanisms for modifying, adding, suspending, or removing rules, roles, artifacts, or decision structures.
 
 8.1.2 Change mechanisms MUST explicitly distinguish between:
-- Permanent rule changes  
-- Time-bounded experiments as defined in Section 8.3  
 
-8.1.3 Every proposed change MUST specify, at minimum:
-- The artifact(s), layer(s), and section(s) affected  
-- The decision type and authorized decision path as defined in Layer 2  
-- The intended effect, scope, and known risks  
-- The effective date and any transition period  
-- Migration requirements for existing roles, agreements, or records  
+- Permanent rule changes
+- Time-bounded experiments as defined in Section 8.3
 
-8.1.4 Changes affecting Layer 0 purpose, scope, invariants, or identity constraints MUST be classified as constitutional changes and MUST follow the constitutional decision mechanism.
+  8.1.3 Every proposed change MUST specify, at minimum:
 
-8.1.5 The community MUST define explicit review mechanisms for adopted changes, including how changes are evaluated, revised, or reverted when they produce harm, instability, or unintended concentration of power.
+- The artifact(s), layer(s), and section(s) affected
+- The decision type and authorized decision path as defined in Layer 2
+- The intended effect, scope, and known risks
+- The effective date and any transition period
+- Migration requirements for existing roles, agreements, or records
+
+  8.1.4 Changes affecting Layer 0 purpose, scope, invariants, or identity constraints MUST be classified as constitutional changes and MUST follow the constitutional decision mechanism.
+
+  8.1.5 The community MUST define explicit review mechanisms for adopted changes, including how changes are evaluated, revised, or reverted when they produce harm, instability, or unintended concentration of power.
 
 ## 8.2 Versioning and Authority
 
 8.2.1 All adopted changes MUST be versioned and traceable.
 
 8.2.2 The community MUST maintain a **Version History** that records, at minimum:
-- Version identifier  
-- Adoption date and effective date  
-- Decision record reference (authority, mechanism, threshold)  
-- Summary of changes  
-- Migration notes and compatibility constraints (if any)  
 
-8.2.3 At any point in time, the community MUST be able to unambiguously determine:
-- Which version is currently in force  
-- Which artifacts are authoritative for compliance  
+- Version identifier
+- Adoption date and effective date
+- Decision record reference (authority, mechanism, threshold)
+- Summary of changes
+- Migration notes and compatibility constraints (if any)
 
-8.2.4 Superseded rules MUST remain accessible for auditability, learning, and dispute resolution, together with the dates during which they were in force.
+  8.2.3 At any point in time, the community MUST be able to unambiguously determine:
 
-8.2.5 No informal, undocumented, or “understood” rule changes MAY be considered valid.
+- Which version is currently in force
+- Which artifacts are authoritative for compliance
+
+  8.2.4 Superseded rules MUST remain accessible for auditability, learning, and dispute resolution, together with the dates during which they were in force.
+
+  8.2.5 No informal, undocumented, or “understood” rule changes MAY be considered valid.
 
 ## 8.3 Experiments
 
 8.3.1 The community MAY adopt experiments as explicitly time-bounded and reversible deviations, extensions, or pilots intended for learning.
 
 8.3.2 Every experiment MUST define, at minimum:
-- Scope (what is changed and what is explicitly not changed)  
-- Duration and review checkpoints  
-- Success and failure criteria  
-- Rollback conditions and rollback process  
-- Authorized decision path for starting, extending, modifying, or terminating the experiment  
 
-8.3.3 Experiments MUST NOT override Layer 0 invariants and MUST NOT bypass governance constraints defined in Layer 2.
+- Scope (what is changed and what is explicitly not changed)
+- Duration and review checkpoints
+- Success and failure criteria
+- Rollback conditions and rollback process
+- Authorized decision path for starting, extending, modifying, or terminating the experiment
 
-8.3.4 Experiments MUST be explicitly labeled as experimental in all affected artifacts and MUST include a non-extendable expiration date unless renewed through an authorized decision.
+  8.3.3 Experiments MUST NOT override Layer 0 invariants and MUST NOT bypass governance constraints defined in Layer 2.
 
-8.3.5 If an experiment introduces safety risk, coercion, or sustained harm, the community MUST suspend or terminate the experiment immediately through a protective action, followed by post-hoc review.
+  8.3.4 Experiments MUST be explicitly labeled as experimental in all affected artifacts and MUST include a non-extendable expiration date unless renewed through an authorized decision.
+
+  8.3.5 If an experiment introduces safety risk, coercion, or sustained harm, the community MUST suspend or terminate the experiment immediately through a protective action, followed by post-hoc review.
 
 ## 8.4 Learning and Feedback Capture
 
 8.4.1 Major failures, adaptations, reversals, and systemic learnings MUST be documented.
 
 8.4.2 Learning capture MUST include, at minimum:
-- What occurred and why it mattered  
-- Which layers, rules, or artifacts were implicated  
-- What was changed, attempted, or stopped  
-- What signals, evidence, or thresholds triggered action  
 
-8.4.3 Learning records MUST be accessible according to Layer 5 information access rules.
+- What occurred and why it mattered
+- Which layers, rules, or artifacts were implicated
+- What was changed, attempted, or stopped
+- What signals, evidence, or thresholds triggered action
 
-8.4.4 Repeated failure patterns MUST trigger structural review rather than individual blame.
+  8.4.3 Learning records MUST be accessible according to Layer 5 information access rules.
+
+  8.4.4 Repeated failure patterns MUST trigger structural review rather than individual blame.
 
 ## 8.5 Change Safety and Reversibility
 
 8.5.1 The system MUST prefer reversible changes over irreversible ones where possible.
 
 8.5.2 Irreversible or high-impact changes MUST include:
-- Extended deliberation or review periods  
-- Higher decision thresholds where appropriate  
-- Explicit risk acknowledgment  
 
-8.5.3 Emergency changes MAY be permitted only where explicitly defined, MUST be time-bounded, MUST NOT override Layer 0 invariants, and MUST undergo mandatory post-hoc review and ratification or rollback.
+- Extended deliberation or review periods
+- Higher decision thresholds where appropriate
+- Explicit risk acknowledgment
+
+  8.5.3 Emergency changes MAY be permitted only where explicitly defined, MUST be time-bounded, MUST NOT override Layer 0 invariants, and MUST undergo mandatory post-hoc review and ratification or rollback.
 
 ## 8.6 Artifacts
 
 8.6.1 The following artifacts are mandatory for Layer 6 compliance:
-- Change Protocol  
-- Version History  
-- Learning Log  
 
-8.6.2 Layer 6 artifacts MUST be:
-- Explicit and unambiguous  
-- Versioned  
-- Accessible to all members, with clearly bounded privacy protections  
-- Adopted through an authorized governance process  
+- Change Protocol
+- Version History
+- Learning Log
 
-8.6.3 The Change Protocol MUST define, at minimum:
-- How changes are proposed, reviewed, adopted, published, and rejected  
-- How proposals are classified by decision type  
-- Required contents of change proposals  
-- Transition, migration, and deprecation expectations  
-- Review, revision, and rollback mechanisms  
-- Emergency change provisions, including strict time bounds and mandatory review  
+  8.6.2 Layer 6 artifacts MUST be:
 
-8.6.4 The Version History MUST define:
-- The authoritative structure for version identifiers and change logs  
-- How superseded versions are retained and accessed  
-- How the currently active version is determined  
+- Explicit and unambiguous
+- Versioned
+- Accessible to all members, with clearly bounded privacy protections
+- Adopted through an authorized governance process
 
-8.6.5 The Learning Log MUST define:
-- What constitutes a learnable event  
-- Documentation format and ownership  
-- Review and synthesis cadence  
+  8.6.3 The Change Protocol MUST define, at minimum:
+
+- How changes are proposed, reviewed, adopted, published, and rejected
+- How proposals are classified by decision type
+- Required contents of change proposals
+- Transition, migration, and deprecation expectations
+- Review, revision, and rollback mechanisms
+- Emergency change provisions, including strict time bounds and mandatory review
+
+  8.6.4 The Version History MUST define:
+
+- The authoritative structure for version identifiers and change logs
+- How superseded versions are retained and accessed
+- How the currently active version is determined
+
+  8.6.5 The Learning Log MUST define:
+
+- What constitutes a learnable event
+- Documentation format and ownership
+- Review and synthesis cadence
 
 ## 8.7 Layer Invariants
 
@@ -1163,22 +1274,26 @@ Its purpose is to ensure that change is deliberate, constrained, reversible wher
 ## 8.8 Explicitness Rules
 
 8.8.1 The following MUST be explicit:
-- How rules change and who decides  
-- Versioning, authority, and review processes  
-- Experiment scope, duration, and rollback conditions  
-- Emergency change conditions and limits  
 
-8.8.2 The following MAY be explicit:
-- Review frequency and cadence  
-- Sunset clauses  
-- Feedback and sensing methods  
+- How rules change and who decides
+- Versioning, authority, and review processes
+- Experiment scope, duration, and rollback conditions
+- Emergency change conditions and limits
 
-8.8.3 The following MUST remain optional and out of scope:
-- Pace of innovation  
+  8.8.2 The following MAY be explicit:
+
+- Review frequency and cadence
+- Sunset clauses
+- Feedback and sensing methods
+
+  8.8.3 The following MUST remain optional and out of scope:
+
+- Pace of innovation
 - Cultural attitudes toward risk within defined bounds
 
+---
 
-# Non-Normative Sections
+# 9. Non-Normative Sections
 
 The sections in this chapter are **informative**, not normative.  
 They do not define compliance requirements but provide guidance, context, examples, and learning support for communities, implementers, auditors, and standard stewards.
@@ -1190,25 +1305,28 @@ Nothing in this section may override or weaken requirements defined in Layers 0�
 9.1.1 Optional Modules are domain-specific extensions that build on top of RCOS-Core without modifying its mandatory layers.
 
 9.1.2 Optional Modules MUST:
-- Declare which RCOS layers they extend or depend on  
-- Explicitly state any additional roles, rules, or artifacts they introduce  
-- NOT override or contradict Layer 0 invariants or RCOS-Core requirements  
 
-9.1.3 Optional Modules MAY define:
-- Domain-specific practices  
-- Additional constraints or standards  
-- Specialized governance or operational patterns  
+- Declare which RCOS layers they extend or depend on
+- Explicitly state any additional roles, rules, or artifacts they introduce
+- NOT override or contradict Layer 0 invariants or RCOS-Core requirements
 
-9.1.4 Typical Optional Module domains MAY include, but are not limited to:
-- Permaculture and regenerative land stewardship  
-- Alternative or community-based education systems  
-- Health, care, and well-being practices  
-- Cultural or spiritual practices  
-- Economic specializations (e.g. cooperatives, land trusts, mutual credit)  
+  9.1.3 Optional Modules MAY define:
 
-9.1.5 Adoption of Optional Modules MUST follow the change mechanisms defined in Layer 6.
+- Domain-specific practices
+- Additional constraints or standards
+- Specialized governance or operational patterns
 
-9.1.6 A community MAY be RCOS-Core compliant without adopting any Optional Modules.
+  9.1.4 Typical Optional Module domains MAY include, but are not limited to:
+
+- Permaculture and regenerative land stewardship
+- Alternative or community-based education systems
+- Health, care, and well-being practices
+- Cultural or spiritual practices
+- Economic specializations (e.g. cooperatives, land trusts, mutual credit)
+
+  9.1.5 Adoption of Optional Modules MUST follow the change mechanisms defined in Layer 6.
+
+  9.1.6 A community MAY be RCOS-Core compliant without adopting any Optional Modules.
 
 ## 9.2 Reference Implementations
 
@@ -1218,17 +1336,19 @@ Nothing in this section may override or weaken requirements defined in Layers 0�
 They illustrate how RCOS can be instantiated, not how it must be instantiated.
 
 9.2.3 A community MAY claim to be an RCOS Reference Implementation only if it:
-- Is RCOS-Core compliant  
-- Publicly documents its Layer 0–6 artifacts  
-- Clearly indicates deviations, experiments, or extensions  
 
-9.2.4 Reference Implementation documentation SHOULD include:
-- Context and scale (size, location, purpose)  
-- Which Optional Modules are adopted  
-- Known challenges and failures  
-- Evolution history and major adaptations  
+- Is RCOS-Core compliant
+- Publicly documents its Layer 0–6 artifacts
+- Clearly indicates deviations, experiments, or extensions
 
-9.2.5 Reference Implementations MUST NOT be treated as authoritative interpretations of the standard.
+  9.2.4 Reference Implementation documentation SHOULD include:
+
+- Context and scale (size, location, purpose)
+- Which Optional Modules are adopted
+- Known challenges and failures
+- Evolution history and major adaptations
+
+  9.2.5 Reference Implementations MUST NOT be treated as authoritative interpretations of the standard.
 
 ## 9.3 Known Failure Modes
 
@@ -1237,23 +1357,26 @@ They illustrate how RCOS can be instantiated, not how it must be instantiated.
 9.3.2 Failure Modes are **informative signals**, not compliance criteria.
 
 9.3.3 Failure Modes MAY include, but are not limited to:
-- Informal power accumulation  
-- Founder or land-owner dominance  
-- Invisible or gendered labor dependency  
-- Governance paralysis or meeting overload  
-- Exit blockage or soft coercion  
-- Economic capture through debt or asset control  
-- Conflict avoidance leading to silent fragmentation  
 
-9.3.4 The purpose of documenting Failure Modes is to:
-- Support stress-testing of RCOS structures  
-- Improve design decisions  
-- Enable early detection in live communities  
+- Informal power accumulation
+- Founder or land-owner dominance
+- Invisible or gendered labor dependency
+- Governance paralysis or meeting overload
+- Exit blockage or soft coercion
+- Economic capture through debt or asset control
+- Conflict avoidance leading to silent fragmentation
 
-9.3.5 Failure Mode documentation SHOULD reference which RCOS layers are intended to mitigate the pattern.
+  9.3.4 The purpose of documenting Failure Modes is to:
 
+- Support stress-testing of RCOS structures
+- Improve design decisions
+- Enable early detection in live communities
 
-# Compliance & Auditing
+  9.3.5 Failure Mode documentation SHOULD reference which RCOS layers are intended to mitigate the pattern.
+
+---
+
+# 10. Compliance & Auditing
 
 This chapter defines how RCOS-Core compliance is assessed and maintained.
 
@@ -1264,51 +1387,57 @@ This chapter defines how RCOS-Core compliance is assessed and maintained.
 10.1.2 Compliance MUST be evaluated per layer (Layers 0–6).
 
 10.1.3 For each layer, the Compliance Checklist MUST verify:
-- Presence of mandatory artifacts  
-- Explicitness and accessibility of required rules  
-- Adoption through authorized governance processes  
 
-10.1.4 Partial compliance or “intent to comply” MUST NOT be considered compliant.
+- Presence of mandatory artifacts
+- Explicitness and accessibility of required rules
+- Adoption through authorized governance processes
 
-10.1.5 Optional Modules MUST NOT be included in RCOS-Core compliance evaluation.
+  10.1.4 Partial compliance or “intent to comply” MUST NOT be considered compliant.
+
+  10.1.5 Optional Modules MUST NOT be included in RCOS-Core compliance evaluation.
 
 ## 10.2 Test Cases
 
 10.2.1 Test Cases are structured scenarios used to validate whether RCOS mechanisms behave as intended.
 
 10.2.2 Test Cases MAY be:
-- Hypothetical scenarios  
-- Historical community failures  
-- Simulated stress tests  
 
-10.2.3 Test Cases SHOULD cover, at minimum:
-- Power concentration attempts  
-- Exit and separation scenarios  
-- Governance deadlock  
-- Economic capture attempts  
-- Safety-critical conflicts  
+- Hypothetical scenarios
+- Historical community failures
+- Simulated stress tests
 
-10.2.4 Test Cases are informative but SHOULD be used during audits, onboarding, and periodic reviews.
+  10.2.3 Test Cases SHOULD cover, at minimum:
+
+- Power concentration attempts
+- Exit and separation scenarios
+- Governance deadlock
+- Economic capture attempts
+- Safety-critical conflicts
+
+  10.2.4 Test Cases are informative but SHOULD be used during audits, onboarding, and periodic reviews.
 
 ## 10.3 Non-Compliance
 
 10.3.1 A community MUST be considered non-compliant if:
-- Any mandatory artifact is missing  
-- Layer 0 invariants are violated  
-- Decisions are repeatedly made outside authorized governance structures  
-- Exit is blocked or informally constrained  
 
-10.3.2 Non-compliance MUST be explicitly acknowledged once detected.
+- Any mandatory artifact is missing
+- Layer 0 invariants are violated
+- Decisions are repeatedly made outside authorized governance structures
+- Exit is blocked or informally constrained
 
-10.3.3 A community MAY regain compliance only through:
-- Corrective action  
-- Formal adoption of missing or corrected artifacts  
-- Documentation of remediation  
+  10.3.2 Non-compliance MUST be explicitly acknowledged once detected.
 
-10.3.4 Claims of RCOS compliance MUST be withdrawn during periods of known non-compliance.
+  10.3.3 A community MAY regain compliance only through:
 
+- Corrective action
+- Formal adoption of missing or corrected artifacts
+- Documentation of remediation
 
-# Versioning & Governance of the Standard
+  10.3.4 Claims of RCOS compliance MUST be withdrawn during periods of known non-compliance.
+
+---
+
+# 11. Versioning & Governance of the Standard
 
 This chapter defines how RCOS itself evolves as a standard.
 
@@ -1317,33 +1446,36 @@ This chapter defines how RCOS itself evolves as a standard.
 11.1.1 RCOS MUST have an identifiable stewarding body or process.
 
 11.1.2 The steward’s responsibilities MUST include:
-- Maintaining the canonical specification  
-- Managing version releases  
-- Curating reference materials and learning  
-- Protecting Layer 0 invariants of the standard itself  
 
-11.1.3 The steward MUST NOT act as an enforcement authority over communities.
+- Maintaining the canonical specification
+- Managing version releases
+- Curating reference materials and learning
+- Protecting Layer 0 invariants of the standard itself
 
-11.1.4 RCOS stewardship MUST prioritize clarity, stability, and real-world learnings over ideological purity.
+  11.1.3 The steward MUST NOT act as an enforcement authority over communities.
+
+  11.1.4 RCOS stewardship MUST prioritize clarity, stability, and real-world learnings over ideological purity.
 
 ## 11.2 Change Process
 
 11.2.1 Changes to RCOS-Core MUST follow a defined change process.
 
 11.2.2 The change process MUST include:
-- Proposal submission  
-- Public review and feedback period  
-- Decision mechanism and authority  
-- Versioning and publication  
 
-11.2.3 Backward compatibility SHOULD be preserved where possible.
+- Proposal submission
+- Public review and feedback period
+- Decision mechanism and authority
+- Versioning and publication
 
-11.2.4 Breaking changes MUST be clearly marked and justified.
+  11.2.3 Backward compatibility SHOULD be preserved where possible.
 
-11.2.5 Superseded versions of RCOS MUST remain publicly accessible.
+  11.2.4 Breaking changes MUST be clearly marked and justified.
 
-11.2.6 RCOS itself MUST model the same principles it requires of communities: explicitness, bounded authority, reversibility, and learning.
+  11.2.5 Superseded versions of RCOS MUST remain publicly accessible.
 
+  11.2.6 RCOS itself MUST model the same principles it requires of communities: explicitness, bounded authority, reversibility, and learning.
+
+---
 
 # Appendix A — Glossary
 
@@ -1462,7 +1594,7 @@ An explicitly defined, justified, time-bounded limitation on information access 
 **Version History**  
 An artifact recording which version is in force and documenting adopted changes, effective dates, and decision references.
 
-
+---
 
 # Appendix B — Example Artifacts (Non-Normative)
 
@@ -1506,13 +1638,13 @@ Examples are informative only and should not be treated as required formats or i
 
 ## B.3 Example Decision Matrix (Excerpt)
 
-| Decision Domain | Decision Type | Authorized Body | Mechanism | Threshold | Escalation |
-|----------------|--------------|-----------------|-----------|-----------|------------|
-| Budget approval (annual) | Strategic | Finance Circle | Consent | No objections | General Circle |
-| Emergency spend ≤ 500 | Operational | Treasurer | Delegated authority | N/A | Finance Circle |
-| Spend 501–5,000 | Strategic | Finance Circle | Vote | Majority | General Circle |
-| Add/remove a core invariant | Constitutional | General Circle | Vote | Supermajority (80%) | Constitutional review |
-| Role appointment | Operational | Circle Lead | Consent | No objections | Governance Circle |
+| Decision Domain             | Decision Type  | Authorized Body | Mechanism           | Threshold           | Escalation            |
+| --------------------------- | -------------- | --------------- | ------------------- | ------------------- | --------------------- |
+| Budget approval (annual)    | Strategic      | Finance Circle  | Consent             | No objections       | General Circle        |
+| Emergency spend ≤ 500       | Operational    | Treasurer       | Delegated authority | N/A                 | Finance Circle        |
+| Spend 501–5,000             | Strategic      | Finance Circle  | Vote                | Majority            | General Circle        |
+| Add/remove a core invariant | Constitutional | General Circle  | Vote                | Supermajority (80%) | Constitutional review |
+| Role appointment            | Operational    | Circle Lead     | Consent             | No objections       | Governance Circle     |
 
 ## B.4 Example Internal Economy Protocol (Excerpt)
 
@@ -1535,11 +1667,11 @@ Examples are informative only and should not be treated as required formats or i
 
 ## B.5 Example Conflict Resolution Ladder (Excerpt)
 
-1. Direct conversation (informal repair)  
-2. Facilitated mediation (neutral facilitator selected from an approved list)  
-3. Accountability intake (documented intake; anti-retaliation safeguards activated)  
-4. Accountability review (findings, repair plan, and proportional responses)  
-5. Governance decision (if authority, access, or roles must change)  
+1. Direct conversation (informal repair)
+2. Facilitated mediation (neutral facilitator selected from an approved list)
+3. Accountability intake (documented intake; anti-retaliation safeguards activated)
+4. Accountability review (findings, repair plan, and proportional responses)
+5. Governance decision (if authority, access, or roles must change)
 6. Separation process (if required; coordinated with Layer 1 exit and separation protocol)
 
 ## B.6 Example Change Proposal Template (Excerpt)
@@ -1600,12 +1732,12 @@ Examples are informative only and should not be treated as required formats or i
   - Monthly balance sheet and cash-flow summary published to all members
 - Spending thresholds:
 
-| Amount | Decision Type | Authorized Body | Mechanism |
-|---:|---|---|---|
-| ≤ 500 | Operational | Treasurer | Delegated |
-| 501–5,000 | Strategic | Finance Circle | Majority vote |
-| > 5,000 | Strategic | General Circle | Majority vote |
-| Debt / long-term obligation | Constitutional | General Circle | Supermajority |
+|                      Amount | Decision Type  | Authorized Body | Mechanism     |
+| --------------------------: | -------------- | --------------- | ------------- |
+|                       ≤ 500 | Operational    | Treasurer       | Delegated     |
+|                   501–5,000 | Strategic      | Finance Circle  | Majority vote |
+|                     > 5,000 | Strategic      | General Circle  | Majority vote |
+| Debt / long-term obligation | Constitutional | General Circle  | Supermajority |
 
 - Conflict-of-interest:
   - A requester may not approve their own spending request
@@ -1640,8 +1772,7 @@ Examples are informative only and should not be treated as required formats or i
 - Outcome after review:
 - Follow-up action owner and due date:
 
-
-
+---
 
 # Appendix C — Reference Implementation Summary
 
@@ -1669,21 +1800,22 @@ This appendix defines a **recommended documentation structure** for communities 
 ## C.3 Layer-by-Layer Summary
 
 For each layer (0–6):
+
 - Implemented artifacts (with links)
 - Deviations or adaptations (with links)
 - Known challenges and failure modes encountered
 
 Recommended format:
 
-| Layer | Required artifacts implemented | Public link(s) | Version/date | Notes |
-|---:|---|---|---|---|
-| 0 | Purpose Charter; Scope Declaration; Invariants Register | [placeholder] | v0.3 / 2026-01-01 | Purpose stable; invariants reviewed quarterly |
-| 1 | Membership Agreement; Onboarding Protocol; Exit & Separation Protocol; Membership State Registry | [placeholder] | v1.1 / 2026-02-15 | Trial period is 3 months |
-| 2 | Decision Matrix; Governance Protocol; Authority Registry | [placeholder] | v0.8 / 2026-03-10 | Consent for ops, vote for strategic |
-| 3 | Internal Economy Protocol; Treasury Ruleset | [placeholder] | v0.5 / 2026-03-20 | Monthly treasury reports published |
-| 4 | Conflict Resolution Ladder; Accountability Protocol | [placeholder] | v0.6 / 2026-04-01 | Anti-retaliation policy included |
-| 5 | Operations Manual; Role Registry; Meeting Templates | [placeholder] | v0.4 / 2026-04-15 | Meeting load capped at 4h/week |
-| 6 | Change Protocol; Version History; Learning Log | [placeholder] | v0.2 / 2026-05-01 | Experiments expire unless renewed |
+| Layer | Required artifacts implemented                                                                   | Public link(s) | Version/date      | Notes                                         |
+| ----: | ------------------------------------------------------------------------------------------------ | -------------- | ----------------- | --------------------------------------------- |
+|     0 | Purpose Charter; Scope Declaration; Invariants Register                                          | [placeholder]  | v0.3 / 2026-01-01 | Purpose stable; invariants reviewed quarterly |
+|     1 | Membership Agreement; Onboarding Protocol; Exit & Separation Protocol; Membership State Registry | [placeholder]  | v1.1 / 2026-02-15 | Trial period is 3 months                      |
+|     2 | Decision Matrix; Governance Protocol; Authority Registry                                         | [placeholder]  | v0.8 / 2026-03-10 | Consent for ops, vote for strategic           |
+|     3 | Internal Economy Protocol; Treasury Ruleset                                                      | [placeholder]  | v0.5 / 2026-03-20 | Monthly treasury reports published            |
+|     4 | Conflict Resolution Ladder; Accountability Protocol                                              | [placeholder]  | v0.6 / 2026-04-01 | Anti-retaliation policy included              |
+|     5 | Operations Manual; Role Registry; Meeting Templates                                              | [placeholder]  | v0.4 / 2026-04-15 | Meeting load capped at 4h/week                |
+|     6 | Change Protocol; Version History; Learning Log                                                   | [placeholder]  | v0.2 / 2026-05-01 | Experiments expire unless renewed             |
 
 ## C.4 Governance and Evolution
 
@@ -1692,43 +1824,45 @@ Recommended format:
 - Major learnings and failures (with links to Learning Log entries)
 - Deviations register (recommended):
 
-| Item | Layer(s) | Type | Status | Start | Review/End | Link |
-|---|---|---|---|---|---|---|
-| Rotating facilitation trial | 5 | Experiment | Active | 2026-06-01 | 2026-08-01 | [placeholder] |
-| Treasury transparency exception (safety) | 3/4 | Permanent | Active | 2026-04-10 | Annual review | [placeholder] |
-
+| Item                                     | Layer(s) | Type       | Status | Start      | Review/End    | Link          |
+| ---------------------------------------- | -------- | ---------- | ------ | ---------- | ------------- | ------------- |
+| Rotating facilitation trial              | 5        | Experiment | Active | 2026-06-01 | 2026-08-01    | [placeholder] |
+| Treasury transparency exception (safety) | 3/4      | Permanent  | Active | 2026-04-10 | Annual review | [placeholder] |
 
 ## C.5 Compliance Statement
+
 - Current compliance status: Compliant / Non-compliant / Unknown
 - Date of last self-audit or external audit
 - Audit method (self-audit vs external)
 - Known non-compliance periods (if any) and remediation summary
 - Evidence links (recommended):
 
-| Evidence | Date | Link |
-|---|---:|---|
+| Evidence                        |       Date | Link          |
+| ------------------------------- | ---------: | ------------- |
 | Layer-by-layer checklist result | 2026-07-01 | [placeholder] |
-| Audit notes / findings | 2026-07-01 | [placeholder] |
-| Remediation log | 2026-07-15 | [placeholder] |
-- Known non-compliance periods (if any)  
+| Audit notes / findings          | 2026-07-01 | [placeholder] |
+| Remediation log                 | 2026-07-15 | [placeholder] |
+
+- Known non-compliance periods (if any)
 
 ## C.6 Public Transparency
+
 - Public artifact index (recommended):
 
-| Artifact | Layer | Public link | Version/date | Notes |
-|---|---:|---|---:|---|
-| Purpose Charter | 0 | [placeholder] | 2026-01-01 | |
-| Decision Matrix | 2 | [placeholder] | 2026-03-10 | |
-| Treasury reports | 3 | [placeholder] | 2026-06-30 | monthly |
-| Learning Log | 6 | [placeholder] | 2026-06-15 | redactions noted |
+| Artifact         | Layer | Public link   | Version/date | Notes            |
+| ---------------- | ----: | ------------- | -----------: | ---------------- |
+| Purpose Charter  |     0 | [placeholder] |   2026-01-01 |                  |
+| Decision Matrix  |     2 | [placeholder] |   2026-03-10 |                  |
+| Treasury reports |     3 | [placeholder] |   2026-06-30 | monthly          |
+| Learning Log     |     6 | [placeholder] |   2026-06-15 | redactions noted |
 
 - Contact or inquiry channel
 - Explicit statement of what is private vs public, and why
 - Link to current RCOS-Core version used and change log
-- Contact or inquiry channel  
+- Contact or inquiry channel
 
 ---
 
 ## Informative Note
 
-Reference Implementations are learning instruments, not endorsements.  
+Reference Implementations are learning instruments, not endorsements.
