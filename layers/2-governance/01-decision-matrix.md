@@ -51,7 +51,7 @@ If the rules for who decides what live in people's heads, authority becomes what
 | Platform and channel changes — structural             | Strategic      | Full Members    | All Full Members      | Snapshot vote                       | Simple majority    | Reasoned objection → re-vote | N/A               |
 | Partnerships and brand use                            | Strategic      | Full Members    | All Full Members      | Snapshot vote                       | Simple majority    | Reasoned objection → re-vote | N/A               |
 | Governance rule changes                               | Constitutional | Full Members    | All Full Members      | Snapshot vote + 30-day ratification | Supermajority (≥⅔) | Reasoned objection → re-vote | N/A               |
-| Primary purpose, scope, or invariant changes          | Constitutional | Full Members    | All Full Members      | Snapshot vote + 30-day ratification | Supermajority (≥⅔) | Reasoned objection → re-vote | N/A               |
+| Primary purpose, scope, invariant, or identity constraint changes | Constitutional | Full Members    | All Full Members      | Snapshot vote + 30-day ratification | Supermajority (≥⅔) | Reasoned objection → re-vote | N/A               |
 | Community support and facilitation activities         | Operational    | Facilitator     | N/A                   | Delegated                           | N/A                | None                         | Full Members vote |
 
 > **Operational role holders:** Each operational decision is executed by the named role holder responsible for that domain, acting within their defined scope per the Role Registry (Layer 5). Where a decision spans multiple domains, each role holder acts within their own scope.
@@ -67,7 +67,7 @@ Without a type, every decision gets handled at whatever speed and scrutiny happe
 
 - **Operational** — Day-to-day functioning within existing rules; executed by the relevant operational role holder (per Role Registry, Layer 5) without a vote; no proposal or deliberation period required
 - **Strategic** — Long-term direction, significant resource allocation, creation or removal of major structures; requires a Full Member Snapshot vote; minimum 5-day deliberation period
-- **Constitutional** — Changes to Layer 0 (purpose, scope, invariants) or the governance system itself; requires a Full Member Snapshot vote, supermajority (≥⅔), and a 30-day ratification period; minimum 15-day deliberation period
+- **Constitutional** — Changes to Layer 0 (purpose, scope, invariants, or identity constraints) or the governance system itself; requires a Full Member Snapshot vote, supermajority (≥⅔), and a 30-day ratification period; minimum 15-day deliberation period
 
 > If a decision cannot be clearly classified, it defaults to the higher-impact type.
 

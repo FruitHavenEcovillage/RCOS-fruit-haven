@@ -33,7 +33,7 @@ A community rarely does only one thing. Secondary purposes make space for the ot
 ## Non-Goals and Exclusions
 
 :::rationale{title="Why state what the community is not?"}
-Communities drift by accretion — one uncontested assumption at a time. Naming what the community is explicitly *not* makes boundary violations visible early, and gives anyone a clear basis to object before an activity becomes normalized. Silence here gets read as consent.
+Communities drift by accretion — one uncontested assumption at a time. Naming what the community is explicitly _not_ makes boundary violations visible early, and gives anyone a clear basis to object before an activity becomes normalized. Silence here gets read as consent.
 :::
 
 1. EcoHubs is not a political party or ideological movement.
@@ -51,24 +51,6 @@ Purpose is the one thing everything else depends on. If it were easy to change, 
 :::
 
 The primary purpose may only be changed through a Constitutional decision as defined in the Decision Matrix (Layer 2), requiring a supermajority of Full Members (≥⅔ of votes cast), followed by a ratification period of no less than 30 days. Secondary purposes may be changed through a Strategic decision. Any change must be recorded in the Version History (Layer 6).
-
-## Identity Constraints
-
-:::rcos{clauses="2.4.1, 2.4.3, 2.4.4"}
-:::
-
-:::rationale{title="Why declare identity constraints explicitly?"}
-Every community has implicit rules — "we don't do that here." Implicit rules become tools of arbitrary enforcement: whoever has social power decides what they mean. Writing identity constraints down, and requiring them to be testable through defined processes, is what turns an informal norm into something a member can actually rely on or contest.
-:::
-
-1. Members must not act in ways that concentrate power, extract value, or cause harm to people, land, or the community's governance integrity.
-2. EcoHubs may not be used as a vehicle for speculative financial gain — internal economic mechanisms exist to recognize contribution, not generate profit.
-3. No member, founder, or role may claim authority that is not explicitly granted through the governance system.
-4. EcoHubs and its communities must not cause sustained net harm to local ecosystems, land, or biodiversity — practices that degrade the conditions for life are incompatible with the primary purpose.
-5. Ecological impact must be considered in all significant resource, land, and infrastructure decisions.
-6. The structural layer of EcoHubs — its governance, membership, and operating system — must remain non-ideological and non-normative. It provides scaffolding, not a prescribed way of living.
-7. No specific belief system, spirituality, culture, or political ideology may be required as a condition of membership or participation.
-8. Diversity of approaches to regenerative living is a feature, not a problem — the structure exists to enable this diversity, not constrain it.
 
 ---
 

@@ -36,7 +36,7 @@ Not every change deserves the same friction. Typo fixes should not need a superm
 
 - **Operational:** wording corrections, formatting, and minor content updates to artifacts — no vote required; executed by Membership Admin within delegated limits
 - **Strategic:** changes to Layer 1–5 content that affect member rights, processes, or structures
-- **Constitutional:** changes to Layer 0 (purpose, scope, invariants) or to the governance system itself (Layer 2)
+- **Constitutional:** changes to Layer 0 (purpose, scope, invariants, or identity constraints) or to the governance system itself (Layer 2)
 
 > If classification is unclear, it defaults to the higher-impact type.
 

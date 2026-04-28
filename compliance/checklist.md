@@ -1,7 +1,7 @@
 # Compliance Checklist
 
 - **RCOS-Core version:** v0.1
-- **Last audited:** 2026-04-22
+- **Last audited:** 2026-04-27
 - **Audit method:** Self-audit (content definition complete; pending formal adoption)
 - **Overall status:** Pending adoption — all artifacts have substantive content; none yet formally adopted through a governance vote
 
@@ -23,18 +23,18 @@ The two bars below show content readiness and formal adoption separately.
 ### Content Coverage (spec requirements addressed in artifacts)
 
 ```
-Layer 0 — Identity & Scope        ████████████████████  98%
+Layer 0 — Identity & Scope        ███████████████████░  95%  (updated 2026-04-27)
 Layer 1 — Membership System       ██████████████████░░  92%
 Layer 2 — Governance & Logic      ████████████████████  98%
 Layer 3 — Economic & Resource     ████████████████░░░░  82%
-Layer 4 — Conflict & Repair       ███████████████████░  93%  (updated 2026-04-22)
-Layer 5 — Operations              ██████████████████░░  92%  (updated 2026-04-22)
-Layer 6 — Evolution               ████████████████████  97%  (updated 2026-04-22)
+Layer 4 — Conflict & Repair       ███████████████████░  93%
+Layer 5 — Operations              ██████████████████░░  92%
+Layer 6 — Evolution               ████████████████████  97%
 ─────────────────────────────────────────────────────────
 Overall content coverage          ████████████████████  93%
 ```
 
-> Scoring method: each normative MUST requirement in the spec counts as 1 point. Fully addressed = 1, partially addressed = 0.5, not addressed = 0. Total ~198 normative MUST requirements identified across Layers 0–6. Score: ~185/198 ≈ 93%.
+> Scoring method: each normative MUST requirement in the spec counts as 1 point. Fully addressed = 1, partially addressed = 0.5, not addressed = 0. Total ~200 normative MUST requirements identified across Layers 0–6 (updated to reflect Identity Constraints Register as a 4th Layer 0 artifact per RCOS-Core v0.1 spec 2026-04-27). Score: ~186/200 ≈ 93%. Layer 0 reduced from 98% to 95% because two ecological constraints (IC-004, IC-005) have partial enforcement (measurable threshold deferred).
 
 ### Formal Adoption (artifacts voted and adopted through Snapshot)
 
@@ -47,22 +47,23 @@ Layer 4 — Conflict & Repair       ░░░░░░░░░░░░░░�
 Layer 5 — Operations              ░░░░░░░░░░░░░░░░░░░░   0%
 Layer 6 — Evolution               ░░░░░░░░░░░░░░░░░░░░   0%
 ─────────────────────────────────────────────────────────
-Overall formal adoption           ░░░░░░░░░░░░░░░░░░░░   0%  (19 artifacts pending)
+Overall formal adoption           ░░░░░░░░░░░░░░░░░░░░   0%  (20 artifacts pending)
 ```
 
-> Once all 19 artifacts are adopted through Snapshot votes, formal adoption reaches 100% and EcoHubs becomes RCOS-Core compliant (subject to any remaining content gaps being resolved first).
+> Once all 20 artifacts are adopted through Snapshot votes, formal adoption reaches 100% and EcoHubs becomes RCOS-Core compliant (subject to any remaining content gaps being resolved first).
 
 ---
 
 ## Layer 0 — Identity & Scope
 
-**Layer compliance:** Pending adoption — content complete
+**Layer compliance:** Pending adoption — content complete; ecological constraint enforcement partially deferred
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Purpose Charter | [layers/0-identity/01-purpose-charter.md](../layers/0-identity/01-purpose-charter.md) | Draft | Content complete; not yet adopted |
+| Purpose Charter | [layers/0-identity/01-purpose-charter.md](../layers/0-identity/01-purpose-charter.md) | Draft | Content complete; Identity Constraints section replaced with cross-reference to dedicated register |
 | Scope Declaration | [layers/0-identity/02-scope-declaration.md](../layers/0-identity/02-scope-declaration.md) | Draft | Content complete; not yet adopted |
 | Invariants Register | [layers/0-identity/03-invariants-register.md](../layers/0-identity/03-invariants-register.md) | Draft | Content complete; not yet adopted |
+| Identity Constraints Register | [layers/0-identity/04-identity-constraints-register.md](../layers/0-identity/04-identity-constraints-register.md) | Draft | Content complete; IC-001–003, IC-006–008 fully enforceable; IC-004–005 (ecological) have partial enforcement — measurable threshold deferred |
 
 ---
 
@@ -163,7 +164,7 @@ These are genuine gaps that require more design work or governance decisions to 
 
 | Ref | Requirement | Status | Notes |
 |---|---|---|---|
-| §2.4.3 | Identity constraints MUST be testable and enforceable through defined processes | **Partial** | Behavioral and governance constraints (constraints 1–3) are enforceable via Layer 4. Ecological constraints (4–5) are stated as design principles but do not have a defined enforcement mechanism for the network community context. Enforcement would require defining what "sustained net harm to ecosystems" means in measurable terms. | 
+| §2.4.3 | Identity constraints MUST be testable and enforceable through defined processes | **Partial** | Identity Constraints Register (IC-001 through IC-008) created 2026-04-27. IC-001–003 and IC-006–008 have defined enforcement pathways via Layer 4 and Layer 2. IC-004–005 (ecological constraints) have behavioral/process enforcement but lack measurable thresholds — "sustained net harm" and "significant decision" are not yet defined in measurable terms for the networked community context. Threshold definition deferred — see [future-proposals.md](../resources/future-proposals.md) | 
 | §3.5.3 | Substitution of participation (e.g., outsourcing labor) MUST be explicitly governed | **Not addressed** | The Membership Agreement defines participation expectations and contribution categories but does not address whether a member may have others perform their contributions on their behalf. **REQUIRED.** Add a clause to the Membership Agreement or Internal Economy Protocol. |
 | §5.1.4 | For commons resources, MUST explicitly define stewardship responsibilities, maintenance obligations, and funding mechanisms | **Partial** | The IEP resource table lists stewards and access rules. Maintenance obligations are implied (Infrastructure Steward for platforms) but not explicit per-resource. Funding mechanisms (operational costs) are covered in the Treasury Ruleset. Add a "Maintenance obligations" column or sub-note to the IEP resource table. |
 | §5.4.4 | MUST define reviewable indicators of economic concentration risk and an explicit mechanism to adjust constraints when such risks are detected | **Not addressed** | No concentration risk indicators defined. Given current early stage (one member, no significant balances), this is low-risk but still a MUST requirement. **REQUIRED.** Define simple indicators (e.g., if one member holds >50% of total ECO balance, a review is triggered) and a review/adjustment pathway. |
@@ -194,7 +195,7 @@ All artifacts have substantive content. To achieve full compliance, each artifac
 - §3.5.3 — Substitution of participation rule (Membership Agreement or IEP)
 - §5.1.4 — Per-commons maintenance obligations (IEP resource table)
 - §5.4.4 — Economic concentration risk indicators (IEP)
-- §2.4.3 — Ecological identity constraint enforcement mechanism (Purpose Charter or separate protocol)
+- §2.4.3 — Ecological identity constraint measurable thresholds (IC-004/IC-005 in Identity Constraints Register — behavioral enforcement exists; numerical definition deferred)
 
 **Open technical gaps** (required for full operational compliance — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md)):
 - Member exit flow in ecohubsOS

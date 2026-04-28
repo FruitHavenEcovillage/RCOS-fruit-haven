@@ -10,7 +10,7 @@ This repository contains the formal RCOS (Regenerative Community Operating Syste
 ├── README.md                          # This file
 │
 ├── layers/                            # All RCOS artifacts — one folder per layer
-│   ├── 0-identity/                    # Layer 0: Purpose, Scope, Invariants
+│   ├── 0-identity/                    # Layer 0: Purpose, Scope, Invariants, Identity Constraints
 │   ├── 1-membership/                  # Layer 1: Membership states, onboarding, exit
 │   ├── 2-governance/                  # Layer 2: Decision matrix, governance protocol, authority
 │   ├── 3-economy/                     # Layer 3: Internal economy, treasury
@@ -55,6 +55,7 @@ Reference specification: [`resources/RCOS_v01:reduced.md`](resources/RCOS_v01:re
 | 0 | Purpose Charter | [layers/0-identity/01-purpose-charter.md](layers/0-identity/01-purpose-charter.md) |
 | 0 | Scope Declaration | [layers/0-identity/02-scope-declaration.md](layers/0-identity/02-scope-declaration.md) |
 | 0 | Invariants Register | [layers/0-identity/03-invariants-register.md](layers/0-identity/03-invariants-register.md) |
+| 0 | Identity Constraints Register | [layers/0-identity/04-identity-constraints-register.md](layers/0-identity/04-identity-constraints-register.md) |
 | 1 | Membership Agreement | [layers/1-membership/01-membership-agreement.md](layers/1-membership/01-membership-agreement.md) |
 | 1 | Onboarding Protocol | [layers/1-membership/02-onboarding-protocol.md](layers/1-membership/02-onboarding-protocol.md) |
 | 1 | Exit & Separation Protocol | [layers/1-membership/03-exit-separation-protocol.md](layers/1-membership/03-exit-separation-protocol.md) |
