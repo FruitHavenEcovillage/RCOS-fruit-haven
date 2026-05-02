@@ -34,7 +34,7 @@ Removal is the sharpest power the community holds over a person. If it can be ex
 - Forced exit may only result from a concluded Layer 4 accountability process with a documented decision
 - The affected member must be notified in writing with the reason and decision record reference before access is revoked
 - Access is revoked within 24 hours of the decision being finalised
-- Accounts on platforms related to ecohubsOS (Discord, Snapshot, Notion, Puckstack, etc.) may be deleted or blocked depending on the severity of the decision and platform capabilities
+- Accounts on platforms related to ecohubsOS (Discord, Notion, Puckstack, etc.) may be deleted or blocked depending on the severity of the decision and platform capabilities
 - Contribution history and XP are retained
 - Membership state transitions to Exited Member
 - The member may not reapply for a period defined in the accountability decision (minimum 6 months)
@@ -65,7 +65,7 @@ The following separation steps apply to both voluntary and forced exits:
 - Any roles held must be vacated and documented in the Role Registry
 - Ongoing tasks claimed in Puckstack must be released or handed over
 - Safe wallet co-signer or Proposer status must be removed
-- All administrative access to platforms (ecohubsOS, Discord, social media, Snapshot, Notion, Puckstack, etc.) must be revoked
+- All administrative access to platforms (ecohubsOS, Discord, social media, Notion, Puckstack, etc.) must be revoked
 - Outstanding obligations (incomplete tasks, financial commitments) must be resolved or transferred before exit is finalised where possible
 
 ---

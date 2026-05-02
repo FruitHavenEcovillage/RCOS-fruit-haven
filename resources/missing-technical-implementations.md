@@ -7,12 +7,12 @@ Features and flows required for full RCOS compliance that are not yet implemente
 
 ---
 
-## 8. Snapshot proposal template
+## 8. Proposal template (ecohubsOS voting app)
 
 **Required by:** Layer 2 — Governance Protocol (Proposal Submission)  
 **Priority:** High
 
-A predefined proposal template must be created in the EcoHubs Snapshot space so all Strategic and Constitutional proposals follow a consistent, auditable format. The template must include fields for:
+A predefined proposal template must be available in the ecohubsOS voting app so all Strategic and Constitutional proposals follow a consistent, auditable format. The template must include fields for:
 - Summary of the change
 - Affected layers and artifacts (with links to this repository)
 - Decision type (Strategic / Constitutional)
@@ -80,7 +80,7 @@ The following automated emails must be sent during the onboarding window:
 **Required by:** Layer 1 — Onboarding Protocol (Admission Criteria, Trial and Evaluation)  
 **Priority:** High
 
-Members who are rejected via Snapshot vote or exited due to incomplete onboarding must be blocked from re-applying for 6 months. Required:
+Members who are rejected via an ecohubsOS vote or exited due to incomplete onboarding must be blocked from re-applying for 6 months. Required:
 - Record rejection/exit date and reason in ecohubsOS
 - Block re-submission of application form for 6 months from that date
 - Display a clear message if a blocked applicant attempts to re-apply

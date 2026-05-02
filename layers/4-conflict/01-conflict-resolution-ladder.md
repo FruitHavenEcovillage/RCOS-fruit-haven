@@ -43,7 +43,7 @@ Most conflict is low-stakes and best resolved between the people involved; forci
 
 4. **Accountability review** — Structured review led by Facilitator. Both parties have a full opportunity to present their position. Facilitator issues a written recommendation. Confidential. 21-day window. If all parties accept: outcome implemented and record kept. If not accepted or forced exit is required: move to Step 5.
 
-5. **Governance decision** — Minimum necessary information is disclosed to Full Members; parties are notified before disclosure. Full Members deliberate (minimum 5 days) and vote via Snapshot. Strategic decision threshold.
+5. **Governance decision** — Minimum necessary information is disclosed to Full Members; parties are notified before disclosure. Full Members deliberate (minimum 5 days) and vote in the ecohubsOS voting app. Strategic decision threshold.
 
 6. **Separation process** — If Full Members vote for forced exit: coordinated with the Exit & Separation Protocol (Layer 1). Minimum 6-month re-application block applies.
 

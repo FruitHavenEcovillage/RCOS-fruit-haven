@@ -19,7 +19,7 @@ If a process only lives in one person's head, the community depends on that pers
 |---|---|---|
 | Member onboarding | Membership Admin | Processes application, triggers trial period, monitors 30-day window, grants Full Member status on completion — see Onboarding Protocol (Layer 1) |
 | Member exit | Membership Admin | Processes voluntary exit request or forced exit per Layer 4 outcome — see Exit & Separation Protocol (Layer 1) |
-| Proposal publication | Proposing member + Membership Admin | Proposing member submits to Snapshot; Membership Admin adds proposal file to `proposals/passed/` or `proposals/rejected/` within 7 days of vote conclusion; affected artifacts updated within 7 days — see Governance Protocol (Layer 2) |
+| Proposal publication | Proposing member + Membership Admin | Proposing member submits the proposal in the ecohubsOS voting app; Membership Admin adds proposal file to `proposals/passed/` or `proposals/rejected/` within 7 days of vote conclusion; affected artifacts updated within 7 days — see Governance Protocol (Layer 2) |
 | Contribution recording | Member (self-reported) / Puckstack (automatic) | Structured contributions credited automatically via Puckstack/Offcoin; informal contributions self-reported in ecohubsOS — see Internal Economy Protocol (Layer 3) |
 | Weekly meeting | Facilitator | Publishes agenda in Discord ≥24 hours in advance; posts meeting notes in Discord after the meeting; action items tracked until resolved |
 | Treasury management | Finance Steward | Ensures all Full Members have Safe Proposer access; publishes fiat account summaries at least every 6 months if the account does not support direct member access — see Treasury Ruleset (Layer 3) |

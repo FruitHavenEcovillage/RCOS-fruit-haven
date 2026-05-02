@@ -31,11 +31,10 @@ Consent to governance only means something if the member has actually seen the g
 
 1. _Review all Layer 0–6 artifacts and this onboarding protocol (link provided in ecohubsOS)_
 2. _Explicitly consent to the Membership Agreement and Layer 0 identity constraints (in-app consent)_
-3. _Set up MetaMask wallet (required for governance participation)_
-4. _Link Offcoin/Puckstack account (contribution tracking and task management)_
-5. _Join Discord via ecohubsOS invite displayed in onboarding (unlocks member-only channels and speaking rights in meetings)_
-6. _Be added as Proposer on the Safe multi-sig wallet (required for Snapshot voting)_
-7. _Onboarding completion recorded in ecohubsOS — membership state transitions to Full Member_
+3. _Link Offcoin/Puckstack account (contribution tracking and task management)_
+4. _Join Discord via ecohubsOS invite displayed in onboarding (unlocks member-only channels and speaking rights in meetings)_
+5. _Optionally set up MetaMask wallet and request Safe Proposer status (required only for treasury / on-chain governance — voting itself happens inside ecohubsOS and does not require a wallet)_
+6. _Onboarding completion recorded in ecohubsOS — membership state transitions to Full Member_
 
 ## Initial Membership State
 

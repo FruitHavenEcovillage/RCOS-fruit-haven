@@ -5,7 +5,7 @@
 - **RCOS reference:** §7.2, §7.6
 
 :::rationale{title="Why a weekly Operations meeting?"}
-Day-to-day coordination needs a regular beat, not ad-hoc improvisation. The Operations meeting is the community's heartbeat — a predictable space to review active work, surface blockers, and make the small decisions that keep things moving. Crucially, only Operational decisions happen here; Strategic and Constitutional ones go through Snapshot, so the meeting can't quietly accumulate authority it doesn't have.
+Day-to-day coordination needs a regular beat, not ad-hoc improvisation. The Operations meeting is the community's heartbeat — a predictable space to review active work, surface blockers, and make the small decisions that keep things moving. Crucially, only Operational decisions happen here; Strategic and Constitutional ones go through the ecohubsOS voting app, so the meeting can't quietly accumulate authority it doesn't have.
 :::
 
 ---

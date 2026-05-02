@@ -15,7 +15,7 @@
 A change that arrives as a vague idea in chat cannot be evaluated, challenged, or rolled back later. Forcing every proposal through the same minimum shape — affected artifacts, rationale, risks, rollback — turns an opinion into a reviewable artifact and makes it impossible to slip a rule change past the community by accident.
 :::
 
-Any Full Member may propose a change to any RCOS artifact. Proposals are submitted via Snapshot first (per the Governance Protocol, Layer 2) — not as repository PRs. After the vote concludes, the Membership Admin adds the proposal file to the repository. Every proposal must include:
+Any Full Member may propose a change to any RCOS artifact. Proposals are submitted via the ecohubsOS voting app first (per the Governance Protocol, Layer 2) — not as repository PRs. After the vote concludes, the Membership Admin adds the proposal file to the repository. Every proposal must include:
 
 - Summary of the change
 - Affected layers and artifacts (with links)
