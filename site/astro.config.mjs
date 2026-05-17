@@ -8,7 +8,7 @@ import remarkRcosDirectives from './src/lib/remark-rcos-directives';
 import rehypeTableWrap from './src/lib/rehype-table-wrap';
 
 export default defineConfig({
-  site: 'https://Fruit Haven.example',
+  site: 'https://fruithaven.example',
   integrations: [svelte(), mdx()],
   markdown: {
     remarkPlugins: [remarkStripFirstH1, remarkDirective, remarkRcosDirectives],
