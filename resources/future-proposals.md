@@ -57,7 +57,7 @@ Governance and design decisions that are deferred — either because they depend
 
 ### Suspended Member State
 
-**Deferred until:** ecohubsOS supports differentiated access control  
+**Deferred until:** Fruit Haven supports differentiated access control  
 **Required by:** §3.7 (MAY) — temporary suspension states are optional under RCOS  
 **What to define:** Formal suspension state with time bounds and review process; access limitations during suspension; distinction from temporary access restriction (Layer 4 measure)  
 **RCOS requirement:** OPTIONAL — §3.7 says "MAY define"  
@@ -74,5 +74,5 @@ Governance and design decisions that are deferred — either because they depend
 
 **Deferred until:** First community partners or pilot projects engaged  
 **Required by:** §2.4.3 — identity constraints MUST be testable and enforceable through defined processes  
-**What to define:** Measurable criteria for what constitutes "sustained net harm to local ecosystems"; enforcement pathway for the EcoHubs network context (as a steward of the standard, not an operator of physical land); how the Layer 4 accountability process would handle an ecological harm concern  
+**What to define:** Measurable criteria for what constitutes "sustained net harm to local ecosystems"; enforcement pathway for the Fruit Haven network context (as a steward of the standard, not an operator of physical land); how the Layer 4 accountability process would handle an ecological harm concern  
 **RCOS requirement:** REQUIRED (partially addressed — behavioral constraints enforced via Layer 4; ecological constraints lack a defined enforcement mechanism)

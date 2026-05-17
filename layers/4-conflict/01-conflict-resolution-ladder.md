@@ -43,9 +43,21 @@ Most conflict is low-stakes and best resolved between the people involved; forci
 
 4. **Accountability review** — Structured review led by Facilitator. Both parties have a full opportunity to present their position. Facilitator issues a written recommendation. Confidential. 21-day window. If all parties accept: outcome implemented and record kept. If not accepted or forced exit is required: move to Step 5.
 
-5. **Governance decision** — Minimum necessary information is disclosed to Full Members; parties are notified before disclosure. Full Members deliberate (minimum 5 days) and vote in the ecohubsOS voting app. Strategic decision threshold.
+5. **Governance decision** — Minimum necessary information is disclosed to Full Members; parties are notified before disclosure. Full Members deliberate (minimum 5 days) and vote in the Fruit Haven voting app. Strategic decision threshold.
 
 6. **Separation process** — If Full Members vote for forced exit: coordinated with the Exit & Separation Protocol (Layer 1). Minimum 6-month re-application block applies.
+
+## Emergency Safety Protocol
+
+If a credible threat of immediate physical harm, violence, coercion, or abuse exists, Facilitators or Membership Admins may take immediate temporary protective action outside the standard Resolution Ladder.
+
+Such actions may include temporary suspension of participation, separation measures, no-contact requirements, removal from community spaces, or contacting emergency services where necessary.
+
+A written incident record must be created within 24 hours.
+
+Once immediate risk is stabilized, the matter proceeds through the Accountability Review process (Step 4), Governance Decision (Step 5), Separation Process (Step 6), or external legal processes as appropriate.
+
+Emergency measures are precautionary and do not by themselves constitute a final determination of wrongdoing.
 
 ## Non-Response, Withdrawal, and Deadlock
 

@@ -15,7 +15,7 @@
 Without an explicit boundary, any money flowing near the community — a founder's personal card, a side account, an informal reimbursement pool — can drift into being treated as community money, with all the obligations that entails. Naming exactly which accounts are treasury and which are not protects both the community and the individuals paying out of pocket.
 :::
 
-The shared treasury consists of all funds held in the Safe multi-sig wallet and any additional accounts explicitly declared as community treasury accounts via Strategic decision (e.g. a fiat bank account for grant receipt). Only funds explicitly received in the name of EcoHubs and deposited into a declared treasury account are community funds. Operational costs currently covered personally by the founding member are not treasury funds and carry no community obligation or repayment claim.
+The shared treasury consists of all funds held in the Safe multi-sig wallet and any additional accounts explicitly declared as community treasury accounts via Strategic decision (e.g. a fiat bank account for grant receipt). Only funds explicitly received in the name of Fruit Haven and deposited into a declared treasury account are community funds. Operational costs currently covered personally by the founding member are not treasury funds and carry no community obligation or repayment claim.
 
 > Any new treasury account (fiat or otherwise) must be declared and approved via a Strategic decision before funds are received into it.
 
@@ -44,8 +44,8 @@ When spending authority is vague, two failure modes appear: either every small d
 | Amount | Decision Type | Authorized Body | Mechanism |
 |---:|---|---|---|
 | Up to delegated limit (currently €0) | Operational | Finance Steward | Delegated — not currently active |
-| Any amount above delegated limit | Strategic | Full Members | ecohubsOS vote |
-| Multi-year contracts, debt, or structural financial obligations | Constitutional | Full Members | ecohubsOS vote + supermajority + 30-day ratification |
+| Any amount above delegated limit | Strategic | Full Members | Fruit Haven vote |
+| Multi-year contracts, debt, or structural financial obligations | Constitutional | Full Members | Fruit Haven vote + supermajority + 30-day ratification |
 
 > Spending thresholds will be defined via a future Strategic proposal once community funds exist. See [Future Proposals](../../resources/future-proposals.md).
 
@@ -62,7 +62,7 @@ Opacity in a treasury compounds: one missing disclosure invites another, and bef
 
 **Fiat or other declared accounts:** If the account supports multi-user read access, Full Members must be granted it. If not, Finance Steward publishes a balance and transaction summary to Full Members at least every 6 months.
 
-All spending decisions must reference the linked governance record (ecohubsOS vote or delegated decision log).
+All spending decisions must reference the linked governance record (Fruit Haven vote or delegated decision log).
 
 ## Reserve, Risk, and Debt Constraints
 

@@ -1,6 +1,6 @@
 # Missing Technical Implementations
 
-Features and flows required for full RCOS compliance that are not yet implemented in ecohubsOS or related platforms. Each item references the artifact that requires it.
+Features and flows required for full RCOS compliance that are not yet implemented in Fruit Haven or related platforms. Each item references the artifact that requires it.
 
 ---
 
@@ -24,7 +24,7 @@ This is a design decision before a technical one — open a governance proposal 
 **Required by:** Layer 2 — Governance Protocol (Proposal Submission)
 **Priority:** High
 
-A predefined proposal template must be created in the EcoHubs Snapshot space so all Strategic and Constitutional proposals follow a consistent, auditable format. The template must include fields for:
+A predefined proposal template must be created in the Fruit Haven Snapshot space so all Strategic and Constitutional proposals follow a consistent, auditable format. The template must include fields for:
 - Summary of the change
 - Affected layers and artifacts (with links to this repository)
 - Decision type (Strategic / Constitutional)
@@ -35,12 +35,12 @@ A predefined proposal template must be created in the EcoHubs Snapshot space so 
 
 ---
 
-## 7. Voluntary exit request flow in ecohubsOS
+## 7. Voluntary exit request flow in Fruit Haven
 
 **Required by:** Layer 1 — Exit & Separation Protocol (Voluntary Exit)
 **Priority:** High
 
-A self-service exit flow must be available to members in ecohubsOS:
+A self-service exit flow must be available to members in Fruit Haven:
 - Exit request form with an optional reason field
 - A message asking the member to consider doing a handover if they hold any roles
 - On submission: notify admin via email with member name, reason (if provided), and any roles held
@@ -49,7 +49,7 @@ A self-service exit flow must be available to members in ecohubsOS:
 
 ---
 
-## 1. Member exit flow in ecohubsOS
+## 1. Member exit flow in Fruit Haven
 
 **Required by:** Layer 1 — Exit & Separation Protocol, Membership State Registry  
 **Priority:** High
@@ -58,7 +58,7 @@ A formal offboarding workflow does not currently exist. Required functionality:
 - Trigger exit for a member (voluntary or forced via Layer 4)
 - Transition membership state from Full Member → Exited Member in the registry
 - Revoke access to member-only Discord channels and calls
-- Revoke access to ecohubsOS member features (retain profile and contribution history)
+- Revoke access to Fruit Haven member features (retain profile and contribution history)
 - Block or remove member from platform-specific tools (Discord, forum via SSO, Safe) depending on what each platform supports
 - Send exit confirmation to the member
 
@@ -69,7 +69,7 @@ A formal offboarding workflow does not currently exist. Required functionality:
 **Required by:** Layer 1 — Onboarding Protocol (Step 1)  
 **Priority:** High
 
-The onboarding flow in ecohubsOS must include direct links to all Layer 0–6 artifacts so members can review them before consenting. Currently no such links exist in the onboarding UI.
+The onboarding flow in Fruit Haven must include direct links to all Layer 0–6 artifacts so members can review them before consenting. Currently no such links exist in the onboarding UI.
 
 Required: add links to the RCOS artifact repository (this repo) at the start of the onboarding flow, with a checklist confirming the member has reviewed them.
 
@@ -93,13 +93,13 @@ The following automated emails must be sent during the onboarding window:
 **Priority:** High
 
 Members who are rejected via Snapshot vote or exited due to incomplete onboarding must be blocked from re-applying for 6 months. Required:
-- Record rejection/exit date and reason in ecohubsOS
+- Record rejection/exit date and reason in Fruit Haven
 - Block re-submission of application form for 6 months from that date
 - Display a clear message if a blocked applicant attempts to re-apply
 
 ---
 
-## 6. Onboarding expiry actions in ecohubsOS admin panel
+## 6. Onboarding expiry actions in Fruit Haven admin panel
 
 **Required by:** Layer 1 — Onboarding Protocol (Trial and Evaluation)
 **Priority:** High
@@ -119,4 +119,4 @@ The onboarding flow must include an explicit, recorded consent step where the me
 - The Membership Agreement (Layer 1)
 - The Layer 0 identity constraints and invariants
 
-Currently there is no consent gate in the ecohubsOS onboarding UI. Required: a consent checkbox or confirmation step with a timestamp, linked to the specific artifact versions in force at the time of onboarding.
+Currently there is no consent gate in the Fruit Haven onboarding UI. Required: a consent checkbox or confirmation step with a timestamp, linked to the specific artifact versions in force at the time of onboarding.

@@ -19,9 +19,9 @@ Unclassified resources are where quiet privatization happens — someone starts 
 | ------------------------------------------------- | -------------- | ---------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | RCOS specification and artifacts (this repo)      | Commons        | Blueprint Steward                              | Public read; Full Members write via governance process                      | Cannot be privatised; forks permitted                        |
 | Shared treasury (Safe multi-sig)                  | Commons        | Finance Steward                                | Transparent to all Full Members (real-time via Safe)                        | Governed by Treasury Ruleset                                 |
-| ecohubsOS (os.ecohubs.community)                  | Commons        | Infrastructure Steward                         | Full Members; public-facing features open                                   | Cannot be sold or privatised without Constitutional decision |
-| EcoHubs website (ecohubs.community)               | Commons        | Infrastructure Steward                         | Public read; Infrastructure Steward and Communications Steward write        | Cannot be sold without Constitutional decision               |
-| RCOS hosted website (blueprint.ecohubs.community) | Commons        | Infrastructure Steward / Blueprint Steward     | Public read; Blueprint Steward writes; Infrastructure Steward manages       | Cannot be sold without Constitutional decision               |
+| Fruit Haven (fruithaven.land)                  | Commons        | Infrastructure Steward                         | Full Members; public-facing features open                                   | Cannot be sold or privatised without Constitutional decision |
+| Fruit Haven website (fruithaven.land)               | Commons        | Infrastructure Steward                         | Public read; Infrastructure Steward and Communications Steward write        | Cannot be sold without Constitutional decision               |
+| RCOS hosted website (blueprint.fruithaven.land) | Commons        | Infrastructure Steward / Blueprint Steward     | Public read; Blueprint Steward writes; Infrastructure Steward manages       | Cannot be sold without Constitutional decision               |
 | Brand, domain names, social media accounts        | Commons        | Communications Steward                         | Communications Steward manages; Full Members may contribute via defined process | Cannot be transferred without Constitutional decision     |
 
 > Any unclassified resource must not be allocated, encumbered, monetized, or transferred until classification is completed.
@@ -38,7 +38,7 @@ If the community never says out loud which kinds of work it depends on, the invi
 | Category                      | Examples                                                                                                                                                                                  |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Knowledge & Research**      | Writing RCOS artifacts, research into community models, documentation, translation                                                                                                        |
-| **Technical Development**     | ecohubsOS development, website development, tooling, infrastructure maintenance                                                                                                           |
+| **Technical Development**     | Fruit Haven development, website development, tooling, infrastructure maintenance                                                                                                           |
 | **Governance & Coordination** | Facilitating and organizing internal meetings, reviewing proposals, onboarding new members, running votes, member coordination (helping members find tasks they'd like to participate in) |
 | **Community Building**        | Outreach, welcoming new members, moderating channels, hosting public calls, facilitating meetings to support other communities in applying RCOS                                           |
 | **Creative & Communication**  | Content creation, social media, design, writing for public channels                                                                                                                       |
@@ -58,7 +58,7 @@ Without a defined mechanism, "who gets credit" becomes a matter of who is loudes
 - **What qualifies:** Any activity falling into one of the recognized categories above; informal participation counts at the member's own declaration
 - **How contributions are recorded:**
   - Structured: automatically via Puckstack task completion → XP/ECO credited via Offcoin
-  - Informal/other: self-reported by the member in ecohubsOS or Discord; no validation required for informal participation
+  - Informal/other: self-reported by the member in Fruit Haven or Discord; no validation required for informal participation
 - **Who validates:** Structured contributions validated automatically by Puckstack/Offcoin; significant contributions (e.g. major artifacts, facilitation work) may be nominated by any member for additional XP via the Membership Admin
 - **Effect on access/privileges:** Contribution recognition affects XP and ECO balance only — it does not grant additional governance rights beyond what the membership state defines
 - **Dispute:** Any member may contest a contribution record within 30 days; disputes resolved by Membership Admin with right of appeal to Full Members
@@ -72,7 +72,7 @@ Without a defined mechanism, "who gets credit" becomes a matter of who is loudes
 Internal units tend to grow powers no one voted for — decay, caps, transferability, governance weight — unless each property is nailed down in writing. Listing issuance, transfer rules, privacy, and explicit non-governance status makes the units tools of recognition rather than quiet shadow currencies.
 :::
 
-Two internal units are in use: **XP** (experience points) and **ECO** (community currency). Both are tracked via Offcoin / ecohubsOS.
+Two internal units are in use: **XP** (experience points) and **ECO** (community currency). Both are tracked via Offcoin / Fruit Haven.
 
 | Property | XP | ECO |
 |---|---|---|
@@ -83,7 +83,7 @@ Two internal units are in use: **XP** (experience points) and **ECO** (community
 | **Hard cap** | None currently | None currently |
 | **Future utility** | N/A | TBD — further utility to be defined via future proposals |
 | **Fraud prevention** | Self-reported contributions subject to community review; dispute mechanism as defined in Contribution Recognition Mechanism | Same as XP |
-| **Privacy** | Balances visible to all Full Members in ecohubsOS | Balances visible to all Full Members in ecohubsOS |
+| **Privacy** | Balances visible to all Full Members in Fruit Haven | Balances visible to all Full Members in Fruit Haven |
 
 > ECO and XP do not grant governance rights beyond what the membership state defines (see §5.2.5).
 

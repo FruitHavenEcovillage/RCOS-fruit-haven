@@ -19,8 +19,8 @@ If a process only lives in one person's head, the community depends on that pers
 |---|---|---|
 | Member onboarding | Membership Admin | Processes application, triggers trial period, monitors 30-day window, grants Full Member status on completion — see Onboarding Protocol (Layer 1) |
 | Member exit | Membership Admin | Processes voluntary exit request or forced exit per Layer 4 outcome — see Exit & Separation Protocol (Layer 1) |
-| Proposal publication | Proposing member + Membership Admin | Proposing member submits the proposal in the ecohubsOS voting app; Membership Admin adds proposal file to `proposals/passed/` or `proposals/rejected/` within 7 days of vote conclusion; affected artifacts updated within 7 days — see Governance Protocol (Layer 2) |
-| Contribution recording | Member (self-reported) / Puckstack (automatic) | Structured contributions credited automatically via Puckstack/Offcoin; informal contributions self-reported in ecohubsOS — see Internal Economy Protocol (Layer 3) |
+| Proposal publication | Proposing member + Membership Admin | Proposing member submits the proposal in the Fruit Haven voting app; Membership Admin adds proposal file to `proposals/passed/` or `proposals/rejected/` within 7 days of vote conclusion; affected artifacts updated within 7 days — see Governance Protocol (Layer 2) |
+| Contribution recording | Member (self-reported) / Puckstack (automatic) | Structured contributions credited automatically via Puckstack/Offcoin; informal contributions self-reported in Fruit Haven — see Internal Economy Protocol (Layer 3) |
 | Weekly meeting | Facilitator | Publishes agenda in Discord ≥24 hours in advance; posts meeting notes in Discord after the meeting; action items tracked until resolved |
 | Treasury management | Finance Steward | Ensures all Full Members have Safe Proposer access; publishes fiat account summaries at least every 6 months if the account does not support direct member access — see Treasury Ruleset (Layer 3) |
 | Platform access review | Infrastructure Steward | Reviews platform permissions quarterly; revokes access for exited members within 24 hours |
@@ -100,8 +100,8 @@ Whoever controls access to information controls the community, whether they mean
 
 - All governance decisions (passed and rejected proposals) are filed in this repository and are accessible to all Full Members
 - Meeting notes are published in Discord within 48 hours of each meeting and are accessible to all Full Members
-- Membership state and role assignment information is maintained in ecohubsOS and accessible to all Full Members (individual states visible to the member and Membership Admin; aggregate member list visible to all Full Members)
-- Contribution records are accessible in ecohubsOS to all Full Members
+- Membership state and role assignment information is maintained in Fruit Haven and accessible to all Full Members (individual states visible to the member and Membership Admin; aggregate member list visible to all Full Members)
+- Contribution records are accessible in Fruit Haven to all Full Members
 - Any Full Member may request access to any document they are entitled to see under the access rules in this manual; requests must be responded to within 72 hours
 - If a role holder controls access to information that other members are entitled to receive, they may not withhold or delay it; doing so is an accountability trigger under Layer 4
 - No role or individual may be the sole point of access for information required by other role holders to perform their responsibilities
@@ -120,11 +120,11 @@ If no one can say where the canonical version of something lives, there is no ca
 | Document type | Location | Owner | Review cadence |
 |---|---|---|---|
 | RCOS artifacts | `layers/` in this repo | Blueprint Steward / Membership Admin | Per change protocol (Layer 6) |
-| Member registry | ecohubsOS | Membership Admin | Ongoing |
+| Member registry | Fruit Haven | Membership Admin | Ongoing |
 | Meeting notes | Discord (dedicated channel) | Facilitator | After each meeting |
 | Governance proposals (passed) | `proposals/passed/` in this repo | Membership Admin | Within 7 days of vote |
 | Governance proposals (rejected) | `proposals/rejected/` in this repo | Membership Admin | Within 7 days of vote |
-| Contribution records | ecohubsOS / Offcoin | Member (self-reported) / Puckstack (auto) | Ongoing |
+| Contribution records | Fruit Haven / Offcoin | Member (self-reported) / Puckstack (auto) | Ongoing |
 | Missing technical implementations | `resources/missing-technical-implementations.md` | Infrastructure Steward / Digital Builder | Quarterly |
 | Future proposals | `resources/future-proposals.md` | Blueprint Steward / Membership Admin | As needed |
 

@@ -1,14 +1,14 @@
-# EcoHubs Community Overview
+# Fruit Haven Community Overview
 
-> Context document for RCOS application — describes EcoHubs as it currently operates across the dimensions that RCOS addresses.
+> Context document for RCOS application — describes Fruit Haven as it currently operates across the dimensions that RCOS addresses.
 
 ---
 
-## What EcoHubs Is
+## What Fruit Haven Is
 
-EcoHubs is an **online-first collaborative community** building an open-source blueprint for regenerative intentional communities. It is not currently a single physical community — it is a distributed network of people co-designing the structural foundations that make community living survivable and replicable.
+Fruit Haven is an **online-first collaborative community** building an open-source blueprint for regenerative intentional communities. It is not currently a single physical community — it is a distributed network of people co-designing the structural foundations that make community living survivable and replicable.
 
-Its primary deliverable is **RCOS (Regenerative Community Operating System)**, a formal, layered specification that EcoHubs is developing and testing through real community practice. EcoHubs is simultaneously the community _producing_ RCOS and an early-stage community _applying_ it.
+Its primary deliverable is **RCOS (Regenerative Community Operating System)**, a formal, layered specification that Fruit Haven is developing and testing through real community practice. Fruit Haven is simultaneously the community _producing_ RCOS and an early-stage community _applying_ it.
 
 The initiative operates across two planes:
 
@@ -19,15 +19,15 @@ The initiative operates across two planes:
 
 ## Origin and Mission
 
-EcoHubs emerged from research into why intentional communities fail. The working finding: **80–90% of intentional communities collapse**, and almost never because of bad intentions. They fail because of implicit structure — unwritten norms enforced as rules, invisible labor, charisma-based authority, and conflicts avoided until they become existential.
+Fruit Haven emerged from research into why intentional communities fail. The working finding: **80–90% of intentional communities collapse**, and almost never because of bad intentions. They fail because of implicit structure — unwritten norms enforced as rules, invisible labor, charisma-based authority, and conflicts avoided until they become existential.
 
 The response was not to build one more community with good values, but to **build the structural layer** that any regenerative community needs regardless of its values: a formal, versioned, auditable operating system.
 
-EcoHubs' stated mission:
+Fruit Haven' stated mission:
 
 > To provide a working model for belonging — tested in real conditions and shared openly so others don't have to start from zero.
 
-This positions EcoHubs as both a **community** and a **commons** — a shared infrastructure project that any future regenerative community can fork, adapt, and contribute back to.
+This positions Fruit Haven as both a **community** and a **commons** — a shared infrastructure project that any future regenerative community can fork, adapt, and contribute back to.
 
 ### Core Claims
 
@@ -62,7 +62,7 @@ As of early 2026:
 
 ## Values and Principles
 
-EcoHubs is deliberately non-ideological at the structural level — it does not prescribe a political, spiritual, or cultural system. Its values operate as **design constraints**, not beliefs.
+Fruit Haven is deliberately non-ideological at the structural level — it does not prescribe a political, spiritual, or cultural system. Its values operate as **design constraints**, not beliefs.
 
 ### Foundational Values
 
@@ -73,7 +73,7 @@ EcoHubs is deliberately non-ideological at the structural level — it does not 
 - **Lived experience over theory**
 - **Curiosity over certainty**
 
-### What EcoHubs Rejects
+### What Fruit Haven Rejects
 
 - Extractive economics
 - Rigid hierarchies
@@ -83,9 +83,9 @@ EcoHubs is deliberately non-ideological at the structural level — it does not 
 
 ### Transformation Frame
 
-EcoHubs frames its work as replacing specific failure conditions with designed alternatives:
+Fruit Haven frames its work as replacing specific failure conditions with designed alternatives:
 
-| Status quo condition                  | EcoHubs alternative                      |
+| Status quo condition                  | Fruit Haven alternative                      |
 | ------------------------------------- | ---------------------------------------- |
 | Loneliness and disconnection          | Neighbors who know your name             |
 | Extractive agriculture                | Land cared for by those who live on it   |
@@ -125,7 +125,7 @@ Note: The current states map roughly to RCOS Layer 1 but have not yet been forma
 
 ### Onboarding Workflow
 
-Once approved, members move through a structured 5-step onboarding in the ecohubsOS dashboard:
+Once approved, members move through a structured 5-step onboarding in the Fruit Haven dashboard:
 
 1. **Wallet setup** — MetaMask wallet linked (required for governance participation)
 2. **Offcoin/Puckstack linking** — Connect contribution tracking and task management identity
@@ -143,7 +143,7 @@ The community currently attracts: permaculturists, community builders, systems t
 
 ### Governance Model
 
-EcoHubs operates as a **DAO (Decentralized Autonomous Organization)** using blockchain-based tooling to ensure transparent, participatory decision-making. The stated principle is that authority is structural, distributed, and written down — not derived from charisma or seniority.
+Fruit Haven operates as a **DAO (Decentralized Autonomous Organization)** using blockchain-based tooling to ensure transparent, participatory decision-making. The stated principle is that authority is structural, distributed, and written down — not derived from charisma or seniority.
 
 ### Current Governance Stack
 
@@ -151,7 +151,7 @@ EcoHubs operates as a **DAO (Decentralized Autonomous Organization)** using bloc
 | --------------------------- | ----------------------------------------------------------------- |
 | **Snapshot**                | Gasless on-chain voting for membership and content decisions      |
 | **Safe (multi-sig wallet)** | Executing governance decisions; treasury management               |
-| **ecohubsOS**               | Dashboard for managing proposals, applications, and member status |
+| **Fruit Haven**               | Dashboard for managing proposals, applications, and member status |
 | **Flarum forum**            | Asynchronous discussion and deliberation                          |
 | **Discord**                 | Real-time communication and announcements                         |
 
@@ -178,14 +178,14 @@ Operational and strategic decision-making beyond these three areas is not yet fo
 
 ### Contribution Recognition
 
-EcoHubs uses two internal units to make contribution visible:
+Fruit Haven uses two internal units to make contribution visible:
 
 | Unit                       | Description                                                      |
 | -------------------------- | ---------------------------------------------------------------- |
 | **XP (Experience Points)** | Activity and progress indicator; tracks participation and growth |
 | **ECO tokens**             | Community currency earned through contributions                  |
 
-These are tracked via the **Offcoin** integration in ecohubsOS. Both units are:
+These are tracked via the **Offcoin** integration in Fruit Haven. Both units are:
 
 - Internal only — not traded on open markets
 - Non-speculative — explicitly not positioned as investment assets
@@ -214,7 +214,7 @@ Intended funding:
 
 ### Economic Philosophy
 
-EcoHubs aims for a **closed-loop local economy** in physical hubs: small businesses serving local community members, permaculture-based food systems, and reduced dependency on global supply chains. The XP/ECO system is designed as the accounting layer that makes this visible and honest.
+Fruit Haven aims for a **closed-loop local economy** in physical hubs: small businesses serving local community members, permaculture-based food systems, and reduced dependency on global supply chains. The XP/ECO system is designed as the accounting layer that makes this visible and honest.
 
 ---
 
@@ -222,7 +222,7 @@ EcoHubs aims for a **closed-loop local economy** in physical hubs: small busines
 
 ### Task Management
 
-Members coordinate work through **Puckstack**, a task management platform integrated into ecohubsOS. Members can browse available tasks, claim them, and track contributions. Task completion feeds into XP and ECO tracking.
+Members coordinate work through **Puckstack**, a task management platform integrated into Fruit Haven. Members can browse available tasks, claim them, and track contributions. Task completion feeds into XP and ECO tracking.
 
 ### Communication
 
@@ -232,11 +232,11 @@ Members coordinate work through **Puckstack**, a task management platform integr
 | **Flarum forum** | Deeper asynchronous discussion and deliberation              |
 | **Newsletter**   | Field notes, new Blueprint chapters, event invitations       |
 | **Weekly sync**  | Weekly sync calls for coordination and decision-making       |
-| **ecohubsOS**    | Governance and onboarding coordination                       |
+| **Fruit Haven**    | Governance and onboarding coordination                       |
 
 ### Documentation and Knowledge
 
-The Blueprint is hosted at `blueprint.ecohubs.community` and is developed as a collaborative knowledge base. Blog content is managed via Ghost CMS with a community proposal-and-vote publication workflow.
+The Blueprint is hosted at `blueprint.fruithaven.land` and is developed as a collaborative knowledge base. Blog content is managed via Ghost CMS with a community proposal-and-vote publication workflow.
 
 ### Role and Responsibility Structure
 
@@ -244,9 +244,9 @@ Role structure is currently informal — the community is in early formation and
 
 ---
 
-## Technology Infrastructure (ecohubsOS)
+## Technology Infrastructure (Fruit Haven)
 
-ecohubsOS is the community's **operating dashboard** — an integrated platform that centralizes membership management, governance participation, task tracking, contribution accounting, and onboarding.
+Fruit Haven is the community's **operating dashboard** — an integrated platform that centralizes membership management, governance participation, task tracking, contribution accounting, and onboarding.
 
 ### Architecture
 
@@ -268,7 +268,7 @@ The platform is built on explicit commitments to avoid extractive design pattern
 
 - **No engagement loops** — No streaks, no algorithmic notifications; community is the reason to return
 - **Privacy by design** — No third-party tracking, no ad market data flows; data lives within the community
-- **Open source** — Platform is auditable and forkable; communities can take the technology with them if they grow beyond ecohubs
+- **Open source** — Platform is auditable and forkable; communities can take the technology with them if they grow beyond Fruit Haven
 - **Offline-first life** — The screen is the smallest possible bridge; real work happens face-to-face
 
 ### Member Profile Data
@@ -286,7 +286,7 @@ Member profiles capture:
 
 ## The Blueprint (RCOS)
 
-The Blueprint is EcoHubs' name for the full Regenerative Community Operating System. EcoHubs is both the steward of this standard and its primary test case.
+The Blueprint is Fruit Haven' name for the full Regenerative Community Operating System. Fruit Haven is both the steward of this standard and its primary test case.
 
 The 7-layer structure:
 
@@ -308,7 +308,7 @@ The Blueprint is described as a **living body of knowledge** — open, modular, 
 
 ## Network Model
 
-EcoHubs is designed as a **distributed network**, not a single community:
+Fruit Haven is designed as a **distributed network**, not a single community:
 
 - **Local** — each hub is rooted in a place, adapted to its culture and climate
 - **Connected** — hubs share patterns, failures, and tools through the shared Blueprint
@@ -320,7 +320,7 @@ The stated strategy is not replacement of existing systems through revolution, b
 
 ## RCOS-Relevant Context
 
-The following observations describe where EcoHubs currently stands relative to the RCOS layers — not as a compliance audit, but as context for applying RCOS systematically.
+The following observations describe where Fruit Haven currently stands relative to the RCOS layers — not as a compliance audit, but as context for applying RCOS systematically.
 
 **What exists explicitly:**
 
@@ -351,7 +351,7 @@ The following observations describe where EcoHubs currently stands relative to t
 - Authority made structural rather than charismatic (DAO design intention)
 - Contribution visibility and honest accounting (XP/ECO system)
 - Transparency as default (open governance, published treasury)
-- Pre-commitment to conflict handling (Blueprint content; not yet a formal artifact for ecohubs-the-community)
+- Pre-commitment to conflict handling (Blueprint content; not yet a formal artifact for Fruit Haven-the-community)
 - Modular design (optional modules planned; core layers stable)
 
-The Ecuador pilot is ecohubs' first formal test of the Blueprint in physical conditions, producing real learnings that feed back into the specification.
+The Ecuador pilot is Fruit Haven' first formal test of the Blueprint in physical conditions, producing real learnings that feed back into the specification.

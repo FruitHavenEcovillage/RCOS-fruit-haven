@@ -15,7 +15,7 @@
 Every decision, role, and allocation of resources downstream has to stay consistent with one thing — the community's primary purpose. If it drifts, shifts with trends, or gets rewritten to justify the latest project, there is nothing left to anchor governance to. A single, stable primary purpose is the constitutional north star: strategies change, the purpose does not.
 :::
 
-To make regenerative community living — rooted in care for people, land, and life — structurally accessible, resilient, and replicable, reducing humanity's dependency on extractive systems one community at a time.
+To cultivate and sustain a resilient, health-oriented, ecologically regenerative, and consciously cooperative human community living in alignment with nature.
 
 ## Secondary Purposes
 
@@ -26,9 +26,12 @@ To make regenerative community living — rooted in care for people, land, and l
 A community rarely does only one thing. Secondary purposes make space for the other concrete outcomes the community pursues — but they are subordinate. If a secondary purpose ever conflicts with the primary, the primary wins. Declaring them explicitly prevents scope creep from masquerading as core work.
 :::
 
-1. To develop and maintain reusable foundations — tools, standards, and resources — that lower the barriers to starting, sustaining, and replicating regenerative communities.
-2. To demonstrate through lived practice that regenerative community living is viable, replicable, and worth choosing.
-3. To grow a distributed network of communities that support, learn from, and strengthen each other.
+1. The cultivation of fruits and vegetables through regenerative and permaculture-based methods.
+2. The promotion of raw vegan or fruitarian lifestyles.
+3. Ecosystem restoration and ecological stewardship.
+4. The development of decentralized and autonomous community structures.
+5. Education, demonstration, and inspiration for others seeking conscious or regenerative ways of living.
+6. The practice of nonviolent communication and consensus-based governance.
 
 ## Non-Goals and Exclusions
 
@@ -36,10 +39,10 @@ A community rarely does only one thing. Secondary purposes make space for the ot
 Communities drift by accretion — one uncontested assumption at a time. Naming what the community is explicitly _not_ makes boundary violations visible early, and gives anyone a clear basis to object before an activity becomes normalized. Silence here gets read as consent.
 :::
 
-1. EcoHubs is not a political party or ideological movement.
-2. EcoHubs is not a for-profit real estate or investment vehicle.
-3. EcoHubs is not a single prescribed way of living — it provides structure, not answers.
-4. EcoHubs is not a short-term project collective or event-based community.
+1. Fruit Haven is not a political party or ideological movement.
+2. Fruit Haven is not a for-profit real estate or investment vehicle.
+3. Fruit Haven is not a single prescribed way of living — it provides structure, not answers.
+4. Fruit Haven is not a short-term project collective or event-based community.
 
 ## Conditions for Purpose Change
 

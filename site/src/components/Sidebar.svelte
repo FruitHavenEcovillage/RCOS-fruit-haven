@@ -65,7 +65,7 @@
 <div class="mobile-bar">
   <a href="/" class="mobile-brand" aria-label="Home">
     <img src="/logo.webp" alt="" width="32" height="32" />
-    <span>EcoHubs</span>
+    <span>Fruit Haven</span>
   </a>
   <button
     bind:this={hamburgerEl}
@@ -115,7 +115,7 @@
   <a href="/" class="brand" aria-label="Home" onclick={onLinkClick}>
     <img src="/logo.webp" alt="" class="brand-mark" width="40" height="40" />
     <span class="brand-stack">
-      <span class="brand-text">EcoHubs</span>
+      <span class="brand-text">Fruit Haven</span>
       <span class="brand-sub">Community · RCOS</span>
     </span>
   </a>
@@ -222,7 +222,7 @@
   </ul>
 
   <div class="sidebar-footer">
-    <a href="https://blueprint.ecohubs.community" target="_blank" rel="noopener"
+    <a href="https://blueprint.fruithaven.land" target="_blank" rel="noopener"
       >RCOS framework ↗</a
     >
   </div>

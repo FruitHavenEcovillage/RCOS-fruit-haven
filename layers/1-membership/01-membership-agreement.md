@@ -63,11 +63,15 @@ Open-ended obligations are how communities slide into exploitation — "contribu
 "Active member" means nothing without a threshold. A defined minimum — in time, category, and cadence — turns participation from a feeling into a fact, so nobody has to guess whether they are in good standing, and nobody can be accused of drifting without evidence. It also makes the line between a genuine absence and quiet abandonment visible early enough to act on.
 :::
 
-- **Minimum contribution:** At least one recognized contribution per 6 months (any category — labor, care, knowledge, stewardship, coordination, or informal community participation including Discord activity)
-- **Recognized categories:** As defined in the Internal Economy Protocol (Layer 3); informal participation such as community discussion counts as coordination
-- **Substitution:** A member may delegate or substitute participation in a specific task but remains responsible for meeting their overall contribution expectations
-- **Extended absence:** A member expecting absence of more than 6 months must notify the community; contribution expectations are paused for the full notified period, up to a maximum of 12 months. If the expected absence exceeds 12 months, the member should either initiate a voluntary exit or agree an arrangement with Admin
-- **Non-participation trigger:** Absence of recognized contribution for 6 consecutive months without prior notice triggers an accountability check as defined in Layer 4
+- **Responsiveness**: "Active Members" must respond to at least 50% of formal proposals within the defined timeframe via approved communication channels (meetings, email or Telegram).
+- **Contribution**: "Active Members" must contribute to at least two (2) substantive discussions during the defined timeframe, by expressing perspectives, questions, agreements, or objections with reasoning.
+- **Attendance**: “Active Members” must either:
+  - attend at least two (2) weekly community governance meetings within the defined timeframe, or
+  - actively participate in one or more community governance work groups with comparable frequency and engagement.
+  Attendance in either format must be in the context of community governance and documented through approved channels.
+- **Accountability**: In cases of disagreement, "Active Members" are expected to actively engage in follow-up dialogue (via email or meetings, online or in person) to support the process of reaching consensus. Additionally, no "Active Member" may remain inactive (no responses or engagement) for a continuous period exceeding 60 days.
+
+Voting alone does not constitute sufficient participation. Participation requires active engagement in the deliberation and consensus-building process as defined above.
 
 ## Due Process Reference
 

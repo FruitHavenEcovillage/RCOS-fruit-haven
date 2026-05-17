@@ -17,31 +17,31 @@
   --color-forest-100: #ebfcba;
   --color-forest-50: #f5fde5;
 
-  /* EcoHubs emerald + amber */
-  --color-ecohubs-base: #fbfbf9;
-  --color-ecohubs-text: #1c1917;
-  --color-ecohubs-primary: #059669;
-  --color-ecohubs-primary-hover: #047857;
-  --color-ecohubs-dark: #064e3b;
-  --color-ecohubs-accent: #d97706;
-  --color-ecohubs-accent-hover: #b45309;
-  --color-ecohubs-light: #a7f3d0;
-  --color-ecohubs-teal: #1a8e7b;
+  /* Fruit Haven emerald + amber */
+  --color-Fruit Haven-base: #fbfbf9;
+  --color-Fruit Haven-text: #1c1917;
+  --color-Fruit Haven-primary: #059669;
+  --color-Fruit Haven-primary-hover: #047857;
+  --color-Fruit Haven-dark: #064e3b;
+  --color-Fruit Haven-accent: #d97706;
+  --color-Fruit Haven-accent-hover: #b45309;
+  --color-Fruit Haven-light: #a7f3d0;
+  --color-Fruit Haven-teal: #1a8e7b;
 
   /* Semantic — light mode */
-  --color-bg: var(--color-ecohubs-base);
+  --color-bg: var(--color-Fruit Haven-base);
   --color-surface: #ffffff;
   --color-surface-muted: #f3f6f1;
   --color-surface-elevated: #ffffff;
   --color-border: #e3e7de;
-  --color-text: var(--color-ecohubs-text);
+  --color-text: var(--color-Fruit Haven-text);
   --color-text-muted: #5b6b5f;
   --color-text-tertiary: #8a968d;
-  --color-primary: var(--color-ecohubs-primary);
-  --color-primary-hover: var(--color-ecohubs-primary-hover);
-  --color-primary-dark: var(--color-ecohubs-dark);
-  --color-accent: var(--color-ecohubs-accent);
-  --color-accent-hover: var(--color-ecohubs-accent-hover);
+  --color-primary: var(--color-Fruit Haven-primary);
+  --color-primary-hover: var(--color-Fruit Haven-primary-hover);
+  --color-primary-dark: var(--color-Fruit Haven-dark);
+  --color-accent: var(--color-Fruit Haven-accent);
+  --color-accent-hover: var(--color-Fruit Haven-accent-hover);
   --color-danger: #b91c1c;
 
   /* Typography */

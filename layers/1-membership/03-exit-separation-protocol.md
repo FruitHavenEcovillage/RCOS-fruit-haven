@@ -15,12 +15,12 @@
 A community that is hard to leave is not a community — it is a trap. Voluntary exit must be available at all times, without interrogation, notice periods, or punishment, because the right to withdraw consent is what makes every other act of consent real. Retaining contribution history separately ensures that leaving does not erase the work the person did.
 :::
 
-- Any Full Member or Trial Member may exit at any time by submitting a request through ecohubsOS (reason optional)
+- Any Full Member or Trial Member may exit at any time by submitting a request through Fruit Haven (reason optional)
 - No notice period required; if the member holds a role, they are asked to consider a handover where appropriate
 - Access is revoked within 24 hours of admin confirmation
 - Contribution history and XP are retained permanently
 - Membership state transitions to Exited Member
-- Exit is recorded in ecohubsOS with a timestamp
+- Exit is recorded in Fruit Haven with a timestamp
 
 ## Forced Exit
 
@@ -34,7 +34,7 @@ Removal is the sharpest power the community holds over a person. If it can be ex
 - Forced exit may only result from a concluded Layer 4 accountability process with a documented decision
 - The affected member must be notified in writing with the reason and decision record reference before access is revoked
 - Access is revoked within 24 hours of the decision being finalised
-- Accounts on platforms related to ecohubsOS (Discord, Notion, Puckstack, etc.) may be deleted or blocked depending on the severity of the decision and platform capabilities
+- Accounts on platforms related to Fruit Haven (Discord, Notion, Puckstack, etc.) may be deleted or blocked depending on the severity of the decision and platform capabilities
 - Contribution history and XP are retained
 - Membership state transitions to Exited Member
 - The member may not reapply for a period defined in the accountability decision (minimum 6 months)
@@ -65,7 +65,7 @@ The following separation steps apply to both voluntary and forced exits:
 - Any roles held must be vacated and documented in the Role Registry
 - Ongoing tasks claimed in Puckstack must be released or handed over
 - Safe wallet co-signer or Proposer status must be removed
-- All administrative access to platforms (ecohubsOS, Discord, social media, Notion, Puckstack, etc.) must be revoked
+- All administrative access to platforms (Fruit Haven, Discord, social media, Notion, Puckstack, etc.) must be revoked
 - Outstanding obligations (incomplete tasks, financial commitments) must be resolved or transferred before exit is finalised where possible
 
 ---

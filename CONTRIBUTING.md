@@ -1,6 +1,6 @@
-# Contributing to EcoHubs RCOS
+# Contributing to Fruit Haven RCOS
 
-This repository is the formal governance record for EcoHubs. Every rule, role, and decision structure that EcoHubs operates under lives here as a versioned markdown file.
+This repository is the formal governance record for Fruit Haven. Every rule, role, and decision structure that Fruit Haven operates under lives here as a versioned markdown file.
 
 This document explains what RCOS is, how this repo is organized, and how to propose or adopt changes.
 
@@ -25,7 +25,7 @@ RCOS makes the following things explicit, versioned, and auditable:
 The core principle: **if it is not written, agreed, and versioned, it does not exist.**
 
 Full specification: [`resources/RCOS_v01:reduced.md`](resources/RCOS_v01:reduced.md)  
-EcoHubs community context: [`resources/ecohubs_community_overview.md`](resources/ecohubs_community_overview.md)
+Fruit Haven community context: [`resources/Fruit Haven_community_overview.md`](resources/Fruit Haven_community_overview.md)
 
 ---
 
@@ -136,4 +136,4 @@ When in doubt, default to the **higher-impact type**.
 
 ## Questions?
 
-If something in the spec or the process is unclear, open a discussion on the [community forum](https://discussions.ecohubs.community) or ask in Discord before opening a PR. Governance changes affect everyone — deliberation before drafting saves time.
+If something in the spec or the process is unclear, open a discussion on the [community forum](https://discussions.fruithaven.land) or ask in Discord before opening a PR. Governance changes affect everyone — deliberation before drafting saves time.

@@ -16,7 +16,7 @@
 
 ## RCOS Compliance Progress
 
-RCOS-Core compliance is binary per §10.1.1: a community is either compliant or non-compliant. EcoHubs is currently **non-compliant** — all artifacts are in Draft status and have not been formally adopted through a governance vote.
+RCOS-Core compliance is binary per §10.1.1: a community is either compliant or non-compliant. Fruit Haven is currently **non-compliant** — all artifacts are in Draft status and have not been formally adopted through a governance vote.
 
 The two bars below show content readiness and formal adoption separately.
 
@@ -50,7 +50,7 @@ Layer 6 — Evolution               ░░░░░░░░░░░░░░�
 Overall formal adoption           ░░░░░░░░░░░░░░░░░░░░   0%  (20 artifacts pending)
 ```
 
-> Once all 20 artifacts are adopted through Snapshot votes, formal adoption reaches 100% and EcoHubs becomes RCOS-Core compliant (subject to any remaining content gaps being resolved first).
+> Once all 20 artifacts are adopted through Snapshot votes, formal adoption reaches 100% and Fruit Haven becomes RCOS-Core compliant (subject to any remaining content gaps being resolved first).
 
 ---
 
@@ -75,7 +75,7 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 |---|---|---|---|
 | Membership Agreement | [layers/1-membership/01-membership-agreement.md](../layers/1-membership/01-membership-agreement.md) | Draft | Content complete; not yet adopted |
 | Onboarding Protocol | [layers/1-membership/02-onboarding-protocol.md](../layers/1-membership/02-onboarding-protocol.md) | Draft | Content complete; several technical implementations pending — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md) |
-| Exit & Separation Protocol | [layers/1-membership/03-exit-separation-protocol.md](../layers/1-membership/03-exit-separation-protocol.md) | Draft | Content complete; exit flow in ecohubsOS not yet implemented — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md) |
+| Exit & Separation Protocol | [layers/1-membership/03-exit-separation-protocol.md](../layers/1-membership/03-exit-separation-protocol.md) | Draft | Content complete; exit flow in Fruit Haven not yet implemented — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md) |
 | Membership State Registry | [layers/1-membership/04-membership-state-registry.md](../layers/1-membership/04-membership-state-registry.md) | Draft | Content complete; not yet adopted |
 
 ---
@@ -177,7 +177,7 @@ These items are deferred because they require a community governance decision to
 |---|---|---|---|
 | ECO expiration / decay mechanism | §5.2.4 + §5.4.2 — if internal units exist, MUST define expiration/decay/cap | Medium | Non-transferability currently serves as the single accumulation-limiting mechanism (satisfies §5.4.2 minimum). Expiration/decay would add additional protection. Deferred — see [future-proposals.md](../resources/future-proposals.md) |
 | Treasury spending thresholds | §5.3.3 — spending authority MUST be explicitly bounded by thresholds | Low urgency | Finance Steward currently has €0 unilateral authority (effectively no spending authority). Thresholds should be defined once community funds exist. Deferred — see [future-proposals.md](../resources/future-proposals.md) |
-| Suspended Member state | §3.7 (MAY) — temporary suspension states | Low | Technically not yet feasible in ecohubsOS. **Optional** per spec. Deferred — see [future-proposals.md](../resources/future-proposals.md) |
+| Suspended Member state | §3.7 (MAY) — temporary suspension states | Low | Technically not yet feasible in Fruit Haven. **Optional** per spec. Deferred — see [future-proposals.md](../resources/future-proposals.md) |
 | Consent-based decision-making for Strategic decisions | §4.2.2 (MAY) — alternatives to majority vote | Low | Currently using simple majority for Strategic decisions. Consent-based approach is optional. Deferred. |
 
 ---
@@ -198,13 +198,13 @@ All artifacts have substantive content. To achieve full compliance, each artifac
 - §2.4.3 — Ecological identity constraint measurable thresholds (IC-004/IC-005 in Identity Constraints Register — behavioral enforcement exists; numerical definition deferred)
 
 **Open technical gaps** (required for full operational compliance — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md)):
-- Member exit flow in ecohubsOS
-- Voluntary exit request flow in ecohubsOS
+- Member exit flow in Fruit Haven
+- Voluntary exit request flow in Fruit Haven
 - Artifact links in onboarding flow
 - Explicit in-app consent to Membership Agreement and Layer 0
 - Onboarding reminder emails and expiry notifications
 - 6-month re-application block after rejection or incomplete onboarding
-- Onboarding expiry actions in ecohubsOS admin panel
+- Onboarding expiry actions in Fruit Haven admin panel
 - Snapshot proposal template
 
 **Deferred governance decisions** (see [future-proposals.md](../resources/future-proposals.md)):

@@ -4,7 +4,7 @@
 - **Status:** Active — updated with each adopted change
 - **RCOS reference:** §8.2, §8.6
 
-> This is the authoritative human-readable record of all adopted changes to EcoHubs' RCOS implementation. The currently active version is the most recent entry at the top of this file. Superseded rules remain accessible via git history.
+> This is the authoritative human-readable record of all adopted changes to Fruit Haven' RCOS implementation. The currently active version is the most recent entry at the top of this file. Superseded rules remain accessible via git history.
 
 ---
 

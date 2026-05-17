@@ -1,6 +1,6 @@
-# EcoHubs — RCOS Implementation
+# Fruit Haven — RCOS Implementation
 
-This repository contains the formal RCOS (Regenerative Community Operating System) artifacts for EcoHubs. It is the authoritative, versioned record of how EcoHubs governs itself.
+This repository contains the formal RCOS (Regenerative Community Operating System) artifacts for Fruit Haven. It is the authoritative, versioned record of how Fruit Haven governs itself.
 
 ## Structure
 

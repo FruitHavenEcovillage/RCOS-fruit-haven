@@ -1,6 +1,6 @@
-# EcoHubs Docs Site
+# Fruit Haven Docs Site
 
-Static site around the RCOS-ecohubs repo. Astro 6 + Svelte 5 + Tailwind 4.
+Static site around the RCOS-Fruit Haven repo. Astro 6 + Svelte 5 + Tailwind 4.
 
 ## Dev
 

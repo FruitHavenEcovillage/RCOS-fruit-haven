@@ -1,6 +1,6 @@
-# EcoHubs Docs Site — Plan
+# Fruit Haven Docs Site — Plan
 
-Static documentation site around the RCOS-ecohubs repo. Designed to be forked
+Static documentation site around the RCOS-Fruit Haven repo. Designed to be forked
 and rebranded by other communities, with a future backend + AI integration
 path.
 
@@ -40,7 +40,7 @@ path.
 ```
 
 Hidden from the site (internal-only): `internal/RCOS_v01-reduced.md`,
-`internal/ecohubs_community_overview.md`,
+`internal/Fruit Haven_community_overview.md`,
 `internal/missing-technical-implementations.md`.
 
 ## Navigation
@@ -70,7 +70,7 @@ FAQ link scrolls to the landing-page FAQ section for v1.
 ## Landing page
 
 - Hero + short explainer of what this site is
-- Link to RCOS framework: https://blueprint.ecohubs.community
+- Link to RCOS framework: https://blueprint.fruithaven.land
 - **Dashboard tiles**
   - *Latest proposals*: last N entries from `proposals/passed/` +
     `proposals/rejected/`, sorted by frontmatter `date`
@@ -86,7 +86,7 @@ public docs):
 
 ```
 resources/RCOS_v01:reduced.md                 → internal/RCOS_v01-reduced.md
-resources/ecohubs_community_overview.md       → internal/ecohubs_community_overview.md
+resources/Fruit Haven_community_overview.md       → internal/Fruit Haven_community_overview.md
 resources/missing-technical-implementations.md → internal/missing-technical-implementations.md
 ```
 
@@ -155,7 +155,7 @@ Tailwind config maps these to utility classes so components stay portable.
 ## Folder layout
 
 ```
-RCOS-ecohubs/
+RCOS-Fruit Haven/
 ├── layers/            (existing, unchanged)
 ├── proposals/
 │   ├── passed/        (existing)
