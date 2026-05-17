@@ -90,7 +90,7 @@ a:hover {
   background: linear-gradient(
     135deg,
     var(--color-primary) 0%,
-    var(--color-Fruit Haven-teal) 50%,
+    var(--color-fruithaven-teal) 50%,
     var(--color-accent) 100%
   );
   -webkit-background-clip: text;
