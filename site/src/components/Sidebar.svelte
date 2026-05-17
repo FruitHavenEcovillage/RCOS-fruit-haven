@@ -64,7 +64,7 @@
 
 <div class="mobile-bar">
   <a href="/" class="mobile-brand" aria-label="Home">
-    <img src="/logo.webp" alt="" width="32" height="32" />
+    <img src="/logo.png" alt="" width="32" height="32" />
     <span>Fruit Haven</span>
   </a>
   <button
@@ -113,7 +113,7 @@
   aria-hidden={isMobile && !drawerOpen}
 >
   <a href="/" class="brand" aria-label="Home" onclick={onLinkClick}>
-    <img src="/logo.webp" alt="" class="brand-mark" width="40" height="40" />
+    <img src="/logo.png" alt="" class="brand-mark" width="40" height="40" />
     <span class="brand-stack">
       <span class="brand-text">Fruit Haven</span>
       <span class="brand-sub">Community · RCOS</span>
