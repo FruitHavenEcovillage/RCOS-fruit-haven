@@ -1,7 +1,7 @@
-﻿# Role Registry
+# Role Registry
 
 - **Layer:** 5 — Operations & Coordination
-- **Status:** Draft
+- **Status:** Present
 - **RCOS reference:** §7.1, §7.6
 
 ---
@@ -35,7 +35,7 @@ This registry defines all recognized roles within Fruit Haven. Every role has a 
 
 ## Ratification Record
 
-- **Adopted:** <YYYY-MM-DD>
+- **Adopted:** 2026-05-19 (Based on Google Doc Consensus)
 - **Decision type:** Strategic
-- **Version:** <version>
-- **Decision record:** <link to decision record>
+- **Version:** v1.0.0
+- **Decision record:** proposals/passed/2026-05-19_fh-roles-proposal.md

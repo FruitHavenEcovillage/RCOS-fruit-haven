@@ -1,7 +1,7 @@
-﻿# Treasury Ruleset
+# Treasury Ruleset
 
 - **Layer:** 3 — Economic & Resource System
-- **Status:** Stub — not yet adopted
+- **Status:** Present
 - **RCOS reference:** §5.3, §5.5
 
 ---
@@ -22,19 +22,19 @@ Potential future income interfaces: grants and foundations, Web3 ecosystem fundi
 
 | Amount | Decision Type | Authorized Body | Mechanism |
 |---:|---|---|---|
-| Up to delegated limit (currently €0) | Operational | Finance Steward | Delegated — not currently active |
-| Any amount above delegated limit | Strategic | Full Members | Fruit Haven vote |
-| Multi-year contracts, debt, or structural financial obligations | Constitutional | Full Members | Fruit Haven vote + supermajority + 30-day ratification |
+| Up to $100 USD | Operational | Communal Finance / Accountant | Delegated limit |
+| Above $100 USD | Strategic | Active Members | Community Meeting |
+| Multi-year contracts, debt, or structural financial obligations | Constitutional | Active Members | Community Meeting + 2-week absentee review |
 
 > Spending thresholds will be defined via a future Strategic proposal once community funds exist. See [Future Proposals](../../resources/future-proposals.md).
 
 ## Transparency and Reporting
 
-**Safe multi-sig (primary treasury):** All Full Members hold at minimum Proposer access on the Safe, giving them real-time visibility of the balance and transaction history via safe.global at any time. No periodic reporting obligation is required for Safe funds.
+**Accounting Ledger:** As per the community bylaws, community finances must be managed with a continuous accounting ledger that is public, transparent, and accessible/reviewable by the trustees at any time.
 
-**Fiat or other declared accounts:** If the account supports multi-user read access, Full Members must be granted it. If not, Finance Steward publishes a balance and transaction summary to Full Members at least every 6 months.
+**Roles:** The Financial Bookkeeper handles data entry and tracking. The Communal Finance / Accountant holds the cash and manages the treasury.
 
-All spending decisions must reference the linked governance record (Fruit Haven vote or delegated decision log).
+All spending decisions above $100 USD must reference the linked governance record (Community Meeting minutes or approved proposals).
 
 ## Reserve, Risk, and Debt Constraints
 
@@ -47,13 +47,13 @@ All spending decisions must reference the linked governance record (Fruit Haven 
 
 - A requester may not approve their own spending request
 - Any member with a direct financial interest in a spending decision must declare it and abstain from the vote
-- Finance Steward may not authorize any treasury spending unilaterally while the delegated limit is €0
+- Communal Finance / Accountant may not authorize any single treasury spending unilaterally above $100 USD
 
 ---
 
 ## Ratification Record
 
-- **Adopted:** <YYYY-MM-DD>
+- **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
 - **Decision type:** Strategic
-- **Version:** <version>
-- **Decision record:** <link to decision record>
+- **Version:** v1.0.0
+- **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md

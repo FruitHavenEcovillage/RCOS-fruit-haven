@@ -1,7 +1,7 @@
-﻿# Membership State Registry
+# Membership State Registry
 
 - **Layer:** 1 — Membership System
-- **Status:** Draft
+- **Status:** Present
 - **RCOS reference:** §3.1, §3.8
 
 ---
@@ -80,7 +80,7 @@ This process includes:
 
 ## Ratification Record
 
-- **Adopted:** <YYYY-MM-DD>
+- **Adopted:** 2026-05-19 (Based on Google Doc Consensus)
 - **Decision type:** Strategic
-- **Version:** <version>
-- **Decision record:** <link to decision record>
+- **Version:** v1.0.0
+- **Decision record:** proposals/passed/2026-05-19_fh-membership-proposal.md

@@ -1,14 +1,14 @@
-﻿# Purpose Charter
+# Purpose Charter
 
 - **Layer:** 0 — Identity & Scope
-- **Status:** Stub — not yet adopted
+- **Status:** Present
 - **RCOS reference:** §2.1, §2.4, §2.5
 
 ---
 
 ## Primary Purpose
 
-To cultivate and sustain a resilient, health-oriented, ecologically regenerative, and consciously cooperative human community living in alignment with nature.
+This community is organized exclusively for charitable, spiritual, religious, educational, and scientific purposes. Its primary purpose is to cultivate and sustain a resilient, health-oriented, ecologically regenerative, and consciously cooperative human community living in alignment with nature.
 
 ## Secondary Purposes
 
@@ -28,13 +28,13 @@ To cultivate and sustain a resilient, health-oriented, ecologically regenerative
 
 ## Conditions for Purpose Change
 
-The primary purpose may only be changed through a Constitutional decision as defined in the Decision Matrix (Layer 2), requiring a supermajority of Full Members (≥⅔ of votes cast), followed by a ratification period of no less than 30 days. Secondary purposes may be changed through a Strategic decision. Any change must be recorded in the Version History (Layer 6).
+The primary purpose may only be changed through a Constitutional decision as defined in the Decision Matrix (Layer 2), requiring a unanimous vote (Unanimity minus one) from Active Members via the consensus decision-making method, followed by a ratification period of no less than 30 days. Secondary purposes may be changed through a Strategic decision. Any change must be recorded in the Version History (Layer 6).
 
 ---
 
 ## Ratification Record
 
-- **Adopted:** <YYYY-MM-DD>
+- **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
 - **Decision type:** Constitutional
-- **Version:** <version>
-- **Decision record:** <link to decision record>
+- **Version:** v1.0.0
+- **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md

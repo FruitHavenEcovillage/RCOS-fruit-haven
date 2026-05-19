@@ -60,10 +60,10 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Purpose Charter | [layers/0-identity/01-purpose-charter.md](../layers/0-identity/01-purpose-charter.md) | Draft | Content complete; Identity Constraints section replaced with cross-reference to dedicated register |
+| Purpose Charter | [layers/0-identity/01-purpose-charter.md](../layers/0-identity/01-purpose-charter.md) | Present | Content complete; Identity Constraints section replaced with cross-reference to dedicated register |
 | Scope Declaration | [layers/0-identity/02-scope-declaration.md](../layers/0-identity/02-scope-declaration.md) | Draft | Content complete; not yet adopted |
 | Invariants Register | [layers/0-identity/03-invariants-register.md](../layers/0-identity/03-invariants-register.md) | Draft | Content complete; not yet adopted |
-| Identity Constraints Register | [layers/0-identity/04-identity-constraints-register.md](../layers/0-identity/04-identity-constraints-register.md) | Draft | Content complete; IC-001–003, IC-006–008 fully enforceable; IC-004–005 (ecological) have partial enforcement — measurable threshold deferred |
+| Identity Constraints Register | [layers/0-identity/04-identity-constraints-register.md](../layers/0-identity/04-identity-constraints-register.md) | Present | Content complete; IC-001–003, IC-006–008 fully enforceable; IC-004–005 (ecological) have partial enforcement — measurable threshold deferred |
 
 ---
 
@@ -73,10 +73,10 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Membership Agreement | [layers/1-membership/01-membership-agreement.md](../layers/1-membership/01-membership-agreement.md) | Draft | Content complete; not yet adopted |
+| Membership Agreement | [layers/1-membership/01-membership-agreement.md](../layers/1-membership/01-membership-agreement.md) | Present | Content complete; not yet adopted |
 | Onboarding Protocol | [layers/1-membership/02-onboarding-protocol.md](../layers/1-membership/02-onboarding-protocol.md) | Draft | Content complete; several technical implementations pending — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md) |
 | Exit & Separation Protocol | [layers/1-membership/03-exit-separation-protocol.md](../layers/1-membership/03-exit-separation-protocol.md) | Draft | Content complete; exit flow in Fruit Haven not yet implemented — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md) |
-| Membership State Registry | [layers/1-membership/04-membership-state-registry.md](../layers/1-membership/04-membership-state-registry.md) | Draft | Content complete; not yet adopted |
+| Membership State Registry | [layers/1-membership/04-membership-state-registry.md](../layers/1-membership/04-membership-state-registry.md) | Present | Content complete; not yet adopted |
 
 ---
 
@@ -86,8 +86,8 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Decision Matrix | [layers/2-governance/01-decision-matrix.md](../layers/2-governance/01-decision-matrix.md) | Draft | Content complete; not yet adopted |
-| Governance Protocol | [layers/2-governance/02-governance-protocol.md](../layers/2-governance/02-governance-protocol.md) | Draft | Content complete; Snapshot proposal template not yet created — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md) |
+| Decision Matrix | [layers/2-governance/01-decision-matrix.md](../layers/2-governance/01-decision-matrix.md) | Present | Content complete |
+| Governance Protocol | [layers/2-governance/02-governance-protocol.md](../layers/2-governance/02-governance-protocol.md) | Present | Content complete |
 | Authority Registry | [layers/2-governance/03-authority-registry.md](../layers/2-governance/03-authority-registry.md) | Draft | Content complete; updated to reference specific operational roles from Layer 5 |
 
 ---
@@ -99,7 +99,8 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 | Artifact | File | Status | Notes |
 |---|---|---|---|
 | Internal Economy Protocol | [layers/3-economy/01-internal-economy-protocol.md](../layers/3-economy/01-internal-economy-protocol.md) | Draft | Content complete; ECO expiration/decay mechanism deferred; concentration risk indicators not yet defined — see [future-proposals.md](../resources/future-proposals.md) |
-| Treasury Ruleset | [layers/3-economy/02-treasury-ruleset.md](../layers/3-economy/02-treasury-ruleset.md) | Draft | Content complete; treasury spending thresholds deferred until community funds exist — see [future-proposals.md](../resources/future-proposals.md) |
+| Treasury Ruleset | [layers/3-economy/02-treasury-ruleset.md](../layers/3-economy/02-treasury-ruleset.md) | Present | Content complete |
+| Land Allotment Protocol | [layers/3-economy/03-land-allotment-protocol.md](../layers/3-economy/03-land-allotment-protocol.md) | Present | Adopted via bylaws |
 
 ---
 
@@ -121,7 +122,7 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 | Artifact | File | Status | Notes |
 |---|---|---|---|
 | Operations Manual | [layers/5-operations/01-operations-manual.md](../layers/5-operations/01-operations-manual.md) | Draft | Content complete; updated 2026-04-22 to add temporary/ad-hoc responsibility rules and information anti-gatekeeping policy |
-| Role Registry | [layers/5-operations/02-role-registry.md](../layers/5-operations/02-role-registry.md) | Draft | Content complete; 12 roles defined; all operational roles currently held by founding member |
+| Role Registry | [layers/5-operations/02-role-registry.md](../layers/5-operations/02-role-registry.md) | Present | Content complete; roles adapted from Fruit Haven bylaws |
 | Meeting Templates | [layers/5-operations/meeting-templates/](../layers/5-operations/meeting-templates/) | Draft | All 5 templates complete (Operations, Governance, Coordination/Alignment, Reflection & Learning, Conflict Handling) |
 
 ---

@@ -1,25 +1,22 @@
-﻿# Decision Matrix
+# Decision Matrix
 
 - **Layer:** 2 — Governance & Decision Logic
-- **Status:** Stub — not yet adopted
+- **Status:** Present
 - **RCOS reference:** §4.2, §4.4, §4.7
 
 > Maps every decision type and domain to an authorized role or body, mechanism, threshold, and escalation path. Decisions made outside this matrix are considered invalid.
 
 ---
 
-## Voting Principles
+## Consensus Principles
 
-- All collective decisions requiring a vote use the **Fruit Haven internal voting system** (off-chain, one-member-one-vote, votes recorded and tallied inside Fruit Haven)
-- **Operational threshold:** Simple majority (>50% of votes cast); 3-day vote window; no deliberation period required (used for routine system actions like membership applications and blog publication)
-- **Strategic threshold:** Simple majority (>50% of votes cast); minimum 5-day deliberation period before vote opens; 7-day vote window
-- **Constitutional threshold:** Supermajority (≥⅔ of votes cast) + 30-day ratification period; minimum 15-day deliberation period before vote opens; 14-day vote window
-- **Tied vote:** A tied vote (exactly 50% for and 50% against) results in the proposal failing; the status quo is maintained
-- **Re-vote:** Any Full Member may trigger a re-vote on any passed decision by submitting a written, reasoned objection that was not considered during deliberation; re-vote uses the same mechanism as the original decision
-- **Reasoned objection:** A reasoned objection must cite a specific consideration that was not raised or addressed during the original deliberation — a general disagreement with the outcome does not qualify
-- **Future:** Strategic decisions may move to consent-based decision-making (no reasoned objections = pass) once tooling supports it
-- **Delegated authority spending limit:** Currently €0 — no community funds exist; all expenditure requires a Strategic vote until a spending threshold is adopted
-- Nothing is permanent — all decisions can be revised through the appropriate process
+- **Consensus Method:** All formal collective decisions (Strategic and Constitutional) use the **Consensus method** at community meetings, supported by minimal sociocracy practices. 
+- **Voting Power:** Only Active Members who have watched the instructional consensus video and successfully completed the consensus quiz hold voting power for formal decisions.
+- **Formal Threshold:** The threshold for formal decisions is **Unanimity minus one (U-1)** among Active Members with voting power.
+- **Absentee Review (2-week period):** Upon testing consensus at a meeting, a proposal is considered "Passed, pending consensus of non-present community members with voting power." Non-present members have 2 weeks to respond. If they do not present an objection (combined with demonstration that said proposal violates the community vision) within 2 weeks, they consent *in absentia*.
+- **Informal Decisions:** The community will attempt to reach group consensus as far as practicable when making informal day-to-day (Operational) decisions.
+- **Jurisdiction of Trustees:** Decisions that significantly affect the value of the property, or involve legal risk to the trustees, must be made by the trustees unless they permit the community to make such a decision. Trustees may also ask any person residing on the property to leave if their presence constitutes a legal risk or significant risk to property value.
+- **Future:** Minimal sociocracy practices are being introduced as a proposal pending review to improve decision-making functionality.
 
 ---
 
@@ -27,26 +24,26 @@
 
 | Decision Domain                                       | Decision Type  | Authorized Body | Eligible Participants | Mechanism                           | Threshold          | Blocking / Veto conditions   | Escalation        |
 | ----------------------------------------------------- | -------------- | --------------- | --------------------- | ----------------------------------- | ------------------ | ---------------------------- | ----------------- |
-| Membership admission                                  | Operational    | Membership Admin | N/A                   | Delegated                           | N/A                | None                         | Full Members vote |
-| Membership forced exit                                | Strategic      | Full Members    | All Full Members      | Fruit Haven vote                       | Simple majority    | Reasoned objection → re-vote | N/A               |
-| RCOS artifact changes (wording, formatting, content)  | Operational    | Membership Admin | N/A                   | Delegated                           | N/A                | None                         | Full Members vote |
-| RCOS Core layer changes                               | Strategic      | Full Members    | All Full Members      | Fruit Haven vote                       | Simple majority    | Reasoned objection → re-vote | N/A               |
-| Adding or retiring optional RCOS modules              | Operational    | Membership Admin | N/A                   | Delegated                           | N/A                | None                         | Full Members vote |
-| Treasury spending — any amount (current: limit is €0) | Strategic      | Full Members    | All Full Members      | Fruit Haven vote                       | Simple majority    | Reasoned objection → re-vote | N/A               |
-| Platform and channel changes — routine                | Operational    | Infrastructure Steward / Communications Steward | N/A                   | Delegated                           | N/A                | None                         | Full Members vote |
-| Platform and channel changes — structural             | Strategic      | Full Members    | All Full Members      | Fruit Haven vote                       | Simple majority    | Reasoned objection → re-vote | N/A               |
-| Partnerships and brand use                            | Strategic      | Full Members    | All Full Members      | Fruit Haven vote                       | Simple majority    | Reasoned objection → re-vote | N/A               |
-| Governance rule changes                               | Constitutional | Full Members    | All Full Members      | Fruit Haven vote + 30-day ratification | Supermajority (≥⅔) | Reasoned objection → re-vote | N/A               |
-| Primary purpose, scope, invariant, or identity constraint changes | Constitutional | Full Members    | All Full Members      | Fruit Haven vote + 30-day ratification | Supermajority (≥⅔) | Reasoned objection → re-vote | N/A               |
-| Community support and facilitation activities         | Operational    | Facilitator     | N/A                   | Delegated                           | N/A                | None                         | Full Members vote |
+| Membership admission                                  | Operational    | Membership Admin | N/A                   | Delegated                           | N/A                | None                         | Active Members consensus |
+| Membership forced exit                                | Strategic      | Active Members    | Active Members      | Community Meeting                       | Unanimity minus one    | Reasoned objection → re-vote | N/A               |
+| RCOS artifact changes (wording, formatting, content)  | Operational    | Membership Admin | N/A                   | Delegated                           | N/A                | None                         | Active Members consensus |
+| RCOS Core layer changes                               | Strategic      | Active Members    | Active Members      | Community Meeting                       | Unanimity minus one    | Reasoned objection → re-vote | N/A               |
+| Adding or retiring optional RCOS modules              | Operational    | Membership Admin | N/A                   | Delegated                           | N/A                | None                         | Active Members consensus |
+| Treasury spending — any amount (current: limit is €0) | Strategic      | Active Members    | Active Members      | Community Meeting                       | Unanimity minus one    | Reasoned objection → re-vote | N/A               |
+| Platform and channel changes — routine                | Operational    | Infrastructure Steward / Communications Steward | N/A                   | Delegated                           | N/A                | None                         | Active Members consensus |
+| Platform and channel changes — structural             | Strategic      | Active Members    | Active Members      | Community Meeting                       | Unanimity minus one    | Reasoned objection → re-vote | N/A               |
+| Partnerships and brand use                            | Strategic      | Active Members    | Active Members      | Community Meeting                       | Unanimity minus one    | Reasoned objection → re-vote | N/A               |
+| Governance rule changes                               | Constitutional | Active Members    | Active Members      | Community Meeting + 2-week period | Unanimity minus one | Reasoned objection → re-vote | N/A               |
+| Primary purpose, scope, invariant, or identity constraint changes | Constitutional | Active Members    | Active Members      | Community Meeting + 2-week period | Unanimity minus one | Reasoned objection → re-vote | N/A               |
+| Community support and facilitation activities         | Operational    | Facilitator     | N/A                   | Delegated                           | N/A                | None                         | Active Members consensus |
 
 > **Operational role holders:** Each operational decision is executed by the named role holder responsible for that domain, acting within their defined scope per the Role Registry (Layer 5). Where a decision spans multiple domains, each role holder acts within their own scope.
 
 ## Decision Type Definitions
 
-- **Operational** — Day-to-day functioning within existing rules. Routine role-holder operations remain delegated (no vote). System-driven decisions (e.g. membership applications, blog publication) are surfaced as auto-created proposals with a short 3-day vote window and no deliberation period — simple majority decides.
-- **Strategic** — Long-term direction, significant resource allocation, creation or removal of major structures. Requires a Full Member Fruit Haven vote; minimum 5-day deliberation period; 7-day vote window; simple majority.
-- **Constitutional** — Changes to Layer 0 (purpose, scope, invariants, or identity constraints) or the governance system itself. Requires a Full Member Fruit Haven vote, supermajority (≥⅔), 14-day vote window, minimum 15-day deliberation period before vote opens, and a 30-day ratification period after vote closes.
+- **Operational** — Day-to-day functioning within existing rules. Routine role-holder operations remain delegated (no vote). Informal consensus is attempted where practicable.
+- **Strategic** — Long-term direction, significant resource allocation, creation or removal of major structures. Requires a formal proposal at a Community Meeting; Unanimity minus one threshold among Active Members.
+- **Constitutional** — Changes to Layer 0 (purpose, scope, invariants, or identity constraints) or the governance system itself. Requires a formal proposal at a Community Meeting, Unanimity minus one threshold, and is subject to the 2-week absentia objection period.
 
 > If a decision cannot be clearly classified, it defaults to the higher-impact type.
 
@@ -54,7 +51,7 @@
 
 ## Ratification Record
 
-- **Adopted:** <YYYY-MM-DD>
+- **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
 - **Decision type:** Constitutional
-- **Version:** <version>
-- **Decision record:** <link to decision record>
+- **Version:** v1.0.0
+- **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md

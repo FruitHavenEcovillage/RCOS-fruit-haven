@@ -1,7 +1,7 @@
-﻿# Membership Agreement
+# Membership Agreement
 
 - **Layer:** 1 — Membership System
-- **Status:** Stub — not yet adopted
+- **Status:** Present
 - **RCOS reference:** §3.4, §3.5, §3.8
 
 > Signed (or explicitly acknowledged) by every member at the time of admission. Defines the rights and obligations of each membership state.
@@ -22,6 +22,10 @@
 6. *The right to raise a conflict through the Conflict Resolution Ladder without retaliation*
 7. *The right to exit the community voluntarily at any time*
 8. *The right to due process before any forced exit, suspension, or access restriction*
+9. *The right to life, liberty, and pursuit of happiness, as far as is possible and practicable.*
+10. *The right to reasonable defense of one's person, personal property, and others.*
+11. *The right to be free from unreasonable search and seizure.*
+12. *The right to a free and fair decision-making process.*
 
 ## Member Obligations
 
@@ -55,11 +59,13 @@ Any forced exit, suspension, or access restriction follows Layer 4 due process a
 
 By entering the community through the defined onboarding process, the member explicitly consents to the terms of this agreement and the Layer 0 artifacts in force at the time of admission.
 
+> **Requirement:** All people residing in the community area for longer than 1 month must sign this agreement as a condition of their residency. Signing signifies full agreement with the community vision and mission, and agreement that the person will follow the by-laws to the best of their ability.
+
 ---
 
 ## Ratification Record
 
-- **Adopted:** <YYYY-MM-DD>
+- **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
 - **Decision type:** Strategic
-- **Version:** <version>
-- **Decision record:** <link to decision record>
+- **Version:** v1.0.0
+- **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md

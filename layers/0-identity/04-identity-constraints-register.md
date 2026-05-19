@@ -1,7 +1,7 @@
-﻿# Identity Constraints Register
+# Identity Constraints Register
 
 - **Layer:** 0 — Identity & Scope
-- **Status:** Draft — not yet adopted
+- **Status:** Present
 - **RCOS reference:** §2.4, §2.5
 
 > Identity constraints declare the non-negotiable boundaries on participation, behavior, and governance that define what Fruit Haven fundamentally is and is not. Constraints listed here apply to all members, roles, and activities within the governed scope. They may not be enforced implicitly or informally — each constraint includes a defined enforcement pathway.
@@ -52,6 +52,21 @@ Constraints on Fruit Haven' identity as a non-ideological, pluralistic structure
 
 ---
 
+## Ethics and Lifestyle Constraints
+
+Constraints on the ethical principles, dietary practices, and lifestyle guidelines.
+
+| ID | Constraint | Enforcement mechanism | Added | Decision record |
+|---|---|---|---|---|
+| IC-009 | **Veganism:** No animal-derived foods may be brought onto the property, consumed, or harmed by anyone present. | Accountability Protocol (Layer 4) | 2019-05-17 | proposals/passed/2019-05-17_fh1-bylaws.md |
+| IC-010 | **Raw Foods:** The aspiration is to consume primarily raw foods. Long-term/indefinite consumption of cooked foods is not permitted. | Accountability Protocol (Layer 4) | 2019-05-17 | proposals/passed/2019-05-17_fh1-bylaws.md |
+| IC-011 | **Animals:** The keeping of domesticated farm animals and pets is prohibited. | Accountability Protocol (Layer 4) | 2019-05-17 | proposals/passed/2019-05-17_fh1-bylaws.md |
+| IC-012 | **Hygiene:** All residents must maintain general cleanliness of their body, clothing, and living quarters to prevent contagious issues (e.g. staph, scabies). | Accountability Protocol (Layer 4) | 2019-05-17 | proposals/passed/2019-05-17_fh1-bylaws.md |
+| IC-013 | **Substance Abuse:** Dependency or regular use of alcohol, marijuana, or mind-altering substances is prohibited. (Occasional/responsible plant-based spiritual use permitted). | Accountability Protocol (Layer 4) | 2019-05-17 | proposals/passed/2019-05-17_fh1-bylaws.md |
+| IC-014 | **Nudism:** Permitted, but must respect locals/neighbors by refraining from nudity when in sight of them. | Accountability Protocol (Layer 4) | 2019-05-17 | proposals/passed/2019-05-17_fh1-bylaws.md |
+
+---
+
 ## Enforcement Principles
 
 Identity constraints MUST be testable and enforceable through defined processes, and MUST NOT be enforced implicitly or informally.
@@ -66,6 +81,12 @@ Identity constraints MUST be testable and enforceable through defined processes,
 | IC-006 | Enforceable | Via Layer 0 Invariant INV-004 + proposal invalidity |
 | IC-007 | Enforceable | Via Membership Agreement (Layer 1) + Layer 4 |
 | IC-008 | Enforceable | Via Layer 4 Conflict Resolution Ladder |
+| IC-009 | Enforceable | Via Layer 4 Accountability Protocol |
+| IC-010 | Enforceable | Via Layer 4 Accountability Protocol |
+| IC-011 | Enforceable | Via Layer 4 Accountability Protocol |
+| IC-012 | Enforceable | Via Layer 4 Accountability Protocol |
+| IC-013 | Enforceable | Via Layer 4 Accountability Protocol |
+| IC-014 | Enforceable | Via Layer 4 Accountability Protocol |
 
 ---
 
@@ -77,7 +98,7 @@ Identity constraints may only be added, modified, or removed through a Constitut
 
 ## Ratification Record
 
-- **Adopted:** <YYYY-MM-DD>
+- **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
 - **Decision type:** Constitutional
-- **Version:** <version>
-- **Decision record:** <link to decision record>
+- **Version:** v1.0.0
+- **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md

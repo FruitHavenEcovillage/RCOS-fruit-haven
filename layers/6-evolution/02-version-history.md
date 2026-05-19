@@ -1,4 +1,4 @@
-﻿# Version History
+# Version History
 
 - **Layer:** 6 — Evolution & Adaptation
 - **Status:** Active — updated with each adopted change
@@ -8,7 +8,20 @@
 
 ---
 
-## Current Version: v0.0 — Repository Initialized
+## v1.0.0 — 2026-05-19
+
+- **Effective date:** 2026-05-19
+- **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md
+- **Decision type:** Constitutional
+- **Mechanism:** Consensus Meeting
+- **Summary:** Initial adaptation of the Fruit Haven Bylaws to the RCOS architecture, mapping purpose, identity constraints, membership states, treasury rules, land allotment, and consensus-based governance rules to the corresponding RCOS layers.
+- **Layers affected:** Layer 0, Layer 1, Layer 2, Layer 3, Layer 5
+- **Artifacts changed:** 0-identity/01-purpose-charter.md, 0-identity/04-identity-constraints-register.md, 1-membership/01-membership-agreement.md, 1-membership/04-membership-state-registry.md, 2-governance/01-decision-matrix.md, 2-governance/02-governance-protocol.md, 3-economy/02-treasury-ruleset.md, 3-economy/03-land-allotment-protocol.md, 5-operations/02-role-registry.md
+- **Migration notes:** Current property owners granted transitional "Active Member" status to resolve ambiguity. See 1-membership/04-membership-state-registry.md.
+
+---
+
+## v0.0 — Repository Initialized
 
 - **Effective date:** 2026-04-21
 - **Decision record:** N/A — initial scaffold
