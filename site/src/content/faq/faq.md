@@ -1,13 +1,13 @@
 ---
 items:
   - q: What is this website?
-    a: Fruit Haven created RCOS — the Regenerative Community Operating System. This site contains the artifacts produced by applying our own framework to our own online community. These aren't illustrations — they are the live structure Fruit Haven actually runs on, published openly to show that RCOS works for online communities and as a worked example of how an RCOS implementation looks in practice.
+    a: This site contains the artifacts produced by applying the RCOS framework (created by EcoHubs) to the Fruit Haven ecovillage. These aren't illustrations — they are the live structure Fruit Haven actually runs on, published openly to show that RCOS works and as a worked example of how an RCOS implementation looks in practice.
   - q: What is RCOS?
-    a: RCOS is an open-source, shared system for organizing intentional communities. It gives you clear, ready-to-use structures for decision-making, roles, resource sharing, and handling conflicts — so you can focus on building your community instead of figuring everything out from scratch. Explore the core system, optional modules, and how to apply them at blueprint.fruithaven.land.
+    a: RCOS is an open-source, shared system for organizing intentional communities, created by EcoHubs. It gives you clear, ready-to-use structures for decision-making, roles, resource sharing, and handling conflicts — so you can focus on building your community instead of figuring everything out from scratch. Explore the core system, optional modules, and how to apply them at blueprint.ecohubs.community.
   - q: What is Fruit Haven?
-    a: Fruit Haven is an online-first collaborative community co-creating the world's first open-source blueprint for regenerative communities (RCOS) as one tangible outcome of its work. The primary purpose is to make regenerative community living — rooted in care for people, land, and life — structurally accessible, resilient, and replicable, reducing humanity's dependency on extractive systems one community at a time.
+    a: Fruit Haven is an ecovillage applying the RCOS framework to its governance and operations. Our primary purpose is to make regenerative community living — rooted in care for people, land, and life — structurally accessible, resilient, and replicable.
   - q: Why apply RCOS to Fruit Haven itself?
-    a: "Because we actually need it. Fruit Haven is an online-first community and these artifacts are the live structure we operate on — how decisions get made, how members join and leave, how conflicts are handled. Publishing it openly serves two additional purposes: it shows RCOS can be applied to online communities — not only to physical ones — and it gives others a concrete, working example to study, fork, and adapt, rather than starting from a blank page."
+    a: "Because we actually need it. These artifacts are the live structure we operate on — how decisions get made, how members join and leave, how conflicts are handled. Publishing it openly serves two additional purposes: it shows RCOS can be applied to real communities and it gives others a concrete, working example to study, fork, and adapt, rather than starting from a blank page."
   - q: Why seven layers?
     a: Each layer addresses one foundational question a community must answer. They build on each other — identity before membership, membership before governance, and so on up to evolution, which is how the community changes its own rules.
   - q: How do I propose a change?
