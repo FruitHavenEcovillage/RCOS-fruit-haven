@@ -1,23 +1,12 @@
-# Meeting Template: Conflict Handling
+﻿# Meeting Template: Conflict Handling
 
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.2, §7.6; see also Layer 4 — Conflict Resolution Ladder
 
-:::rationale{title="Why a distinct meeting type for conflict?"}
-Conflict work has rules that other meetings don't: confidentiality, Facilitator selection that bypasses party preference, anti-retaliation protections, and restricted records. Using the Operations template for a conflict session would quietly violate all of these. A dedicated template makes the different container visible from the first minute.
-:::
-
 ---
 
 ## Meeting Type: Conflict Handling
-
-:::rcos{clauses="7.2.1, 7.2.2, 7.2.3, 7.6.4"}
-:::
-
-:::rationale{title="Why declare privacy and Facilitator rules up front?"}
-Conflict resolution only works if parties can trust the process. Naming the privacy boundaries, the Facilitator-selection rule, and the ladder-step scope at the top of the template makes those protections part of the structure — not a favor granted by whoever is in the room.
-:::
 
 - **Purpose:** Facilitate resolution of a raised conflict at a defined ladder step; covers facilitated sessions (Conflict Resolution Ladder Steps 2–4)
 - **Decision scope:** Produces repair plans, agreements, or escalation decisions; binding outcomes require the authority defined in the Conflict Resolution Ladder and Decision Matrix
@@ -32,10 +21,6 @@ Conflict resolution only works if parties can trust the process. Naming the priv
 ---
 
 ## Agenda Structure
-
-:::rationale{title="Why this sequence of stages?"}
-Jumping straight to solutions is how mediations fail — parties haven't felt heard, haven't checked understanding, and haven't separated needs from positions. The staged flow (perspectives, reflection, needs, options, decision) is what gives the conversation a fair chance of producing durable repair rather than imposed compromise.
-:::
 
 1. **Opening and ground rules** (10 min) — Facilitator confirms: consent to the process, confidentiality boundaries, anti-retaliation protections, and that either party may pause the session at any time
 2. **Each party shares their perspective** (15 min each, uninterrupted) — Facilitator holds the time boundary; no interruptions or rebuttals during this phase

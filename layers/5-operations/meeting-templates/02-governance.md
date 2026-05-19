@@ -1,23 +1,12 @@
-# Meeting Template: Governance
+﻿# Meeting Template: Governance
 
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.2, §7.6
 
-:::rationale{title="Why a separate deliberation meeting?"}
-A good vote depends on a shared understanding of what's actually being voted on. The Governance meeting gives members a structured space to question, probe, and discuss a proposal before the Fruit Haven vote — so that Strategic and Constitutional decisions are made with real comprehension, not just reaction. The meeting itself makes no binding decisions; the vote does.
-:::
-
 ---
 
 ## Meeting Type: Governance
-
-:::rcos{clauses="7.2.1, 7.2.2, 7.2.3, 7.6.4"}
-:::
-
-:::rationale{title="Why separate deliberation from the binding decision?"}
-If a meeting can both discuss and decide, whoever is in the room that day gets to decide — regardless of quorum or authority rules. Keeping deliberation separate from the Fruit Haven vote preserves the integrity of the Decision Matrix and ensures absent members still get a vote.
-:::
 
 - **Purpose:** Deliberate on an active proposal during its deliberation period, ahead of or alongside a Fruit Haven vote
 - **Decision scope:** Deliberation only — the binding decision is made via Fruit Haven vote per the Decision Matrix; no governance decisions are made in the meeting itself
@@ -30,10 +19,6 @@ If a meeting can both discuss and decide, whoever is in the room that day gets t
 ---
 
 ## Agenda Structure
-
-:::rationale{title="Why separate clarifying questions from deliberation?"}
-Mixing factual questions with advocacy is how discussions go sideways — people argue past each other before they've even agreed on what the proposal says. Splitting clarification from deliberation keeps the conversation grounded in the proposal itself.
-:::
 
 1. **Check-in** (5 min) — one word or sentence from each participant
 2. **Proposal summary** (10 min) — proposer presents the proposal: what it changes, why, and what the alternatives considered were

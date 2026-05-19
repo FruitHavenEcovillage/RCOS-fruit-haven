@@ -1,23 +1,12 @@
-# Meeting Template: Coordination & Alignment
+﻿# Meeting Template: Coordination & Alignment
 
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.2, §7.6
 
-:::rationale{title="Why a dedicated coordination meeting?"}
-Some blockers span more than one role and can't be resolved in the weekly Operations rhythm. Coordination & Alignment gives cross-role work its own space — for dependencies, handoffs, and competing priorities — so the weekly meeting doesn't balloon trying to absorb everything.
-:::
-
 ---
 
 ## Meeting Type: Coordination & Alignment
-
-:::rcos{clauses="7.2.1, 7.2.2, 7.2.3, 7.6.4"}
-:::
-
-:::rationale{title="Why bound scope and participants for this meeting?"}
-Without a declared scope, a coordination meeting becomes a second Operations meeting — doubling the meeting load for no gain. Keeping it focused on cross-role synchronization, and limiting required participants to those with active initiatives, preserves its purpose.
-:::
 
 - **Purpose:** Synchronize work across roles and initiatives; surface dependencies and blockers; align on priorities
 - **Decision scope:** Operational decisions only — cannot make Strategic or Constitutional decisions
@@ -30,10 +19,6 @@ Without a declared scope, a coordination meeting becomes a second Operations mee
 ---
 
 ## Agenda Structure
-
-:::rationale{title="Why front-load status and blockers?"}
-Most cross-role friction shows up as either a missing update or a blocker nobody named. Front-loading both, before discussing next steps, makes the real coordination problems visible instead of leaving them to emerge indirectly.
-:::
 
 1. **Check-in** (5 min) — one word or sentence from each participant
 2. **Initiative status updates** (30 min) — each role holder briefly covers: what's in progress, what's completed since last time, what's needed from other roles

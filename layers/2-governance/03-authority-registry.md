@@ -1,4 +1,4 @@
-# Authority Registry
+﻿# Authority Registry
 
 - **Layer:** 2 — Governance & Decision Logic
 - **Status:** Stub — not yet adopted
@@ -9,13 +9,6 @@
 ---
 
 ## Registered Authorities
-
-:::rcos{clauses="4.3.1, 4.3.2, 4.3.3, 4.3.4, 4.3.5"}
-:::
-
-:::rationale{title="Why write every authority down?"}
-Authority that is not explicitly registered gets filled in by default — by whoever has been around longest, speaks loudest, or controls the keys. A single registry that names every role, bounds its scope, caps its limits, and ties its basis to a delegation act makes unauthorized action detectable and prevents authority from being derived from charisma, seniority, or ownership.
-:::
 
 | Role / Body | Scope of authority | Limits | Term / Duration | Basis |
 |---|---|---|---|---|

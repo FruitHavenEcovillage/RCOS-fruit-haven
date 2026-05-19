@@ -1,23 +1,12 @@
-# Meeting Template: Operations
+﻿# Meeting Template: Operations
 
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §7.2, §7.6
 
-:::rationale{title="Why a weekly Operations meeting?"}
-Day-to-day coordination needs a regular beat, not ad-hoc improvisation. The Operations meeting is the community's heartbeat — a predictable space to review active work, surface blockers, and make the small decisions that keep things moving. Crucially, only Operational decisions happen here; Strategic and Constitutional ones go through the Fruit Haven voting app, so the meeting can't quietly accumulate authority it doesn't have.
-:::
-
 ---
 
 ## Meeting Type: Operations
-
-:::rcos{clauses="7.2.1, 7.2.2, 7.2.3, 7.2.4, 7.6.4"}
-:::
-
-:::rationale{title="Why define scope, quorum, and limits up front?"}
-A meeting without a declared decision scope will eventually be used to decide things it shouldn't. Naming the purpose, scope, quorum, duration, and facilitator is what keeps a recurring meeting from drifting into a shadow authority.
-:::
 
 - **Purpose:** Review active work, coordinate tasks, surface blockers, and make operational decisions
 - **Decision scope:** Operational decisions only — cannot make Strategic or Constitutional decisions
@@ -30,10 +19,6 @@ A meeting without a declared decision scope will eventually be used to decide th
 ---
 
 ## Agenda Structure
-
-:::rationale{title="Why a fixed agenda shape?"}
-A consistent agenda reduces the facilitation load, makes it easier for members to prepare, and ensures check-in, review, and next actions always happen — not just when someone remembers to include them.
-:::
 
 1. **Check-in** (5 min) — one word or sentence from each participant
 2. **Review last actions** (10 min) — what was committed at the last meeting; what was completed, what is outstanding

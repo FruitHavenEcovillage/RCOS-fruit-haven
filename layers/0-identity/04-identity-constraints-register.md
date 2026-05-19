@@ -1,4 +1,4 @@
-# Identity Constraints Register
+﻿# Identity Constraints Register
 
 - **Layer:** 0 — Identity & Scope
 - **Status:** Draft — not yet adopted
@@ -12,9 +12,6 @@
 
 Constraints on how authority is held and exercised within Fruit Haven.
 
-:::rcos{clauses="2.4.1, 2.4.2"}
-:::
-
 | ID | Constraint | Enforcement mechanism | Added | Decision record |
 |---|---|---|---|---|
 | IC-001 | Members must not act in ways that concentrate power, extract value, or cause harm to people, land, or the community's governance integrity. | Accountability Protocol (Layer 4); any member may raise a concern via the Conflict Resolution Ladder | <YYYY-MM-DD> | [link] |
@@ -26,9 +23,6 @@ Constraints on how authority is held and exercised within Fruit Haven.
 
 Constraints on how Fruit Haven and its mechanisms may be used economically.
 
-:::rcos{clauses="2.4.1, 2.4.2"}
-:::
-
 | ID | Constraint | Enforcement mechanism | Added | Decision record |
 |---|---|---|---|---|
 | IC-003 | Fruit Haven may not be used as a vehicle for speculative financial gain — internal economic mechanisms exist to recognize contribution, not generate profit. | Treasury Ruleset and Internal Economy Protocol (Layer 3); any proposal to create speculative financial mechanisms is invalid under this constraint; Full Members may veto via re-vote | <YYYY-MM-DD> | [link] |
@@ -38,13 +32,6 @@ Constraints on how Fruit Haven and its mechanisms may be used economically.
 ## Ecological Constraints
 
 Constraints on Fruit Haven' relationship with ecosystems and biodiversity.
-
-:::rcos{clauses="2.4.1, 2.4.2"}
-:::
-
-:::rationale{title="Why are ecological constraints partially deferred?"}
-Constraints IC-004 and IC-005 express a non-negotiable design intent — Fruit Haven must not degrade the conditions for life. They are fully enforceable as a basis for raising conflicts and objecting to proposals. The remaining gap is the definition of a measurable threshold for "sustained net harm" in a networked community context — this cannot be defined without operational data. Defining that threshold is a deferred governance task, tracked in future-proposals.md.
-:::
 
 | ID | Constraint | Enforcement mechanism | Added | Decision record |
 |---|---|---|---|---|
@@ -57,9 +44,6 @@ Constraints IC-004 and IC-005 express a non-negotiable design intent — Fruit H
 
 Constraints on Fruit Haven' identity as a non-ideological, pluralistic structure.
 
-:::rcos{clauses="2.4.1, 2.4.2"}
-:::
-
 | ID | Constraint | Enforcement mechanism | Added | Decision record |
 |---|---|---|---|---|
 | IC-006 | The structural layer of Fruit Haven — its governance, membership, and operating system — must remain non-ideological and non-normative. It provides scaffolding, not a prescribed way of living. | Any proposal embedding ideological requirements in RCOS Core or governance artifacts is invalid under this constraint; reinforced by Invariant INV-004 | <YYYY-MM-DD> | [link] |
@@ -69,13 +53,6 @@ Constraints on Fruit Haven' identity as a non-ideological, pluralistic structure
 ---
 
 ## Enforcement Principles
-
-:::rcos{clauses="2.4.3, 2.4.4"}
-:::
-
-:::rationale{title="Why require constraints to be testable and enforceable?"}
-Writing a constraint that cannot be acted on is performative — it creates the appearance of accountability without the substance. Testability means there is a defined process through which a member can raise a violation. If no such process exists, the constraint is an aspiration, not a rule. Making that distinction explicit here is what separates implicit culture from enforceable governance.
-:::
 
 Identity constraints MUST be testable and enforceable through defined processes, and MUST NOT be enforced implicitly or informally.
 

@@ -1,4 +1,4 @@
-# Membership State Registry
+﻿# Membership State Registry
 
 - **Layer:** 1 — Membership System
 - **Status:** Draft
@@ -7,13 +7,6 @@
 ---
 
 ## Defined Membership States
-
-:::rcos{clauses="3.1.1, 3.1.2, 3.1.3, 3.1.4, 3.1.5"}
-:::
-
-:::rationale{title="Why a single table of states?"}
-Rights and obligations scattered across documents drift apart. Collecting every state, its rights, its obligations, and its transitions into one table makes the membership system auditable at a glance.
-:::
 
 | State | Can Vote | Can Propose | Can Hold Roles | Can Buy Land |
 |---|---|---|---|---|
