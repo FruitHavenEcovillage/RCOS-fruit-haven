@@ -4,6 +4,8 @@
 - **Status:** Present
 - **RCOS reference:** §2.1, §2.4, §2.5
 
+> Every decision, role, and allocation of resources downstream has to stay consistent with one thing — the community's primary purpose. If it drifts, shifts with trends, or gets diluted by competing goals, the community loses coherence.
+
 ---
 
 ## Primary Purpose
