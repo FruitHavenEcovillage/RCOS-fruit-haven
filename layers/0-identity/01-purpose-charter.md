@@ -8,7 +8,7 @@
 
 ## Primary Purpose
 
-This community is organized exclusively for charitable, spiritual, religious, educational, and scientific purposes. Its primary purpose is to cultivate and sustain a resilient, health-oriented, ecologically regenerative, and consciously cooperative human community living in alignment with nature.
+The primary purpose of the community is to cultivate and sustain a resilient, health-oriented, ecologically regenerative, and consciously cooperative human community living in alignment with nature.
 
 ## Secondary Purposes
 
@@ -28,7 +28,7 @@ This community is organized exclusively for charitable, spiritual, religious, ed
 
 ## Conditions for Purpose Change
 
-The primary purpose may only be changed through a Constitutional decision as defined in the Decision Matrix (Layer 2), requiring a unanimous vote (Unanimity minus one) from Active Members via the consensus decision-making method, followed by a ratification period of no less than 30 days. Secondary purposes may be changed through a Strategic decision. Any change must be recorded in the Version History (Layer 6).
+The primary purpose may only be changed through a Constitutional decision as defined in the Decision Matrix (Layer 2), requiring a unanimous vote (Unanimity minus one) from Active Members via the Snapshot voting mechanism.
 
 ---
 
