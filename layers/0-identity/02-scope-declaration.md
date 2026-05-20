@@ -4,6 +4,8 @@
 - **Status:** Stub — not yet adopted
 - **RCOS reference:** §2.2, §2.5
 
+> If the community has not explicitly named an asset as in-scope, it isn't — full stop. Listing assets by name closes the gap where informal claims of authority grow over time and misunderstandings occur.
+
 ---
 
 ## In-Scope Assets
@@ -35,7 +37,7 @@
 5. _Facilitating, supporting and documenting pilot communities_
 6. _Publishing learnings, failures, and adaptations openly_
 7. _Stewarding the Fruit Haven brand, public presence, and social media accounts_
-8. _Researching and developing new approaches, tools, and methods to make regenerative communities more accessible, resilient, and replicable — including software development and applied experimentation_
+8. _Researching and developing new approaches, tools, and methods to make regenerative communities more accessible, resilient, and replicable — including software development and applied experiments_
 
 ## Explicitly Out of Scope
 
