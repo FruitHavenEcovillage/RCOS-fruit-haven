@@ -8,6 +8,13 @@
 
 ## Overview
 
+:::rcos{clauses="7.1.1, 7.1.2, 7.1.4, 7.7.1"}
+:::
+
+:::rationale{title="Why require every responsibility to have a named role?"}
+Ongoing responsibilities without explicit roles become invisible labor — done by whoever notices, resented silently, and impossible to hand over. Making every ongoing responsibility a named, accountable role is what prevents the community from running on the unpaid goodwill of a few members.
+:::
+
 This registry defines all recognized roles within Fruit Haven. Every role has a defined purpose, authority, limit, and term length.
 
 > **"In good standing"** means a Full Member who has met their participation expectations in the last 6 months and is not currently subject to an active accountability process or conflict review under Layer 4.

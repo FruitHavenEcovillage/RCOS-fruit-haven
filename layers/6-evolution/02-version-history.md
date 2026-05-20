@@ -10,6 +10,13 @@
 
 ## v1.0.0 — 2026-05-19
 
+:::rcos{clauses="8.2.1, 8.2.2, 8.2.3, 8.2.4, 8.2.5, 8.6.4, 8.7.2"}
+:::
+
+:::rationale{title="Why record every adopted change?"}
+Version history is what turns governance from memory into evidence. Every adopted change must say what changed, when it became effective, what decision authorized it, and which artifacts moved, so future members can reconstruct the current system without relying on oral history or private context.
+:::
+
 - **Effective date:** 2026-05-19
 - **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md
 - **Decision type:** Constitutional

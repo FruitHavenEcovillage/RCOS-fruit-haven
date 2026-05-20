@@ -8,6 +8,13 @@
 
 ## Defined Membership States
 
+:::rcos{clauses="3.1.1, 3.1.2, 3.1.3, 3.1.4, 3.1.5"}
+:::
+
+:::rationale{title="Why a single table of states?"}
+Rights and obligations scattered across documents drift apart. Collecting every state, its rights, its obligations, and its transitions into one table makes the membership system auditable at a glance — you can see every door into and out of the community, and what each one grants. If two documents ever disagree, this registry is the tiebreaker.
+:::
+
 | State | Can Vote | Can Propose | Can Hold Roles | Can Buy Land |
 |---|---|---|---|---|
 | Membership Applicant | No | No | Volunteer, Guest | Yes |
@@ -71,6 +78,10 @@ This process includes:
 * Need to adhere to the current bylaws
 
 ## Technical Notes
+
+:::rationale{title="Why preserve data after exit?"}
+The community's history belongs to the community, not to any individual account. Retaining contribution records after exit protects the integrity of audit trails, governance history, and XP/ECO accounting — while revoking access and removing the person from active listings respects the finality of their departure.
+:::
 
 - Contribution history and XP are retained in Fruit Haven after exit — records are preserved for audit and transparency purposes.
 - Exited members have their access blocked; they are removed from all member listings.

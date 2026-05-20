@@ -10,6 +10,9 @@
 
 ## Governance Constraints
 
+:::rcos{clauses="2.4.1, 2.4.2"}
+:::
+
 Constraints on how authority is held and exercised within Fruit Haven.
 
 | ID | Constraint | Enforcement mechanism | Added | Decision record |
@@ -21,6 +24,9 @@ Constraints on how authority is held and exercised within Fruit Haven.
 
 ## Economic Constraints
 
+:::rcos{clauses="2.4.1, 2.4.2"}
+:::
+
 Constraints on how Fruit Haven and its mechanisms may be used economically.
 
 | ID | Constraint | Enforcement mechanism | Added | Decision record |
@@ -30,6 +36,13 @@ Constraints on how Fruit Haven and its mechanisms may be used economically.
 ---
 
 ## Ecological Constraints
+
+:::rcos{clauses="2.4.1, 2.4.2"}
+:::
+
+:::rationale{title="Why are ecological constraints partially deferred?"}
+Constraints IC-004 and IC-005 express a non-negotiable design intent — Fruit Haven must not degrade the conditions for life. They are fully enforceable as a basis for raising conflicts and objecting to proposals. The remaining gap is the definition of a measurable threshold for "sustained net harm" in a networked community context — this cannot be defined without operational data. Defining that threshold is a deferred governance task, tracked in future-proposals.md.
+:::
 
 Constraints on Fruit Haven' relationship with ecosystems and biodiversity.
 
@@ -41,6 +54,9 @@ Constraints on Fruit Haven' relationship with ecosystems and biodiversity.
 ---
 
 ## Structural and Cultural Constraints
+
+:::rcos{clauses="2.4.1, 2.4.2"}
+:::
 
 Constraints on Fruit Haven' identity as a non-ideological, pluralistic structure.
 
@@ -68,6 +84,13 @@ Constraints on the ethical principles, dietary practices, and lifestyle guidelin
 ---
 
 ## Enforcement Principles
+
+:::rcos{clauses="2.4.3, 2.4.4"}
+:::
+
+:::rationale{title="Why require constraints to be testable and enforceable?"}
+Writing a constraint that cannot be acted on is performative — it creates the appearance of accountability without the substance. Testability means there is a defined process through which a member can raise a violation. If no such process exists, the constraint is an aspiration, not a rule. Making that distinction explicit here is what separates implicit culture from enforceable governance.
+:::
 
 Identity constraints MUST be testable and enforceable through defined processes, and MUST NOT be enforced implicitly or informally.
 

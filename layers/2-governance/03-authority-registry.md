@@ -1,8 +1,8 @@
-﻿# Authority Registry
+# Authority Registry
 
-- **Layer:** 2 — Governance & Decision Logic
-- **Status:** Stub — not yet adopted
-- **RCOS reference:** §4.3, §4.7
+- **Layer:** 2 � Governance & Decision Logic
+- **Status:** Stub � not yet adopted
+- **RCOS reference:** �4.3, �4.7
 
 > Lists all roles, circles, or bodies that hold decision-making authority, along with their explicit scope, limits, and term.
 
@@ -10,13 +10,20 @@
 
 ## Registered Authorities
 
+:::rcos{clauses="4.3.1, 4.3.2, 4.3.3, 4.3.4, 4.3.5"}
+:::
+
+:::rationale{title="Why write every authority down?"}
+Authority that is not explicitly registered gets filled in by default — by whoever has been around longest, speaks loudest, or controls the keys. A single registry that names every role, bounds its scope, caps its limits, and ties its basis to a delegation act makes unauthorized action detectable and prevents authority from being derived from charisma, seniority, or ownership.
+:::
+
 | Role / Body | Scope of authority | Limits | Term / Duration | Basis |
 |---|---|---|---|---|
-| Full Members (collective) | All Strategic and Constitutional decisions as defined in the Decision Matrix | Cannot act outside the Decision Matrix; cannot override invariants; no individual Full Member has unilateral authority | Ongoing — any Full Member in good standing | Membership state (Layer 1) |
-| Membership Admin | Membership lifecycle: application processing, onboarding, exits, Membership State Registry | Cannot make Strategic or Constitutional decisions; cannot override Full Member votes | Ongoing — see Role Registry (Layer 5) | Delegated by Full Members via the governance process |
-| Finance Steward | Treasury administration: Safe multi-sig management, treasury records, spending compliance | Spending limit: €0 (current); no unilateral spending authority; cannot override Full Member votes | Ongoing — see Role Registry (Layer 5) | Delegated by Full Members via the governance process |
-| Infrastructure Steward | Platform operations: Fruit Haven, integrations, websites, credentials, routine platform changes | Cannot make structural platform changes without a Strategic vote; cannot override Full Member votes | Ongoing — see Role Registry (Layer 5) | Delegated by Full Members via the governance process |
-| Communications Steward | Internal and external communications: newsletters, announcements, social media, routine channel management | Cannot make partnership or brand-use decisions without a Strategic vote; cannot override Full Member votes | Ongoing — see Role Registry (Layer 5) | Delegated by Full Members via the governance process |
+| Full Members (collective) | All Strategic and Constitutional decisions as defined in the Decision Matrix | Cannot act outside the Decision Matrix; cannot override invariants; no individual Full Member has unilateral authority | Ongoing � any Full Member in good standing | Membership state (Layer 1) |
+| Membership Admin | Membership lifecycle: application processing, onboarding, exits, Membership State Registry | Cannot make Strategic or Constitutional decisions; cannot override Full Member votes | Ongoing � see Role Registry (Layer 5) | Delegated by Full Members via the governance process |
+| Finance Steward | Treasury administration: Safe multi-sig management, treasury records, spending compliance | Spending limit: �0 (current); no unilateral spending authority; cannot override Full Member votes | Ongoing � see Role Registry (Layer 5) | Delegated by Full Members via the governance process |
+| Infrastructure Steward | Platform operations: Fruit Haven, integrations, websites, credentials, routine platform changes | Cannot make structural platform changes without a Strategic vote; cannot override Full Member votes | Ongoing � see Role Registry (Layer 5) | Delegated by Full Members via the governance process |
+| Communications Steward | Internal and external communications: newsletters, announcements, social media, routine channel management | Cannot make partnership or brand-use decisions without a Strategic vote; cannot override Full Member votes | Ongoing � see Role Registry (Layer 5) | Delegated by Full Members via the governance process |
 
 > **Note:** All four operational roles are currently held by the founding member (Stefan) during the early phase of the community. Role definitions, responsibilities, and handover requirements are fully specified in the Role Registry (Layer 5).
 
