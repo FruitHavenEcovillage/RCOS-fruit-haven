@@ -9,6 +9,9 @@
 
   let layersOpen = $state(pathname.startsWith("/layers"));
   let proposalsOpen = $state(pathname.startsWith("/proposals"));
+  let openLayerArticles = $state<Record<string, boolean>>(
+    Object.fromEntries(layerMeta.map((layer) => [layer.slug, true])),
+  );
 
   let drawerOpen = $state(false);
   let isMobile = $state(false);
@@ -22,6 +25,17 @@
 
   function getLayerArtifacts(layerSlug: string): LayerArtifact[] {
     return artifactsByLayer[layerSlug] ?? [];
+  }
+
+  function layerArticlesOpen(layerSlug: string): boolean {
+    return openLayerArticles[layerSlug] ?? false;
+  }
+
+  function toggleLayerArticles(layerSlug: string) {
+    openLayerArticles = {
+      ...openLayerArticles,
+      [layerSlug]: !layerArticlesOpen(layerSlug),
+    };
   }
 
   function openDrawer() {
@@ -159,31 +173,49 @@
           </li>
           {#each layerMeta as layer (layer.slug)}
             <li>
-              <a
-                href={`/layers/${layer.slug}`}
-                class="nav-sublink"
-                class:active={isActive(`/layers/${layer.slug}`)}
-                onclick={onLinkClick}
-              >
-                <span class="num">{layer.number}</span>
-                {layer.title}
-              </a>
+              <div class="layer-row">
+                <a
+                  href={`/layers/${layer.slug}`}
+                  class="nav-sublink layer-link"
+                  class:active={isActive(`/layers/${layer.slug}`)}
+                  onclick={onLinkClick}
+                >
+                  <span class="num">{layer.number}</span>
+                  {layer.title}
+                </a>
+                {#if getLayerArtifacts(layer.slug).length > 0}
+                  <button
+                    type="button"
+                    class="layer-toggle"
+                    aria-label={`${layerArticlesOpen(layer.slug) ? "Hide" : "Show"} ${layer.title} articles`}
+                    aria-expanded={layerArticlesOpen(layer.slug)}
+                    onclick={() => toggleLayerArticles(layer.slug)}
+                  >
+                    <span
+                      class="chevron layer-chevron"
+                      class:open={layerArticlesOpen(layer.slug)}>â–¸</span
+                    >
+                  </button>
+                {/if}
+              </div>
               {#if getLayerArtifacts(layer.slug).length > 0}
-                <ul class="nav-artifact-list" aria-label={`${layer.title} artifacts`}>
-                  {#each getLayerArtifacts(layer.slug) as artifact (artifact.slug)}
-                    <li>
-                      <a
-                        href={`/layers/${layer.slug}/${artifact.slug}`}
-                        class="nav-artifact-link"
-                        class:active={pathname ===
-                          `/layers/${layer.slug}/${artifact.slug}`}
-                        onclick={onLinkClick}
-                      >
-                        {artifact.title}
-                      </a>
-                    </li>
-                  {/each}
-                </ul>
+                {#if layerArticlesOpen(layer.slug)}
+                  <ul class="nav-artifact-list" aria-label={`${layer.title} artifacts`}>
+                    {#each getLayerArtifacts(layer.slug) as artifact (artifact.slug)}
+                      <li>
+                        <a
+                          href={`/layers/${layer.slug}/${artifact.slug}`}
+                          class="nav-artifact-link"
+                          class:active={pathname ===
+                            `/layers/${layer.slug}/${artifact.slug}`}
+                          onclick={onLinkClick}
+                        >
+                          {artifact.title}
+                        </a>
+                      </li>
+                    {/each}
+                  </ul>
+                {/if}
               {/if}
             </li>
           {/each}
@@ -383,6 +415,39 @@
   .nav-sublink.active {
     color: var(--color-primary);
     font-weight: 600;
+  }
+
+  .layer-row {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+  }
+
+  .layer-link {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .layer-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 0;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .layer-toggle:hover {
+    background: var(--color-surface-muted);
+    color: var(--color-text);
+  }
+  .layer-chevron {
+    font-size: 1.1rem;
   }
 
   .nav-artifact-list {
