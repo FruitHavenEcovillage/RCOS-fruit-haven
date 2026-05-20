@@ -1,7 +1,10 @@
 <script lang="ts">
   import layerMeta from "../data/layer-meta.json";
+  import layerArtifacts from "../data/layer-artifacts.json";
 
   type Props = { pathname?: string };
+  type LayerArtifact = { slug: string; title: string };
+  const artifactsByLayer = layerArtifacts as Record<string, LayerArtifact[]>;
   let { pathname = "" }: Props = $props();
 
   let layersOpen = $state(pathname.startsWith("/layers"));
@@ -15,6 +18,10 @@
   function isActive(href: string): boolean {
     if (href === "/") return pathname === "/";
     return pathname === href || pathname.startsWith(href + "/");
+  }
+
+  function getLayerArtifacts(layerSlug: string): LayerArtifact[] {
+    return artifactsByLayer[layerSlug] ?? [];
   }
 
   function openDrawer() {
@@ -161,6 +168,24 @@
                 <span class="num">{layer.number}</span>
                 {layer.title}
               </a>
+              {@const artifacts = getLayerArtifacts(layer.slug)}
+              {#if artifacts.length > 0}
+                <ul class="nav-artifact-list" aria-label={`${layer.title} artifacts`}>
+                  {#each artifacts as artifact (artifact.slug)}
+                    {@const href = `/layers/${layer.slug}/${artifact.slug}`}
+                    <li>
+                      <a
+                        href={href}
+                        class="nav-artifact-link"
+                        class:active={pathname === href}
+                        onclick={onLinkClick}
+                      >
+                        {artifact.title}
+                      </a>
+                    </li>
+                  {/each}
+                </ul>
+              {/if}
             </li>
           {/each}
         </ul>
@@ -282,7 +307,8 @@
   }
 
   .nav-list,
-  .nav-sublist {
+  .nav-sublist,
+  .nav-artifact-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -356,6 +382,33 @@
     color: var(--color-text);
   }
   .nav-sublink.active {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+
+  .nav-artifact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.05rem;
+    margin: 0 0 0.3rem 1.6rem;
+    padding-left: 0.55rem;
+    border-left: 1px solid color-mix(in srgb, var(--color-border) 75%, transparent);
+  }
+
+  .nav-artifact-link {
+    display: block;
+    padding: 0.22rem 0.45rem;
+    border-radius: var(--radius-sm);
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: 0.78rem;
+    line-height: 1.25;
+  }
+  .nav-artifact-link:hover {
+    background: var(--color-surface-muted);
+    color: var(--color-text);
+  }
+  .nav-artifact-link.active {
     color: var(--color-primary);
     font-weight: 600;
   }
