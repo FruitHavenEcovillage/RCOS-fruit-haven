@@ -1,8 +1,8 @@
 # Accountability Protocol
 
-- **Layer:** 4 � Conflict, Repair & Accountability
-- **Status:** Stub � not yet adopted
-- **RCOS reference:** �6.4, �6.5
+- **Layer:** 4 — Conflict, Repair & Accountability
+- **Status:** Stub — not yet adopted
+- **RCOS reference:** §6.4, §6.5
 
 ---
 
@@ -75,10 +75,10 @@ Ad-hoc sanctions invented mid-process reflect whoever is loudest in the room, no
 
 | Type | Preconditions | Authorized body | Appealable? |
 |---|---|---|---|
-| Private check-in / reminder | Inactivity or minor breach | Membership Admin | Yes � to Full Members |
-| Written warning | Unresolved obligation breach after check-in | Membership Admin | Yes � to Full Members |
-| Temporary access restriction | Safety-critical situation only; must be reviewed within 14 days | Membership Admin | Yes � to Full Members |
-| Forced exit | Serious or unresolved breach, or Full Member decision | Full Members (Strategic vote) | Yes � via re-vote mechanism |
+| Private check-in / reminder | Inactivity or minor breach | Membership Admin | Yes — to Full Members |
+| Written warning | Unresolved obligation breach after check-in | Membership Admin | Yes — to Full Members |
+| Temporary access restriction | Safety-critical situation only; must be reviewed within 14 days | Membership Admin | Yes — to Full Members |
+| Forced exit | Serious or unresolved breach, or Full Member decision | Full Members (Strategic vote) | Yes — via re-vote mechanism |
 
 ## Conditions for Restoring Rights
 

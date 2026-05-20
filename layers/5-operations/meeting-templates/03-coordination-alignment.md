@@ -1,8 +1,8 @@
 # Meeting Template: Coordination & Alignment
 
-- **Layer:** 5 � Operations & Coordination
-- **Status:** Stub � not yet adopted
-- **RCOS reference:** �7.2, �7.6
+- **Layer:** 5 — Operations & Coordination
+- **Status:** Stub — not yet adopted
+- **RCOS reference:** §7.2, §7.6
 
 ---
 
@@ -16,7 +16,7 @@ Without a declared scope, a coordination meeting becomes a second Operations mee
 :::
 
 - **Purpose:** Synchronize work across roles and initiatives; surface dependencies and blockers; align on priorities
-- **Decision scope:** Operational decisions only � cannot make Strategic or Constitutional decisions
+- **Decision scope:** Operational decisions only — cannot make Strategic or Constitutional decisions
 - **Required participants:** Role holders with active initiatives
 - **Optional participants:** All Full Members welcome
 - **Cadence:** Monthly or as needed when cross-role coordination is required
@@ -31,10 +31,10 @@ Without a declared scope, a coordination meeting becomes a second Operations mee
 Most cross-role friction shows up as either a missing update or a blocker nobody named. Front-loading both, before discussing next steps, makes the real coordination problems visible instead of leaving them to emerge indirectly.
 :::
 
-1. **Check-in** (5 min) � one word or sentence from each participant
-2. **Initiative status updates** (30 min) � each role holder briefly covers: what's in progress, what's completed since last time, what's needed from other roles
-3. **Blockers and dependencies** (15 min) � flag anything stalling progress across role boundaries; agree on owners and timelines for resolution
-4. **Next steps** (10 min) � confirm priorities and next actions with explicit owners
+1. **Check-in** (5 min) — one word or sentence from each participant
+2. **Initiative status updates** (30 min) — each role holder briefly covers: what's in progress, what's completed since last time, what's needed from other roles
+3. **Blockers and dependencies** (15 min) — flag anything stalling progress across role boundaries; agree on owners and timelines for resolution
+4. **Next steps** (10 min) — confirm priorities and next actions with explicit owners
 
 ---
 

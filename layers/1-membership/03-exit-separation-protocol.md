@@ -1,8 +1,8 @@
 # Exit & Separation Protocol
 
-- **Layer:** 1 � Membership System
-- **Status:** Stub � not yet adopted
-- **RCOS reference:** �3.6, �3.7, �3.8
+- **Layer:** 1 — Membership System
+- **Status:** Stub — not yet adopted
+- **RCOS reference:** §3.6, §3.7, §3.8
 
 ---
 

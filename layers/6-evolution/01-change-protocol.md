@@ -1,8 +1,8 @@
 # Change Protocol
 
-- **Layer:** 6 � Evolution & Adaptation
-- **Status:** Stub � not yet adopted
-- **RCOS reference:** �8.1, �8.5, �8.6
+- **Layer:** 6 — Evolution & Adaptation
+- **Status:** Stub — not yet adopted
+- **RCOS reference:** §8.1, §8.5, §8.6
 
 ---
 
@@ -15,7 +15,7 @@
 A change that arrives as a vague idea in chat cannot be evaluated, challenged, or rolled back later. Forcing every proposal through the same minimum shape — affected artifacts, rationale, risks, rollback — turns an opinion into a reviewable artifact and makes it impossible to slip a rule change past the community by accident.
 :::
 
-Any Full Member may propose a change to any RCOS artifact. Proposals are submitted via the Fruit Haven voting app first (per the Governance Protocol, Layer 2) � not as repository PRs. After the vote concludes, the Membership Admin adds the proposal file to the repository. Every proposal must include:
+Any Full Member may propose a change to any RCOS artifact. Proposals are submitted via the Fruit Haven voting app first (per the Governance Protocol, Layer 2) — not as repository PRs. After the vote concludes, the Membership Admin adds the proposal file to the repository. Every proposal must include:
 
 - Summary of the change
 - Affected layers and artifacts (with links)
@@ -34,8 +34,8 @@ Any Full Member may propose a change to any RCOS artifact. Proposals are submitt
 Not every change deserves the same friction. Typo fixes should not need a supermajority; constitutional shifts should not pass quietly. Mapping proposals to decision types — and defaulting unclear cases upward — makes the cost of a change proportional to its blast radius and protects Layer 0 from being eroded through small moves.
 :::
 
-- **Operational:** wording corrections, formatting, and minor content updates to artifacts � no vote required; executed by Membership Admin within delegated limits
-- **Strategic:** changes to Layer 1�5 content that affect member rights, processes, or structures
+- **Operational:** wording corrections, formatting, and minor content updates to artifacts — no vote required; executed by Membership Admin within delegated limits
+- **Strategic:** changes to Layer 1–5 content that affect member rights, processes, or structures
 - **Constitutional:** changes to Layer 0 (purpose, scope, invariants, or identity constraints) or to the governance system itself (Layer 2)
 
 > If classification is unclear, it defaults to the higher-impact type.
@@ -66,7 +66,7 @@ When a proposal passes:
 1. Membership Admin adds the proposal file to `proposals/passed/` within 7 days
 2. Affected artifacts in `layers/` are updated within 7 days
 3. `layers/6-evolution/02-version-history.md` is updated to record the change
-4. Status fields in affected artifacts are updated from *Stub � not yet adopted* to *Active � adopted <YYYY-MM-DD>*
+4. Status fields in affected artifacts are updated from *Stub — not yet adopted* to *Active — adopted <YYYY-MM-DD>*
 
 ## Rejection
 

@@ -1,8 +1,8 @@
 # Internal Economy Protocol
 
-- **Layer:** 3 � Economic & Resource System
-- **Status:** Stub � not yet adopted
-- **RCOS reference:** �5.1, �5.2, �5.4, �5.5
+- **Layer:** 3 — Economic & Resource System
+- **Status:** Stub — not yet adopted
+- **RCOS reference:** §5.1, §5.2, §5.4, §5.5
 
 ---
 
@@ -60,7 +60,7 @@ Without a defined mechanism, "who gets credit" becomes a matter of who is loudes
   - Structured: automatically via Puckstack task completion ? XP/ECO credited via Offcoin
   - Informal/other: self-reported by the member in Fruit Haven or Discord; no validation required for informal participation
 - **Who validates:** Structured contributions validated automatically by Puckstack/Offcoin; significant contributions (e.g. major artifacts, facilitation work) may be nominated by any member for additional XP via the Membership Admin
-- **Effect on access/privileges:** Contribution recognition affects XP and ECO balance only � it does not grant additional governance rights beyond what the membership state defines
+- **Effect on access/privileges:** Contribution recognition affects XP and ECO balance only — it does not grant additional governance rights beyond what the membership state defines
 - **Dispute:** Any member may contest a contribution record within 30 days; disputes resolved by Membership Admin with right of appeal to Full Members
 
 ## Internal Units
@@ -79,13 +79,13 @@ Two internal units are in use: **XP** (experience points) and **ECO** (community
 | **Purpose** | Activity and progress indicator | Contribution recognition; may unlock certain Puckstack permissions |
 | **Issuance** | Automatic via Puckstack task completion; manual via Membership Admin for nominated informal contributions | Same as XP |
 | **Transferability** | Non-transferable between members | Non-transferable between members; not traded on external markets |
-| **Expiration / decay** | None currently | None currently � see [Missing Technical Implementations](../../resources/missing-technical-implementations.md) |
+| **Expiration / decay** | None currently | None currently — see [Missing Technical Implementations](../../resources/missing-technical-implementations.md) |
 | **Hard cap** | None currently | None currently |
-| **Future utility** | N/A | TBD � further utility to be defined via future proposals |
+| **Future utility** | N/A | TBD — further utility to be defined via future proposals |
 | **Fraud prevention** | Self-reported contributions subject to community review; dispute mechanism as defined in Contribution Recognition Mechanism | Same as XP |
 | **Privacy** | Balances visible to all Full Members in Fruit Haven | Balances visible to all Full Members in Fruit Haven |
 
-> ECO and XP do not grant governance rights beyond what the membership state defines (see �5.2.5).
+> ECO and XP do not grant governance rights beyond what the membership state defines (see §5.2.5).
 
 ## Accumulation Constraints
 
@@ -96,7 +96,7 @@ Two internal units are in use: **XP** (experience points) and **ECO** (community
 Any internal unit that can pile up without limit eventually becomes leverage — a few members with large balances gain informal sway the governance system never granted them. Stating accumulation rules explicitly, even when the current rule is "none yet," keeps the question open and forces a visible decision before concentration becomes a structural problem.
 :::
 
-- No hard cap on XP or ECO currently � accumulation is unlimited
+- No hard cap on XP or ECO currently — accumulation is unlimited
 - Neither unit can be converted into governance authority or used to bypass the Decision Matrix
 - Accumulation limits and decay mechanisms are deferred as a future proposal; see [Future Proposals](../../resources/future-proposals.md)
 

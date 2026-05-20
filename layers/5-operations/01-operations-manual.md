@@ -1,8 +1,8 @@
 # Operations Manual
 
-- **Layer:** 5 � Operations & Coordination
-- **Status:** Stub � not yet adopted
-- **RCOS reference:** �7.1, �7.3, �7.4, �7.5, �7.6
+- **Layer:** 5 — Operations & Coordination
+- **Status:** Stub — not yet adopted
+- **RCOS reference:** §7.1, §7.3, §7.4, §7.5, §7.6
 
 ---
 
@@ -17,12 +17,12 @@ If a process only lives in one person's head, the community depends on that pers
 
 | Process | Who | Detail |
 |---|---|---|
-| Member onboarding | Membership Admin | Processes application, triggers trial period, monitors 30-day window, grants Full Member status on completion � see Onboarding Protocol (Layer 1) |
-| Member exit | Membership Admin | Processes voluntary exit request or forced exit per Layer 4 outcome � see Exit & Separation Protocol (Layer 1) |
-| Proposal publication | Proposing member + Membership Admin | Proposing member submits the proposal in the Fruit Haven voting app; Membership Admin adds proposal file to `proposals/passed/` or `proposals/rejected/` within 7 days of vote conclusion; affected artifacts updated within 7 days � see Governance Protocol (Layer 2) |
-| Contribution recording | Member (self-reported) / Puckstack (automatic) | Structured contributions credited automatically via Puckstack/Offcoin; informal contributions self-reported in Fruit Haven � see Internal Economy Protocol (Layer 3) |
+| Member onboarding | Membership Admin | Processes application, triggers trial period, monitors 30-day window, grants Full Member status on completion — see Onboarding Protocol (Layer 1) |
+| Member exit | Membership Admin | Processes voluntary exit request or forced exit per Layer 4 outcome — see Exit & Separation Protocol (Layer 1) |
+| Proposal publication | Proposing member + Membership Admin | Proposing member submits the proposal in the Fruit Haven voting app; Membership Admin adds proposal file to `proposals/passed/` or `proposals/rejected/` within 7 days of vote conclusion; affected artifacts updated within 7 days — see Governance Protocol (Layer 2) |
+| Contribution recording | Member (self-reported) / Puckstack (automatic) | Structured contributions credited automatically via Puckstack/Offcoin; informal contributions self-reported in Fruit Haven — see Internal Economy Protocol (Layer 3) |
 | Weekly meeting | Facilitator | Publishes agenda in Discord =24 hours in advance; posts meeting notes in Discord after the meeting; action items tracked until resolved |
-| Treasury management | Finance Steward | Ensures all Full Members have Safe Proposer access; publishes fiat account summaries at least every 6 months if the account does not support direct member access � see Treasury Ruleset (Layer 3) |
+| Treasury management | Finance Steward | Ensures all Full Members have Safe Proposer access; publishes fiat account summaries at least every 6 months if the account does not support direct member access — see Treasury Ruleset (Layer 3) |
 | Platform access review | Infrastructure Steward | Reviews platform permissions quarterly; revokes access for exited members within 24 hours |
 
 ## Temporary and Ad-Hoc Responsibilities
@@ -39,7 +39,7 @@ When a task or responsibility is assigned temporarily (e.g. covering for an abse
 - Documented as a temporary assignment (in Discord or the relevant task tool) at the time of assignment
 - Reviewed before the end date; if the need continues beyond the original scope, the responsibility must be formally assigned through the Role Registry process
 
-No temporary or ad-hoc responsibility may persist beyond 90 days without being converted into a formally defined role or terminated. If a temporary responsibility has no owner after its end date, it lapses � it does not transfer implicitly to any other member or role.
+No temporary or ad-hoc responsibility may persist beyond 90 days without being converted into a formally defined role or terminated. If a temporary responsibility has no owner after its end date, it lapses — it does not transfer implicitly to any other member or role.
 
 ---
 

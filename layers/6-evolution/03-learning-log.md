@@ -1,8 +1,8 @@
 # Learning Log
 
-- **Layer:** 6 � Evolution & Adaptation
-- **Status:** Active � updated when learnable events occur
-- **RCOS reference:** �8.4, �8.6
+- **Layer:** 6 — Evolution & Adaptation
+- **Status:** Active — updated when learnable events occur
+- **RCOS reference:** §8.4, §8.6
 
 > Records major failures, adaptations, reversals, and systemic learnings. Repeated failure patterns must trigger structural review, not individual blame. Entries are prepended (most recent first).
 
@@ -27,7 +27,7 @@ An entry MUST be added when any of the following occur:
 - A near-miss: a situation that could have caused significant harm but was caught before it did
 - Any event the community collectively identifies as worth learning from
 
-Minor operational adjustments, routine decisions, and individual member issues that are fully resolved at Step 1�3 of the Conflict Resolution Ladder do not require a Learning Log entry.
+Minor operational adjustments, routine decisions, and individual member issues that are fully resolved at Step 1–3 of the Conflict Resolution Ladder do not require a Learning Log entry.
 
 **Ownership:** The Blueprint Steward is responsible for ensuring entries are created and maintained. Any Full Member may draft an entry and submit it to the Blueprint Steward for review and publication.
 
@@ -49,10 +49,10 @@ Free-form reflection is valuable, but it does not aggregate. A consistent schema
 :::
 
 ```markdown
-## <YYYY-MM-DD> � <Short title>
+## <YYYY-MM-DD> — <Short title>
 
 - **Trigger:** <What happened that prompted this entry>
-- **Layers/artifacts implicated:** <e.g. Layer 2 � Governance Protocol>
+- **Layers/artifacts implicated:** <e.g. Layer 2 — Governance Protocol>
 - **What occurred:** <Short narrative>
 - **Signals that triggered action:** <What made this visible as a problem>
 - **What changed or was tried:** <Decision, experiment, or rule change>
