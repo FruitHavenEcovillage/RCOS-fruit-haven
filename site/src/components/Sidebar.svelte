@@ -168,16 +168,15 @@
                 <span class="num">{layer.number}</span>
                 {layer.title}
               </a>
-              {@const artifacts = getLayerArtifacts(layer.slug)}
-              {#if artifacts.length > 0}
+              {#if getLayerArtifacts(layer.slug).length > 0}
                 <ul class="nav-artifact-list" aria-label={`${layer.title} artifacts`}>
-                  {#each artifacts as artifact (artifact.slug)}
-                    {@const href = `/layers/${layer.slug}/${artifact.slug}`}
+                  {#each getLayerArtifacts(layer.slug) as artifact (artifact.slug)}
                     <li>
                       <a
-                        href={href}
+                        href={`/layers/${layer.slug}/${artifact.slug}`}
                         class="nav-artifact-link"
-                        class:active={pathname === href}
+                        class:active={pathname ===
+                          `/layers/${layer.slug}/${artifact.slug}`}
                         onclick={onLinkClick}
                       >
                         {artifact.title}
