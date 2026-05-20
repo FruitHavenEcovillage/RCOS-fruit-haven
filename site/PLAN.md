@@ -70,7 +70,7 @@ FAQ link scrolls to the landing-page FAQ section for v1.
 ## Landing page
 
 - Hero + short explainer of what this site is
-- Link to RCOS framework: https://blueprint.fruithaven.land
+- Link to RCOS framework: https://blueprint.ecohubs.community
 - **Dashboard tiles**
   - *Latest proposals*: last N entries from `proposals/passed/` +
     `proposals/rejected/`, sorted by frontmatter `date`

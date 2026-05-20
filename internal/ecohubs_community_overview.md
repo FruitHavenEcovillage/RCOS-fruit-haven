@@ -236,7 +236,7 @@ Members coordinate work through **Puckstack**, a task management platform integr
 
 ### Documentation and Knowledge
 
-The Blueprint is hosted at `blueprint.fruithaven.land` and is developed as a collaborative knowledge base. Blog content is managed via Ghost CMS with a community proposal-and-vote publication workflow.
+The Blueprint is hosted at `blueprint.ecohubs.community` and is developed as a collaborative knowledge base. Blog content is managed via Ghost CMS with a community proposal-and-vote publication workflow.
 
 ### Role and Responsibility Structure
 

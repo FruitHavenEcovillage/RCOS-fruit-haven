@@ -1,4 +1,4 @@
-﻿# Scope Declaration
+# Scope Declaration
 
 - **Layer:** 0 — Identity & Scope
 - **Status:** Stub — not yet adopted
@@ -19,7 +19,7 @@ If the community has not explicitly named an asset as in-scope, it isn't — ful
 2. _The shared treasury (currently held in the Safe multi-sig wallet)_
 3. _The Fruit Haven platform (fruithaven.land)_
 4. _The Fruit Haven website (fruithaven.land)_
-5. _The RCOS hosted website (blueprint.fruithaven.land)_
+5. _The RCOS hosted website (blueprint.ecohubs.community)_
 6. _The Fruit Haven brand, domain names, public channels, and social media accounts_
 7. _Pilot community resources explicitly designated as community-governed_
 

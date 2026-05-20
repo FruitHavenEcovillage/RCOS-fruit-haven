@@ -222,7 +222,7 @@
   </ul>
 
   <div class="sidebar-footer">
-    <a href="https://blueprint.fruithaven.land" target="_blank" rel="noopener"
+    <a href="https://blueprint.ecohubs.community" target="_blank" rel="noopener"
       >RCOS framework ↗</a
     >
   </div>
