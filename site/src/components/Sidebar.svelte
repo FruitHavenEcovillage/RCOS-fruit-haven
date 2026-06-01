@@ -10,7 +10,12 @@
   let layersOpen = $state(pathname.startsWith("/layers"));
   let proposalsOpen = $state(pathname.startsWith("/proposals"));
   let openLayerArticles = $state<Record<string, boolean>>(
-    Object.fromEntries(layerMeta.map((layer) => [layer.slug, true])),
+    Object.fromEntries(
+      layerMeta.map((layer) => [
+        layer.slug,
+        pathname === `/layers/${layer.slug}` || pathname.startsWith(`/layers/${layer.slug}/`),
+      ]),
+    ),
   );
 
   let drawerOpen = $state(false);
@@ -193,7 +198,7 @@
                   >
                     <span
                       class="chevron layer-chevron"
-                      class:open={layerArticlesOpen(layer.slug)}>â–¸</span
+                      class:open={layerArticlesOpen(layer.slug)}>▸</span
                     >
                   </button>
                 {/if}
