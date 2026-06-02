@@ -72,6 +72,7 @@ An unstated boundary is no boundary at all. Explicit out-of-scope items protect 
 3. _Private relationships and personal living arrangements of members (except where safety-critical conditions apply as defined in Layer 4)_
 4. _Off-network projects and businesses that do not use Fruit Haven assets or operate under Fruit Haven governance_
 5. _The internal governance of independent communities that have adopted RCOS — Fruit Haven stewards the standard, not the communities using it_
+6. _Sovereign properties: Any property, should all the owners agree using the consensus method and the unanimity decision rule, may shed the title of "Fruit Haven" and effectively leave the project._
 
 ---
 

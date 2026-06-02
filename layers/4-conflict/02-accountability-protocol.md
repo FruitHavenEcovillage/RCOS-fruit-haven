@@ -47,8 +47,10 @@ Accountability without due process is just punishment with paperwork. A member f
 :::
 
 - **Right to notice:** The member is notified in writing of the concern before any review or sanction begins
+- **Right to prior warning:** The community must present a written list of grievances/complaints/transgressions with approximate dates. Some items on this list must have been discussed with the inhabitant previously to satisfy a prior warning. An exception may be made for severe transgressions.
 - **Right to respond:** Minimum 30 days to respond to any accountability check
 - **Right to appeal:** Any Membership Admin decision may be appealed to Full Members via the governance process (Strategic vote)
+- **Absentee deferral:** Non-present members reviewing an appeal or a banishment proposal shall defer to present members as reasonable, as non-present members are likely not experiencing the issues firsthand and may offer undue leniency.
 
 ## Anti-Retaliation Protections
 

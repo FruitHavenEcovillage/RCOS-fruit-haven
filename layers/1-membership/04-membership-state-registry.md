@@ -91,7 +91,7 @@ The community's history belongs to the community, not to any individual account.
 
 ## Ratification Record
 
-- **Adopted:** 2026-05-19 (Based on Google Doc Consensus)
+- **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
 - **Decision type:** Strategic
 - **Version:** v1.0.0
-- **Decision record:** proposals/passed/2026-05-19_fh-membership-proposal.md
+- **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md

@@ -37,6 +37,7 @@ Removal is the sharpest power the community holds over a person. If it can be ex
 - Accounts on platforms related to Fruit Haven (Discord, Notion, Puckstack, etc.) may be deleted or blocked depending on the severity of the decision and platform capabilities
 - Contribution history and XP are retained
 - Membership state transitions to Exited Member
+- For the duration of the banishment/forced exit, the individual is temporarily stripped of their community member status and loses any previously possessed voting power. If they have residency in other Fruit Haven community areas, they may retain it if that area permits, but their Fruit Haven community membership is no longer recognized.
 - The member may not reapply for a period defined in the accountability decision (minimum 6 months)
 - The decision record is retained permanently; access to it is governed by the privacy rules in the Conflict Resolution Ladder
 

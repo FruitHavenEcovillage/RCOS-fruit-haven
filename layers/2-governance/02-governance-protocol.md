@@ -75,6 +75,19 @@ A governance system with no appeal route hardens mistakes into permanent rules; 
 - Within the 2-week absentee review period, a non-present member may present an objection combined with a demonstration that the proposal violates the community vision.
 - A re-vote or re-testing of consensus is held using the same consensus mechanism if a valid objection is raised.
 
+## Sovereignty of Community Areas and Properties
+
+:::rationale{title="Why define sovereignty of areas?"}
+Recognizing the sovereignty of localized areas ensures that decisions primarily affecting a specific physical community or property are made by the people actually residing there, preventing overreach by the broader network while maintaining shared standards.
+:::
+
+- Each community area may have its own set of by-laws and may accept members to be part of the "Fruit Haven" community.
+- A community area may grant residency in that same area, but cannot grant residency in a different community area.
+- When voting on proposals that affect primarily a specific community area, only community members with voting power who have been granted residency or regular use rights in that same area can block the proposal.
+- Only members who are trained in the Consensus Decision Making method may have general voting power across the community. However, specific community areas may waive this training requirement if they consent, allowing untrained members to vote only on matters primarily affecting that specific area.
+- Fruit Haven trustees have access to all FH community areas unless a restriction has been placed upon them for poor behavior.
+- **Initiation of a Sovereign Community Area**: A community area is recognized as sovereign once it has at least 1 resident Fruit Haven community member and 2 non-members granted residency (OR 3 residents total including at least 1 FH member), AND has a formally ratified set of written by-laws on display and available in the web archives. Only after reaching this point may the community grant residency or Fruit Haven membership. At this point, FH members rescind jurisdiction over day-to-day operations to the residents of that area.
+
 ## Conflict Between Decisions
 
 :::rcos{clauses="4.5.3"}

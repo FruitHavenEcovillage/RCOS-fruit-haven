@@ -19,6 +19,8 @@ Admission is the moment a stranger becomes bound by — and protected by — the
 2. _Willingness to actively contribute in at least one recognized category_
 3. _No prior forced exit, rejection, or incomplete-onboarding exit within the last 6 months_
 4. _Completion of the application form in good faith — no misrepresentation_
+5. _Membership granting is initiated by the Fruit Haven members with voting power in a community area, with the consultation of the residents and volunteers in that area._
+6. _A community area may only grant residency or membership once it has satisfied the conditions for a Sovereign Community Area._
 
 ## Onboarding Steps
 
