@@ -25,6 +25,23 @@
     }
   }
 
+  function getSnippet(text, query) {
+    if (!text || !query) return '';
+    const q = query.toLowerCase();
+    const idx = text.toLowerCase().indexOf(q);
+    if (idx === -1) return text.slice(0, 100) + (text.length > 100 ? '...' : '');
+    
+    const start = Math.max(0, idx - 40);
+    const end = Math.min(text.length, idx + query.length + 40);
+    
+    let snippet = text.slice(start, end);
+    if (start > 0) snippet = '...' + snippet;
+    if (end < text.length) snippet = snippet + '...';
+    
+    const regex = new RegExp(`(${query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')})`, 'gi');
+    return snippet.replace(regex, '<mark>$1</mark>');
+  }
+
   $: {
     if (query.trim() === '') {
       results = [];
@@ -34,7 +51,17 @@
         (item.title && item.title.toLowerCase().includes(q)) || 
         (item.body && item.body.toLowerCase().includes(q)) ||
         (item.summary && item.summary.toLowerCase().includes(q))
-      ).slice(0, 10);
+      ).map(item => {
+        let snippetHtml = '';
+        if (item.body && item.body.toLowerCase().includes(q)) {
+          snippetHtml = getSnippet(item.body, query);
+        } else if (item.summary && item.summary.toLowerCase().includes(q)) {
+          snippetHtml = getSnippet(item.summary, query);
+        } else {
+          snippetHtml = item.summary || (item.body ? item.body.slice(0, 100) + '...' : '');
+        }
+        return { ...item, snippetHtml };
+      }).slice(0, 10);
     }
   }
 
@@ -48,9 +75,17 @@
     }
   }
 
+  function handleOpenSearch() {
+    if (!isOpen) toggleSearch();
+  }
+
   onMount(() => {
     window.addEventListener('keydown', handleKeydown);
-    return () => window.removeEventListener('keydown', handleKeydown);
+    window.addEventListener('open-search', handleOpenSearch);
+    return () => {
+      window.removeEventListener('keydown', handleKeydown);
+      window.removeEventListener('open-search', handleOpenSearch);
+    };
   });
 </script>
 
@@ -96,8 +131,8 @@
               <span class="type">{result.type}</span>
               {result.title}
             </div>
-            {#if result.summary}
-              <div class="result-summary">{result.summary}</div>
+            {#if result.snippetHtml}
+              <div class="result-summary">{@html result.snippetHtml}</div>
             {/if}
           </a>
         {/each}
@@ -107,6 +142,13 @@
 </div>
 
 <style>
+  :global(.result-summary mark) {
+    background: color-mix(in srgb, var(--color-primary) 30%, transparent);
+    color: var(--color-text);
+    border-radius: 2px;
+    padding: 0 0.15rem;
+  }
+  
   .search-container {
     position: absolute;
     top: 2rem;

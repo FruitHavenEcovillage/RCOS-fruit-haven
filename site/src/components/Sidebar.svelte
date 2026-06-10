@@ -148,6 +148,23 @@
 
   <ul class="nav-list">
     <li>
+      <button 
+        type="button" 
+        class="nav-link search-nav-btn" 
+        onclick={() => { window.dispatchEvent(new CustomEvent('open-search')); if(isMobile) closeDrawer(); }}
+      >
+        <span class="search-nav-content">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          Search
+        </span>
+        <span class="search-nav-shortcut">Ctrl K</span>
+      </button>
+    </li>
+
+    <li>
       <a
         href="/"
         class="nav-link"
@@ -382,6 +399,27 @@
     background: var(--color-surface-muted);
     color: var(--color-primary);
     font-weight: 600;
+  }
+  
+  .search-nav-btn {
+    margin-bottom: 0.5rem;
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+  }
+  .search-nav-btn:hover {
+    border-color: var(--color-text-muted);
+  }
+  .search-nav-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .search-nav-shortcut {
+    font-size: 0.7rem;
+    background: var(--color-bg);
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
   }
 
   .chevron {
