@@ -5,9 +5,9 @@ items:
   - q: What is RCOS?
     a: RCOS is an open-source, shared system for organizing intentional communities, created by EcoHubs. It gives you clear, ready-to-use structures for decision-making, roles, resource sharing, and handling conflicts — so you can focus on building your community instead of figuring everything out from scratch. Explore the core system, optional modules, and how to apply them at blueprint.ecohubs.community.
   - q: What is Fruit Haven?
-    a: Fruit Haven is an ecovillage applying the RCOS framework to its governance and operations. Our primary purpose is to make regenerative community living — rooted in care for people, land, and life — structurally accessible, resilient, and replicable.
-  - q: Why apply RCOS to Fruit Haven itself?
-    a: "Because we actually need it. These artifacts are the live structure we operate on — how decisions get made, how members join and leave, how conflicts are handled. Publishing it openly serves two additional purposes: it shows RCOS can be applied to real communities and it gives others a concrete, working example to study, fork, and adapt, rather than starting from a blank page."
+    a: Fruit Haven is an ecovillage applying the RCOS framework to its governance and operations. Our primary purpose is to cultivate and sustain a resilient, health-oriented, ecologically regenerative, and consciously cooperative human community living in alignment with nature. We also focus on cultivating fruits and vegetables through permaculture, promoting raw vegan or fruitarian lifestyles, and ecosystem restoration.
+  - q: Why apply RCOS to Fruit Haven?
+    a: We are applying RCOS to establish explicit, written rules and bylaws for our community. Our goal is to ensure that as little as possible remains implicit or undefined, creating clear and transparent structures for how decisions get made, how members join and leave, and how conflicts are handled.
   - q: Why seven layers?
     a: Each layer addresses one foundational question a community must answer. They build on each other — identity before membership, membership before governance, and so on up to evolution, which is how the community changes its own rules.
   - q: How do I propose a change?
