@@ -89,6 +89,7 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 | Decision Matrix | [layers/2-governance/01-decision-matrix.md](../layers/2-governance/01-decision-matrix.md) | Present | Content complete |
 | Governance Protocol | [layers/2-governance/02-governance-protocol.md](../layers/2-governance/02-governance-protocol.md) | Present | Content complete |
 | Authority Registry | [layers/2-governance/03-authority-registry.md](../layers/2-governance/03-authority-registry.md) | Draft | Content complete; updated to reference specific operational roles from Layer 5 |
+| Federation Protocol | [layers/2-governance/04-federation-protocol.md](../layers/2-governance/04-federation-protocol.md) | Present | Adopted via 2019 consensus; explicitly integrated |
 
 ---
 

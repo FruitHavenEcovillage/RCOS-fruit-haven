@@ -8,6 +8,19 @@
 
 ---
 
+## v1.1.0 — 2026-06-10
+
+- **Effective date:** 2026-06-10
+- **Decision record:** proposals/passed/2019-05-17_federation-sovereignty.md
+- **Decision type:** Constitutional
+- **Mechanism:** Consensus
+- **Summary:** Integrated the "FH Federation" Sovereignty Doctrine (passed by consensus in 2019) into the formal RCOS layers. Extracted community sovereignty details into a dedicated Federation Protocol.
+- **Layers affected:** Layer 2
+- **Artifacts changed:** 2-governance/02-governance-protocol.md, 2-governance/04-federation-protocol.md
+- **Migration notes:** None
+
+---
+
 ## v1.0.0 — 2026-05-19
 
 :::rcos{clauses="8.2.1, 8.2.2, 8.2.3, 8.2.4, 8.2.5, 8.6.4, 8.7.2"}
