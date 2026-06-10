@@ -14,7 +14,8 @@
   "2-governance": [
     { "slug": "01-decision-matrix", "title": "Decision Matrix" },
     { "slug": "02-governance-protocol", "title": "Governance Protocol" },
-    { "slug": "03-authority-registry", "title": "Authority Registry" }
+    { "slug": "03-authority-registry", "title": "Authority Registry" },
+    { "slug": "04-federation-protocol", "title": "Federation Protocol" }
   ],
   "3-economy": [
     { "slug": "01-internal-economy-protocol", "title": "Internal Economy Protocol" },
