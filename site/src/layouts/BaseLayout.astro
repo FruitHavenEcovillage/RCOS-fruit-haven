@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Sidebar from '../components/Sidebar.svelte';
+import Search from '../components/Search.svelte';
 
 interface Props {
   title?: string;
@@ -25,6 +26,7 @@ const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
     <div class="shell">
       <Sidebar client:load pathname={pathname} />
       <main class="main">
+        <Search client:load />
         <div class="main-inner">
           <slot />
         </div>
@@ -47,6 +49,7 @@ const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
   .main {
     flex: 1;
     min-width: 0;
+    position: relative;
   }
   .main-inner {
     max-width: 62rem;
