@@ -60,6 +60,7 @@
       <circle cx="11" cy="11" r="8"></circle>
       <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
     </svg>
+    <span class="search-text">Search documentation</span>
     <span class="shortcut">Ctrl K</span>
   </button>
 
@@ -131,12 +132,18 @@
     border-color: var(--color-text-muted);
   }
   
+  .search-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
   .shortcut {
     font-size: 0.75rem;
     background: var(--color-bg);
     padding: 0.1rem 0.3rem;
     border-radius: 4px;
     border: 1px solid var(--color-border);
+    margin-left: 0.5rem;
   }
   
   .backdrop {
@@ -266,6 +273,9 @@
       max-height: 90vh;
     }
     .shortcut {
+      display: none;
+    }
+    .search-text {
       display: none;
     }
   }
