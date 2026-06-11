@@ -300,6 +300,7 @@
   </ul>
 
   <div class="sidebar-footer">
+    <a href="https://fruithaven.land" target="_blank" rel="noopener">fruithaven.land ↗</a>
     <a href="https://blueprint.ecohubs.community" target="_blank" rel="noopener"
       >RCOS framework ↗</a
     >
@@ -532,6 +533,9 @@
     padding: 0.5rem 0.6rem;
     border-top: 1px solid var(--color-border);
     padding-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
   }
   .sidebar-footer a {
     color: var(--color-text-muted);
