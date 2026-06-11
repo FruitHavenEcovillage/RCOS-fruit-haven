@@ -300,7 +300,7 @@
   </ul>
 
   <div class="sidebar-footer">
-    <a href="https://fruithaven.land" target="_blank" rel="noopener">fruithaven.land ↗</a>
+    <a href="https://fruithaven.land" target="_blank" rel="noopener">Fruit Haven homepage ↗</a>
     <a href="https://blueprint.ecohubs.community" target="_blank" rel="noopener"
       >RCOS framework ↗</a
     >
