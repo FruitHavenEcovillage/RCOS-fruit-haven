@@ -127,9 +127,9 @@ const faqItems = faqEntry?.data.items ?? [];
     border: 1px solid var(--color-border);
     background: linear-gradient(
       135deg,
-      color-mix(in srgb, var(--color-primary) 8%, var(--color-surface)) 0%,
-      var(--color-surface) 60%,
-      color-mix(in srgb, var(--color-accent) 6%, var(--color-surface)) 100%
+      color-mix(in srgb, var(--color-primary) 13%, var(--color-surface)) 0%,
+      color-mix(in srgb, var(--color-fruithaven-light) 28%, var(--color-surface)) 58%,
+      color-mix(in srgb, var(--color-accent) 14%, var(--color-surface)) 100%
     );
     overflow: hidden;
     margin-bottom: 2.5rem;
@@ -220,13 +220,13 @@ const faqItems = faqEntry?.data.items ?? [];
     box-shadow: 0 6px 16px -4px color-mix(in srgb, var(--color-primary) 50%, transparent);
   }
   .btn-secondary {
-    border-color: var(--color-border);
-    background: var(--color-surface);
+    border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
+    background: color-mix(in srgb, var(--color-accent) 8%, var(--color-surface));
     color: var(--color-text);
   }
   .btn-secondary:hover {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
+    border-color: var(--color-accent);
+    color: var(--color-accent-hover);
     transform: translateY(-1px);
   }
   .btn-ghost {

@@ -1,42 +1,45 @@
 /*
  * Theme tokens. Fork this file to rebrand.
- * Palette + typography aligned with the RCOS blueprint
- * (regenerative-community-blueprint).
+ * Palette aligned with Fruit Haven's tropical land-based identity:
+ * rainforest greens, leaf surfaces, and warm fruit accents.
  */
 
 :root {
-  /* Forest greens (primary palette) */
-  --color-forest-900: #1a3009;
-  --color-forest-800: #2d5016;
-  --color-forest-700: #4a7c2a;
-  --color-forest-600: #6b9f3d;
-  --color-forest-500: #7fb84a;
-  --color-forest-400: #9ac966;
-  --color-forest-300: #b5da82;
-  --color-forest-200: #d0eb9e;
-  --color-forest-100: #ebfcba;
-  --color-forest-50: #f5fde5;
+  color-scheme: light dark;
 
-  /* Fruit Haven emerald + amber */
-  --color-fruithaven-base: #fbfbf9;
-  --color-fruithaven-text: #1c1917;
-  --color-fruithaven-primary: #059669;
-  --color-fruithaven-primary-hover: #047857;
-  --color-fruithaven-dark: #064e3b;
-  --color-fruithaven-accent: #d97706;
-  --color-fruithaven-accent-hover: #b45309;
-  --color-fruithaven-light: #a7f3d0;
-  --color-fruithaven-teal: #1a8e7b;
+  /* Rainforest greens */
+  --color-forest-900: #17310f;
+  --color-forest-800: #234718;
+  --color-forest-700: #315f22;
+  --color-forest-600: #497d2c;
+  --color-forest-500: #6c9d36;
+  --color-forest-400: #94b94d;
+  --color-forest-300: #b9d36f;
+  --color-forest-200: #d9eaa5;
+  --color-forest-100: #eef6cf;
+  --color-forest-50: #f8fbec;
 
-  /* Semantic — light mode */
+  /* Fruit Haven rainforest + fruit accents */
+  --color-fruithaven-base: #fbfaf1;
+  --color-fruithaven-text: #263019;
+  --color-fruithaven-primary: #497d2c;
+  --color-fruithaven-primary-hover: #315f22;
+  --color-fruithaven-dark: #17310f;
+  --color-fruithaven-accent: #d88a24;
+  --color-fruithaven-accent-hover: #b96718;
+  --color-fruithaven-light: #d9eaa5;
+  --color-fruithaven-teal: #2f7c62;
+  --color-fruithaven-blossom: #f1c453;
+
+  /* Semantic - light mode */
   --color-bg: var(--color-fruithaven-base);
-  --color-surface: #ffffff;
-  --color-surface-muted: #f3f6f1;
+  --color-surface: #fffdf6;
+  --color-surface-muted: #f1f5df;
   --color-surface-elevated: #ffffff;
-  --color-border: #e3e7de;
+  --color-border: #dce6c1;
   --color-text: var(--color-fruithaven-text);
-  --color-text-muted: #5b6b5f;
-  --color-text-tertiary: #8a968d;
+  --color-text-muted: #657157;
+  --color-text-tertiary: #8a947a;
   --color-primary: var(--color-fruithaven-primary);
   --color-primary-hover: var(--color-fruithaven-primary-hover);
   --color-primary-dark: var(--color-fruithaven-dark);
@@ -76,19 +79,21 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #0f1410;
-    --color-surface: #17201a;
-    --color-surface-muted: #1f2a22;
-    --color-surface-elevated: #232f26;
-    --color-border: #2c3a30;
-    --color-text: #f5f7f2;
-    --color-text-muted: #b5bfb3;
-    --color-text-tertiary: #8a968d;
-    --color-primary: #34d399;
-    --color-primary-hover: #6ee7b7;
-    --color-primary-dark: #a7f3d0;
-    --color-accent: #f59e0b;
-    --color-accent-hover: #fbbf24;
+    color-scheme: dark;
+
+    --color-bg: #10170d;
+    --color-surface: #172312;
+    --color-surface-muted: #20301a;
+    --color-surface-elevated: #24361d;
+    --color-border: #36502a;
+    --color-text: #f7f6e7;
+    --color-text-muted: #c1c9ad;
+    --color-text-tertiary: #94a07f;
+    --color-primary: #b9d36f;
+    --color-primary-hover: #d9eaa5;
+    --color-primary-dark: #eef6cf;
+    --color-accent: #f1c453;
+    --color-accent-hover: #ffd978;
     --color-danger: #f87171;
   }
 }
