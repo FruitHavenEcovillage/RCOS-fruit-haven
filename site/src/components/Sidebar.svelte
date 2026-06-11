@@ -301,6 +301,7 @@
 
   <div class="sidebar-footer">
     <a href="https://fruithaven.land" target="_blank" rel="noopener">Fruit Haven homepage ↗</a>
+    <a href="https://github.com/FruitHavenEcovillage/RCOS-fruit-haven" target="_blank" rel="noopener">View on GitHub ↗</a>
     <a href="https://blueprint.ecohubs.community" target="_blank" rel="noopener"
       >RCOS framework ↗</a
     >
