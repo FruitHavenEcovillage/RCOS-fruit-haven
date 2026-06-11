@@ -150,9 +150,9 @@
   }
   
   .search-container {
-    position: absolute;
+    position: fixed;
     top: 2rem;
-    right: 2.5rem;
+    left: calc(var(--sidebar-width) + 2.5rem);
     z-index: 50;
   }
   
@@ -306,8 +306,8 @@
   
   @media (max-width: 768px) {
     .search-container {
-      top: 1rem;
-      right: 1.25rem;
+      top: 4.75rem;
+      left: 1.25rem;
     }
     .modal {
       top: 5vh;
