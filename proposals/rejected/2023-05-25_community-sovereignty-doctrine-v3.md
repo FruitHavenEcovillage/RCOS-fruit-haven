@@ -148,5 +148,5 @@ N/A
 - **Vote outcome:** Never formally put to a vote
 - **Vote date:** N/A
 - **Mechanism:** Would have required consensus + unanimity-minus-one among all FH owners + 15-day no-contact clause (per Art. V)
-- **Snapshot link:** Source document: `FH_Community_Sovereignty_Doctrine v3.pdf` (archived in repository root)
+- **Snapshot link:** Source document: [FH_Community_Sovereignty_Doctrine v3.pdf](https://fruithaven.land/wp-content/uploads/2026/06/FH_Community_Sovereignty_Doctrine-v3.pdf)
 - **Signatories / vote count:** None — document was flagged by its author as not yet ready to propose
