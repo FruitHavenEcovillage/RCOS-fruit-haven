@@ -3,7 +3,7 @@
 - **RCOS-Core version:** v0.1
 - **Last audited:** 2026-06-12
 - **Audit method:** Self-audit (content definition complete; pending formal adoption; cross-referenced against 2019 passed proposals)
-- **Overall status:** Pending adoption — all artifacts have substantive content; 13 of 20 artifacts carry substantive content already ratified via 2019 community consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md), [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty.md)); none of the current RCOS-formatted artifacts have yet been formally adopted through a Snapshot vote
+- **Overall status:** Pending adoption — all artifacts have substantive content; 13 of 23 artifacts (57%) are formally adopted via 2019 community consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md), [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty.md)); the remaining 10 RCOS-formatted artifacts have not yet been formally adopted through a Snapshot vote
 
 > **Status key:**
 > - `Present` — file exists with substantive, adopted content
@@ -16,7 +16,7 @@
 
 ## RCOS Compliance Progress
 
-RCOS-Core compliance is binary per §10.1.1: a community is either compliant or non-compliant. Fruit Haven is currently **non-compliant** — while 13 of the 20 artifacts carry substantive content ratified via 2019 community consensus (see [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty.md)), none of the current RCOS-formatted artifacts have been formally adopted through a Snapshot vote.
+RCOS-Core compliance is binary per §10.1.1: a community is either compliant or non-compliant. Fruit Haven is currently **non-compliant** — 13 of the 23 artifacts are formally adopted via 2019 community consensus (see [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty.md)), but the remaining 10 RCOS-formatted artifacts have not yet been formally adopted through a Snapshot vote.
 
 The two bars below show content readiness and formal adoption separately.
 
@@ -36,23 +36,23 @@ Overall content coverage          ███████████████�
 
 > Scoring method: each normative MUST requirement in the spec counts as 1 point. Fully addressed = 1, partially addressed = 0.5, not addressed = 0. Total ~200 normative MUST requirements identified across Layers 0–6 (updated to reflect Identity Constraints Register as a 4th Layer 0 artifact per RCOS-Core v0.1 spec 2026-04-27). Score: ~186/200 ≈ 93%. Layer 0 reduced from 98% to 95% because two ecological constraints (IC-004, IC-005) have partial enforcement (measurable threshold deferred).
 
-### Formal Adoption (artifacts voted and adopted through Snapshot)
+### Formal Adoption (artifacts ratified via consensus vote or Snapshot)
 
 ```
-Layer 0 — Identity & Scope        ░░░░░░░░░░░░░░░░░░░░   0%
-Layer 1 — Membership System       ░░░░░░░░░░░░░░░░░░░░   0%
-Layer 2 — Governance & Logic      ░░░░░░░░░░░░░░░░░░░░   0%
-Layer 3 — Economic & Resource     ░░░░░░░░░░░░░░░░░░░░   0%
-Layer 4 — Conflict & Repair       ░░░░░░░░░░░░░░░░░░░░   0%
-Layer 5 — Operations              ░░░░░░░░░░░░░░░░░░░░   0%
-Layer 6 — Evolution               ░░░░░░░░░░░░░░░░░░░░   0%
+Layer 0 — Identity & Scope        ████████████████████ 100%  (4/4)
+Layer 1 — Membership System       ██████████░░░░░░░░░░  50%  (2/4)
+Layer 2 — Governance & Logic      ███████████████░░░░░  75%  (3/4)
+Layer 3 — Economic & Resource     █████████████░░░░░░░  67%  (2/3)
+Layer 4 — Conflict & Repair       ░░░░░░░░░░░░░░░░░░░░   0%  (0/2)
+Layer 5 — Operations              ███████░░░░░░░░░░░░░  33%  (1/3)
+Layer 6 — Evolution               ███████░░░░░░░░░░░░░  33%  (1/3)
 ─────────────────────────────────────────────────────────
-Overall formal adoption           ░░░░░░░░░░░░░░░░░░░░   0%  (20 artifacts pending)
+Overall formal adoption           ███████████░░░░░░░░░  57%  (13/23 artifacts)
 ```
 
-> Once all 20 artifacts are adopted through Snapshot votes, formal adoption reaches 100% and Fruit Haven becomes RCOS-Core compliant (subject to any remaining content gaps being resolved first).
+> Once all 23 artifacts are adopted, formal adoption reaches 100% and Fruit Haven becomes RCOS-Core compliant (subject to any remaining content gaps being resolved first).
 >
-> Note: 13 of the 20 artifacts (marked "Adopted via 2019 consensus" in the per-layer tables below) carry substantive content that was already ratified by Fruit Haven 1 community consensus on 2019-05-17, via the [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty.md). The 2026 RCOS-formatted versions of these artifacts re-express that prior decision in the RCOS layer structure; the bars above remain at 0% because the RCOS-formatted artifacts themselves have not been separately ratified through a Snapshot vote.
+> 13 of the 23 artifacts (marked "Adopted via 2019 consensus" in the per-layer tables below) carry substantive content that was already ratified by Fruit Haven 1 community consensus on 2019-05-17, via the [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty.md). The 2026 RCOS-formatted versions of these artifacts re-express that prior decision in the RCOS layer structure; the bars above count that 2019 ratification toward formal adoption. The remaining 10 artifacts (Layer 1: Onboarding Protocol, Exit & Separation Protocol; Layer 2: Authority Registry; Layer 3: Internal Economy Protocol; Layer 4: Conflict Resolution Ladder, Accountability Protocol; Layer 5: Operations Manual, Meeting Templates; Layer 6: Version History, Learning Log) have not been ratified by either the 2019 consensus or a Snapshot vote.
 
 ---
 
