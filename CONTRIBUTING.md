@@ -118,7 +118,7 @@ All artifact files in `layers/` start as stubs with `[To be defined]` placeholde
 
 Each stub includes a reference to the RCOS specification section it implements — use that to understand what the artifact must contain to be compliant.
 
-**A stub does not count as compliant.** Compliance requires substantive, adopted content. See [`compliance/checklist.md`](compliance/checklist.md) for current status.
+**A stub does not count as compliant.** Compliance requires substantive, adopted content. See [`compliance/checklist`](compliance/checklist) for current status.
 
 ---
 

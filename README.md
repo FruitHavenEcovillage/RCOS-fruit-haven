@@ -52,24 +52,24 @@ Reference specification: [`resources/RCOS_v01:reduced.md`](resources/RCOS_v01:re
 
 | Layer | Artifact | File |
 |---|---|---|
-| 0 | Purpose Charter | [layers/0-identity/01-purpose-charter.md](layers/0-identity/01-purpose-charter.md) |
-| 0 | Scope Declaration | [layers/0-identity/02-scope-declaration.md](layers/0-identity/02-scope-declaration.md) |
-| 0 | Invariants Register | [layers/0-identity/03-invariants-register.md](layers/0-identity/03-invariants-register.md) |
-| 0 | Identity Constraints Register | [layers/0-identity/04-identity-constraints-register.md](layers/0-identity/04-identity-constraints-register.md) |
-| 1 | Membership Agreement | [layers/1-membership/01-membership-agreement.md](layers/1-membership/01-membership-agreement.md) |
-| 1 | Onboarding Protocol | [layers/1-membership/02-onboarding-protocol.md](layers/1-membership/02-onboarding-protocol.md) |
-| 1 | Exit & Separation Protocol | [layers/1-membership/03-exit-separation-protocol.md](layers/1-membership/03-exit-separation-protocol.md) |
-| 1 | Membership State Registry | [layers/1-membership/04-membership-state-registry.md](layers/1-membership/04-membership-state-registry.md) |
-| 2 | Decision Matrix | [layers/2-governance/01-decision-matrix.md](layers/2-governance/01-decision-matrix.md) |
-| 2 | Governance Protocol | [layers/2-governance/02-governance-protocol.md](layers/2-governance/02-governance-protocol.md) |
-| 2 | Authority Registry | [layers/2-governance/03-authority-registry.md](layers/2-governance/03-authority-registry.md) |
-| 3 | Internal Economy Protocol | [layers/3-economy/01-internal-economy-protocol.md](layers/3-economy/01-internal-economy-protocol.md) |
-| 3 | Treasury Ruleset | [layers/3-economy/02-treasury-ruleset.md](layers/3-economy/02-treasury-ruleset.md) |
-| 4 | Conflict Resolution Ladder | [layers/4-conflict/01-conflict-resolution-ladder.md](layers/4-conflict/01-conflict-resolution-ladder.md) |
-| 4 | Accountability Protocol | [layers/4-conflict/02-accountability-protocol.md](layers/4-conflict/02-accountability-protocol.md) |
-| 5 | Operations Manual | [layers/5-operations/01-operations-manual.md](layers/5-operations/01-operations-manual.md) |
-| 5 | Role Registry | [layers/5-operations/02-role-registry.md](layers/5-operations/02-role-registry.md) |
+| 0 | Purpose Charter | [layers/0-identity/01-purpose-charter](layers/0-identity/01-purpose-charter) |
+| 0 | Scope Declaration | [layers/0-identity/02-scope-declaration](layers/0-identity/02-scope-declaration) |
+| 0 | Invariants Register | [layers/0-identity/03-invariants-register](layers/0-identity/03-invariants-register) |
+| 0 | Identity Constraints Register | [layers/0-identity/04-identity-constraints-register](layers/0-identity/04-identity-constraints-register) |
+| 1 | Membership Agreement | [layers/1-membership/01-membership-agreement](layers/1-membership/01-membership-agreement) |
+| 1 | Onboarding Protocol | [layers/1-membership/02-onboarding-protocol](layers/1-membership/02-onboarding-protocol) |
+| 1 | Exit & Separation Protocol | [layers/1-membership/03-exit-separation-protocol](layers/1-membership/03-exit-separation-protocol) |
+| 1 | Membership State Registry | [layers/1-membership/04-membership-state-registry](layers/1-membership/04-membership-state-registry) |
+| 2 | Decision Matrix | [layers/2-governance/01-decision-matrix](layers/2-governance/01-decision-matrix) |
+| 2 | Governance Protocol | [layers/2-governance/02-governance-protocol](layers/2-governance/02-governance-protocol) |
+| 2 | Authority Registry | [layers/2-governance/03-authority-registry](layers/2-governance/03-authority-registry) |
+| 3 | Internal Economy Protocol | [layers/3-economy/01-internal-economy-protocol](layers/3-economy/01-internal-economy-protocol) |
+| 3 | Treasury Ruleset | [layers/3-economy/02-treasury-ruleset](layers/3-economy/02-treasury-ruleset) |
+| 4 | Conflict Resolution Ladder | [layers/4-conflict/01-conflict-resolution-ladder](layers/4-conflict/01-conflict-resolution-ladder) |
+| 4 | Accountability Protocol | [layers/4-conflict/02-accountability-protocol](layers/4-conflict/02-accountability-protocol) |
+| 5 | Operations Manual | [layers/5-operations/01-operations-manual](layers/5-operations/01-operations-manual) |
+| 5 | Role Registry | [layers/5-operations/02-role-registry](layers/5-operations/02-role-registry) |
 | 5 | Meeting Templates | [layers/5-operations/meeting-templates/](layers/5-operations/meeting-templates/) |
-| 6 | Change Protocol | [layers/6-evolution/01-change-protocol.md](layers/6-evolution/01-change-protocol.md) |
-| 6 | Version History | [layers/6-evolution/02-version-history.md](layers/6-evolution/02-version-history.md) |
-| 6 | Learning Log | [layers/6-evolution/03-learning-log.md](layers/6-evolution/03-learning-log.md) |
+| 6 | Change Protocol | [layers/6-evolution/01-change-protocol](layers/6-evolution/01-change-protocol) |
+| 6 | Version History | [layers/6-evolution/02-version-history](layers/6-evolution/02-version-history) |
+| 6 | Learning Log | [layers/6-evolution/03-learning-log](layers/6-evolution/03-learning-log) |
