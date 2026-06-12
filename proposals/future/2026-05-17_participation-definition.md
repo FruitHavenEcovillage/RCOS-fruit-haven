@@ -12,9 +12,9 @@
 Defines participation for Active Members as a combination of Responsiveness, Contribution, Attendance, and Accountability.
 
 ## Affected Layers and Artifacts
-- Layer 1 — layers/1-membership/01-membership-agreement.md
-- Layer 2 — layers/2-governance/02-governance-protocol.md
+- Layer 1 â€” [layers/1-membership/01-membership-agreement.md](/layers/1-membership/01-membership-agreement)
+- Layer 2 â€” [layers/2-governance/02-governance-protocol.md](/layers/2-governance/02-governance-protocol)
 
 ## Change Type
 - [x] Permanent rule change
-- [ ] Time-bounded experiment
+- [ ] Time-bounded experiment

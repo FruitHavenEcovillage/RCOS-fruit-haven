@@ -12,8 +12,8 @@
 Provides a transitional pathway for current property owners to be granted 'Active Member' status for a 1-year period, during which they must fulfill membership requirements.
 
 ## Affected Layers and Artifacts
-- Layer 1 — layers/1-membership/04-membership-state-registry.md
+- Layer 1 â€” [layers/1-membership/04-membership-state-registry.md](/layers/1-membership/04-membership-state-registry)
 
 ## Change Type
 - [ ] Permanent rule change
-- [x] Time-bounded experiment
+- [x] Time-bounded experiment

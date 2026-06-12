@@ -47,8 +47,8 @@ A passed proposal that never reaches the affected artifact is a decision in name
 
 - On **testing consensus:** If unanimity minus one is reached among present voting members, the proposal is considered “Passed, pending consensus of non-present community members with voting power.”
 - **Absentee Review (2 weeks):** The proposal is included in the meeting minutes. All non-present community members with voting power have a period of 2 weeks to respond.
-- On **final passing:** If no valid objection is presented within 2 weeks, non-present members consent *in absentia*. The proposal file is added to `proposals/passed/` in this repository and the change is applied to the affected artifact(s) in `layers/`; `layers/6-evolution/02-version-history.md` is updated.
-- On **rejection:** The proposal file is added to `proposals/rejected/` for archive.
+- On **final passing:** If no valid objection is presented within 2 weeks, non-present members consent *in absentia*. The proposal file is added to [proposals/passed/](/proposals/passed) in this repository and the change is applied to the affected artifact(s) in `layers/`; [layers/6-evolution/02-version-history.md](/layers/6-evolution/02-version-history) is updated.
+- On **rejection:** The proposal file is added to [proposals/rejected/](/proposals/rejected) for archive.
 
 ## Documentation and Publication
 
@@ -119,4 +119,4 @@ Every governance system fails somewhere — captured by a subgroup, frozen by in
 - **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
 - **Decision type:** Constitutional
 - **Version:** v1.0.0
-- **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md
+- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)

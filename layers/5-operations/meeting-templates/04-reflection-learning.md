@@ -47,5 +47,5 @@ If both are discussed together, failures dominate and successes get underweighte
 - **Facilitator:**
 - **Attendees:**
 - **Notes:** [Summary posted to Discord after the meeting]
-- **Learning Log entries triggered:** [List or "none" — Blueprint Steward updates `layers/6-evolution/03-learning-log.md`]
+- **Learning Log entries triggered:** [List or "none" — Blueprint Steward updates [layers/6-evolution/03-learning-log.md](/layers/6-evolution/03-learning-log)]
 - **Future proposals added:** [Links or titles, or "none"]

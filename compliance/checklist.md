@@ -191,7 +191,7 @@ All artifacts have substantive content. To achieve full compliance, each artifac
 1. Proposed and deliberated per the Governance Protocol (Layer 2)
 2. Adopted through an authorized Snapshot vote
 3. Status fields updated from *Stub — not yet adopted* to *Active — adopted <YYYY-MM-DD>*
-4. Recorded in `layers/6-evolution/02-version-history.md`
+4. Recorded in [layers/6-evolution/02-version-history.md](/layers/6-evolution/02-version-history)
 
 **Remaining content gaps to resolve before claiming compliance** (from "Partially Addressed — Open Items" above):
 - §3.5.3 — Substitution of participation rule (Membership Agreement or IEP)

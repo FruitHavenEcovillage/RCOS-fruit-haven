@@ -98,4 +98,4 @@ Even well-intentioned people unconsciously tilt decisions toward their own inter
 - **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
 - **Decision type:** Strategic
 - **Version:** v1.0.0
-- **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md
+- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)

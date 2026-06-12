@@ -12,8 +12,8 @@
 Clarifies the responsibilities of Owners / Trustees as legal stewards of the property, distinct from general membership.
 
 ## Affected Layers and Artifacts
-- Layer 1 — layers/1-membership/04-membership-state-registry.md
+- Layer 1 â€” [layers/1-membership/04-membership-state-registry.md](/layers/1-membership/04-membership-state-registry)
 
 ## Change Type
 - [x] Permanent rule change
-- [ ] Time-bounded experiment
+- [ ] Time-bounded experiment

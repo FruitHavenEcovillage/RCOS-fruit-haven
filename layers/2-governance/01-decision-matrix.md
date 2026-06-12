@@ -75,4 +75,4 @@ Without a type, every decision gets handled at whatever speed and scrutiny happe
 - **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
 - **Decision type:** Constitutional
 - **Version:** v1.0.0
-- **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md
+- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)

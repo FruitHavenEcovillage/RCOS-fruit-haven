@@ -12,8 +12,8 @@
 Updates the conflict resolution ladder with explicit conflict classes and an Emergency Safety Protocol.
 
 ## Affected Layers and Artifacts
-- Layer 4 — layers/4-conflict/01-conflict-resolution-ladder.md
+- Layer 4 â€” [layers/4-conflict/01-conflict-resolution-ladder.md](/layers/4-conflict/01-conflict-resolution-ladder)
 
 ## Change Type
 - [x] Permanent rule change
-- [ ] Time-bounded experiment
+- [ ] Time-bounded experiment

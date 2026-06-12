@@ -19,7 +19,7 @@ If a process only lives in one person's head, the community depends on that pers
 |---|---|---|
 | Member onboarding | Membership Admin | Processes application, triggers trial period, monitors 30-day window, grants Full Member status on completion — see Onboarding Protocol (Layer 1) |
 | Member exit | Membership Admin | Processes voluntary exit request or forced exit per Layer 4 outcome — see Exit & Separation Protocol (Layer 1) |
-| Proposal publication | Proposing member + Membership Admin | Proposing member submits the proposal in the Fruit Haven voting app; Membership Admin adds proposal file to `proposals/passed/` or `proposals/rejected/` within 7 days of vote conclusion; affected artifacts updated within 7 days — see Governance Protocol (Layer 2) |
+| Proposal publication | Proposing member + Membership Admin | Proposing member submits the proposal in the Fruit Haven voting app; Membership Admin adds proposal file to [proposals/passed/](/proposals/passed) or [proposals/rejected/](/proposals/rejected) within 7 days of vote conclusion; affected artifacts updated within 7 days — see Governance Protocol (Layer 2) |
 | Contribution recording | Member (self-reported) / Puckstack (automatic) | Structured contributions credited automatically via Puckstack/Offcoin; informal contributions self-reported in Fruit Haven — see Internal Economy Protocol (Layer 3) |
 | Weekly meeting | Facilitator | Publishes agenda in Discord =24 hours in advance; posts meeting notes in Discord after the meeting; action items tracked until resolved |
 | Treasury management | Finance Steward | Ensures all Full Members have Safe Proposer access; publishes fiat account summaries at least every 6 months if the account does not support direct member access — see Treasury Ruleset (Layer 3) |
@@ -122,8 +122,8 @@ If no one can say where the canonical version of something lives, there is no ca
 | RCOS artifacts | `layers/` in this repo | Blueprint Steward / Membership Admin | Per change protocol (Layer 6) |
 | Member registry | Fruit Haven | Membership Admin | Ongoing |
 | Meeting notes | Discord (dedicated channel) | Facilitator | After each meeting |
-| Governance proposals (passed) | `proposals/passed/` in this repo | Membership Admin | Within 7 days of vote |
-| Governance proposals (rejected) | `proposals/rejected/` in this repo | Membership Admin | Within 7 days of vote |
+| Governance proposals (passed) | [proposals/passed/](/proposals/passed) in this repo | Membership Admin | Within 7 days of vote |
+| Governance proposals (rejected) | [proposals/rejected/](/proposals/rejected) in this repo | Membership Admin | Within 7 days of vote |
 | Contribution records | Fruit Haven / Offcoin | Member (self-reported) / Puckstack (auto) | Ongoing |
 | Missing technical implementations | `resources/missing-technical-implementations.md` | Infrastructure Steward / Digital Builder | Quarterly |
 | Future proposals | `resources/future-proposals.md` | Blueprint Steward / Membership Admin | As needed |

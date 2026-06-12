@@ -11,7 +11,7 @@
 ## v1.1.0 — 2026-06-10
 
 - **Effective date:** 2026-06-10
-- **Decision record:** proposals/passed/2019-05-17_federation-sovereignty.md
+- **Decision record:** [proposals/passed/2019-05-17_federation-sovereignty.md](/proposals/passed/2019-05-17_federation-sovereignty)
 - **Decision type:** Constitutional
 - **Mechanism:** Consensus
 - **Summary:** Integrated the "FH Federation" Sovereignty Doctrine (passed by consensus in 2019) into the formal RCOS layers. Extracted community sovereignty details into a dedicated Federation Protocol.
@@ -31,7 +31,7 @@ Version history is what turns governance from memory into evidence. Every adopte
 :::
 
 - **Effective date:** 2026-05-19
-- **Decision record:** proposals/passed/2019-05-17_fh1-bylaws.md
+- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)
 - **Decision type:** Constitutional
 - **Mechanism:** Consensus Meeting
 - **Summary:** Initial adaptation of the Fruit Haven Bylaws to the RCOS architecture, mapping purpose, identity constraints, membership states, treasury rules, land allotment, and consensus-based governance rules to the corresponding RCOS layers.
