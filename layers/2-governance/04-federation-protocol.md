@@ -112,7 +112,7 @@ Per the [FH1 Community Bylaws](https://fruithaven.land/wp-content/uploads/2024/0
 1. Community Bylaws (e.g. [FH1 Community Bylaws](https://fruithaven.land/wp-content/uploads/2024/04/FH1_Community_Bylaws.pdf), [FH3 Community Bylaws](https://fruithaven.land/wp-content/uploads/2026/05/FH3_Community_Bylaws.pdf))
 2. Fruit Haven Sovereignty and Jurisdiction Doctrine
 3. FH1 Trustee Bylaws
-4. Fruit Haven Community Sovereignty Doctrine (this charter)
+4. [Fruit Haven Community Sovereignty Doctrine](https://fruithaven.land/wp-content/uploads/2024/04/FH_Community_Sovereignty_Doctrine.pdf) (this charter)
 5. FH1 Trustee Legal Contract
 
 A community bylaw or lower-ranked document that conflicts with a higher-ranked document is null and void to the extent of the conflict. Items 2 and 3 are referenced by the original bylaws but are not yet digitized in this repository.

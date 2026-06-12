@@ -20,7 +20,7 @@ summary: "Establishes the sovereignty and federation rules for Fruit Haven commu
 
 ## Summary
 
-Establishes the sovereignty and federation rules for Fruit Haven community areas. It outlines community autonomy, access rules between communities, and the formation of new sovereign communities.
+Establishes the sovereignty and federation rules for Fruit Haven community areas, as set out in the [Fruit Haven Community Sovereignty Doctrine](https://fruithaven.land/wp-content/uploads/2024/04/FH_Community_Sovereignty_Doctrine.pdf). It outlines community autonomy, access rules between communities, and the formation of new sovereign communities.
 
 ## Affected Layers and Artifacts
 
