@@ -8,20 +8,7 @@
 
 ---
 
-## v1.1.0 — 2026-06-10
-
-- **Effective date:** 2026-06-10
-- **Decision record:** [proposals/passed/2019-05-17_federation-sovereignty](/proposals/passed/2019-05-17_federation-sovereignty)
-- **Decision type:** Constitutional
-- **Mechanism:** Consensus
-- **Summary:** Integrated the ["FH Federation" Sovereignty Doctrine](/source-documents/FH_Community_Sovereignty_Doctrine.pdf) (passed by consensus in 2019) into the formal RCOS layers. Extracted community sovereignty details into a dedicated Federation Protocol.
-- **Layers affected:** Layer 2
-- **Artifacts changed:** 2-governance/02-governance-protocol.md, 2-governance/04-federation-protocol.md
-- **Migration notes:** None
-
----
-
-## v1.0.0 — 2026-05-19
+## v1.0.0 — 2019-05-17
 
 :::rcos{clauses="8.2.1, 8.2.2, 8.2.3, 8.2.4, 8.2.5, 8.6.4, 8.7.2"}
 :::
@@ -30,27 +17,17 @@
 Version history is what turns governance from memory into evidence. Every adopted change must say what changed, when it became effective, what decision authorized it, and which artifacts moved, so future members can reconstruct the current system without relying on oral history or private context.
 :::
 
-- **Effective date:** 2026-05-19
-- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)
+- **Effective date:** 2019-05-17
+- **Decision records:**
+  - [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)
+  - [proposals/passed/2019-05-17_fh3-bylaws.md](/proposals/passed/2019-05-17_fh3-bylaws)
+  - [proposals/passed/2019-05-17_federation-sovereignty](/proposals/passed/2019-05-17_federation-sovereignty)
 - **Decision type:** Constitutional
 - **Mechanism:** Consensus Meeting
-- **Summary:** Initial adaptation of the Fruit Haven Bylaws to the RCOS architecture, mapping purpose, identity constraints, membership states, treasury rules, land allotment, and consensus-based governance rules to the corresponding RCOS layers.
-- **Layers affected:** Layer 0, Layer 1, Layer 2, Layer 3, Layer 5
-- **Artifacts changed:** 0-identity/01-purpose-charter.md, 0-identity/04-identity-constraints-register.md, 1-membership/01-membership-agreement.md, 1-membership/04-membership-state-registry.md, 2-governance/01-decision-matrix.md, 2-governance/02-governance-protocol.md, 3-economy/02-treasury-ruleset.md, 3-economy/03-land-allotment-protocol.md, 5-operations/02-role-registry.md
+- **Summary:** Founding governance record. The FH1 Community Bylaws, FH3 Community Bylaws, and the Fruit Haven Community Sovereignty Doctrine were all passed by consensus at a Fruit Haven 1 community meeting on this date, establishing purpose, identity constraints, membership states, decision-making, treasury and land allotment rules, operational roles, and the federation/sovereignty relationships between Fruit Haven community areas. These adopted rules were later mapped into the RCOS layer architecture.
+- **Layers affected:** Layer 0, Layer 1, Layer 2, Layer 3, Layer 5, Layer 6
+- **Artifacts changed:** 0-identity/01-purpose-charter.md, 0-identity/02-scope-declaration.md, 0-identity/03-invariants-register.md, 0-identity/04-identity-constraints-register.md, 1-membership/01-membership-agreement.md, 1-membership/04-membership-state-registry.md, 2-governance/01-decision-matrix.md, 2-governance/02-governance-protocol.md, 2-governance/04-federation-protocol.md, 3-economy/02-treasury-ruleset.md, 3-economy/03-land-allotment-protocol.md, 5-operations/02-role-registry.md, 6-evolution/01-change-protocol.md
 - **Migration notes:** Current property owners granted transitional "Active Member" status to resolve ambiguity. See 1-membership/04-membership-state-registry.md.
-
----
-
-## v0.0 — Repository Initialized
-
-- **Effective date:** 2026-04-21
-- **Decision record:** N/A — initial scaffold
-- **Decision type:** N/A
-- **Mechanism:** N/A
-- **Summary:** Repository structure initialized. All artifact files are stubs — no layer is yet compliant. No rules are in force.
-- **Layers affected:** All (scaffold only)
-- **Artifacts changed:** All files created as stubs
-- **Migration notes:** None — initial state
 
 ---
 

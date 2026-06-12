@@ -50,7 +50,7 @@ Removal is the sharpest power the community holds over a person. If it can be ex
 A poorly-designed suspension state is worse than none — it becomes a soft exit with no due process, or an indefinite limbo used to punish without the accountability of a full removal. Until the community can commit to explicit conditions, time bounds, and review mechanisms, it is safer to have no formal suspension than a loose one.
 :::
 
-Formal membership suspension is not yet technically implemented. See [Future Proposals](../../proposals/future.md) for the deferred Suspended Member state design.
+Formal membership suspension is not yet technically implemented. See [Future Proposals](../../proposals/future) for the deferred Suspended Member state design.
 
 ## Asset, Role, and Responsibility Separation
 

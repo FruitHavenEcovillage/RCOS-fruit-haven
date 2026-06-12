@@ -79,7 +79,7 @@ Two internal units are in use: **XP** (experience points) and **ECO** (community
 | **Purpose** | Activity and progress indicator | Contribution recognition; may unlock certain Puckstack permissions |
 | **Issuance** | Automatic via Puckstack task completion; manual via Membership Admin for nominated informal contributions | Same as XP |
 | **Transferability** | Non-transferable between members | Non-transferable between members; not traded on external markets |
-| **Expiration / decay** | None currently | None currently — see [Missing Technical Implementations](../../resources/missing-technical-implementations.md) |
+| **Expiration / decay** | None currently | None currently — see Missing Technical Implementations |
 | **Hard cap** | None currently | None currently |
 | **Future utility** | N/A | TBD — further utility to be defined via future proposals |
 | **Fraud prevention** | Self-reported contributions subject to community review; dispute mechanism as defined in Contribution Recognition Mechanism | Same as XP |
@@ -98,7 +98,7 @@ Any internal unit that can pile up without limit eventually becomes leverage —
 
 - No hard cap on XP or ECO currently — accumulation is unlimited
 - Neither unit can be converted into governance authority or used to bypass the Decision Matrix
-- Accumulation limits and decay mechanisms are deferred as a future proposal; see [Future Proposals](../../proposals/future.md)
+- Accumulation limits and decay mechanisms are deferred as a future proposal; see [Future Proposals](../../proposals/future)
 
 ## External Income Interfaces
 

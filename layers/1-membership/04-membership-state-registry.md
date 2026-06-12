@@ -85,13 +85,13 @@ The community's history belongs to the community, not to any individual account.
 
 - Contribution history and XP are retained in Fruit Haven after exit — records are preserved for audit and transparency purposes.
 - Exited members have their access blocked; they are removed from all member listings.
-- A formal member exit flow in Fruit Haven is not yet implemented — see [Future Proposals](../../proposals/future.md).
+- A formal member exit flow in Fruit Haven is not yet implemented — see [Future Proposals](../../proposals/future).
 
 ---
 
 ## Ratification Record
 
-- **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
+- **Adopted:** 2019-05-17
 - **Decision type:** Strategic
 - **Version:** v1.0.0
 - **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)

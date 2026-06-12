@@ -47,7 +47,7 @@ When spending authority is vague, two failure modes appear: either every small d
 | Above $100 USD | Strategic | Active Members | Community Meeting |
 | Multi-year contracts, debt, or structural financial obligations | Constitutional | Active Members | Community Meeting + 2-week absentee review |
 
-> Spending thresholds will be defined via a future Strategic proposal once community funds exist. See [Future Proposals](../../proposals/future.md).
+> Spending thresholds will be defined via a future Strategic proposal once community funds exist. See [Future Proposals](../../proposals/future).
 
 ## Transparency and Reporting
 
@@ -95,7 +95,7 @@ Even well-intentioned people unconsciously tilt decisions toward their own inter
 
 ## Ratification Record
 
-- **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
+- **Adopted:** 2019-05-17
 - **Decision type:** Strategic
 - **Version:** v1.0.0
 - **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)

@@ -14,8 +14,8 @@ Governance and design decisions that are drafted or deferred — either awaiting
 **Status:** Draft  
 **Decision type:** Constitutional — Full Members Vote  
 **Summary:** Defines the membership states: Applicant, Trial Member, Active Member, and Exited Member / External. Includes their rights, obligations, and transition triggers.  
-**Affected:** Layer 1 — [`layers/1-membership/04-membership-state-registry.md`](../layers/1-membership/04-membership-state-registry.md)  
-**Proposal file:** [`proposals/future/2026-05-17_membership-states.md`](future/2026-05-17_membership-states.md)
+**Affected:** Layer 1 — [`layers/1-membership/04-membership-state-registry`](../layers/1-membership/04-membership-state-registry)  
+**Proposal file:** `proposals/future/2026-05-17_membership-states.md`
 
 ---
 
@@ -24,8 +24,8 @@ Governance and design decisions that are drafted or deferred — either awaiting
 **Status:** Draft  
 **Decision type:** Operational — Full Members Vote  
 **Summary:** Provides a transitional pathway for current property owners to be granted Active Member status for a 1-year period, during which they must fulfill membership requirements.  
-**Affected:** Layer 1 — [`layers/1-membership/04-membership-state-registry.md`](../layers/1-membership/04-membership-state-registry.md)  
-**Proposal file:** [`proposals/future/2026-05-17_transitional-membership.md`](future/2026-05-17_transitional-membership.md)
+**Affected:** Layer 1 — [`layers/1-membership/04-membership-state-registry`](../layers/1-membership/04-membership-state-registry)  
+**Proposal file:** `proposals/future/2026-05-17_transitional-membership.md`
 
 ---
 
@@ -34,8 +34,8 @@ Governance and design decisions that are drafted or deferred — either awaiting
 **Status:** Draft  
 **Decision type:** Strategic — Full Members Vote  
 **Summary:** Defines clear roles, purposes, authorities, limits, and term lengths for various community positions (Communal Finance, C.A. Manager, etc.).  
-**Affected:** Layer 5 — [`layers/5-operations/02-role-registry.md`](../layers/5-operations/02-role-registry.md)  
-**Proposal file:** [`proposals/future/2026-05-17_roles-explicitness.md`](future/2026-05-17_roles-explicitness.md)
+**Affected:** Layer 5 — [`layers/5-operations/02-role-registry`](../layers/5-operations/02-role-registry)  
+**Proposal file:** `proposals/future/2026-05-17_roles-explicitness.md`
 
 ---
 
@@ -44,8 +44,8 @@ Governance and design decisions that are drafted or deferred — either awaiting
 **Status:** Draft  
 **Decision type:** Strategic — Full Members Vote  
 **Summary:** Clarifies the responsibilities of Owners / Trustees as legal stewards of the property, distinct from general membership.  
-**Affected:** Layer 1 — [`layers/1-membership/04-membership-state-registry.md`](../layers/1-membership/04-membership-state-registry.md)  
-**Proposal file:** [`proposals/future/2026-05-17_owner-responsibilities.md`](future/2026-05-17_owner-responsibilities.md)
+**Affected:** Layer 1 — [`layers/1-membership/04-membership-state-registry`](../layers/1-membership/04-membership-state-registry)  
+**Proposal file:** `proposals/future/2026-05-17_owner-responsibilities.md`
 
 ---
 
@@ -54,8 +54,8 @@ Governance and design decisions that are drafted or deferred — either awaiting
 **Status:** Draft  
 **Decision type:** Strategic — Full Members Vote  
 **Summary:** Defines participation for Active Members as a combination of Responsiveness, Contribution, Attendance, and Accountability.  
-**Affected:** Layer 1 — [`layers/1-membership/01-membership-agreement.md`](../layers/1-membership/01-membership-agreement.md); Layer 2 — [`layers/2-governance/02-governance-protocol.md`](../layers/2-governance/02-governance-protocol.md)  
-**Proposal file:** [`proposals/future/2026-05-17_participation-definition.md`](future/2026-05-17_participation-definition.md)
+**Affected:** Layer 1 — [`layers/1-membership/01-membership-agreement`](../layers/1-membership/01-membership-agreement); Layer 2 — [`layers/2-governance/02-governance-protocol`](../layers/2-governance/02-governance-protocol)  
+**Proposal file:** `proposals/future/2026-05-17_participation-definition.md`
 
 ---
 
@@ -64,8 +64,8 @@ Governance and design decisions that are drafted or deferred — either awaiting
 **Status:** Draft  
 **Decision type:** Strategic — Full Members Vote  
 **Summary:** Updates the conflict resolution ladder with explicit conflict classes and an Emergency Safety Protocol.  
-**Affected:** Layer 4 — [`layers/4-conflict/01-conflict-resolution-ladder.md`](../layers/4-conflict/01-conflict-resolution-ladder.md)  
-**Proposal file:** [`proposals/future/2026-05-17_conflict-resolution.md`](future/2026-05-17_conflict-resolution.md)
+**Affected:** Layer 4 — [`layers/4-conflict/01-conflict-resolution-ladder`](../layers/4-conflict/01-conflict-resolution-ladder)  
+**Proposal file:** `proposals/future/2026-05-17_conflict-resolution.md`
 
 ---
 
@@ -74,8 +74,8 @@ Governance and design decisions that are drafted or deferred — either awaiting
 **Status:** Draft  
 **Decision type:** Strategic — Full Members Vote  
 **Summary:** Outlines community autonomy, inter-community access, and sovereignty requirements for new Fruit Haven communities.  
-**Affected:** Layer 2 — [`layers/2-governance/04-federation-protocol.md`](../layers/2-governance/04-federation-protocol.md)  
-**Proposal file:** [`proposals/future/2026-05-17_fh-federation.md`](future/2026-05-17_fh-federation.md)
+**Affected:** Layer 2 — [`layers/2-governance/04-federation-protocol`](../layers/2-governance/04-federation-protocol)  
+**Proposal file:** `proposals/future/2026-05-17_fh-federation.md`
 
 ---
 

@@ -59,7 +59,7 @@ The primary purpose may only be changed through a Constitutional decision as def
 
 ## Ratification Record
 
-- **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
+- **Adopted:** 2019-05-17
 - **Decision type:** Constitutional
 - **Version:** v1.0.0
 - **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)

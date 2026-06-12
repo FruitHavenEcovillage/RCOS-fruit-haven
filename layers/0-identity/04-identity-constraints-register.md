@@ -48,8 +48,8 @@ Constraints on Fruit Haven' relationship with ecosystems and biodiversity.
 
 | ID | Constraint | Enforcement mechanism | Added | Decision record |
 |---|---|---|---|---|
-| IC-004 | Fruit Haven and its communities must not cause sustained net harm to local ecosystems, land, or biodiversity — practices that degrade the conditions for life are incompatible with the primary purpose. | **Partial.** Behavioral/governance enforcement: any member may raise a concern via the Conflict Resolution Ladder; proposals visibly degrading ecosystems may be objected to via re-vote. Measurable threshold for "sustained net harm" in a networked community context is deferred — see [future-proposals.md](../../proposals/future.md) | <YYYY-MM-DD> | [link] |
-| IC-005 | Ecological impact must be considered in all significant resource, land, and infrastructure decisions. | **Partial.** Process requirement: all Strategic and Constitutional decisions affecting resources, land, or infrastructure must include an ecological impact statement; omission is grounds for a re-vote request. Criteria for what constitutes a "significant" decision are deferred — see [future-proposals.md](../../proposals/future.md) | <YYYY-MM-DD> | [link] |
+| IC-004 | Fruit Haven and its communities must not cause sustained net harm to local ecosystems, land, or biodiversity — practices that degrade the conditions for life are incompatible with the primary purpose. | **Partial.** Behavioral/governance enforcement: any member may raise a concern via the Conflict Resolution Ladder; proposals visibly degrading ecosystems may be objected to via re-vote. Measurable threshold for "sustained net harm" in a networked community context is deferred — see [Future Proposals](../../proposals/future) | <YYYY-MM-DD> | [link] |
+| IC-005 | Ecological impact must be considered in all significant resource, land, and infrastructure decisions. | **Partial.** Process requirement: all Strategic and Constitutional decisions affecting resources, land, or infrastructure must include an ecological impact statement; omission is grounds for a re-vote request. Criteria for what constitutes a "significant" decision are deferred — see [Future Proposals](../../proposals/future) | <YYYY-MM-DD> | [link] |
 
 ---
 
@@ -121,7 +121,7 @@ Identity constraints may only be added, modified, or removed through a Constitut
 
 ## Ratification Record
 
-- **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
+- **Adopted:** 2019-05-17
 - **Decision type:** Constitutional
 - **Version:** v1.0.0
 - **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)

@@ -76,8 +76,8 @@ Overall formal adoption           █████████░░░░░░�
 | Artifact | File | Status | Notes |
 |---|---|---|---|
 | Membership Agreement | [layers/1-membership/01-membership-agreement](../layers/1-membership/01-membership-agreement) | Present | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) Art. 8, 13) — RCOS-formatted artifact not yet separately ratified |
-| Onboarding Protocol | [layers/1-membership/02-onboarding-protocol](../layers/1-membership/02-onboarding-protocol) | Draft | Content complete; several technical implementations pending — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md) |
-| Exit & Separation Protocol | [layers/1-membership/03-exit-separation-protocol](../layers/1-membership/03-exit-separation-protocol) | Draft | Content complete; exit flow in Fruit Haven not yet implemented — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md) |
+| Onboarding Protocol | [layers/1-membership/02-onboarding-protocol](../layers/1-membership/02-onboarding-protocol) | Draft | Content complete; several technical implementations pending — see Missing Technical Implementations |
+| Exit & Separation Protocol | [layers/1-membership/03-exit-separation-protocol](../layers/1-membership/03-exit-separation-protocol) | Draft | Content complete; exit flow in Fruit Haven not yet implemented — see Missing Technical Implementations |
 | Membership State Registry | [layers/1-membership/04-membership-state-registry](../layers/1-membership/04-membership-state-registry) | Present | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) Art. 8.02) — RCOS-formatted artifact not yet separately ratified |
 
 ---
@@ -101,7 +101,7 @@ Overall formal adoption           █████████░░░░░░�
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Internal Economy Protocol | [layers/3-economy/01-internal-economy-protocol](../layers/3-economy/01-internal-economy-protocol) | Draft | Content complete; ECO expiration/decay mechanism deferred; concentration risk indicators not yet defined — see [future-proposals.md](../proposals/future.md) |
+| Internal Economy Protocol | [layers/3-economy/01-internal-economy-protocol](../layers/3-economy/01-internal-economy-protocol) | Draft | Content complete; ECO expiration/decay mechanism deferred; concentration risk indicators not yet defined — see [Future Proposals](../proposals/future) |
 | Treasury Ruleset | [layers/3-economy/02-treasury-ruleset](../layers/3-economy/02-treasury-ruleset) | Present | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) Art. 9) — RCOS-formatted artifact not yet separately ratified |
 | Land Allotment Protocol | [layers/3-economy/03-land-allotment-protocol](../layers/3-economy/03-land-allotment-protocol) | Present | Adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) Art. 7) — RCOS-formatted artifact not yet separately ratified |
 
@@ -168,7 +168,7 @@ These are genuine gaps that require more design work or governance decisions to 
 
 | Ref | Requirement | Status | Notes |
 |---|---|---|---|
-| §2.4.3 | Identity constraints MUST be testable and enforceable through defined processes | **Partial** | Identity Constraints Register (IC-001 through IC-008) created 2026-04-27. IC-001–003 and IC-006–008 have defined enforcement pathways via Layer 4 and Layer 2. IC-004–005 (ecological constraints) have behavioral/process enforcement but lack measurable thresholds — "sustained net harm" and "significant decision" are not yet defined in measurable terms for the networked community context. Threshold definition deferred — see [future-proposals.md](../proposals/future.md) | 
+| §2.4.3 | Identity constraints MUST be testable and enforceable through defined processes | **Partial** | Identity Constraints Register (IC-001 through IC-008) created 2026-04-27. IC-001–003 and IC-006–008 have defined enforcement pathways via Layer 4 and Layer 2. IC-004–005 (ecological constraints) have behavioral/process enforcement but lack measurable thresholds — "sustained net harm" and "significant decision" are not yet defined in measurable terms for the networked community context. Threshold definition deferred — see [Future Proposals](../proposals/future) | 
 | §3.5.3 | Substitution of participation (e.g., outsourcing labor) MUST be explicitly governed | **Not addressed** | The Membership Agreement defines participation expectations and contribution categories but does not address whether a member may have others perform their contributions on their behalf. **REQUIRED.** Add a clause to the Membership Agreement or Internal Economy Protocol. |
 | §5.1.4 | For commons resources, MUST explicitly define stewardship responsibilities, maintenance obligations, and funding mechanisms | **Partial** | The IEP resource table lists stewards and access rules. Maintenance obligations are implied (Infrastructure Steward for platforms) but not explicit per-resource. Funding mechanisms (operational costs) are covered in the Treasury Ruleset. Add a "Maintenance obligations" column or sub-note to the IEP resource table. |
 | §5.4.4 | MUST define reviewable indicators of economic concentration risk and an explicit mechanism to adjust constraints when such risks are detected | **Not addressed** | No concentration risk indicators defined. Given current early stage (one member, no significant balances), this is low-risk but still a MUST requirement. **REQUIRED.** Define simple indicators (e.g., if one member holds >50% of total ECO balance, a review is triggered) and a review/adjustment pathway. |
@@ -179,9 +179,9 @@ These items are deferred because they require a community governance decision to
 
 | Ref | Requirement | Priority | Notes |
 |---|---|---|---|
-| ECO expiration / decay mechanism | §5.2.4 + §5.4.2 — if internal units exist, MUST define expiration/decay/cap | Medium | Non-transferability currently serves as the single accumulation-limiting mechanism (satisfies §5.4.2 minimum). Expiration/decay would add additional protection. Deferred — see [future-proposals.md](../proposals/future.md) |
-| Treasury spending thresholds | §5.3.3 — spending authority MUST be explicitly bounded by thresholds | Low urgency | Finance Steward currently has €0 unilateral authority (effectively no spending authority). Thresholds should be defined once community funds exist. Deferred — see [future-proposals.md](../proposals/future.md) |
-| Suspended Member state | §3.7 (MAY) — temporary suspension states | Low | Technically not yet feasible in Fruit Haven. **Optional** per spec. Deferred — see [future-proposals.md](../proposals/future.md) |
+| ECO expiration / decay mechanism | §5.2.4 + §5.4.2 — if internal units exist, MUST define expiration/decay/cap | Medium | Non-transferability currently serves as the single accumulation-limiting mechanism (satisfies §5.4.2 minimum). Expiration/decay would add additional protection. Deferred — see [Future Proposals](../proposals/future) |
+| Treasury spending thresholds | §5.3.3 — spending authority MUST be explicitly bounded by thresholds | Low urgency | Finance Steward currently has €0 unilateral authority (effectively no spending authority). Thresholds should be defined once community funds exist. Deferred — see [Future Proposals](../proposals/future) |
+| Suspended Member state | §3.7 (MAY) — temporary suspension states | Low | Technically not yet feasible in Fruit Haven. **Optional** per spec. Deferred — see [Future Proposals](../proposals/future) |
 | Consent-based decision-making for Strategic decisions | §4.2.2 (MAY) — alternatives to majority vote | Low | Currently using simple majority for Strategic decisions. Consent-based approach is optional. Deferred. |
 
 ---
@@ -201,7 +201,7 @@ All artifacts have substantive content. To achieve full compliance, each artifac
 - §5.4.4 — Economic concentration risk indicators (IEP)
 - §2.4.3 — Ecological identity constraint measurable thresholds (IC-004/IC-005 in Identity Constraints Register — behavioral enforcement exists; numerical definition deferred)
 
-**Open technical gaps** (required for full operational compliance — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md)):
+**Open technical gaps** (required for full operational compliance — see Missing Technical Implementations):
 - Member exit flow in Fruit Haven
 - Voluntary exit request flow in Fruit Haven
 - Artifact links in onboarding flow
@@ -211,7 +211,7 @@ All artifacts have substantive content. To achieve full compliance, each artifac
 - Onboarding expiry actions in Fruit Haven admin panel
 - Fruit Haven voting app proposal template
 
-**Deferred governance decisions** (see [future-proposals.md](../proposals/future.md)):
+**Deferred governance decisions** (see [Future Proposals](../proposals/future)):
 - Treasury spending thresholds (trigger: first community funds received)
 - Consent-based decision making for Strategic decisions
 - ECO accumulation limits and decay

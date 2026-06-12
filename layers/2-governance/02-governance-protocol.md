@@ -81,7 +81,7 @@ A governance system with no appeal route hardens mistakes into permanent rules; 
 Recognizing the sovereignty of localized areas ensures that decisions primarily affecting a specific physical community or property are made by the people actually residing there, preventing overreach by the broader network while maintaining shared standards.
 :::
 
-The detailed rules governing the sovereignty of community areas, community autonomy, access rules, formation of new communities, and federation voting standards are defined in the [Federation Protocol](04-federation-protocol.md).
+The detailed rules governing the sovereignty of community areas, community autonomy, access rules, formation of new communities, and federation voting standards are defined in the [Federation Protocol](04-federation-protocol).
 
 ## Conflict Between Decisions
 
@@ -116,7 +116,7 @@ Every governance system fails somewhere — captured by a subgroup, frozen by in
 
 ## Ratification Record
 
-- **Adopted:** 2019-05-17 (Original Bylaws), 2026-05-19 (RCOS adaptation)
+- **Adopted:** 2019-05-17
 - **Decision type:** Constitutional
 - **Version:** v1.0.0
 - **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)
