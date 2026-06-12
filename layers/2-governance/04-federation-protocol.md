@@ -109,7 +109,7 @@ Any owner who acquires ownership in a Fruit Haven property accepts this charter 
 
 Per the [FH1 Community Bylaws](/source-documents/FH1_Community_Bylaws.pdf) (Article 6.02(a)), governing documents are ordered as follows, from most subordinate to most authoritative:
 
-1. Community Bylaws (e.g. [FH1 Community Bylaws](/source-documents/FH1_Community_Bylaws.pdf), [FH3 Community Bylaws](https://fruithaven.land/wp-content/uploads/2026/05/FH3_Community_Bylaws.pdf))
+1. Community Bylaws (e.g. [FH1 Community Bylaws](/source-documents/FH1_Community_Bylaws.pdf), [FH3 Community Bylaws](/source-documents/FH3_Community_Bylaws.pdf))
 2. Fruit Haven Sovereignty and Jurisdiction Doctrine
 3. FH1 Trustee Bylaws
 4. [Fruit Haven Community Sovereignty Doctrine](/source-documents/FH_Community_Sovereignty_Doctrine.pdf) (this charter)
