@@ -39,7 +39,7 @@ To explicitly define the relationships between different Fruit Haven communities
 ## Risks and Mitigations
 
 Risk: Communities may fracture or establish conflicting rules.
-Mitigation: The charter establishes clear supremacy guidelines, maintaining that the core charter takes precedence where community bylaws conflict.
+Mitigation: The charter establishes clear supremacy guidelines, maintaining that the core charter takes precedence where [community bylaws](https://fruithaven.land/wp-content/uploads/2024/04/FH1_Community_Bylaws.pdf) conflict.
 
 ## Transition and Migration Plan
 

@@ -58,7 +58,7 @@ When spending authority is vague, two failure modes appear: either every small d
 Opacity in a treasury compounds: one missing disclosure invites another, and before long members can no longer verify whether the community's money is being handled as they agreed. Making real-time visibility the baseline — and requiring any exception to be named, justified, and time-bounded — keeps audit within reach of every member, not just stewards.
 :::
 
-**Accounting Ledger:** As per the community bylaws, community finances must be managed with a continuous accounting ledger that is public, transparent, and accessible/reviewable by the trustees at any time.
+**Accounting Ledger:** As per the [community bylaws](https://fruithaven.land/wp-content/uploads/2024/04/FH1_Community_Bylaws.pdf), community finances must be managed with a continuous accounting ledger that is public, transparent, and accessible/reviewable by the trustees at any time.
 
 **Roles:** The Financial Bookkeeper handles data entry and tracking. The Communal Finance / Accountant holds the cash and manages the treasury.
 
