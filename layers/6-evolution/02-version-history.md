@@ -11,7 +11,7 @@
 ## v1.1.0 — 2026-06-10
 
 - **Effective date:** 2026-06-10
-- **Decision record:** [proposals/passed/2019-05-17_federation-sovereignty.md](/proposals/passed/2019-05-17_federation-sovereignty)
+- **Decision record:** [proposals/passed/2019-05-17_federation-sovereignty](/proposals/passed/2019-05-17_federation-sovereignty)
 - **Decision type:** Constitutional
 - **Mechanism:** Consensus
 - **Summary:** Integrated the ["FH Federation" Sovereignty Doctrine](https://fruithaven.land/wp-content/uploads/2024/04/FH_Community_Sovereignty_Doctrine.pdf) (passed by consensus in 2019) into the formal RCOS layers. Extracted community sovereignty details into a dedicated Federation Protocol.

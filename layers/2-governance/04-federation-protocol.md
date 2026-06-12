@@ -124,4 +124,4 @@ A community bylaw or lower-ranked document that conflicts with a higher-ranked d
 - **Adopted:** 2019-05-17
 - **Decision type:** Constitutional
 - **Version:** v1.1.0
-- **Decision record:** [proposals/passed/2019-05-17_federation-sovereignty.md](/proposals/passed/2019-05-17_federation-sovereignty)
+- **Decision record:** [proposals/passed/2019-05-17_federation-sovereignty](/proposals/passed/2019-05-17_federation-sovereignty)
