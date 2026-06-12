@@ -16,4 +16,7 @@ Defines clear roles, purposes, authorities, limits, and term lengths for various
 
 ## Change Type
 - [x] Permanent rule change
-- [ ] Time-bounded experiment
+- [ ] Time-bounded experiment
+
+## Source
+- [FH Membership Proposal (Google Doc)](https://docs.google.com/document/d/1-0FcjEpPhlVZBg0o_RDS4YPQYdr7-NdviYV3yk4JRNU/edit?tab=t.hbkmi61fve5i)

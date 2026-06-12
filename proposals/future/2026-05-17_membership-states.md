@@ -16,4 +16,7 @@ Defines the membership states: Applicant, Trial Member, Active Member, and Exite
 
 ## Change Type
 - [x] Permanent rule change
-- [ ] Time-bounded experiment
+- [ ] Time-bounded experiment
+
+## Source
+- [FH Membership Proposal (Google Doc)](https://docs.google.com/document/d/1-0FcjEpPhlVZBg0o_RDS4YPQYdr7-NdviYV3yk4JRNU/edit?tab=t.hbkmi61fve5i)

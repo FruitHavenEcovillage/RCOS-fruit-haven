@@ -16,4 +16,7 @@ Provides a transitional pathway for current property owners to be granted 'Activ
 
 ## Change Type
 - [ ] Permanent rule change
-- [x] Time-bounded experiment
+- [x] Time-bounded experiment
+
+## Source
+- [FH Membership Proposal (Google Doc)](https://docs.google.com/document/d/1-0FcjEpPhlVZBg0o_RDS4YPQYdr7-NdviYV3yk4JRNU/edit?tab=t.hbkmi61fve5i)
