@@ -20,7 +20,7 @@ summary: "A 2023 redraft of the federation-wide Community Sovereignty Doctrine c
 
 ## Summary
 
-A redraft of the federation-wide [Community Sovereignty Doctrine](https://fruithaven.land/wp-content/uploads/2026/06/FH_Community_Sovereignty_Doctrine-v3.pdf), covering community vision, cross-community access rights, property sovereignty, banishment procedures, and ratification. The document itself carried the note: *"To be proposed to owners once a version is written that may pass consensus,"* indicating it was withdrawn before being formally tabled. The primary blocker was Article I (Community Vision), which listed six unresolved competing options and included no agreed text. The draft was never voted on.
+A redraft of the federation-wide [Community Sovereignty Doctrine](/source-documents/FH_Community_Sovereignty_Doctrine_v3.pdf), covering community vision, cross-community access rights, property sovereignty, banishment procedures, and ratification. The document itself carried the note: *"To be proposed to owners once a version is written that may pass consensus,"* indicating it was withdrawn before being formally tabled. The primary blocker was Article I (Community Vision), which listed six unresolved competing options and included no agreed text. The draft was never voted on.
 
 The content that was agreed upon in this draft was later absorbed — in amended form — into the adopted Federation Protocol ([layers/2-governance/04-federation-protocol.md](/layers/2-governance/04-federation-protocol), decision record: [proposals/passed/2019-05-17_federation-sovereignty](/proposals/passed/2019-05-17_federation-sovereignty), RCOS-integrated v1.1.0 on 2026-06-10).
 
@@ -148,5 +148,5 @@ N/A
 - **Vote outcome:** Never formally put to a vote
 - **Vote date:** N/A
 - **Mechanism:** Would have required consensus + unanimity-minus-one among all FH owners + 15-day no-contact clause (per Art. V)
-- **Snapshot link:** Source document: [FH_Community_Sovereignty_Doctrine v3.pdf](https://fruithaven.land/wp-content/uploads/2026/06/FH_Community_Sovereignty_Doctrine-v3.pdf) (local archived copy: [resources/source-documents/FH_Community_Sovereignty_Doctrine_v3.pdf](../../resources/source-documents/FH_Community_Sovereignty_Doctrine_v3.pdf))
+- **Snapshot link:** Source document: [FH_Community_Sovereignty_Doctrine v3.pdf](/source-documents/FH_Community_Sovereignty_Doctrine_v3.pdf)
 - **Signatories / vote count:** None — document was flagged by its author as not yet ready to propose

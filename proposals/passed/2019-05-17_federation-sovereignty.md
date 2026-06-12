@@ -20,7 +20,7 @@ summary: "Establishes the sovereignty and federation rules for Fruit Haven commu
 
 ## Summary
 
-Establishes the sovereignty and federation rules for Fruit Haven community areas, as set out in the [Fruit Haven Community Sovereignty Doctrine](https://fruithaven.land/wp-content/uploads/2024/04/FH_Community_Sovereignty_Doctrine.pdf). It outlines community autonomy, access rules between communities, and the formation of new sovereign communities.
+Establishes the sovereignty and federation rules for Fruit Haven community areas, as set out in the [Fruit Haven Community Sovereignty Doctrine](/source-documents/FH_Community_Sovereignty_Doctrine.pdf). It outlines community autonomy, access rules between communities, and the formation of new sovereign communities.
 
 ## Affected Layers and Artifacts
 
@@ -39,7 +39,7 @@ To explicitly define the relationships between different Fruit Haven communities
 ## Risks and Mitigations
 
 Risk: Communities may fracture or establish conflicting rules.
-Mitigation: The charter establishes clear supremacy guidelines, maintaining that the core charter takes precedence where [community bylaws](https://fruithaven.land/wp-content/uploads/2024/04/FH1_Community_Bylaws.pdf) conflict.
+Mitigation: The charter establishes clear supremacy guidelines, maintaining that the core charter takes precedence where [community bylaws](/source-documents/FH1_Community_Bylaws.pdf) conflict.
 
 ## Transition and Migration Plan
 
@@ -64,5 +64,5 @@ N/A
 - **Vote outcome:** Passed
 - **Vote date:** 2019-05-17
 - **Mechanism:** Consensus
-- **Snapshot link:** Source document: [FH_Community_Sovereignty_Doctrine.pdf](https://fruithaven.land/wp-content/uploads/2024/04/FH_Community_Sovereignty_Doctrine.pdf) (local archived copy: [resources/source-documents/FH_Community_Sovereignty_Doctrine.pdf](../../resources/source-documents/FH_Community_Sovereignty_Doctrine.pdf))
+- **Snapshot link:** Source document: [FH_Community_Sovereignty_Doctrine.pdf](/source-documents/FH_Community_Sovereignty_Doctrine.pdf)
 - **Signatories / vote count:** Consensus achieved
