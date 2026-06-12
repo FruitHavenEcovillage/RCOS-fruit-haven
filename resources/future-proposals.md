@@ -1,78 +1,68 @@
 # Future Proposals
 
-Governance and design decisions that are deferred — either because they depend on conditions not yet met, require more community input before drafting, or are optional under RCOS and not urgently needed.
+Governance and design decisions that are drafted or deferred — either awaiting community vote, depending on conditions not yet met, or requiring more input before finalization. Items here are candidates for formal proposal once ready.
 
 **Owner:** Blueprint Steward / Membership Admin  
 **Review cadence:** Reviewed at each Reflection & Learning meeting; priorities updated as community context changes
 
 ---
 
-## High Priority
+## Draft Proposals
 
-### Treasury Spending Thresholds
+### Membership States
 
-**Deferred until:** First community funds received in the treasury  
-**Required by:** Layer 3 — Treasury Ruleset (§5.3.3); currently Finance Steward has €0 unilateral spending authority  
-**What to define:** Explicit spending tiers (e.g. Operational threshold ≤ €X, Strategic for larger amounts), authorized role/body, and escalation path  
-**RCOS requirement:** REQUIRED — spending authority must be explicitly bounded by thresholds
-
----
-
-## Medium Priority
-
-### ECO Accumulation Limits and Decay Mechanism
-
-**Deferred until:** ECO utility is better defined  
-**Required by:** Layer 3 — Internal Economy Protocol (§5.2.4, §5.4.2); currently non-transferability is the only accumulation-limiting mechanism  
-**What to define:** Whether ECO should expire after inactivity, decay gradually, or have a hard cap; redistribution or burn mechanism; technical feasibility in Offcoin  
-**RCOS requirement:** REQUIRED to define at least one accumulation-limiting mechanism; non-transferability currently satisfies the minimum. Additional mechanisms would strengthen compliance with §5.4.4 (concentration risk indicators).  
-**See also:** [missing-technical-implementations.md](missing-technical-implementations.md) — item 9
-
-### Economic Concentration Risk Indicators
-
-**Deferred until:** Multiple members and meaningful ECO/XP balances exist  
-**Required by:** §5.4.4 — MUST define reviewable indicators of economic concentration risk and an explicit adjustment mechanism  
-**What to define:** Simple indicators (e.g., if one member holds >50% of total ECO supply, a review is triggered automatically at the next Reflection & Learning meeting); adjustment pathway (Strategic vote to tighten constraints)  
-**RCOS requirement:** REQUIRED
-
-### Substitution of Participation Rule
-
-**Deferred until:** First governance adoption cycle  
-**Required by:** §3.5.3 — substitution of participation (outsourcing contributions to non-members) must be explicitly governed  
-**What to define:** Whether members may have third parties perform contributions on their behalf; if yes, under what conditions; whether such contributions count toward participation expectations  
-**RCOS requirement:** REQUIRED — currently unaddressed in any artifact  
-**Where to add:** Membership Agreement or Internal Economy Protocol
-
-### Per-Commons Resource Maintenance Obligations
-
-**Deferred until:** First governance adoption cycle  
-**Required by:** §5.1.4 — for each commons resource, maintenance obligations must be explicit  
-**What to define:** Who is responsible for maintaining each resource (platform uptime, content accuracy, backups); what the maintenance obligation consists of; frequency  
-**RCOS requirement:** REQUIRED (partially addressed — stewards are named but obligations not listed per-resource)  
-**Where to add:** Internal Economy Protocol resource table (add "Maintenance obligations" column)
+**Status:** Draft  
+**Decision type:** Constitutional — Full Members Vote  
+**Summary:** Defines the membership states: Applicant, Trial Member, Active Member, and Exited Member / External. Includes their rights, obligations, and transition triggers.  
+**Affected:** Layer 1 — [`layers/1-membership/04-membership-state-registry.md`](../layers/1-membership/04-membership-state-registry.md)  
+**Proposal file:** [`proposals/future/2026-05-17_membership-states.md`](../proposals/future/2026-05-17_membership-states.md)
 
 ---
 
-## Low Priority / Optional
+### Transitional Membership Pathway for Current Owners
 
-### Suspended Member State
+**Status:** Draft  
+**Decision type:** Operational — Full Members Vote  
+**Summary:** Provides a transitional pathway for current property owners to be granted Active Member status for a 1-year period, during which they must fulfill membership requirements.  
+**Affected:** Layer 1 — [`layers/1-membership/04-membership-state-registry.md`](../layers/1-membership/04-membership-state-registry.md)  
+**Proposal file:** [`proposals/future/2026-05-17_transitional-membership.md`](../proposals/future/2026-05-17_transitional-membership.md)
 
-**Deferred until:** Fruit Haven supports differentiated access control  
-**Required by:** §3.7 (MAY) — temporary suspension states are optional under RCOS  
-**What to define:** Formal suspension state with time bounds and review process; access limitations during suspension; distinction from temporary access restriction (Layer 4 measure)  
-**RCOS requirement:** OPTIONAL — §3.7 says "MAY define"  
-**See also:** Exit & Separation Protocol notes this as not yet technically feasible
+---
 
-### Consent-Based Decision Making for Strategic Decisions
+### Roles Explicitness
 
-**Deferred until:** Community is large enough to benefit from non-majority processes  
-**Required by:** Not a MUST requirement — §4.2.2 says decision mechanisms MAY include consent-based methods  
-**What to define:** Consent process for Strategic decisions as an alternative to simple majority vote; objection handling rules  
-**RCOS requirement:** OPTIONAL
+**Status:** Draft  
+**Decision type:** Strategic — Full Members Vote  
+**Summary:** Defines clear roles, purposes, authorities, limits, and term lengths for various community positions (Communal Finance, C.A. Manager, etc.).  
+**Affected:** Layer 5 — [`layers/5-operations/02-role-registry.md`](../layers/5-operations/02-role-registry.md)  
+**Proposal file:** [`proposals/future/2026-05-17_roles-explicitness.md`](../proposals/future/2026-05-17_roles-explicitness.md)
 
-### Ecological Identity Constraint Enforcement Mechanism
+---
 
-**Deferred until:** First community partners or pilot projects engaged  
-**Required by:** §2.4.3 — identity constraints MUST be testable and enforceable through defined processes  
-**What to define:** Measurable criteria for what constitutes "sustained net harm to local ecosystems"; enforcement pathway for the Fruit Haven network context (as a steward of the standard, not an operator of physical land); how the Layer 4 accountability process would handle an ecological harm concern  
-**RCOS requirement:** REQUIRED (partially addressed — behavioral constraints enforced via Layer 4; ecological constraints lack a defined enforcement mechanism)
+### Responsibilities of Owners / Trustees
+
+**Status:** Draft  
+**Decision type:** Strategic — Full Members Vote  
+**Summary:** Clarifies the responsibilities of Owners / Trustees as legal stewards of the property, distinct from general membership.  
+**Affected:** Layer 1 — [`layers/1-membership/04-membership-state-registry.md`](../layers/1-membership/04-membership-state-registry.md)  
+**Proposal file:** [`proposals/future/2026-05-17_owner-responsibilities.md`](../proposals/future/2026-05-17_owner-responsibilities.md)
+
+---
+
+### Definition of Participation in Community Governance
+
+**Status:** Draft  
+**Decision type:** Strategic — Full Members Vote  
+**Summary:** Defines participation for Active Members as a combination of Responsiveness, Contribution, Attendance, and Accountability.  
+**Affected:** Layer 1 — [`layers/1-membership/01-membership-agreement.md`](../layers/1-membership/01-membership-agreement.md); Layer 2 — [`layers/2-governance/02-governance-protocol.md`](../layers/2-governance/02-governance-protocol.md)  
+**Proposal file:** [`proposals/future/2026-05-17_participation-definition.md`](../proposals/future/2026-05-17_participation-definition.md)
+
+---
+
+### Conflict Resolution Updates
+
+**Status:** Draft  
+**Decision type:** Strategic — Full Members Vote  
+**Summary:** Updates the conflict resolution ladder with explicit conflict classes and an Emergency Safety Protocol.  
+**Affected:** Layer 4 — [`layers/4-conflict/01-conflict-resolution-ladder.md`](../layers/4-conflict/01-conflict-resolution-ladder.md)  
+**Proposal file:** [`proposals/future/2026-05-17_conflict-resolution.md`](../proposals/future/2026-05-17_conflict-resolution.md)
