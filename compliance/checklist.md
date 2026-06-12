@@ -3,7 +3,7 @@
 - **RCOS-Core version:** v0.1
 - **Last audited:** 2026-06-12
 - **Audit method:** Self-audit (content definition complete; pending formal adoption; cross-referenced against 2019 passed proposals)
-- **Overall status:** Pending adoption — all artifacts have substantive content; 13 of 23 artifacts (57%) are formally adopted via 2019 community consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws), [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty)); the remaining 10 RCOS-formatted artifacts have not yet been formally adopted through a Fruit Haven vote
+- **Overall status:** Pending adoption — all artifacts have substantive content; 10 of 23 artifacts (43%) are formally adopted via 2019 community consensus, evidenced by a completed Ratification Record in the artifact file itself citing the [FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) or [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty); the remaining 13 RCOS-formatted artifacts (including some listed as "affected" by the 2019 proposals but not yet updated with a completed Ratification Record) have not yet been formally adopted through a Fruit Haven vote
 
 > **Status key:**
 > - `Present` — file exists with substantive, adopted content
@@ -16,7 +16,7 @@
 
 ## RCOS Compliance Progress
 
-RCOS-Core compliance is binary per §10.1.1: a community is either compliant or non-compliant. Fruit Haven is currently **non-compliant** — 13 of the 23 artifacts are formally adopted via 2019 community consensus (see [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty)), but the remaining 10 RCOS-formatted artifacts have not yet been formally adopted through a Fruit Haven vote.
+RCOS-Core compliance is binary per §10.1.1: a community is either compliant or non-compliant. Fruit Haven is currently **non-compliant** — 10 of the 23 artifacts have a completed Ratification Record showing they were formally adopted via 2019 community consensus (see [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty)), but the remaining 13 RCOS-formatted artifacts — including some that the 2019 proposals list as "affected" but whose own files still carry a placeholder Ratification Record — have not yet been formally adopted through a Fruit Haven vote.
 
 The two bars below show content readiness and formal adoption separately.
 
@@ -39,20 +39,20 @@ Overall content coverage          ███████████████�
 ### Formal Adoption (artifacts ratified via consensus vote or Fruit Haven vote)
 
 ```
-Layer 0 — Identity & Scope        ████████████████████ 100%  (4/4)
+Layer 0 — Identity & Scope        ██████████░░░░░░░░░░  50%  (2/4)
 Layer 1 — Membership System       ██████████░░░░░░░░░░  50%  (2/4)
 Layer 2 — Governance & Logic      ███████████████░░░░░  75%  (3/4)
 Layer 3 — Economic & Resource     █████████████░░░░░░░  67%  (2/3)
 Layer 4 — Conflict & Repair       ░░░░░░░░░░░░░░░░░░░░   0%  (0/2)
 Layer 5 — Operations              ███████░░░░░░░░░░░░░  33%  (1/3)
-Layer 6 — Evolution               ███████░░░░░░░░░░░░░  33%  (1/3)
+Layer 6 — Evolution               ░░░░░░░░░░░░░░░░░░░░   0%  (0/3)
 ─────────────────────────────────────────────────────────
-Overall formal adoption           ███████████░░░░░░░░░  57%  (13/23 artifacts)
+Overall formal adoption           █████████░░░░░░░░░░░  43%  (10/23 artifacts)
 ```
 
 > Once all 23 artifacts are adopted, formal adoption reaches 100% and Fruit Haven becomes RCOS-Core compliant (subject to any remaining content gaps being resolved first).
 >
-> 13 of the 23 artifacts (marked "Adopted via 2019 consensus" in the per-layer tables below) carry substantive content that was already ratified by Fruit Haven 1 community consensus on 2019-05-17, via the [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty). The 2026 RCOS-formatted versions of these artifacts re-express that prior decision in the RCOS layer structure; the bars above count that 2019 ratification toward formal adoption. The remaining 10 artifacts (Layer 1: Onboarding Protocol, Exit & Separation Protocol; Layer 2: Authority Registry; Layer 3: Internal Economy Protocol; Layer 4: Conflict Resolution Ladder, Accountability Protocol; Layer 5: Operations Manual, Meeting Templates; Layer 6: Version History, Learning Log) have not been ratified by either the 2019 consensus or a Fruit Haven vote.
+> 10 of the 23 artifacts (marked "Adopted via 2019 consensus" in the per-layer tables below) each have a completed Ratification Record in their own file, citing ratification by Fruit Haven 1 community consensus on 2019-05-17 via the [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) or [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty): Layer 0 — Purpose Charter, Identity Constraints Register; Layer 1 — Membership Agreement, Membership State Registry; Layer 2 — Decision Matrix, Governance Protocol, Federation Protocol; Layer 3 — Treasury Ruleset, Land Allotment Protocol; Layer 5 — Role Registry. The bars above count that 2019 ratification toward formal adoption. The remaining 13 artifacts (Layer 0: Scope Declaration, Invariants Register; Layer 1: Onboarding Protocol, Exit & Separation Protocol; Layer 2: Authority Registry; Layer 3: Internal Economy Protocol; Layer 4: Conflict Resolution Ladder, Accountability Protocol; Layer 5: Operations Manual, Meeting Templates; Layer 6: Change Protocol, Version History, Learning Log) have not been ratified by either the 2019 consensus or a Fruit Haven vote. Note that Layer 0's Scope Declaration and Invariants Register, and Layer 6's Change Protocol, are listed as "affected artifacts" in the FH1 Bylaws proposal, but those files are still `Stub — not yet adopted` with a placeholder Ratification Record, so they do not count toward formal adoption until they are completed and ratified.
 
 ---
 
@@ -63,8 +63,8 @@ Overall formal adoption           ███████████░░░░�
 | Artifact | File | Status | Notes |
 |---|---|---|---|
 | Purpose Charter | [layers/0-identity/01-purpose-charter](../layers/0-identity/01-purpose-charter) | Present | Content complete; Identity Constraints section replaced with cross-reference to dedicated register; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) Art. 2) — RCOS-formatted artifact not yet separately ratified |
-| Scope Declaration | [layers/0-identity/02-scope-declaration](../layers/0-identity/02-scope-declaration) | Draft | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) Art. 1, 2.03) — RCOS-formatted artifact not yet separately ratified |
-| Invariants Register | [layers/0-identity/03-invariants-register](../layers/0-identity/03-invariants-register) | Draft | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) Art. 12) — RCOS-formatted artifact not yet separately ratified |
+| Scope Declaration | [layers/0-identity/02-scope-declaration](../layers/0-identity/02-scope-declaration) | Draft | Content complete; [FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) (Art. 1, 2.03) lists this artifact as affected, but the file itself is still `Stub — not yet adopted` with a placeholder Ratification Record — not yet formally adopted |
+| Invariants Register | [layers/0-identity/03-invariants-register](../layers/0-identity/03-invariants-register) | Draft | Content complete; [FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) (Art. 12) lists this artifact as affected, but the file itself is still `Stub — not yet adopted` with a placeholder Ratification Record — not yet formally adopted |
 | Identity Constraints Register | [layers/0-identity/04-identity-constraints-register](../layers/0-identity/04-identity-constraints-register) | Present | Content complete; IC-001–003, IC-006–008 fully enforceable; IC-004–005 (ecological) have partial enforcement — measurable threshold deferred. Substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) Art. 10) — RCOS-formatted artifact not yet separately ratified |
 
 ---
@@ -136,7 +136,7 @@ Overall formal adoption           ███████████░░░░�
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Change Protocol | [layers/6-evolution/01-change-protocol](../layers/6-evolution/01-change-protocol) | Draft | Content complete; updated 2026-04-22 to add experiment review checkpoints and safety suspension mechanism; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) Art. 5, 6.01) — RCOS-formatted artifact not yet separately ratified |
+| Change Protocol | [layers/6-evolution/01-change-protocol](../layers/6-evolution/01-change-protocol) | Draft | Content complete; updated 2026-04-22 to add experiment review checkpoints and safety suspension mechanism; [FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) (Art. 5, 6.01) lists this artifact as affected, but the file itself is still `Stub — not yet adopted` with a placeholder Ratification Record — not yet formally adopted |
 | Version History | [layers/6-evolution/02-version-history](../layers/6-evolution/02-version-history) | Draft | Active; v0.0 scaffold entry present; will be updated as artifacts are formally adopted |
 | Learning Log | [layers/6-evolution/03-learning-log](../layers/6-evolution/03-learning-log) | Draft | Active; updated 2026-04-22 to define learnable events, ownership, and synthesis cadence; no entries yet |
 
