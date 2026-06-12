@@ -151,6 +151,12 @@ All artifacts affected by an experiment MUST be explicitly labeled as experiment
 
 **Safety suspension:** If an experiment introduces a credible safety risk, coercion, or sustained harm, the Membership Admin may suspend the experiment immediately as an emergency protective action. The suspension must be reported to all Full Members within 48 hours and reviewed at the next community meeting. Post-hoc ratification or rollback follows the emergency change process above.
 
+## Decentralization Review
+
+> Source: [FH1 Community Bylaws](/proposals/passed/2019-05-17_fh1-bylaws) Art. 5 (Decentralization).
+
+The community shall periodically review points of centralization within its structures and determine how to decentralize, if deemed necessary or beneficial.
+
 ---
 
 ## Ratification Record
