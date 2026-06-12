@@ -1,9 +1,9 @@
 # Compliance Checklist
 
 - **RCOS-Core version:** v0.1
-- **Last audited:** 2026-04-27
-- **Audit method:** Self-audit (content definition complete; pending formal adoption)
-- **Overall status:** Pending adoption — all artifacts have substantive content; none yet formally adopted through a governance vote
+- **Last audited:** 2026-06-12
+- **Audit method:** Self-audit (content definition complete; pending formal adoption; cross-referenced against 2019 passed proposals)
+- **Overall status:** Pending adoption — all artifacts have substantive content; 13 of 20 artifacts carry substantive content already ratified via 2019 community consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md), [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty.md)); none of the current RCOS-formatted artifacts have yet been formally adopted through a Snapshot vote
 
 > **Status key:**
 > - `Present` — file exists with substantive, adopted content
@@ -16,7 +16,7 @@
 
 ## RCOS Compliance Progress
 
-RCOS-Core compliance is binary per §10.1.1: a community is either compliant or non-compliant. Fruit Haven is currently **non-compliant** — all artifacts are in Draft status and have not been formally adopted through a governance vote.
+RCOS-Core compliance is binary per §10.1.1: a community is either compliant or non-compliant. Fruit Haven is currently **non-compliant** — while 13 of the 20 artifacts carry substantive content ratified via 2019 community consensus (see [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty.md)), none of the current RCOS-formatted artifacts have been formally adopted through a Snapshot vote.
 
 The two bars below show content readiness and formal adoption separately.
 
@@ -51,6 +51,8 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 ```
 
 > Once all 20 artifacts are adopted through Snapshot votes, formal adoption reaches 100% and Fruit Haven becomes RCOS-Core compliant (subject to any remaining content gaps being resolved first).
+>
+> Note: 13 of the 20 artifacts (marked "Adopted via 2019 consensus" in the per-layer tables below) carry substantive content that was already ratified by Fruit Haven 1 community consensus on 2019-05-17, via the [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty.md). The 2026 RCOS-formatted versions of these artifacts re-express that prior decision in the RCOS layer structure; the bars above remain at 0% because the RCOS-formatted artifacts themselves have not been separately ratified through a Snapshot vote.
 
 ---
 
@@ -60,10 +62,10 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Purpose Charter | [layers/0-identity/01-purpose-charter.md](../layers/0-identity/01-purpose-charter.md) | Present | Content complete; Identity Constraints section replaced with cross-reference to dedicated register |
-| Scope Declaration | [layers/0-identity/02-scope-declaration.md](../layers/0-identity/02-scope-declaration.md) | Draft | Content complete; not yet adopted |
-| Invariants Register | [layers/0-identity/03-invariants-register.md](../layers/0-identity/03-invariants-register.md) | Draft | Content complete; not yet adopted |
-| Identity Constraints Register | [layers/0-identity/04-identity-constraints-register.md](../layers/0-identity/04-identity-constraints-register.md) | Present | Content complete; IC-001–003, IC-006–008 fully enforceable; IC-004–005 (ecological) have partial enforcement — measurable threshold deferred |
+| Purpose Charter | [layers/0-identity/01-purpose-charter.md](../layers/0-identity/01-purpose-charter.md) | Present | Content complete; Identity Constraints section replaced with cross-reference to dedicated register; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 2) — RCOS-formatted artifact not yet separately ratified |
+| Scope Declaration | [layers/0-identity/02-scope-declaration.md](../layers/0-identity/02-scope-declaration.md) | Draft | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 1, 2.03) — RCOS-formatted artifact not yet separately ratified |
+| Invariants Register | [layers/0-identity/03-invariants-register.md](../layers/0-identity/03-invariants-register.md) | Draft | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 12) — RCOS-formatted artifact not yet separately ratified |
+| Identity Constraints Register | [layers/0-identity/04-identity-constraints-register.md](../layers/0-identity/04-identity-constraints-register.md) | Present | Content complete; IC-001–003, IC-006–008 fully enforceable; IC-004–005 (ecological) have partial enforcement — measurable threshold deferred. Substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 10) — RCOS-formatted artifact not yet separately ratified |
 
 ---
 
@@ -73,10 +75,10 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Membership Agreement | [layers/1-membership/01-membership-agreement.md](../layers/1-membership/01-membership-agreement.md) | Present | Content complete; not yet adopted |
+| Membership Agreement | [layers/1-membership/01-membership-agreement.md](../layers/1-membership/01-membership-agreement.md) | Present | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 8, 13) — RCOS-formatted artifact not yet separately ratified |
 | Onboarding Protocol | [layers/1-membership/02-onboarding-protocol.md](../layers/1-membership/02-onboarding-protocol.md) | Draft | Content complete; several technical implementations pending — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md) |
 | Exit & Separation Protocol | [layers/1-membership/03-exit-separation-protocol.md](../layers/1-membership/03-exit-separation-protocol.md) | Draft | Content complete; exit flow in Fruit Haven not yet implemented — see [missing-technical-implementations.md](../resources/missing-technical-implementations.md) |
-| Membership State Registry | [layers/1-membership/04-membership-state-registry.md](../layers/1-membership/04-membership-state-registry.md) | Present | Content complete; not yet adopted |
+| Membership State Registry | [layers/1-membership/04-membership-state-registry.md](../layers/1-membership/04-membership-state-registry.md) | Present | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 8.02) — RCOS-formatted artifact not yet separately ratified |
 
 ---
 
@@ -86,10 +88,10 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Decision Matrix | [layers/2-governance/01-decision-matrix.md](../layers/2-governance/01-decision-matrix.md) | Present | Content complete |
-| Governance Protocol | [layers/2-governance/02-governance-protocol.md](../layers/2-governance/02-governance-protocol.md) | Present | Content complete |
+| Decision Matrix | [layers/2-governance/01-decision-matrix.md](../layers/2-governance/01-decision-matrix.md) | Present | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 11.03–11.04) — RCOS-formatted artifact not yet separately ratified |
+| Governance Protocol | [layers/2-governance/02-governance-protocol.md](../layers/2-governance/02-governance-protocol.md) | Present | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 11.01–11.02, [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty.md)) — RCOS-formatted artifact not yet separately ratified |
 | Authority Registry | [layers/2-governance/03-authority-registry.md](../layers/2-governance/03-authority-registry.md) | Draft | Content complete; updated to reference specific operational roles from Layer 5 |
-| Federation Protocol | [layers/2-governance/04-federation-protocol.md](../layers/2-governance/04-federation-protocol.md) | Present | Adopted via 2019 consensus; explicitly integrated |
+| Federation Protocol | [layers/2-governance/04-federation-protocol.md](../layers/2-governance/04-federation-protocol.md) | Present | Adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 6.02, [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty.md)); explicitly integrated — RCOS-formatted artifact not yet separately ratified |
 
 ---
 
@@ -100,8 +102,8 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 | Artifact | File | Status | Notes |
 |---|---|---|---|
 | Internal Economy Protocol | [layers/3-economy/01-internal-economy-protocol.md](../layers/3-economy/01-internal-economy-protocol.md) | Draft | Content complete; ECO expiration/decay mechanism deferred; concentration risk indicators not yet defined — see [future-proposals.md](../resources/future-proposals.md) |
-| Treasury Ruleset | [layers/3-economy/02-treasury-ruleset.md](../layers/3-economy/02-treasury-ruleset.md) | Present | Content complete |
-| Land Allotment Protocol | [layers/3-economy/03-land-allotment-protocol.md](../layers/3-economy/03-land-allotment-protocol.md) | Present | Adopted via bylaws |
+| Treasury Ruleset | [layers/3-economy/02-treasury-ruleset.md](../layers/3-economy/02-treasury-ruleset.md) | Present | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 9) — RCOS-formatted artifact not yet separately ratified |
+| Land Allotment Protocol | [layers/3-economy/03-land-allotment-protocol.md](../layers/3-economy/03-land-allotment-protocol.md) | Present | Adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 7) — RCOS-formatted artifact not yet separately ratified |
 
 ---
 
@@ -123,7 +125,7 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 | Artifact | File | Status | Notes |
 |---|---|---|---|
 | Operations Manual | [layers/5-operations/01-operations-manual.md](../layers/5-operations/01-operations-manual.md) | Draft | Content complete; updated 2026-04-22 to add temporary/ad-hoc responsibility rules and information anti-gatekeeping policy |
-| Role Registry | [layers/5-operations/02-role-registry.md](../layers/5-operations/02-role-registry.md) | Present | Content complete; roles adapted from Fruit Haven bylaws |
+| Role Registry | [layers/5-operations/02-role-registry.md](../layers/5-operations/02-role-registry.md) | Present | Content complete; roles adapted from Fruit Haven bylaws; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 3–4) — RCOS-formatted artifact not yet separately ratified |
 | Meeting Templates | [layers/5-operations/meeting-templates/](../layers/5-operations/meeting-templates/) | Draft | All 5 templates complete (Operations, Governance, Coordination/Alignment, Reflection & Learning, Conflict Handling) |
 
 ---
@@ -134,7 +136,7 @@ Overall formal adoption           ░░░░░░░░░░░░░░░�
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Change Protocol | [layers/6-evolution/01-change-protocol.md](../layers/6-evolution/01-change-protocol.md) | Draft | Content complete; updated 2026-04-22 to add experiment review checkpoints and safety suspension mechanism |
+| Change Protocol | [layers/6-evolution/01-change-protocol.md](../layers/6-evolution/01-change-protocol.md) | Draft | Content complete; updated 2026-04-22 to add experiment review checkpoints and safety suspension mechanism; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws.md) Art. 5, 6.01) — RCOS-formatted artifact not yet separately ratified |
 | Version History | [layers/6-evolution/02-version-history.md](../layers/6-evolution/02-version-history.md) | Draft | Active; v0.0 scaffold entry present; will be updated as artifacts are formally adopted |
 | Learning Log | [layers/6-evolution/03-learning-log.md](../layers/6-evolution/03-learning-log.md) | Draft | Active; updated 2026-04-22 to define learnable events, ownership, and synthesis cadence; no entries yet |
 
