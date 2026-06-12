@@ -169,7 +169,7 @@
         href="/"
         class="nav-link"
         class:active={isActive("/")}
-        onclick={onLinkClick}>RCOS FH Home</a
+        onclick={onLinkClick}>Fruit Haven RCOS Home</a
       >
     </li>
 
