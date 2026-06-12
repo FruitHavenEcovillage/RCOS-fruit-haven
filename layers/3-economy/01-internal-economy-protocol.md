@@ -98,7 +98,7 @@ Any internal unit that can pile up without limit eventually becomes leverage —
 
 - No hard cap on XP or ECO currently — accumulation is unlimited
 - Neither unit can be converted into governance authority or used to bypass the Decision Matrix
-- Accumulation limits and decay mechanisms are deferred as a future proposal; see [Future Proposals](../../resources/future-proposals.md)
+- Accumulation limits and decay mechanisms are deferred as a future proposal; see [Future Proposals](../../proposals/future.md)
 
 ## External Income Interfaces
 

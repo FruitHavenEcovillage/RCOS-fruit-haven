@@ -41,15 +41,15 @@ Constraints on how Fruit Haven and its mechanisms may be used economically.
 :::
 
 :::rationale{title="Why are ecological constraints partially deferred?"}
-Constraints IC-004 and IC-005 express a non-negotiable design intent — Fruit Haven must not degrade the conditions for life. They are fully enforceable as a basis for raising conflicts and objecting to proposals. The remaining gap is the definition of a measurable threshold for "sustained net harm" in a networked community context — this cannot be defined without operational data. Defining that threshold is a deferred governance task, tracked in future-proposals.md.
+Constraints IC-004 and IC-005 express a non-negotiable design intent — Fruit Haven must not degrade the conditions for life. They are fully enforceable as a basis for raising conflicts and objecting to proposals. The remaining gap is the definition of a measurable threshold for "sustained net harm" in a networked community context — this cannot be defined without operational data. Defining that threshold is a deferred governance task, tracked in proposals/future.md.
 :::
 
 Constraints on Fruit Haven' relationship with ecosystems and biodiversity.
 
 | ID | Constraint | Enforcement mechanism | Added | Decision record |
 |---|---|---|---|---|
-| IC-004 | Fruit Haven and its communities must not cause sustained net harm to local ecosystems, land, or biodiversity — practices that degrade the conditions for life are incompatible with the primary purpose. | **Partial.** Behavioral/governance enforcement: any member may raise a concern via the Conflict Resolution Ladder; proposals visibly degrading ecosystems may be objected to via re-vote. Measurable threshold for "sustained net harm" in a networked community context is deferred — see [future-proposals.md](../../resources/future-proposals.md) | <YYYY-MM-DD> | [link] |
-| IC-005 | Ecological impact must be considered in all significant resource, land, and infrastructure decisions. | **Partial.** Process requirement: all Strategic and Constitutional decisions affecting resources, land, or infrastructure must include an ecological impact statement; omission is grounds for a re-vote request. Criteria for what constitutes a "significant" decision are deferred — see [future-proposals.md](../../resources/future-proposals.md) | <YYYY-MM-DD> | [link] |
+| IC-004 | Fruit Haven and its communities must not cause sustained net harm to local ecosystems, land, or biodiversity — practices that degrade the conditions for life are incompatible with the primary purpose. | **Partial.** Behavioral/governance enforcement: any member may raise a concern via the Conflict Resolution Ladder; proposals visibly degrading ecosystems may be objected to via re-vote. Measurable threshold for "sustained net harm" in a networked community context is deferred — see [future-proposals.md](../../proposals/future.md) | <YYYY-MM-DD> | [link] |
+| IC-005 | Ecological impact must be considered in all significant resource, land, and infrastructure decisions. | **Partial.** Process requirement: all Strategic and Constitutional decisions affecting resources, land, or infrastructure must include an ecological impact statement; omission is grounds for a re-vote request. Criteria for what constitutes a "significant" decision are deferred — see [future-proposals.md](../../proposals/future.md) | <YYYY-MM-DD> | [link] |
 
 ---
 

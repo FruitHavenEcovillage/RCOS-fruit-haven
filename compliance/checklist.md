@@ -3,7 +3,7 @@
 - **RCOS-Core version:** v0.1
 - **Last audited:** 2026-06-12
 - **Audit method:** Self-audit (content definition complete; pending formal adoption; cross-referenced against 2019 passed proposals)
-- **Overall status:** Pending adoption — all artifacts have substantive content; 13 of 23 artifacts (57%) are formally adopted via 2019 community consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws), [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty)); the remaining 10 RCOS-formatted artifacts have not yet been formally adopted through a Snapshot vote
+- **Overall status:** Pending adoption — all artifacts have substantive content; 13 of 23 artifacts (57%) are formally adopted via 2019 community consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws), [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty)); the remaining 10 RCOS-formatted artifacts have not yet been formally adopted through a Fruit Haven vote
 
 > **Status key:**
 > - `Present` — file exists with substantive, adopted content
@@ -16,7 +16,7 @@
 
 ## RCOS Compliance Progress
 
-RCOS-Core compliance is binary per §10.1.1: a community is either compliant or non-compliant. Fruit Haven is currently **non-compliant** — 13 of the 23 artifacts are formally adopted via 2019 community consensus (see [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty)), but the remaining 10 RCOS-formatted artifacts have not yet been formally adopted through a Snapshot vote.
+RCOS-Core compliance is binary per §10.1.1: a community is either compliant or non-compliant. Fruit Haven is currently **non-compliant** — 13 of the 23 artifacts are formally adopted via 2019 community consensus (see [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty)), but the remaining 10 RCOS-formatted artifacts have not yet been formally adopted through a Fruit Haven vote.
 
 The two bars below show content readiness and formal adoption separately.
 
@@ -36,7 +36,7 @@ Overall content coverage          ███████████████�
 
 > Scoring method: each normative MUST requirement in the spec counts as 1 point. Fully addressed = 1, partially addressed = 0.5, not addressed = 0. Total ~200 normative MUST requirements identified across Layers 0–6 (updated to reflect Identity Constraints Register as a 4th Layer 0 artifact per RCOS-Core v0.1 spec 2026-04-27). Score: ~186/200 ≈ 93%. Layer 0 reduced from 98% to 95% because two ecological constraints (IC-004, IC-005) have partial enforcement (measurable threshold deferred).
 
-### Formal Adoption (artifacts ratified via consensus vote or Snapshot)
+### Formal Adoption (artifacts ratified via consensus vote or Fruit Haven vote)
 
 ```
 Layer 0 — Identity & Scope        ████████████████████ 100%  (4/4)
@@ -52,7 +52,7 @@ Overall formal adoption           ███████████░░░░�
 
 > Once all 23 artifacts are adopted, formal adoption reaches 100% and Fruit Haven becomes RCOS-Core compliant (subject to any remaining content gaps being resolved first).
 >
-> 13 of the 23 artifacts (marked "Adopted via 2019 consensus" in the per-layer tables below) carry substantive content that was already ratified by Fruit Haven 1 community consensus on 2019-05-17, via the [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty). The 2026 RCOS-formatted versions of these artifacts re-express that prior decision in the RCOS layer structure; the bars above count that 2019 ratification toward formal adoption. The remaining 10 artifacts (Layer 1: Onboarding Protocol, Exit & Separation Protocol; Layer 2: Authority Registry; Layer 3: Internal Economy Protocol; Layer 4: Conflict Resolution Ladder, Accountability Protocol; Layer 5: Operations Manual, Meeting Templates; Layer 6: Version History, Learning Log) have not been ratified by either the 2019 consensus or a Snapshot vote.
+> 13 of the 23 artifacts (marked "Adopted via 2019 consensus" in the per-layer tables below) carry substantive content that was already ratified by Fruit Haven 1 community consensus on 2019-05-17, via the [FH1 Community Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) and [Federation Sovereignty Doctrine](../proposals/passed/2019-05-17_federation-sovereignty). The 2026 RCOS-formatted versions of these artifacts re-express that prior decision in the RCOS layer structure; the bars above count that 2019 ratification toward formal adoption. The remaining 10 artifacts (Layer 1: Onboarding Protocol, Exit & Separation Protocol; Layer 2: Authority Registry; Layer 3: Internal Economy Protocol; Layer 4: Conflict Resolution Ladder, Accountability Protocol; Layer 5: Operations Manual, Meeting Templates; Layer 6: Version History, Learning Log) have not been ratified by either the 2019 consensus or a Fruit Haven vote.
 
 ---
 
@@ -84,7 +84,7 @@ Overall formal adoption           ███████████░░░░�
 
 ## Layer 2 — Governance & Decision Logic
 
-**Layer compliance:** Pending adoption — content complete; Snapshot proposal template missing
+**Layer compliance:** Pending adoption — content complete; Fruit Haven voting app proposal template missing
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
@@ -101,7 +101,7 @@ Overall formal adoption           ███████████░░░░�
 
 | Artifact | File | Status | Notes |
 |---|---|---|---|
-| Internal Economy Protocol | [layers/3-economy/01-internal-economy-protocol](../layers/3-economy/01-internal-economy-protocol) | Draft | Content complete; ECO expiration/decay mechanism deferred; concentration risk indicators not yet defined — see [future-proposals.md](../resources/future-proposals.md) |
+| Internal Economy Protocol | [layers/3-economy/01-internal-economy-protocol](../layers/3-economy/01-internal-economy-protocol) | Draft | Content complete; ECO expiration/decay mechanism deferred; concentration risk indicators not yet defined — see [future-proposals.md](../proposals/future.md) |
 | Treasury Ruleset | [layers/3-economy/02-treasury-ruleset](../layers/3-economy/02-treasury-ruleset) | Present | Content complete; substantive content adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) Art. 9) — RCOS-formatted artifact not yet separately ratified |
 | Land Allotment Protocol | [layers/3-economy/03-land-allotment-protocol](../layers/3-economy/03-land-allotment-protocol) | Present | Adopted via 2019 consensus ([FH1 Bylaws](../proposals/passed/2019-05-17_fh1-bylaws) Art. 7) — RCOS-formatted artifact not yet separately ratified |
 
@@ -168,7 +168,7 @@ These are genuine gaps that require more design work or governance decisions to 
 
 | Ref | Requirement | Status | Notes |
 |---|---|---|---|
-| §2.4.3 | Identity constraints MUST be testable and enforceable through defined processes | **Partial** | Identity Constraints Register (IC-001 through IC-008) created 2026-04-27. IC-001–003 and IC-006–008 have defined enforcement pathways via Layer 4 and Layer 2. IC-004–005 (ecological constraints) have behavioral/process enforcement but lack measurable thresholds — "sustained net harm" and "significant decision" are not yet defined in measurable terms for the networked community context. Threshold definition deferred — see [future-proposals.md](../resources/future-proposals.md) | 
+| §2.4.3 | Identity constraints MUST be testable and enforceable through defined processes | **Partial** | Identity Constraints Register (IC-001 through IC-008) created 2026-04-27. IC-001–003 and IC-006–008 have defined enforcement pathways via Layer 4 and Layer 2. IC-004–005 (ecological constraints) have behavioral/process enforcement but lack measurable thresholds — "sustained net harm" and "significant decision" are not yet defined in measurable terms for the networked community context. Threshold definition deferred — see [future-proposals.md](../proposals/future.md) | 
 | §3.5.3 | Substitution of participation (e.g., outsourcing labor) MUST be explicitly governed | **Not addressed** | The Membership Agreement defines participation expectations and contribution categories but does not address whether a member may have others perform their contributions on their behalf. **REQUIRED.** Add a clause to the Membership Agreement or Internal Economy Protocol. |
 | §5.1.4 | For commons resources, MUST explicitly define stewardship responsibilities, maintenance obligations, and funding mechanisms | **Partial** | The IEP resource table lists stewards and access rules. Maintenance obligations are implied (Infrastructure Steward for platforms) but not explicit per-resource. Funding mechanisms (operational costs) are covered in the Treasury Ruleset. Add a "Maintenance obligations" column or sub-note to the IEP resource table. |
 | §5.4.4 | MUST define reviewable indicators of economic concentration risk and an explicit mechanism to adjust constraints when such risks are detected | **Not addressed** | No concentration risk indicators defined. Given current early stage (one member, no significant balances), this is low-risk but still a MUST requirement. **REQUIRED.** Define simple indicators (e.g., if one member holds >50% of total ECO balance, a review is triggered) and a review/adjustment pathway. |
@@ -179,9 +179,9 @@ These items are deferred because they require a community governance decision to
 
 | Ref | Requirement | Priority | Notes |
 |---|---|---|---|
-| ECO expiration / decay mechanism | §5.2.4 + §5.4.2 — if internal units exist, MUST define expiration/decay/cap | Medium | Non-transferability currently serves as the single accumulation-limiting mechanism (satisfies §5.4.2 minimum). Expiration/decay would add additional protection. Deferred — see [future-proposals.md](../resources/future-proposals.md) |
-| Treasury spending thresholds | §5.3.3 — spending authority MUST be explicitly bounded by thresholds | Low urgency | Finance Steward currently has €0 unilateral authority (effectively no spending authority). Thresholds should be defined once community funds exist. Deferred — see [future-proposals.md](../resources/future-proposals.md) |
-| Suspended Member state | §3.7 (MAY) — temporary suspension states | Low | Technically not yet feasible in Fruit Haven. **Optional** per spec. Deferred — see [future-proposals.md](../resources/future-proposals.md) |
+| ECO expiration / decay mechanism | §5.2.4 + §5.4.2 — if internal units exist, MUST define expiration/decay/cap | Medium | Non-transferability currently serves as the single accumulation-limiting mechanism (satisfies §5.4.2 minimum). Expiration/decay would add additional protection. Deferred — see [future-proposals.md](../proposals/future.md) |
+| Treasury spending thresholds | §5.3.3 — spending authority MUST be explicitly bounded by thresholds | Low urgency | Finance Steward currently has €0 unilateral authority (effectively no spending authority). Thresholds should be defined once community funds exist. Deferred — see [future-proposals.md](../proposals/future.md) |
+| Suspended Member state | §3.7 (MAY) — temporary suspension states | Low | Technically not yet feasible in Fruit Haven. **Optional** per spec. Deferred — see [future-proposals.md](../proposals/future.md) |
 | Consent-based decision-making for Strategic decisions | §4.2.2 (MAY) — alternatives to majority vote | Low | Currently using simple majority for Strategic decisions. Consent-based approach is optional. Deferred. |
 
 ---
@@ -191,7 +191,7 @@ These items are deferred because they require a community governance decision to
 All artifacts have substantive content. To achieve full compliance, each artifact must be:
 
 1. Proposed and deliberated per the Governance Protocol (Layer 2)
-2. Adopted through an authorized Snapshot vote
+2. Adopted through an authorized Fruit Haven vote
 3. Status fields updated from *Stub — not yet adopted* to *Active — adopted <YYYY-MM-DD>*
 4. Recorded in [layers/6-evolution/02-version-history](/layers/6-evolution/02-version-history)
 
@@ -209,9 +209,9 @@ All artifacts have substantive content. To achieve full compliance, each artifac
 - Onboarding reminder emails and expiry notifications
 - 6-month re-application block after rejection or incomplete onboarding
 - Onboarding expiry actions in Fruit Haven admin panel
-- Snapshot proposal template
+- Fruit Haven voting app proposal template
 
-**Deferred governance decisions** (see [future-proposals.md](../resources/future-proposals.md)):
+**Deferred governance decisions** (see [future-proposals.md](../proposals/future.md)):
 - Treasury spending thresholds (trigger: first community funds received)
 - Consent-based decision making for Strategic decisions
 - ECO accumulation limits and decay

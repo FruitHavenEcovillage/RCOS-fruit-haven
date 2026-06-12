@@ -36,7 +36,7 @@ If both are discussed together, failures dominate and successes get underweighte
 3. **What worked well** (15 min) — patterns of success worth reinforcing or documenting
 4. **What didn't work / what we'd do differently** (15 min) — failures, friction, near-misses; no blame, focus on patterns and systems
 5. **Learnings to carry forward** (15 min) — insights to capture in the Learning Log (Layer 6); Blueprint Steward notes items for framework consideration
-6. **Updates to learning log and future proposals** (15 min) — Blueprint Steward records learning log entries; any items that should become a future proposal are added to `resources/future-proposals.md`
+6. **Updates to learning log and future proposals** (15 min) — Blueprint Steward records learning log entries; any items that should become a future proposal are added to `proposals/future.md`
 7. **Check-out** (5 min) — one word or sentence from each participant
 
 ---

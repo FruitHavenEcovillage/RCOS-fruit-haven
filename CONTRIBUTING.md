@@ -97,7 +97,7 @@ Discussion happens in the PR comments and/or on the community forum. The deliber
 
 - **Operational** — lighter process, shorter window (defined in the Decision Matrix once adopted)
 - **Strategic** — community review; vote if required
-- **Constitutional** — requires a Snapshot vote with a defined supermajority threshold
+- **Constitutional** — requires a Fruit Haven vote with a defined supermajority threshold
 
 ### 3. Outcome
 

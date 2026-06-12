@@ -2,8 +2,8 @@
   "tiles": [
     {
       "layer": 2,
-      "title": "Snapshot-based governance live",
-      "body": "Governance workflow now triggers on on-chain Snapshot proposals; compliance transitions automatically to draft state."
+      "title": "Governance protocol drafted",
+      "body": "Decision matrix and governance protocol are content-complete and pending formal adoption via a Fruit Haven vote."
     },
     {
       "layer": 5,

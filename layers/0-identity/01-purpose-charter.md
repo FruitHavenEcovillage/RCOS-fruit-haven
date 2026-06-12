@@ -53,7 +53,7 @@ Communities drift by accretion — one uncontested assumption at a time. Naming 
 Purpose is the one thing everything else depends on. If it were easy to change, nothing above it in the stack — membership, governance, invariants — could be trusted to mean the same thing from one decision cycle to the next.
 :::
 
-The primary purpose may only be changed through a Constitutional decision as defined in the Decision Matrix (Layer 2), requiring a unanimous vote (Unanimity minus one) from Active Members via the Snapshot voting mechanism.
+The primary purpose may only be changed through a Constitutional decision as defined in the Decision Matrix (Layer 2), requiring a unanimous vote (Unanimity minus one) from Active Members via the Fruit Haven voting app.
 
 ---
 

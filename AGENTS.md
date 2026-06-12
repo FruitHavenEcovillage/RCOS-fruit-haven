@@ -12,11 +12,11 @@ Never summarize a change without recording it. Never update an artifact without 
 
 ---
 
-## 1. When a Snapshot Vote Passes
+## 1. When a Fruit Haven Vote Passes
 
-The authoritative trigger for all repository updates is a **passed Snapshot vote** — not a PR merge. The workflow is:
-1. A Full Member submits a proposal to Snapshot and opens deliberation (Discord / forum)
-2. The Snapshot vote runs for the required period
+The authoritative trigger for all repository updates is a **passed Fruit Haven vote** — not a PR merge. The workflow is:
+1. A Full Member submits a proposal to the Fruit Haven voting app and opens deliberation (Discord / forum)
+2. The Fruit Haven vote runs for the required period
 3. On passing: the Membership Admin adds the proposal file to `proposals/passed/` and triggers the updates below
 
 When a proposal passes, do all of the following in the same commit or a direct follow-up:
@@ -35,7 +35,7 @@ Append a new entry at the top of the log using this format:
 - **Effective date:** <YYYY-MM-DD>
 - **Decision record:** proposals/passed/<proposal-filename>.md
 - **Decision type:** Operational / Strategic / Constitutional
-- **Mechanism:** <e.g. Snapshot vote, consent, delegated authority>
+- **Mechanism:** <e.g. Fruit Haven vote, consent, delegated authority>
 - **Summary:** <1–3 sentences describing what changed>
 - **Layers affected:** <e.g. Layer 1, Layer 2>
 - **Artifacts changed:** <list of files modified>
@@ -53,9 +53,9 @@ If the merged proposal adds a previously missing mandatory artifact, or fixes a 
 
 ---
 
-## 2. When a Snapshot Vote Fails (Rejected)
+## 2. When a Fruit Haven Vote Fails (Rejected)
 
-When a Snapshot vote fails:
+When a Fruit Haven vote fails:
 
 1. The Membership Admin adds the proposal file to `proposals/rejected/` with a note at the top:
 
@@ -98,7 +98,7 @@ Use this format (append at top of file):
 
 ## 4. Proposal File Format
 
-This is the **repository archive format** for proposals — the record filed to the repo after a Snapshot vote concludes. The Snapshot submission itself is a separate step done directly on Snapshot before the vote opens (a Snapshot proposal template is tracked as a missing technical implementation).
+This is the **repository archive format** for proposals — the record filed to the repo after a Fruit Haven vote concludes. The submission itself is a separate step done directly in the Fruit Haven voting app before the vote opens (a proposal template for the voting app is tracked as a missing technical implementation).
 
 All proposal files must follow this template. Save new proposals as:
 `proposals/<status>/<YYYY-MM-DD>_<short-kebab-title>.md`
@@ -157,8 +157,8 @@ All proposal files must follow this template. Save new proposals as:
 
 - **Vote outcome:** <Passed / Rejected / Needs Review>
 - **Vote date:** <YYYY-MM-DD>
-- **Mechanism:** <Snapshot vote / consent / delegated authority>
-- **Snapshot link:** <URL or "N/A">
+- **Mechanism:** <Fruit Haven vote / consent / delegated authority>
+- **Vote link:** <URL or "N/A">
 - **Signatories / vote count:** <e.g. 12 approve, 1 reject, 2 abstain>
 ```
 
