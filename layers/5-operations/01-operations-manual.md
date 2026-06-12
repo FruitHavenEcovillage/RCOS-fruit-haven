@@ -127,6 +127,7 @@ If no one can say where the canonical version of something lives, there is no ca
 | Contribution records | Fruit Haven / Offcoin | Member (self-reported) / Puckstack (auto) | Ongoing |
 | Missing technical implementations | `resources/missing-technical-implementations.md` | Infrastructure Steward / Digital Builder | Quarterly |
 | Future proposals | `resources/future-proposals.md` | Blueprint Steward / Membership Admin | As needed |
+| Hard copy records (meeting minutes, bylaws, passed proposals) | Folder in the community house, kept in date order | Facilitator | After each meeting |
 
 ---
 

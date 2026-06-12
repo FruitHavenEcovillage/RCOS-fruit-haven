@@ -22,16 +22,16 @@ summary: "A 2023 redraft of the federation-wide Community Sovereignty Doctrine c
 
 A redraft of the federation-wide Community Sovereignty Doctrine, covering community vision, cross-community access rights, property sovereignty, banishment procedures, and ratification. The document itself carried the note: *"To be proposed to owners once a version is written that may pass consensus,"* indicating it was withdrawn before being formally tabled. The primary blocker was Article I (Community Vision), which listed six unresolved competing options and included no agreed text. The draft was never voted on.
 
-The content that was agreed upon in this draft was later absorbed — in amended form — into the adopted Federation Protocol (`layers/2-governance/04-federation-protocol.md`, decision record: `proposals/passed/2019-05-17_federation-sovereignty.md`, RCOS-integrated v1.1.0 on 2026-06-10).
+The content that was agreed upon in this draft was later absorbed — in amended form — into the adopted Federation Protocol ([layers/2-governance/04-federation-protocol.md](/layers/2-governance/04-federation-protocol), decision record: [proposals/passed/2019-05-17_federation-sovereignty.md](/proposals/passed/2019-05-17_federation-sovereignty), RCOS-integrated v1.1.0 on 2026-06-10).
 
 ---
 
 ## Affected Layers and Artifacts (as proposed)
 
-- Layer 0 — `layers/0-identity/01-purpose-charter.md` (Art. I: community vision — unresolved)
-- Layer 2 — `layers/2-governance/04-federation-protocol.md` (Art. II–III: community area and property sovereignty)
-- Layer 2 — `layers/2-governance/01-decision-matrix.md` (Art. IV: banishment decision rules)
-- Layer 4 — `layers/4-conflict/02-accountability-protocol.md` (Art. IV: formal banishment procedure, written grievances, prior-warning requirement)
+- Layer 0 — [layers/0-identity/01-purpose-charter.md](/layers/0-identity/01-purpose-charter) (Art. I: community vision — unresolved)
+- Layer 2 — [layers/2-governance/04-federation-protocol.md](/layers/2-governance/04-federation-protocol) (Art. II–III: community area and property sovereignty)
+- Layer 2 — [layers/2-governance/01-decision-matrix.md](/layers/2-governance/01-decision-matrix) (Art. IV: banishment decision rules)
+- Layer 4 — [layers/4-conflict/02-accountability-protocol.md](/layers/4-conflict/02-accountability-protocol) (Art. IV: formal banishment procedure, written grievances, prior-warning requirement)
 
 ---
 
@@ -92,7 +92,7 @@ The adopted federation-protocol.md contains only a brief reference to behavioura
 | IV.a.v | Some listed items must have **previously been discussed with the inhabitant** (prior-warning requirement). Exception: transgressions severe enough that no prior warning is necessary (example cited in draft: *"the case of the schizophrenic monk at FH1"*). Prior warnings given at other communities also count (for long-running cross-community problems). |
 | IV.a.vi | Each community area may add further terms, but may not contradict these. |
 
-**Status in adopted protocol:** The banishment detail from this draft was not adopted into the Federation Protocol. The substance is closest to `layers/4-conflict/02-accountability-protocol.md` and `layers/2-governance/01-decision-matrix.md`, but neither currently contains this level of procedural detail.
+**Status in adopted protocol:** The banishment detail from this draft was not adopted into the Federation Protocol. The substance is closest to [layers/4-conflict/02-accountability-protocol.md](/layers/4-conflict/02-accountability-protocol) and [layers/2-governance/01-decision-matrix.md](/layers/2-governance/01-decision-matrix), but neither currently contains this level of procedural detail.
 
 ---
 
@@ -127,7 +127,7 @@ To establish a single federation-wide sovereignty doctrine agreed upon by all ~4
 
 ## Transition and Migration Plan
 
-N/A — never adopted. The clauses of this draft that reached sufficient agreement were absorbed into the adopted Federation Protocol (v1.1.0) in amended form. The banishment procedure detail (Art. IV) remains a gap in the current layer artifacts and is a candidate for a future proposal to `layers/4-conflict/02-accountability-protocol.md`.
+N/A — never adopted. The clauses of this draft that reached sufficient agreement were absorbed into the adopted Federation Protocol (v1.1.0) in amended form. The banishment procedure detail (Art. IV) remains a gap in the current layer artifacts and is a candidate for a future proposal to [layers/4-conflict/02-accountability-protocol.md](/layers/4-conflict/02-accountability-protocol).
 
 ## Rollback Plan
 

@@ -35,6 +35,8 @@ Each trustee shall receive an area considered their "private homestead area".
 - They may not engage in activities that the community finds disruptive to other residents.
 - Trustees are required to maintain a general cleanliness and positive appearance of their property (e.g. no rotting houses, large piles of scrap metal, unkempt fencing).
 
+A trustee who is prohibited from entering and/or residing in the community area (per the Federation Protocol / Decision Matrix) retains a guaranteed right to access and reside on their own private homestead lot, including the public trails necessary to reach it.
+
 ## Nature Reserve
 
 :::rcos{clauses="5.1.1, 5.1.2, 5.4.4"}

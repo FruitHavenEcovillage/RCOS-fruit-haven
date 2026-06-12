@@ -105,6 +105,18 @@ This charter applies to all Fruit Haven properties and community areas.
 If a community bylaw conflicts with this charter, this charter takes precedence.
 Any owner who acquires ownership in a Fruit Haven property accepts this charter as a condition of participation in the Fruit Haven network.
 
+### 6.1 Document Hierarchy
+
+Per the FH1 Community Bylaws (Article 6.02(a)), governing documents are ordered as follows, from most subordinate to most authoritative:
+
+1. Community Bylaws (e.g. FH1 Community Bylaws)
+2. Fruit Haven Sovereignty and Jurisdiction Doctrine
+3. FH1 Trustee Bylaws
+4. Fruit Haven Community Sovereignty Doctrine (this charter)
+5. FH1 Trustee Legal Contract
+
+A community bylaw or lower-ranked document that conflicts with a higher-ranked document is null and void to the extent of the conflict. Items 2 and 3 are referenced by the original bylaws but are not yet digitized in this repository.
+
 ---
 
 ## Ratification Record
