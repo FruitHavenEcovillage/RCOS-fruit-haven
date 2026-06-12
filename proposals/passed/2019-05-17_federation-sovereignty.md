@@ -64,5 +64,5 @@ N/A
 - **Vote outcome:** Passed
 - **Vote date:** 2019-05-17
 - **Mechanism:** Consensus
-- **Snapshot link:** N/A
+- **Snapshot link:** Source document: [FH_Community_Sovereignty_Doctrine.pdf](https://fruithaven.land/wp-content/uploads/2024/04/FH_Community_Sovereignty_Doctrine.pdf)
 - **Signatories / vote count:** Consensus achieved
