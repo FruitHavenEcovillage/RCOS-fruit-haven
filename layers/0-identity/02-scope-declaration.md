@@ -15,7 +15,7 @@
 If the community has not explicitly named an asset as in-scope, it isn't — full stop. Listing assets by name closes the gap where informal claims of authority grow over undeclared resources, and prevents scope creep.
 :::
 
-1. The RCOS specification and all versioned artifacts in this repository
+1. Fruit Haven's governing documents — the [FH1](/proposals/passed/2019-05-17_fh1-bylaws) and [FH3](/proposals/passed/2019-05-17_fh3-bylaws) Community Bylaws, the [Community Sovereignty Doctrine](/proposals/passed/2019-05-17_federation-sovereignty), and their RCOS-mapped artifacts in this repository
 2. The shared treasury, as defined in the [Treasury Ruleset](/layers/3-economy/02-treasury-ruleset) (FH1 Bylaws Art. 9)
 3. The FH1 property (~26.4359 hectares, Sector Las Peñas, Ecuador) — its Community Area, Private Homestead Areas, and Nature Reserve as allotted under the [Land Allotment Protocol](/layers/3-economy/03-land-allotment-protocol) (FH1 Bylaws Art. 7)
 4. _<Reserved — digital platforms, websites, and hosted services (e.g. fruithaven.land) are not yet named as in-scope assets in any ratified bylaws or doctrine. Pending future ratification.>_
@@ -34,7 +34,7 @@ Scope isn't only about stuff — it's about which kinds of questions the communi
 1. Governance rules and decision processes (Layer 2), per FH1 Bylaws Art. 11
 2. Membership rules, states, and admission (Layer 1), per FH1 Bylaws Art. 8 and the Community Sovereignty Doctrine Art. II
 3. Treasury and shared resource allocation (Layer 3), per FH1 Bylaws Art. 9
-4. The RCOS specification and its evolution, per FH1 Bylaws Art. 5–6
+4. Fruit Haven's governing documents (bylaws, doctrine, and their RCOS-mapped artifacts) and their evolution, per FH1 Bylaws Art. 5 (decentralization review) and Art. 6 (bylaw amendment process)
 5. _<Reserved — governance of Fruit Haven-owned platforms, websites, and public channels is not yet defined as a decision domain in any ratified bylaws or doctrine. Pending future ratification.>_
 6. Support and facilitation offered to developing Fruit Haven communities (meetings, guidance, resources), per the Community Sovereignty Doctrine Art. V and the [Federation Protocol](/layers/2-governance/04-federation-protocol)
 7. Partnerships, external collaborations, and use of the "Fruit Haven" name, per the Community Sovereignty Doctrine Art. IV
@@ -48,7 +48,7 @@ Scope isn't only about stuff — it's about which kinds of questions the communi
 Authority without owned responsibility produces paralysis; responsibility without declared authority produces burnout and blame. Listing the activities the community collectively governs makes the match explicit.
 :::
 
-1. Maintaining and evolving the RCOS specification, per FH1 Bylaws Art. 5–6
+1. Maintaining and evolving Fruit Haven's governing documents — the [FH1](/proposals/passed/2019-05-17_fh1-bylaws) and [FH3](/proposals/passed/2019-05-17_fh3-bylaws) Community Bylaws, the [Community Sovereignty Doctrine](/proposals/passed/2019-05-17_federation-sovereignty), and their RCOS-mapped artifacts — per FH1 Bylaws Art. 5 (decentralization review) and Art. 6 (bylaw amendment process)
 2. Reviewing and admitting new members, per FH1 Bylaws Art. 11.03 and the Community Sovereignty Doctrine Art. II
 3. Managing and reporting on the shared treasury, per FH1 Bylaws Art. 9 and the [Treasury Ruleset](/layers/3-economy/02-treasury-ruleset)
 4. _<Reserved — operating and maintaining community platforms and websites is not yet named as a community responsibility in any ratified bylaws or doctrine. Pending future ratification.>_
