@@ -31,7 +31,7 @@ Rights that are not written down are rights that can be quietly withdrawn. Enume
 1. *The right to vote on all decisions as defined in the Decision Matrix*
 2. *The right to access all member-only channels, calls, and community records*
 3. *The right to hold roles as defined in the Role Registry (Layer 5)*
-4. *The right to earn XP and ECO through recognized contributions*
+4. *The right to have one's contributions recognized — recorded in meeting minutes per the Internal Economy Protocol (Layer 3); a formal recognition mechanism is reserved pending future ratification*
 5. *The right to propose changes through the governance process*
 6. *The right to raise a conflict through the Conflict Resolution Ladder without retaliation*
 7. *The right to exit the community voluntarily at any time*

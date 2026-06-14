@@ -33,9 +33,9 @@ Treating a missed contribution the same as an invariant violation either crushes
 
 > **Breach severity guidance:** A breach is **medium** if it involves non-compliance with a Membership Agreement obligation (e.g. participation expectations, notification requirements, or process obligations) without threatening member safety or community integrity. A breach is **serious** if it involves a Layer 0 invariant violation, a credible safety concern, persistent bad-faith conduct, or any action that fundamentally undermines the governance system.
 
-- **Inactivity (soft breach):** Membership Admin contacts the member privately. The member has 30 days to respond. If no response: exit is triggered per the Exit & Separation Protocol. If the member responds and commits to re-engagement: outcome documented and monitored for 3 months.
-- **Obligation breach (medium):** Membership Admin contacts the member privately with a written notice of the concern. Member has 30 days to respond and address the breach. If resolved privately: written record kept by Membership Admin. If unresolved: escalated to Conflict Resolution Ladder Step 3.
-- **Serious breach / invariant violation:** Membership Admin may escalate directly to Conflict Resolution Ladder Step 4 or 5, bypassing the private check-in.
+- **Inactivity (soft breach):** Meetings Organizer/Facilitator contacts the member privately. The member has 30 days to respond. If no response: exit is triggered per the Exit & Separation Protocol. If the member responds and commits to re-engagement: outcome documented and monitored for 3 months.
+- **Obligation breach (medium):** Meetings Organizer/Facilitator contacts the member privately with a written notice of the concern. Member has 30 days to respond and address the breach. If resolved privately: written record kept by Meetings Organizer/Facilitator. If unresolved: escalated to Conflict Resolution Ladder Step 3.
+- **Serious breach / invariant violation:** Meetings Organizer/Facilitator may escalate directly to Conflict Resolution Ladder Step 4 or 5, bypassing the private check-in.
 
 ## Due Process Guarantees
 
@@ -43,13 +43,13 @@ Treating a missed contribution the same as an invariant violation either crushes
 :::
 
 :::rationale{title="Why spell out notice, response, and appeal rights?"}
-Accountability without due process is just punishment with paperwork. A member facing a sanction needs to know the concern, have real time to respond, and have somewhere to appeal to — otherwise the Membership Admin's word is final by default, which concentrates power exactly where it should not concentrate.
+Accountability without due process is just punishment with paperwork. A member facing a sanction needs to know the concern, have real time to respond, and have somewhere to appeal to — otherwise the Meetings Organizer/Facilitator's word is final by default, which concentrates power exactly where it should not concentrate.
 :::
 
 - **Right to notice:** The member is notified in writing of the concern before any review or sanction begins
 - **Right to prior warning:** The community must present a written list of grievances/complaints/transgressions with approximate dates. Some items on this list must have been discussed with the inhabitant previously to satisfy a prior warning. An exception may be made for severe transgressions.
 - **Right to respond:** Minimum 30 days to respond to any accountability check
-- **Right to appeal:** Any Membership Admin decision may be appealed to Full Members via the governance process (Strategic vote)
+- **Right to appeal:** Any Meetings Organizer/Facilitator decision may be appealed to Full Members via the governance process (Strategic vote)
 - **Absentee deferral:** Non-present members reviewing an appeal or a banishment proposal shall defer to present members as reasonable, as non-present members are likely not experiencing the issues firsthand and may offer undue leniency.
 - **Presence during deliberation:** Forced exit / banishment proposals should be discussed without the affected person present, though they may be present for part of the discussion if Active Members consent.
 
@@ -78,9 +78,9 @@ Ad-hoc sanctions invented mid-process reflect whoever is loudest in the room, no
 
 | Type | Preconditions | Authorized body | Appealable? |
 |---|---|---|---|
-| Private check-in / reminder | Inactivity or minor breach | Membership Admin | Yes — to Full Members |
-| Written warning | Unresolved obligation breach after check-in | Membership Admin | Yes — to Full Members |
-| Temporary access restriction | Safety-critical situation only; must be reviewed within 14 days | Membership Admin | Yes — to Full Members |
+| Private check-in / reminder | Inactivity or minor breach | Meetings Organizer/Facilitator | Yes — to Full Members |
+| Written warning | Unresolved obligation breach after check-in | Meetings Organizer/Facilitator | Yes — to Full Members |
+| Temporary access restriction | Safety-critical situation only; must be reviewed within 14 days | Meetings Organizer/Facilitator | Yes — to Full Members |
 | Forced exit | Serious or unresolved breach, or Full Member decision | Full Members (Strategic vote) | Yes — via re-vote mechanism |
 
 ## Conditions for Restoring Rights
@@ -94,7 +94,7 @@ If there is no defined path back, every sanction becomes effectively permanent a
 
 - **After voluntary exit:** re-application per Onboarding Protocol; no automatic rights restoration
 - **After forced exit:** minimum 6-month re-application block; re-application subject to standard admission process
-- **After temporary access restriction:** rights restored upon Membership Admin confirmation of resolution (within 14 days of restriction being imposed)
+- **After temporary access restriction:** rights restored upon Meetings Organizer/Facilitator confirmation of resolution (within 14 days of restriction being imposed)
 
 ## Coordination with Layer 1
 

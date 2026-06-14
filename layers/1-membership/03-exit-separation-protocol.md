@@ -18,7 +18,7 @@ A community that is hard to leave is not a community — it is a trap. Voluntary
 - Any Full Member or Trial Member may exit at any time by submitting a request through Fruit Haven (reason optional)
 - No notice period required; if the member holds a role, they are asked to consider a handover where appropriate
 - Access is revoked within 24 hours of admin confirmation
-- Contribution history and XP are retained permanently
+- Contribution and participation records are retained permanently
 - Membership state transitions to Exited Member
 - Exit is recorded in Fruit Haven with a timestamp
 
@@ -34,8 +34,8 @@ Removal is the sharpest power the community holds over a person. If it can be ex
 - Forced exit may only result from a concluded Layer 4 accountability process with a documented decision
 - The affected member must be notified in writing with the reason and decision record reference before access is revoked
 - Access is revoked within 24 hours of the decision being finalised
-- Accounts on platforms related to Fruit Haven (Discord, Notion, Puckstack, etc.) may be deleted or blocked depending on the severity of the decision and platform capabilities
-- Contribution history and XP are retained
+- Accounts on platforms related to Fruit Haven (Telegram, Fruit Haven, etc.) may be deleted or blocked depending on the severity of the decision and platform capabilities
+- Contribution and participation records are retained
 - Membership state transitions to Exited Member
 - For the duration of the banishment/forced exit, the individual is temporarily stripped of their community member status and loses any previously possessed voting power. If they have residency in other Fruit Haven community areas, they may retain it if that area permits, but their Fruit Haven community membership is no longer recognized.
 - The member may not reapply for a period defined in the accountability decision (minimum 6 months)
@@ -58,15 +58,15 @@ Formal membership suspension is not yet technically implemented. See [Future Pro
 :::
 
 :::rationale{title="Why enumerate separation steps?"}
-When someone leaves, every unclosed thread — a role nobody vacated, a wallet key still active, a task still assigned — becomes a live attack surface or an operational gap. A checklist forces these threads to be closed deliberately, not discovered months later when something breaks or someone abuses access they no longer should have.
+When someone leaves, every unclosed thread — a role nobody vacated, an account still active, a task still assigned — becomes a live attack surface or an operational gap. A checklist forces these threads to be closed deliberately, not discovered months later when something breaks or someone abuses access they no longer should have.
 :::
 
 The following separation steps apply to both voluntary and forced exits:
 
 - Any roles held must be vacated and documented in the Role Registry
-- Ongoing tasks claimed in Puckstack must be released or handed over
-- Safe wallet co-signer or Proposer status must be removed
-- All administrative access to platforms (Fruit Haven, Discord, social media, Notion, Puckstack, etc.) must be revoked
+- Any claimed tasks or responsibilities must be released or handed over
+- Access to communal accounts and records (per the Treasury Ruleset) must be removed
+- All administrative access to platforms (Fruit Haven, Telegram, social media, etc.) must be revoked
 - Outstanding obligations (incomplete tasks, financial commitments) must be resolved or transferred before exit is finalised where possible
 
 ---

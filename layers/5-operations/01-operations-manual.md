@@ -17,13 +17,13 @@ If a process only lives in one person's head, the community depends on that pers
 
 | Process | Who | Detail |
 |---|---|---|
-| Member onboarding | Membership Admin | Processes application, triggers trial period, monitors 30-day window, grants Full Member status on completion — see Onboarding Protocol (Layer 1) |
-| Member exit | Membership Admin | Processes voluntary exit request or forced exit per Layer 4 outcome — see Exit & Separation Protocol (Layer 1) |
-| Proposal publication | Proposing member + Membership Admin | Proposing member submits the proposal in the Fruit Haven voting app; Membership Admin adds proposal file to [proposals/passed/](/proposals/passed) or [proposals/rejected/](/proposals/rejected) within 7 days of vote conclusion; affected artifacts updated within 7 days — see Governance Protocol (Layer 2) |
-| Contribution recording | Member (self-reported) / Puckstack (automatic) | Structured contributions credited automatically via Puckstack/Offcoin; informal contributions self-reported in Fruit Haven — see Internal Economy Protocol (Layer 3) |
-| Weekly meeting | Facilitator | Publishes agenda in Discord =24 hours in advance; posts meeting notes in Discord after the meeting; action items tracked until resolved |
-| Treasury management | Finance Steward | Ensures all Full Members have Safe Proposer access; publishes fiat account summaries at least every 6 months if the account does not support direct member access — see Treasury Ruleset (Layer 3) |
-| Platform access review | Infrastructure Steward | Reviews platform permissions quarterly; revokes access for exited members within 24 hours |
+| Member onboarding | Meetings Organizer/Facilitator | Processes application, triggers trial period, monitors 30-day window, grants Full Member status on completion — see Onboarding Protocol (Layer 1) |
+| Member exit | Meetings Organizer/Facilitator | Processes voluntary exit request or forced exit per Layer 4 outcome — see Exit & Separation Protocol (Layer 1) |
+| Proposal publication | Proposing member + Meetings Organizer/Facilitator | Proposing member submits the proposal at a Community Meeting; Meetings Organizer/Facilitator adds proposal file to [proposals/passed/](/proposals/passed) or [proposals/rejected/](/proposals/rejected) within 7 days of vote conclusion; affected artifacts updated within 7 days — see Governance Protocol (Layer 2) |
+| Contribution recording | Member (self-reported) | Contributions self-reported and recorded in meeting minutes and/or Fruit Haven — see Internal Economy Protocol (Layer 3) |
+| Weekly meeting | Meetings Organizer/Facilitator | Publishes agenda in Telegram ≥24 hours in advance; posts meeting notes in Telegram after the meeting; action items tracked until resolved |
+| Treasury management | Communal Finance/Accountant | Maintains the continuous accounting ledger; publishes account summaries at least every 6 months if the account does not support direct member access — see Treasury Ruleset (Layer 3) |
+| Platform access review | C.A. Manager | Reviews platform permissions quarterly; revokes access for exited members within 24 hours |
 
 ## Temporary and Ad-Hoc Responsibilities
 
@@ -36,7 +36,7 @@ Ad-hoc tasks quietly calcify into permanent unpaid jobs — usually on whoever s
 
 When a task or responsibility is assigned temporarily (e.g. covering for an absent role holder, handling a one-off project), it must be:
 - Explicitly time-bounded from the outset (a specific end date or completion condition must be stated)
-- Documented as a temporary assignment (in Discord or the relevant task tool) at the time of assignment
+- Documented as a temporary assignment (in Telegram or the relevant task tool) at the time of assignment
 - Reviewed before the end date; if the need continues beyond the original scope, the responsibility must be formally assigned through the Role Registry process
 
 No temporary or ad-hoc responsibility may persist beyond 90 days without being converted into a formally defined role or terminated. If a temporary responsibility has no owner after its end date, it lapses — it does not transfer implicitly to any other member or role.
@@ -54,13 +54,12 @@ Most operational failures happen not inside a role but between roles — at the 
 
 | From | To | Handoff |
 |---|---|---|
-| Membership Admin | Finance Steward | New member requires Safe Proposer access |
-| Membership Admin | Infrastructure Steward | New or exiting member requires platform access changes |
-| Content Creator | Communications Steward | Content ready for publication or social media |
-| Digital Builder | Infrastructure Steward | New features ready for deployment |
-| Research Steward | Blueprint Steward | Research findings for framework consideration |
-| Blueprint Steward | Facilitator | Workshop content or agenda input |
-| Any role holder | Facilitator | Agenda items for community meetings |
+| Meetings Organizer/Facilitator | Communal Finance/Accountant | New member requires treasury/accounting access |
+| Meetings Organizer/Facilitator | C.A. Manager | New or exiting member requires platform access changes |
+| Any role holder | Soc. Media Manager | Content ready for publication or social media |
+| Any role holder | Meetings Organizer/Facilitator | Agenda items for community meetings |
+
+> _<Reserved — handoffs involving digital platform development and RCOS framework research are not yet named as roles in any ratified bylaws or doctrine; see scope-declaration items 7 and 8. Pending future ratification.>_
 
 ## Workload Boundaries
 
@@ -72,8 +71,8 @@ Unbounded coordination load is the default failure mode of volunteer communities
 :::
 
 - **Meeting load:** One weekly community meeting, 90 minutes maximum. Extraordinary meetings may be called by any Full Member but should be the exception.
-- **Role load:** No formal cap currently. Role holders are responsible for flagging overload at any community meeting or in Discord. Any overload concern must be addressed within 14 days; roles may be redistributed via the governance process.
-- **Response time expectations:** Non-urgent async messages (Discord, forum): 72 hours. Urgent operational matters: 24 hours. Safety-critical matters: as soon as possible.
+- **Role load:** No formal cap currently. Role holders are responsible for flagging overload at any community meeting or in Telegram. Any overload concern must be addressed within 14 days; roles may be redistributed via the governance process.
+- **Response time expectations:** Non-urgent async messages (Telegram, forum): 72 hours. Urgent operational matters: 24 hours. Safety-critical matters: as soon as possible.
 - **Renegotiation and relief:** Any role holder may request redistribution of responsibilities at any community meeting. The community seeks a solution within 14 days.
 
 ## Operational Continuity
@@ -99,8 +98,8 @@ Whoever controls access to information controls the community, whether they mean
 :::
 
 - All governance decisions (passed and rejected proposals) are filed in this repository and are accessible to all Full Members
-- Meeting notes are published in Discord within 48 hours of each meeting and are accessible to all Full Members
-- Membership state and role assignment information is maintained in Fruit Haven and accessible to all Full Members (individual states visible to the member and Membership Admin; aggregate member list visible to all Full Members)
+- Meeting notes are published in Telegram within 48 hours of each meeting and are accessible to all Full Members
+- Membership state and role assignment information is maintained in Fruit Haven and accessible to all Full Members (individual states visible to the member and the Meetings Organizer/Facilitator; aggregate member list visible to all Full Members)
 - Contribution records are accessible in Fruit Haven to all Full Members
 - Any Full Member may request access to any document they are entitled to see under the access rules in this manual; requests must be responded to within 72 hours
 - If a role holder controls access to information that other members are entitled to receive, they may not withhold or delay it; doing so is an accountability trigger under Layer 4
@@ -119,15 +118,15 @@ If no one can say where the canonical version of something lives, there is no ca
 
 | Document type | Location | Owner | Review cadence |
 |---|---|---|---|
-| RCOS artifacts | `layers/` in this repo | Blueprint Steward / Membership Admin | Per change protocol (Layer 6) |
-| Member registry | Fruit Haven | Membership Admin | Ongoing |
-| Meeting notes | Discord (dedicated channel) | Facilitator | After each meeting |
-| Governance proposals (passed) | [proposals/passed/](/proposals/passed) in this repo | Membership Admin | Within 7 days of vote |
-| Governance proposals (rejected) | [proposals/rejected/](/proposals/rejected) in this repo | Membership Admin | Within 7 days of vote |
-| Contribution records | Fruit Haven / Offcoin | Member (self-reported) / Puckstack (auto) | Ongoing |
-| Missing technical implementations | `resources/missing-technical-implementations.md` | Infrastructure Steward / Digital Builder | Quarterly |
-| Future proposals | `proposals/future.md` | Blueprint Steward / Membership Admin | As needed |
-| Hard copy records (meeting minutes, bylaws, passed proposals) | Folder in the community house, kept in date order | Facilitator | After each meeting |
+| RCOS artifacts | `layers/` in this repo | Meetings Organizer/Facilitator | Per change protocol (Layer 6) |
+| Member registry | Fruit Haven | Meetings Organizer/Facilitator | Ongoing |
+| Meeting notes | Telegram (dedicated channel) | Meetings Organizer/Facilitator | After each meeting |
+| Governance proposals (passed) | [proposals/passed/](/proposals/passed) in this repo | Meetings Organizer/Facilitator | Within 7 days of vote |
+| Governance proposals (rejected) | [proposals/rejected/](/proposals/rejected) in this repo | Meetings Organizer/Facilitator | Within 7 days of vote |
+| Contribution records | Fruit Haven / meeting minutes | Member (self-reported) | Ongoing |
+| Missing technical implementations | `resources/missing-technical-implementations.md` | C.A. Manager | Quarterly |
+| Future proposals | `proposals/future.md` | Meetings Organizer/Facilitator | As needed |
+| Hard copy records (meeting minutes, bylaws, passed proposals) | Folder in the community house, kept in date order | Meetings Organizer/Facilitator | After each meeting |
 
 ---
 

@@ -15,7 +15,7 @@
 A change that arrives as a vague idea in chat cannot be evaluated, challenged, or rolled back later. Forcing every proposal through the same minimum shape — affected artifacts, rationale, risks, rollback — turns an opinion into a reviewable artifact and makes it impossible to slip a rule change past the community by accident.
 :::
 
-Any Full Member may propose a change to any RCOS artifact. Proposals are submitted via the Fruit Haven voting app first (per the Governance Protocol, Layer 2) — not as repository PRs. After the vote concludes, the Membership Admin adds the proposal file to the repository. Every proposal must include:
+Any Full Member may propose a change to any RCOS artifact. Proposals are submitted and voted on at a Community Meeting (per the Governance Protocol, Layer 2) — not as repository PRs. After the vote concludes, the Meetings Organizer/Facilitator adds the proposal file to the repository. Every proposal must include:
 
 - Summary of the change
 - Affected layers and artifacts (with links)
@@ -34,7 +34,7 @@ Any Full Member may propose a change to any RCOS artifact. Proposals are submitt
 Not every change deserves the same friction. Typo fixes should not need a supermajority; constitutional shifts should not pass quietly. Mapping proposals to decision types — and defaulting unclear cases upward — makes the cost of a change proportional to its blast radius and protects Layer 0 from being eroded through small moves.
 :::
 
-- **Operational:** wording corrections, formatting, and minor content updates to artifacts — no vote required; executed by Membership Admin within delegated limits
+- **Operational:** wording corrections, formatting, and minor content updates to artifacts — no vote required; executed by the relevant role holder within delegated limits per the Role Registry (Layer 5)
 - **Strategic:** changes to Layer 1–5 content that affect member rights, processes, or structures
 - **Constitutional:** changes to Layer 0 (purpose, scope, invariants, or identity constraints) or to the governance system itself (Layer 2)
 
@@ -50,8 +50,8 @@ Without a floor on deliberation time, any change can be rushed through on a slow
 :::
 
 - **Operational:** no deliberation required
-- **Strategic:** minimum 5-day deliberation period; deliberation happens in Discord or forum; a Governance meeting may be called per the meeting template (Layer 5)
-- **Constitutional:** minimum 15-day deliberation period; deliberation in Discord and forum; a Governance meeting is strongly recommended; 30-day ratification period after the vote passes
+- **Strategic:** minimum 5-day deliberation period; deliberation happens in Telegram or forum; a Governance meeting may be called per the meeting template (Layer 5)
+- **Constitutional:** minimum 15-day deliberation period; deliberation in Telegram and forum; a Governance meeting is strongly recommended; 30-day ratification period after the vote passes
 
 ## Adoption and Publication
 
@@ -63,7 +63,7 @@ A vote that passes but is never written down is the same as no vote at all — a
 :::
 
 When a proposal passes:
-1. Membership Admin adds the proposal file to [proposals/passed/](/proposals/passed) within 7 days
+1. Meetings Organizer/Facilitator adds the proposal file to [proposals/passed/](/proposals/passed) within 7 days
 2. Affected artifacts in `layers/` are updated within 7 days
 3. [layers/6-evolution/02-version-history.md](/layers/6-evolution/02-version-history) is updated to record the change
 4. Status fields in affected artifacts are updated from *Stub — not yet adopted* to *Active — adopted <YYYY-MM-DD>*
@@ -78,7 +78,7 @@ Rejected ideas carry as much signal as accepted ones — they show what the comm
 :::
 
 When a proposal is rejected:
-1. Membership Admin adds the proposal file to [proposals/rejected/](/proposals/rejected) within 7 days
+1. Meetings Organizer/Facilitator adds the proposal file to [proposals/rejected/](/proposals/rejected) within 7 days
 2. No artifact changes are made
 3. The re-vote mechanism applies if new information emerges (per the Decision Matrix, Layer 2)
 
@@ -117,7 +117,7 @@ Any passed decision can be reversed through the same process as the original dec
 Some harms unfold faster than a vote can be convened. A narrow, well-guarded emergency path lets the community respond to genuine safety or platform failures without handing anyone a general-purpose override. The mandatory report, review, and ratification-or-rollback cycle is what keeps emergency powers from becoming ordinary powers.
 :::
 
-An emergency operational change may be made by Membership Admin only if all of the following conditions are met:
+An emergency operational change may be made by the Meetings Organizer/Facilitator only if all of the following conditions are met:
 
 1. Immediate action is required to prevent safety harm or platform failure
 2. A Full Member vote cannot be convened in time
@@ -149,7 +149,7 @@ Experiments expire automatically at the end of their defined duration unless exp
 
 All artifacts affected by an experiment MUST be explicitly labeled as experimental for the duration.
 
-**Safety suspension:** If an experiment introduces a credible safety risk, coercion, or sustained harm, the Membership Admin may suspend the experiment immediately as an emergency protective action. The suspension must be reported to all Full Members within 48 hours and reviewed at the next community meeting. Post-hoc ratification or rollback follows the emergency change process above.
+**Safety suspension:** If an experiment introduces a credible safety risk, coercion, or sustained harm, the Meetings Organizer/Facilitator may suspend the experiment immediately as an emergency protective action. The suspension must be reported to all Full Members within 48 hours and reviewed at the next community meeting. Post-hoc ratification or rollback follows the emergency change process above.
 
 ## Decentralization Review
 

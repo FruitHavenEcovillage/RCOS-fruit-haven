@@ -17,12 +17,11 @@ Unclassified resources are where quiet privatization happens — someone starts 
 
 | Resource                                          | Classification | Steward                                        | Access rules                                                                | Transfer constraints                                         |
 | ------------------------------------------------- | -------------- | ---------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| RCOS specification and artifacts (this repo)      | Commons        | Blueprint Steward                              | Public read; Full Members write via governance process                      | Cannot be privatised; forks permitted                        |
-| Shared treasury (Safe multi-sig)                  | Commons        | Finance Steward                                | Transparent to all Full Members (real-time via Safe)                        | Governed by Treasury Ruleset                                 |
-| Fruit Haven (fruithaven.land)                  | Commons        | Infrastructure Steward                         | Full Members; public-facing features open                                   | Cannot be sold or privatised without Constitutional decision |
-| Fruit Haven website (fruithaven.land)               | Commons        | Infrastructure Steward                         | Public read; Infrastructure Steward and Communications Steward write        | Cannot be sold without Constitutional decision               |
-| RCOS hosted website (blueprint.ecohubs.community) | Commons        | Infrastructure Steward / Blueprint Steward     | Public read; Blueprint Steward writes; Infrastructure Steward manages       | Cannot be sold without Constitutional decision               |
-| Brand, domain names, social media accounts        | Commons        | Communications Steward                         | Communications Steward manages; Full Members may contribute via defined process | Cannot be transferred without Constitutional decision     |
+| RCOS specification and artifacts (this repo)      | Commons        | Meetings Organizer/Facilitator                 | Public read; Active Members write via governance process                    | Cannot be privatised; forks permitted                        |
+| Shared treasury (per accounting ledger)           | Commons        | Communal Finance/Accountant                    | Transparent to all Active Members (continuous accounting ledger, per Treasury Ruleset) | Governed by Treasury Ruleset                                 |
+| Brand, domain names, social media accounts        | Commons        | Soc. Media Manager                             | Soc. Media Manager manages; Active Members may contribute via defined process | Cannot be transferred without Constitutional decision     |
+
+> _<Reserved — digital platforms, websites, and hosted services (e.g. fruithaven.land) are not yet named as in-scope assets in any ratified bylaws or doctrine; see scope-declaration item 4. Pending future ratification.>_
 
 > Any unclassified resource must not be allocated, encumbered, monetized, or transferred until classification is completed.
 
@@ -44,7 +43,7 @@ If the community never says out loud which kinds of work it depends on, the invi
 | **Creative & Communication**  | Content creation, social media, design, writing for public channels                                                                                                                       |
 | **Care & Support**            | Emotional support, conflict facilitation, wellbeing check-ins                                                                                                                             |
 | **Stewardship**               | Maintaining shared resources, monitoring platforms, managing external services                                                                                                            |
-| **Informal Participation**    | Active Discord/forum engagement, attending calls, feedback on proposals                                                                                                                   |
+| **Informal Participation**    | Active Telegram/forum engagement, attending calls, feedback on proposals                                                                                                                   |
 
 ## Contribution Recognition Mechanism
 
@@ -56,36 +55,23 @@ Without a defined mechanism, "who gets credit" becomes a matter of who is loudes
 :::
 
 - **What qualifies:** Any activity falling into one of the recognized categories above; informal participation counts at the member's own declaration
-- **How contributions are recorded:**
-  - Structured: automatically via Puckstack task completion ? XP/ECO credited via Offcoin
-  - Informal/other: self-reported by the member in Fruit Haven or Discord; no validation required for informal participation
-- **Who validates:** Structured contributions validated automatically by Puckstack/Offcoin; significant contributions (e.g. major artifacts, facilitation work) may be nominated by any member for additional XP via the Membership Admin
-- **Effect on access/privileges:** Contribution recognition affects XP and ECO balance only — it does not grant additional governance rights beyond what the membership state defines
-- **Dispute:** Any member may contest a contribution record within 30 days; disputes resolved by Membership Admin with right of appeal to Full Members
+- **How contributions are recorded:** Self-reported by the member and recorded in meeting minutes and/or Fruit Haven or Telegram; no validation required for informal participation
+- **Who validates:** Significant contributions (e.g. major artifacts, facilitation work) may be nominated by any member for recognition at a Community Meeting
+- **Effect on access/privileges:** Contribution recognition does not grant additional governance rights beyond what the membership state defines
+- **Dispute:** Any member may contest a contribution record within 30 days; disputes resolved by Active Members via the governance process
 
 ## Internal Units
 
 :::rcos{clauses="5.2.4, 5.2.5"}
 :::
 
-:::rationale{title="Why define XP and ECO this precisely?"}
-Internal units tend to grow powers no one voted for — decay, caps, transferability, governance weight — unless each property is nailed down in writing. Listing issuance, transfer rules, privacy, and explicit non-governance status makes the units tools of recognition rather than quiet shadow currencies.
+:::rationale{title="Why defer internal units?"}
+Internal units tend to grow powers no one voted for — decay, caps, transferability, governance weight — unless each property is nailed down in writing. Until a unit and its issuance, transfer, and privacy rules are ratified, recognition is handled through meeting minutes rather than an internal unit.
 :::
 
-Two internal units are in use: **XP** (experience points) and **ECO** (community currency). Both are tracked via Offcoin / Fruit Haven.
+_<Reserved — a formal internal contribution-recognition unit is not yet named in any ratified bylaws or doctrine. Pending future ratification; see [Future Proposals](../../proposals/future).>_
 
-| Property | XP | ECO |
-|---|---|---|
-| **Purpose** | Activity and progress indicator | Contribution recognition; may unlock certain Puckstack permissions |
-| **Issuance** | Automatic via Puckstack task completion; manual via Membership Admin for nominated informal contributions | Same as XP |
-| **Transferability** | Non-transferable between members | Non-transferable between members; not traded on external markets |
-| **Expiration / decay** | None currently | None currently — see Missing Technical Implementations |
-| **Hard cap** | None currently | None currently |
-| **Future utility** | N/A | TBD — further utility to be defined via future proposals |
-| **Fraud prevention** | Self-reported contributions subject to community review; dispute mechanism as defined in Contribution Recognition Mechanism | Same as XP |
-| **Privacy** | Balances visible to all Full Members in Fruit Haven | Balances visible to all Full Members in Fruit Haven |
-
-> ECO and XP do not grant governance rights beyond what the membership state defines (see §5.2.5).
+> Any future internal unit must not grant governance rights beyond what the membership state defines (see §5.2.5).
 
 ## Accumulation Constraints
 
@@ -96,9 +82,9 @@ Two internal units are in use: **XP** (experience points) and **ECO** (community
 Any internal unit that can pile up without limit eventually becomes leverage — a few members with large balances gain informal sway the governance system never granted them. Stating accumulation rules explicitly, even when the current rule is "none yet," keeps the question open and forces a visible decision before concentration becomes a structural problem.
 :::
 
-- No hard cap on XP or ECO currently — accumulation is unlimited
-- Neither unit can be converted into governance authority or used to bypass the Decision Matrix
-- Accumulation limits and decay mechanisms are deferred as a future proposal; see [Future Proposals](../../proposals/future)
+- No internal contribution-recognition unit currently exists — see Internal Units above
+- Any future internal unit cannot be converted into governance authority or used to bypass the Decision Matrix
+- Accumulation limits and decay mechanisms for any future unit are deferred as a future proposal; see [Future Proposals](../../proposals/future)
 
 ## External Income Interfaces
 
@@ -110,7 +96,7 @@ Once funds are in hand, the conversation shifts from "should we accept this?" to
 :::
 
 - **Current:** No external income; all operational costs are covered by the founding member as personal contributions
-- **Potential future interfaces:** Grants and foundations, Web3 ecosystem funding, partnerships, paid services (tooling, onboarding support, educational programs)
+- **Potential future interfaces:** Grants and foundations, partnerships, paid services (tooling, onboarding support, educational programs)
 - **Rule:** Any new external income interface must be declared and approved via a Strategic decision before funds are received or commitments made
 
 ## Dispute Resolution for Economic Records

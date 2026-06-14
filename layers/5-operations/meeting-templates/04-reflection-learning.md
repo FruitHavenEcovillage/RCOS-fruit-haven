@@ -35,8 +35,8 @@ If both are discussed together, failures dominate and successes get underweighte
 2. **Review period highlights** (15 min) — what has the community done and experienced since the last reflection meeting?
 3. **What worked well** (15 min) — patterns of success worth reinforcing or documenting
 4. **What didn't work / what we'd do differently** (15 min) — failures, friction, near-misses; no blame, focus on patterns and systems
-5. **Learnings to carry forward** (15 min) — insights to capture in the Learning Log (Layer 6); Blueprint Steward notes items for framework consideration
-6. **Updates to learning log and future proposals** (15 min) — Blueprint Steward records learning log entries; any items that should become a future proposal are added to `proposals/future.md`
+5. **Learnings to carry forward** (15 min) — insights to capture in the Learning Log (Layer 6); Meetings Organizer/Facilitator notes items for framework consideration
+6. **Updates to learning log and future proposals** (15 min) — Meetings Organizer/Facilitator records learning log entries; any items that should become a future proposal are added to `proposals/future.md`
 7. **Check-out** (5 min) — one word or sentence from each participant
 
 ---
@@ -46,6 +46,6 @@ If both are discussed together, failures dominate and successes get underweighte
 - **Date:**
 - **Facilitator:**
 - **Attendees:**
-- **Notes:** [Summary posted to Discord after the meeting]
-- **Learning Log entries triggered:** [List or "none" — Blueprint Steward updates [layers/6-evolution/03-learning-log.md](/layers/6-evolution/03-learning-log)]
+- **Notes:** [Summary posted to Telegram after the meeting]
+- **Learning Log entries triggered:** [List or "none" — Meetings Organizer/Facilitator updates [layers/6-evolution/03-learning-log.md](/layers/6-evolution/03-learning-log)]
 - **Future proposals added:** [Links or titles, or "none"]

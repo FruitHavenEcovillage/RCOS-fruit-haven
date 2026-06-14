@@ -46,7 +46,7 @@ A consistent agenda reduces the facilitation load, makes it easier for members t
 - **Date:**
 - **Facilitator:**
 - **Attendees:**
-- **Notes:** [Summary posted to Discord after the meeting]
+- **Notes:** [Summary posted to Telegram after the meeting]
 
 ---
 
@@ -57,4 +57,4 @@ A consistent agenda reduces the facilitation load, makes it easier for members t
 - **Mechanism / threshold:** Delegated authority
 - **Outcome:** [What was decided]
 - **Effective date:**
-- **Filed to:** Brief note in Discord by the relevant role holder
+- **Filed to:** Brief note in Telegram by the relevant role holder

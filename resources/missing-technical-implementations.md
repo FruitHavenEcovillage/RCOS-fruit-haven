@@ -2,17 +2,17 @@
 
 Features and flows required for full RCOS compliance that are not yet implemented in Fruit Haven or related platforms. Each item references the artifact that requires it.
 
-**Owner:** Infrastructure Steward / Digital Builder  
+**Owner:** _<Reserved — ownership of digital platform development and RCOS framework research is not yet named as a role in any ratified bylaws or doctrine; see scope-declaration items 7 and 8. Pending future ratification.>_  
 **Review cadence:** Quarterly
 
 ---
 
-## 8. Proposal template (Fruit Haven voting app)
+## 8. Proposal template (Community Meeting)
 
 **Required by:** Layer 2 — Governance Protocol (Proposal Submission)  
 **Priority:** High
 
-A predefined proposal template must be available in the Fruit Haven voting app so all Strategic and Constitutional proposals follow a consistent, auditable format. The template must include fields for:
+A predefined proposal template must be available for use at Community Meetings so all Strategic and Constitutional proposals follow a consistent, auditable format. The template must include fields for:
 - Summary of the change
 - Affected layers and artifacts (with links to this repository)
 - Decision type (Strategic / Constitutional)
@@ -45,9 +45,9 @@ A self-service exit flow must be available to members in Fruit Haven:
 A formal offboarding workflow does not currently exist. Required functionality:
 - Trigger exit for a member (voluntary or forced via Layer 4)
 - Transition membership state from Full Member → Exited Member in the registry
-- Revoke access to member-only Discord channels and calls
+- Revoke access to member-only Telegram channels and calls
 - Revoke access to Fruit Haven member features (retain profile and contribution history)
-- Block or remove member from platform-specific tools (Discord, forum via SSO, Safe) depending on what each platform supports
+- Block or remove member from platform-specific tools (Telegram, forum via SSO) depending on what each platform supports
 - Send exit confirmation to the member
 
 ---
@@ -80,7 +80,7 @@ The following automated emails must be sent during the onboarding window:
 **Required by:** Layer 1 — Onboarding Protocol (Admission Criteria, Trial and Evaluation)  
 **Priority:** High
 
-Members who are rejected via an Fruit Haven vote or exited due to incomplete onboarding must be blocked from re-applying for 6 months. Required:
+Members who are rejected via consensus at a Community Meeting or exited due to incomplete onboarding must be blocked from re-applying for 6 months. Required:
 - Record rejection/exit date and reason in Fruit Haven
 - Block re-submission of application form for 6 months from that date
 - Display a clear message if a blocked applicant attempts to re-apply
@@ -111,15 +111,3 @@ Currently there is no consent gate in the Fruit Haven onboarding UI. Required: a
 
 ---
 
-## 9. ECO expiration / decay mechanism
-
-**Required by:** Layer 3 — Internal Economy Protocol (Internal Units, Accumulation Constraints)  
-**Priority:** Medium
-
-Consider designing and implementing an expiration or decay mechanism for ECO to prevent passive accumulation by inactive members and keep the unit meaningful as a contribution signal. Design questions to resolve first:
-- Should ECO expire after a fixed period (e.g. 12 months of inactivity)?
-- Should it decay gradually or expire in full?
-- Should expired ECO be redistributed, burned, or simply zeroed?
-- Should the mechanism trigger only when ECO has real utility (unlocks, access, etc.)?
-
-This is a design decision before a technical one — open a governance proposal once the future utility of ECO is clearer.

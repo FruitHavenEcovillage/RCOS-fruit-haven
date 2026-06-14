@@ -15,7 +15,7 @@
 Without an explicit boundary, any money flowing near the community — a founder's personal card, a side account, an informal reimbursement pool — can drift into being treated as community money, with all the obligations that entails. Naming exactly which accounts are treasury and which are not protects both the community and the individuals paying out of pocket.
 :::
 
-The shared treasury consists of all funds held in the Safe multi-sig wallet and any additional accounts explicitly declared as community treasury accounts via Strategic decision (e.g. a fiat bank account for grant receipt). Only funds explicitly received in the name of Fruit Haven and deposited into a declared treasury account are community funds. Operational costs currently covered personally by the founding member are not treasury funds and carry no community obligation or repayment claim.
+The shared treasury consists of all funds and accounts recorded in the community's accounting ledger and any additional accounts explicitly declared as community treasury accounts via Strategic decision (e.g. a fiat bank account for grant receipt). Only funds explicitly received in the name of Fruit Haven and deposited into a declared treasury account are community funds. Operational costs currently covered personally by the founding member are not treasury funds and carry no community obligation or repayment claim.
 
 > Any new treasury account (fiat or otherwise) must be declared and approved via a Strategic decision before funds are received into it.
 
@@ -30,7 +30,7 @@ Every income source carries strings — reporting requirements, expectations, de
 
 All income streams must align with the External Income Interfaces defined in the Internal Economy Protocol. Current income: none — all operational costs are covered personally by the founding member.
 
-Potential future income interfaces: grants and foundations, Web3 ecosystem funding, partnerships, paid services (tooling, onboarding support, educational programs). Any new income interface must be approved via a Strategic decision before funds are received or commitments made.
+Potential future income interfaces: grants and foundations, partnerships, paid services (tooling, onboarding support, educational programs). Any new income interface must be approved via a Strategic decision before funds are received or commitments made.
 
 ## Spending Authority
 

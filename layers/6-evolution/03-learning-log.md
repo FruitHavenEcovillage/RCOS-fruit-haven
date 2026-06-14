@@ -29,9 +29,9 @@ An entry MUST be added when any of the following occur:
 
 Minor operational adjustments, routine decisions, and individual member issues that are fully resolved at Step 1–3 of the Conflict Resolution Ladder do not require a Learning Log entry.
 
-**Ownership:** The Blueprint Steward is responsible for ensuring entries are created and maintained. Any Full Member may draft an entry and submit it to the Blueprint Steward for review and publication.
+**Ownership:** The Meetings Organizer/Facilitator is responsible for ensuring entries are created and maintained. Any Full Member may draft an entry and submit it to the Meetings Organizer/Facilitator for review and publication.
 
-**Synthesis cadence:** The Learning Log is reviewed quarterly at the Reflection & Learning meeting. The Blueprint Steward prepares a brief synthesis of entries added since the last review, noting any recurring patterns that may require structural attention.
+**Synthesis cadence:** The Learning Log is reviewed quarterly at the Reflection & Learning meeting. The Meetings Organizer/Facilitator prepares a brief synthesis of entries added since the last review, noting any recurring patterns that may require structural attention.
 
 ---
 

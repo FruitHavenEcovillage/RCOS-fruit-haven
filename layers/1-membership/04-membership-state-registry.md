@@ -80,10 +80,10 @@ This process includes:
 ## Technical Notes
 
 :::rationale{title="Why preserve data after exit?"}
-The community's history belongs to the community, not to any individual account. Retaining contribution records after exit protects the integrity of audit trails, governance history, and XP/ECO accounting — while revoking access and removing the person from active listings respects the finality of their departure.
+The community's history belongs to the community, not to any individual account. Retaining contribution and participation records after exit protects the integrity of audit trails and governance history — while revoking access and removing the person from active listings respects the finality of their departure.
 :::
 
-- Contribution history and XP are retained in Fruit Haven after exit — records are preserved for audit and transparency purposes.
+- Contribution and participation records are retained in Fruit Haven after exit — records are preserved for audit and transparency purposes.
 - Exited members have their access blocked; they are removed from all member listings.
 - A formal member exit flow in Fruit Haven is not yet implemented — see [Future Proposals](../../proposals/future).
 

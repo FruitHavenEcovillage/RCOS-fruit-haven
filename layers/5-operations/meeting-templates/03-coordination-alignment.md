@@ -43,7 +43,7 @@ Most cross-role friction shows up as either a missing update or a blocker nobody
 - **Date:**
 - **Facilitator:**
 - **Attendees:**
-- **Notes:** [Summary posted to Discord after the meeting]
+- **Notes:** [Summary posted to Telegram after the meeting]
 
 ---
 

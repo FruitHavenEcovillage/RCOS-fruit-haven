@@ -21,7 +21,7 @@ Without named classes, every dispute gets treated the same — or worse, treated
 | **Role-based** | Disputes about how a role was performed, task scope disagreements | Step 2 | Facilitator acknowledgement within 5 days of request | None required until Step 3 |
 | **Structural** | Disputes about whether a governance process was followed correctly | Step 2 | Facilitator acknowledgement within 5 days of request | None required until Step 3 |
 | **Ethical / obligation breach** | Breach of Membership Agreement obligations or Layer 0 principles (non-severe) | Step 3 | Facilitator written acknowledgement within 3 days | Written record from intake |
-| **Safety-critical** | Credible safety risk, coercion, abuse, or threats | Step 4 (bypasses Steps 1–3) | Facilitator or Membership Admin acknowledgement within 24 hours; immediate protective action permitted | Written record from intake; immediate action permitted |
+| **Safety-critical** | Credible safety risk, coercion, abuse, or threats | Step 4 (bypasses Steps 1–3) | Meetings Organizer/Facilitator acknowledgement within 24 hours; immediate protective action permitted | Written record from intake; immediate action permitted |
 
 > Safety-critical conflicts override participation rights, role continuity, and operational convenience.
 > The initial response window is measured from the point at which the party requests escalation (for Steps 1–3) or reports the issue (for safety-critical). The Facilitator acknowledges receipt and confirms the next step — this does not require immediate resolution.
@@ -43,13 +43,13 @@ Most conflict is low-stakes and best resolved between the people involved; forci
 
 4. **Accountability review** — Structured review led by Facilitator. Both parties have a full opportunity to present their position. Facilitator issues a written recommendation. Confidential. 21-day window. If all parties accept: outcome implemented and record kept. If not accepted or forced exit is required: move to Step 5.
 
-5. **Governance decision** — Minimum necessary information is disclosed to Full Members; parties are notified before disclosure. Full Members deliberate (minimum 5 days) and vote in the Fruit Haven voting app. Strategic decision threshold.
+5. **Governance decision** — Minimum necessary information is disclosed to Full Members; parties are notified before disclosure. Full Members deliberate (minimum 5 days) and vote at a Community Meeting. Strategic decision threshold.
 
 6. **Separation process** — If Full Members vote for forced exit: coordinated with the Exit & Separation Protocol (Layer 1). Minimum 6-month re-application block applies.
 
 ## Emergency Safety Protocol
 
-If a credible threat of immediate physical harm, violence, coercion, or abuse exists, Facilitators or Membership Admins may take immediate temporary protective action outside the standard Resolution Ladder.
+If a credible threat of immediate physical harm, violence, coercion, or abuse exists, the Meetings Organizer/Facilitator may take immediate temporary protective action outside the standard Resolution Ladder.
 
 Such actions may include temporary suspension of participation, separation measures, no-contact requirements, removal from community spaces, or contacting emergency services where necessary.
 
@@ -83,7 +83,7 @@ The easiest way to defeat any accountability process is to ignore it. If non-res
 - The Facilitator documents the deadlock in writing, noting which steps were attempted and why they did not produce resolution
 
 **Procedural failure review:**
-- If a party believes a step of this process was not followed correctly (e.g., wrong escalation, breach of confidentiality, missed timeline), they may raise a procedural objection in writing to the Facilitator or, if the Facilitator is implicated, directly to the Membership Admin
+- If a party believes a step of this process was not followed correctly (e.g., wrong escalation, breach of confidentiality, missed timeline), they may raise a procedural objection in writing to the Facilitator or, if the Facilitator is implicated, directly to any other Active Member with no declared conflict of interest
 - Procedural failures are logged and reviewed at the next Reflection & Learning meeting; persistent procedural failures trigger a review of this artifact under the Change Protocol
 
 ---
@@ -113,7 +113,7 @@ Conflict records contain the most sensitive material the community holds. Leaks,
 
 - **Steps 1–4:** fully confidential; only parties and Facilitator may access records or be aware of the process
 - **Steps 5–6:** minimum necessary information is disclosed to Full Members; parties are notified before any disclosure. **Minimum necessary information** means: the conflict class, the ladder step reached, the resolution attempts made, and what decision is being requested of Full Members. Written statements, personal submissions, and detailed records from Steps 3–4 remain confidential and are not disclosed to Full Members.
-- **Record retention:** records from Steps 3–4 are retained by Membership Admin for 2 years, then destroyed; accessible only to parties and Facilitator during that period
+- **Record retention:** records from Steps 3–4 are retained by the Meetings Organizer/Facilitator for 2 years, then destroyed; accessible only to parties and Facilitator during that period
 - **Non-disclosure:** no participant may share information about the process outside the defined participants without the written consent of all parties
 
 ## Safeguards
@@ -130,7 +130,7 @@ Process alone does not protect the party with less power. Retaliation, bad-faith
 - **Facilitator conflict of interest:** If the Facilitator is a party to the conflict, a substitute Facilitator must be appointed (see Facilitator Selection and Replacement above).
 - **Process pause:** Either party may pause the process once for up to 14 days by written notice to the Facilitator, for personal reasons.
 - **Safety-critical immediate action:** The Facilitator may recommend an immediate, temporary access restriction pending review. This does not constitute exit and must be reviewed within 14 days.
-- **Power differential — separate intake channel:** Where a significant power differential exists between parties (for example, a conflict between a member and a role holder whose authority directly affects that member, or where the Facilitator is associated with one party), the affected member may request that their initial report and documentation be submitted directly to the Membership Admin via private message or email rather than through the standard facilitation channel. The Membership Admin then either handles the intake directly or arranges an independent substitute Facilitator. This ensures reporting is not channeled through parties with a conflicting interest.
+- **Power differential — separate intake channel:** Where a significant power differential exists between parties (for example, a conflict between a member and a role holder whose authority directly affects that member, or where the Facilitator is associated with one party), the affected member may request that their initial report and documentation be submitted directly to any other Active Member with no declared conflict of interest via private message or email rather than through the standard facilitation channel. That member then either handles the intake directly or arranges an independent substitute Facilitator. This ensures reporting is not channeled through parties with a conflicting interest.
 - **Role suspension during review:** Where a power differential involves a role holder and the role authority is a source of the conflict, the Full Members may vote (Strategic decision) to temporarily suspend the role holder's delegated authority during the review. This does not constitute forced exit.
 
 ---

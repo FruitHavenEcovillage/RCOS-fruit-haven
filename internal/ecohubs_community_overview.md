@@ -107,31 +107,31 @@ Membership is **application-based and values-aligned**, not payment-based. There
 ### Application Process
 
 1. Applicant submits a detailed application (40+ fields) covering values, experience, contribution areas, languages, location, and collaboration style.
-2. Application is reviewed by the admin team; an AI-assisted recommendation may assist review.
-3. A governance proposal is created on Snapshot (the DAO voting platform).
-4. Existing DAO members vote (Approve / Reject / Needs Review) within a defined window.
+2. Application is reviewed by the relevant role holder (per the Role Registry, Layer 5); an AI-assisted recommendation may assist review.
+3. The application is brought to a Community Meeting for consensus.
+4. Active Members reach consensus (Unanimity minus one) within a defined window, per the Governance Protocol (Layer 2).
 5. Applicant receives email notification of the decision.
 
 ### Membership States (as currently implemented)
 
 | State            | Description                                 |
 | ---------------- | ------------------------------------------- |
-| Applicant        | Submitted application, awaiting vote        |
-| Proposal created | Snapshot vote is live                       |
-| Approved         | Passed community vote, onboarding initiated |
+| Applicant        | Submitted application, awaiting decision    |
+| Proposal pending | Application is on the agenda for a Community Meeting |
+| Approved         | Passed consensus, onboarding initiated      |
 | Rejected         | Not admitted at this time                   |
 
 Note: The current states map roughly to RCOS Layer 1 but have not yet been formally specified with explicit rights, obligations, and transition rules per RCOS requirements.
 
 ### Onboarding Workflow
 
-Once approved, members move through a structured 5-step onboarding in the Fruit Haven dashboard:
+Once approved, members move through a structured onboarding per the Onboarding Protocol (Layer 1):
 
-1. **Wallet setup** — MetaMask wallet linked (required for governance participation)
-2. **Offcoin/Puckstack linking** — Connect contribution tracking and task management identity
-3. **Discord integration** — Join community chat; verified via OAuth
-4. **Forum account** — Join the Flarum-based community discussion space
-5. **Safe proposal** (optional) — Request to be added as member or proposer on the community multi-sig wallet
+1. **Review RCOS artifacts** — review Layer 0–6 artifacts and the Membership Agreement
+2. **Sign the Membership Agreement** — explicit, recorded consent to member rights and obligations
+3. **Complete training and quizzes** — consensus training, Non-Violent Communication training, and Sociocracy training videos and quizzes (per the Membership State Registry's Transitional Membership Pathway)
+4. **Join Telegram** — via Fruit Haven invite; unlocks member-only channels and speaking rights in meetings
+5. **Review "New Member Expectations"** — per the FH1 Community Bylaws
 
 ### Who Joins
 
@@ -143,34 +143,34 @@ The community currently attracts: permaculturists, community builders, systems t
 
 ### Governance Model
 
-Fruit Haven operates as a **DAO (Decentralized Autonomous Organization)** using blockchain-based tooling to ensure transparent, participatory decision-making. The stated principle is that authority is structural, distributed, and written down — not derived from charisma or seniority.
+Fruit Haven operates by **consensus at Community Meetings**, per the ratified FH1 Community Bylaws and the Governance Protocol (Layer 2). Strategic and Constitutional decisions require Unanimity minus one among Active Members with voting power, followed by a 2-week absentee review period. The stated principle is that authority is structural, distributed, and written down — not derived from charisma or seniority.
 
 ### Current Governance Stack
 
-| Tool                        | Purpose                                                           |
-| --------------------------- | ----------------------------------------------------------------- |
-| **Snapshot**                | Gasless on-chain voting for membership and content decisions      |
-| **Safe (multi-sig wallet)** | Executing governance decisions; treasury management               |
-| **Fruit Haven**               | Dashboard for managing proposals, applications, and member status |
-| **Flarum forum**            | Asynchronous discussion and deliberation                          |
-| **Discord**                 | Real-time communication and announcements                         |
+| Tool                  | Purpose                                                           |
+| --------------------- | ----------------------------------------------------------------- |
+| **Community Meeting** | Deliberation and consensus decision-making for Strategic and Constitutional decisions |
+| **Accounting Ledger** | Continuous, public, transparent treasury record (per Treasury Ruleset) |
+| **Fruit Haven**       | Dashboard for managing proposals, applications, and member status |
+| **Flarum forum**      | Asynchronous discussion and deliberation                          |
+| **Telegram**          | Real-time communication and announcements                         |
 
 ### Decision Scope (current practice)
 
 Governance currently handles:
 
-- **Membership admission** — vote per applicant on Snapshot
-- **Content publication** — blog articles proposed and voted on before publishing
-- **Treasury transactions** — executed via Safe multi-sig requiring multiple signers
+- **Membership admission** — consensus vote per applicant at a Community Meeting
+- **Content publication** — proposed and discussed, decided by consensus
+- **Treasury transactions** — spending up to $100 USD is delegated to the Communal Finance/Accountant; spending above $100 USD requires consensus at a Community Meeting (per the Treasury Ruleset)
 
-Operational and strategic decision-making beyond these three areas is not yet formally structured with a Decision Matrix or Governance Protocol per RCOS Layer 2 requirements.
+Operational and strategic decision-making beyond these three areas is structured per the Decision Matrix and Governance Protocol (RCOS Layer 2).
 
 ### Authority Model
 
 - No individual holds unilateral authority by default
-- The community's Safe wallet requires multiple owners to execute transactions
-- Members can be added as Safe owners (full authority) or proposers (delegated, limited authority)
-- Voting power on Snapshot is tied to wallet/NFT holdings
+- The community's treasury is managed via a continuous accounting ledger, reviewable by trustees at any time (per FH1 Bylaws Art. 9)
+- The Communal Finance/Accountant may not authorize any single treasury spending unilaterally above $100 USD
+- Voting/consensus power is tied to Active Member status, per the Membership State Registry — not to wallet or token holdings
 
 ---
 
@@ -178,18 +178,11 @@ Operational and strategic decision-making beyond these three areas is not yet fo
 
 ### Contribution Recognition
 
-Fruit Haven uses two internal units to make contribution visible:
+A formal internal contribution-recognition unit is not yet named in any ratified bylaws or doctrine (Reserved, pending future ratification — see Internal Economy Protocol, Layer 3). Contributions are instead:
 
-| Unit                       | Description                                                      |
-| -------------------------- | ---------------------------------------------------------------- |
-| **XP (Experience Points)** | Activity and progress indicator; tracks participation and growth |
-| **ECO tokens**             | Community currency earned through contributions                  |
-
-These are tracked via the **Offcoin** integration in Fruit Haven. Both units are:
-
-- Internal only — not traded on open markets
-- Non-speculative — explicitly not positioned as investment assets
-- Designed to make labor and care visible, not to generate profit
+- Self-reported by the member
+- Recorded in meeting minutes and/or Fruit Haven or Telegram
+- Nominated by any member for recognition at a Community Meeting if significant (e.g. major artifacts, facilitation work)
 
 Recognized contribution types include:
 
@@ -201,20 +194,19 @@ Recognized contribution types include:
 
 ### Treasury
 
-The shared treasury is managed via the **Safe multi-sig wallet**, requiring multiple co-signers to execute transactions. Transparency of treasury state to all members is an expressed value, though the formal treasury ruleset and spending authority thresholds have not yet been fully specified as RCOS artifacts.
+The shared treasury is managed via a continuous, public accounting ledger, reviewable by trustees at any time (per FH1 Bylaws Art. 9 / Treasury Ruleset, Layer 3). The Communal Finance/Accountant holds day-to-day responsibility for the treasury, with a $100 USD delegated spending limit; the Financial Bookkeeper handles data entry and tracking. Transparency of treasury state to all members is an expressed value and is formalized in the Treasury Ruleset.
 
 ### External Funding Sources
 
 Intended funding:
 
 - Grants and foundations
-- Web3 ecosystem funding
 - Private partnerships
 - Future revenue from tools, educational programs, and onboarding support (while maintaining regenerative principles)
 
 ### Economic Philosophy
 
-Fruit Haven aims for a **closed-loop local economy** in physical hubs: small businesses serving local community members, permaculture-based food systems, and reduced dependency on global supply chains. The XP/ECO system is designed as the accounting layer that makes this visible and honest.
+Fruit Haven aims for a **closed-loop local economy** in physical hubs: small businesses serving local community members, permaculture-based food systems, and reduced dependency on global supply chains. The accounting ledger is the layer that makes this visible and honest.
 
 ---
 
@@ -222,25 +214,25 @@ Fruit Haven aims for a **closed-loop local economy** in physical hubs: small bus
 
 ### Task Management
 
-Members coordinate work through **Puckstack**, a task management platform integrated into Fruit Haven. Members can browse available tasks, claim them, and track contributions. Task completion feeds into XP and ECO tracking.
+Members coordinate work via Telegram and Fruit Haven. Members can browse available tasks, claim them, and track contributions per the Operations Manual (Layer 5). Task completion is self-reported and recorded in meeting minutes and/or Fruit Haven.
 
 ### Communication
 
 | Channel          | Use                                                          |
 | ---------------- | ------------------------------------------------------------ |
-| **Discord**      | Real-time community chat; admin notifications; announcements |
+| **Telegram**     | Real-time community chat; notifications; announcements       |
 | **Flarum forum** | Deeper asynchronous discussion and deliberation              |
 | **Newsletter**   | Field notes, new Blueprint chapters, event invitations       |
-| **Weekly sync**  | Weekly sync calls for coordination and decision-making       |
+| **Weekly sync**  | Weekly community meeting for coordination and decision-making |
 | **Fruit Haven**    | Governance and onboarding coordination                       |
 
 ### Documentation and Knowledge
 
-The Blueprint is hosted at `blueprint.ecohubs.community` and is developed as a collaborative knowledge base. Blog content is managed via Ghost CMS with a community proposal-and-vote publication workflow.
+RCOS artifacts (the Blueprint) are maintained in this repository (`layers/`) and developed as a collaborative knowledge base. Governance proposals are filed in `proposals/passed/` and `proposals/rejected/`.
 
 ### Role and Responsibility Structure
 
-Role structure is currently informal — the community is in early formation and most explicit role definitions exist in the technical infrastructure (admin vs. member access, Safe owner vs. proposer) rather than in formal governance artifacts. A full Role Registry per RCOS Layer 5 has not yet been established.
+A Role Registry exists per RCOS Layer 5 ([layers/5-operations/02-role-registry.md](/layers/5-operations/02-role-registry)), defining roles including Communal Finance/Accountant, Financial Bookkeeper, C.A. Manager, Hospitality Manager, Nursery Manager, Project Manager, Volunteer Coordinator, Soc. Media Manager, Meetings Organizer/Facilitator, Workshop Manager, Volunteer, and Guest.
 
 ---
 
@@ -255,12 +247,10 @@ Fruit Haven is the community's **operating dashboard** — an integrated platfor
 | Frontend              | Svelte 5 / SvelteKit                                  |
 | Database              | SQLite with Drizzle ORM                               |
 | Authentication        | Authentik (SSO/OAuth) + better-auth                   |
-| Governance            | Snapshot (GraphQL API), Safe (Protocol Kit + API Kit) |
-| Contribution tracking | Offcoin SDK                                           |
-| Tasks                 | Puckstack                                             |
+| Governance            | _<Reserved — Community Meeting consensus per Governance Protocol, Layer 2; no platform-specific tooling named in any ratified bylaws or doctrine>_ |
 | Forum                 | Flarum                                                |
 | Blog                  | Ghost CMS                                             |
-| Communication         | Discord (OAuth + webhooks), Nodemailer                |
+| Communication         | Telegram, Nodemailer                                  |
 
 ### Design Philosophy
 
@@ -277,8 +267,7 @@ Member profiles capture:
 
 - Display name, biography, location, languages spoken
 - Contribution areas and projects
-- XP and ECO balance
-- Wallet addresses and Safe membership
+- Membership state (per the Membership State Registry, Layer 1)
 - Onboarding completion status
 - Public visibility preferences
 
@@ -326,9 +315,9 @@ The following observations describe where Fruit Haven currently stands relative 
 
 - A stated primary purpose and set of values
 - An application-based membership process with a defined workflow
-- Governance tooling (Snapshot voting, Safe multi-sig) for specific decisions
-- A contribution recognition system (XP/ECO via Offcoin)
-- A task and coordination layer (Puckstack, Discord, Flarum)
+- Governance per the FH1 Bylaws (consensus at Community Meetings, accounting ledger) for specific decisions
+- A contribution recognition approach (self-reported, recorded in meeting minutes and/or Fruit Haven)
+- A task and coordination layer (Telegram, Flarum forum)
 - Onboarding workflow with defined steps
 - A change/versioning framework implicit in the Blueprint development process
 
@@ -348,8 +337,8 @@ The following observations describe where Fruit Haven currently stands relative 
 **Structural patterns already aligned with RCOS principles:**
 
 - Explicit beats implicit (stated value; partially implemented)
-- Authority made structural rather than charismatic (DAO design intention)
-- Contribution visibility and honest accounting (XP/ECO system)
+- Authority made structural rather than charismatic (Role Registry and Decision Matrix)
+- Contribution visibility and honest accounting (accounting ledger)
 - Transparency as default (open governance, published treasury)
 - Pre-commitment to conflict handling (Blueprint content; not yet a formal artifact for Fruit Haven-the-community)
 - Modular design (optional modules planned; core layers stable)

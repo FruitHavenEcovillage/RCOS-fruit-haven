@@ -32,7 +32,7 @@ A decision process that accepts proposals informally — a message, a verbal sug
 Rushed votes favor whoever is already paying attention and disadvantage everyone else. A mandatory deliberation period, tied to the weight of the decision, gives members time to read, respond, and surface concerns before the vote opens — so the vote reflects considered judgment, not speed of reaction.
 :::
 
-- Deliberation happens in the community forum, Discord, or directly during the Community Meeting.
+- Deliberation happens in the community forum, Telegram, or directly during the Community Meeting.
 - Minimum deliberation guidelines apply to ensure adequate time for review before a meeting.
 - Members are encouraged to raise concerns during deliberation and use non-adversarial discussion techniques to prevent "adversarial debate".
 

@@ -34,9 +34,9 @@ Consent to governance only means something if the member has actually seen the g
 
 1. _Review all Layer 0–6 artifacts and this onboarding protocol (link provided in Fruit Haven)_
 2. _Explicitly consent to the Membership Agreement and Layer 0 identity constraints (in-app consent)_
-3. _Link Offcoin/Puckstack account (contribution tracking and task management)_
-4. _Join Discord via Fruit Haven invite displayed in onboarding (unlocks member-only channels and speaking rights in meetings)_
-5. _Optionally set up MetaMask wallet and request Safe Proposer status (required only for treasury / on-chain governance — voting itself happens inside Fruit Haven and does not require a wallet)_
+3. _Complete the consensus training video and quiz, the Non-Violent Communication training video and quiz, and the Sociocracy training video and quiz (per the Membership State Registry's Transitional Membership Pathway requirements)_
+4. _Join Telegram via Fruit Haven invite displayed in onboarding (unlocks member-only channels and speaking rights in meetings)_
+5. _Review the "New Member Expectations" list referenced in the FH1 Bylaws_
 6. _Onboarding completion recorded in Fruit Haven — membership state transitions to Full Member_
 
 ## Initial Membership State
