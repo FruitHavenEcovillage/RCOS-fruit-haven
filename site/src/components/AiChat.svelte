@@ -65,8 +65,10 @@
       });
 
       if (!res.ok) {
-        const err = await res.json().catch(() => ({ error: 'Request failed' }));
-        messages = [...messages, { role: 'assistant', content: `Error: ${err.error ?? 'Something went wrong.'}` }];
+        const body = await res.text().catch(() => '');
+        let errMsg = `HTTP ${res.status}`;
+        try { errMsg += ': ' + (JSON.parse(body).error ?? body); } catch { if (body) errMsg += ': ' + body.slice(0, 200); }
+        messages = [...messages, { role: 'assistant', content: `Error — ${errMsg}` }];
         return;
       }
 
