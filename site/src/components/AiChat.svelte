@@ -4,6 +4,7 @@
   let open = $state(false);
   let input = $state('');
   let loading = $state(false);
+  let cooldown = $state(false);
   let messages = $state<Message[]>([]);
   let messagesEl: HTMLElement | undefined = $state();
   let inputEl: HTMLTextAreaElement | undefined = $state();
@@ -48,7 +49,7 @@
 
   async function send() {
     const text = input.trim();
-    if (!text || loading) return;
+    if (!text || loading || cooldown) return;
 
     input = '';
     messages = [...messages, { role: 'user', content: text }];
@@ -88,7 +89,8 @@
       messages = [...messages, { role: 'assistant', content: 'Network error. Please try again.' }];
     } finally {
       loading = false;
-      setTimeout(() => inputEl?.focus(), 50);
+      cooldown = true;
+      setTimeout(() => { cooldown = false; inputEl?.focus(); }, 4000);
     }
   }
 
@@ -201,7 +203,7 @@
         type="button"
         class="chat-send"
         onclick={send}
-        disabled={loading || !input.trim()}
+        disabled={loading || cooldown || !input.trim()}
         aria-label="Send"
       >
         {#if loading}
