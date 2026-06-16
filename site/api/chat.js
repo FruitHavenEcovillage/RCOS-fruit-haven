@@ -1,6 +1,4 @@
-export const config = { runtime: 'edge' };
-
-export default async function handler(req: Request): Promise<Response> {
+export default async function handler(req) {
   if (req.method === 'OPTIONS') {
     return new Response(null, {
       status: 204,
@@ -21,11 +19,7 @@ export default async function handler(req: Request): Promise<Response> {
     return new Response(JSON.stringify({ error: 'API key not configured' }), { status: 500 });
   }
 
-  let body: {
-    message: string;
-    history?: { role: 'user' | 'assistant'; content: string }[];
-    context?: string;
-  };
+  let body;
   try {
     body = await req.json();
   } catch {
@@ -40,7 +34,6 @@ export default async function handler(req: Request): Promise<Response> {
     ? `You are a helpful assistant for the Fruit Haven community's RCOS governance documentation site. You help visitors understand the organization's structure, governance layers, proposals, and bylaws.\n\nYou have access to the following documentation:\n\n---\n${body.context}\n---\n\nWhen referencing a document, format links as [Title](URL) so users can click through.`
     : `You are a helpful assistant for the Fruit Haven community's RCOS governance documentation site.`;
 
-  // Build Gemini contents array from history + new message
   const contents = [
     ...(body.history ?? []).map((m) => ({
       role: m.role === 'assistant' ? 'model' : 'user',
@@ -64,14 +57,13 @@ export default async function handler(req: Request): Promise<Response> {
 
   if (!geminiRes.ok) {
     const err = await geminiRes.text();
-    return new Response(JSON.stringify({ error: `Gemini API error: ${err.slice(0, 300)}` }), { status: 502 });
+    return new Response(JSON.stringify({ error: `Gemini error: ${err.slice(0, 300)}` }), { status: 502 });
   }
 
-  // Forward the SSE stream, extracting just the text from each event
   const encoder = new TextEncoder();
   const readable = new ReadableStream({
     async start(controller) {
-      const reader = geminiRes.body!.getReader();
+      const reader = geminiRes.body.getReader();
       const decoder = new TextDecoder();
       let buffer = '';
       try {
@@ -108,3 +100,5 @@ export default async function handler(req: Request): Promise<Response> {
     },
   });
 }
+
+export const config = { runtime: 'edge' };
