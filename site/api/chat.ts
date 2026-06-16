@@ -1,8 +1,19 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-export const config = { runtime: 'nodejs' };
+export const config = { runtime: 'edge' };
 
 export default async function handler(req: Request): Promise<Response> {
+  if (req.method === 'OPTIONS') {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
+      },
+    });
+  }
+
   if (req.method !== 'POST') {
     return new Response(JSON.stringify({ error: 'Method not allowed' }), {
       status: 405,
@@ -49,7 +60,6 @@ ${body.context ? `You have access to the following Fruit Haven RCOS documentatio
     systemInstruction,
   });
 
-  // Convert history from our format to Gemini's format
   const history = (body.history ?? []).map((m) => ({
     role: m.role === 'assistant' ? 'model' : 'user',
     parts: [{ text: m.content }],
@@ -76,6 +86,7 @@ ${body.context ? `You have access to the following Fruit Haven RCOS documentatio
     headers: {
       'Content-Type': 'text/plain; charset=utf-8',
       'Cache-Control': 'no-cache',
+      'Access-Control-Allow-Origin': '*',
     },
   });
 }
