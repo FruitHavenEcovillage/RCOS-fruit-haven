@@ -8,6 +8,22 @@
   let messagesEl: HTMLElement | undefined = $state();
   let inputEl: HTMLTextAreaElement | undefined = $state();
 
+  // Loaded once from /api/search.json and passed as context to the API
+  let docsContext = $state<string | null>(null);
+
+  async function loadContext() {
+    if (docsContext !== null) return;
+    try {
+      const res = await fetch('/api/search.json');
+      const data: { title: string; url: string; body?: string; summary?: string; type: string }[] = await res.json();
+      docsContext = data
+        .map((d) => `### ${d.type}: ${d.title}\nURL: ${d.url}\n${d.summary ? `Summary: ${d.summary}\n` : ''}${(d.body ?? '').slice(0, 2000)}`)
+        .join('\n\n');
+    } catch {
+      docsContext = '';
+    }
+  }
+
   function toggle() {
     open = !open;
     if (open) {
@@ -38,13 +54,14 @@
     messages = [...messages, { role: 'user', content: text }];
     loading = true;
 
+    await loadContext();
     const history = messages.slice(0, -1);
 
     try {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: text, history }),
+        body: JSON.stringify({ message: text, history, context: docsContext }),
       });
 
       if (!res.ok) {

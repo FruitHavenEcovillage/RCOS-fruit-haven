@@ -13,10 +13,9 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.55.0",
     "@astrojs/mdx": "^5.0.4",
-    "@astrojs/vercel": "^9.0.0",
     "@astrojs/svelte": "^8.0.5",
     "@tailwindcss/vite": "^4.2.4",
-    "astro": "^6.13.0",
+    "astro": "^6.1.9",
     "remark-directive": "^4.0.0",
     "svelte": "^5.55.4",
     "tailwindcss": "^4.2.4",
