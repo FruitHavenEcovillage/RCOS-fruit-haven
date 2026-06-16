@@ -17,7 +17,7 @@
       const res = await fetch('/api/search.json');
       const data: { title: string; url: string; body?: string; summary?: string; type: string }[] = await res.json();
       docsContext = data
-        .map((d) => `### ${d.type}: ${d.title}\nURL: ${d.url}\n${d.summary ? `Summary: ${d.summary}\n` : ''}${(d.body ?? '').slice(0, 2000)}`)
+        .map((d) => `### ${d.type}: ${d.title}\nURL: ${d.url}\n${d.summary ? `Summary: ${d.summary}\n` : ''}${(d.body ?? '').slice(0, 600)}`)
         .join('\n\n');
     } catch {
       docsContext = '';
