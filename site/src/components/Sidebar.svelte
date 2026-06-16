@@ -148,9 +148,9 @@
 
   <ul class="nav-list">
     <li>
-      <button 
-        type="button" 
-        class="nav-link search-nav-btn" 
+      <button
+        type="button"
+        class="nav-link search-nav-btn"
         onclick={() => { window.dispatchEvent(new CustomEvent('open-search')); if(isMobile) closeDrawer(); }}
       >
         <span class="search-nav-content">
@@ -161,6 +161,21 @@
           Search
         </span>
         <span class="search-nav-shortcut">Ctrl K</span>
+      </button>
+    </li>
+
+    <li>
+      <button
+        type="button"
+        class="nav-link ask-ai-btn"
+        onclick={() => { window.dispatchEvent(new CustomEvent('open-ai-chat')); if(isMobile) closeDrawer(); }}
+      >
+        <span class="search-nav-content">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+          Ask AI
+        </span>
       </button>
     </li>
 
@@ -410,6 +425,17 @@
   }
   .search-nav-btn:hover {
     border-color: var(--color-text-muted);
+  }
+
+  .ask-ai-btn {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    border: 1px solid color-mix(in srgb, var(--color-primary) 40%, transparent);
+    background: color-mix(in srgb, var(--color-primary) 8%, transparent);
+  }
+  .ask-ai-btn:hover {
+    background: color-mix(in srgb, var(--color-primary) 15%, transparent);
+    border-color: var(--color-primary);
   }
   .search-nav-content {
     display: flex;

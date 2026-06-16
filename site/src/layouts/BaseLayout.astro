@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Sidebar from '../components/Sidebar.svelte';
 import Search from '../components/Search.svelte';
+import AiChat from '../components/AiChat.svelte';
 
 interface Props {
   title?: string;
@@ -35,6 +36,7 @@ const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
         </div>
       </main>
     </div>
+    <AiChat client:load />
   </body>
 </html>
 
