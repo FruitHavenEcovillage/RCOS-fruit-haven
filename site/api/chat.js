@@ -1,3 +1,5 @@
+export const config = { runtime: 'edge' };
+
 export default async function handler(req) {
   if (req.method === 'OPTIONS') {
     return new Response(null, {
@@ -14,7 +16,7 @@ export default async function handler(req) {
     return new Response(JSON.stringify({ error: 'Method not allowed' }), { status: 405 });
   }
 
-  const apiKey = process.env.GOOGLE_AI_API_KEY;
+  const apiKey = process.env.GROQ_API_KEY;
   if (!apiKey) {
     return new Response(JSON.stringify({ error: 'API key not configured' }), { status: 500 });
   }
@@ -30,40 +32,42 @@ export default async function handler(req) {
     return new Response(JSON.stringify({ error: 'Message is required' }), { status: 400 });
   }
 
-  const systemInstruction = body.context
+  const systemPrompt = body.context
     ? `You are a helpful assistant for the Fruit Haven community's RCOS governance documentation site. You help visitors understand the organization's structure, governance layers, proposals, and bylaws.\n\nYou have access to the following documentation:\n\n---\n${body.context}\n---\n\nWhen referencing a document, format links as [Title](URL) so users can click through.`
     : `You are a helpful assistant for the Fruit Haven community's RCOS governance documentation site.`;
 
-  const contents = [
+  const messages = [
+    { role: 'system', content: systemPrompt },
     ...(body.history ?? []).map((m) => ({
-      role: m.role === 'assistant' ? 'model' : 'user',
-      parts: [{ text: m.content }],
+      role: m.role === 'assistant' ? 'assistant' : 'user',
+      content: m.content,
     })),
-    { role: 'user', parts: [{ text: body.message }] },
+    { role: 'user', content: body.message },
   ];
 
-  const geminiRes = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:streamGenerateContent?alt=sse&key=${apiKey}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        system_instruction: { parts: [{ text: systemInstruction }] },
-        contents,
-        generationConfig: { maxOutputTokens: 1024 },
-      }),
+  const groqRes = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`,
     },
-  );
+    body: JSON.stringify({
+      model: 'llama-3.3-70b-versatile',
+      messages,
+      max_tokens: 1024,
+      stream: true,
+    }),
+  });
 
-  if (!geminiRes.ok) {
-    const err = await geminiRes.text();
-    return new Response(JSON.stringify({ error: `Gemini error: ${err.slice(0, 300)}` }), { status: 502 });
+  if (!groqRes.ok) {
+    const err = await groqRes.text();
+    return new Response(JSON.stringify({ error: `Groq error: ${err.slice(0, 300)}` }), { status: 502 });
   }
 
   const encoder = new TextEncoder();
   const readable = new ReadableStream({
     async start(controller) {
-      const reader = geminiRes.body.getReader();
+      const reader = groqRes.body.getReader();
       const decoder = new TextDecoder();
       let buffer = '';
       try {
@@ -79,7 +83,7 @@ export default async function handler(req) {
             if (!json || json === '[DONE]') continue;
             try {
               const parsed = JSON.parse(json);
-              const text = parsed?.candidates?.[0]?.content?.parts?.[0]?.text;
+              const text = parsed?.choices?.[0]?.delta?.content;
               if (text) controller.enqueue(encoder.encode(text));
             } catch {
               // skip malformed chunks
@@ -100,5 +104,3 @@ export default async function handler(req) {
     },
   });
 }
-
-export const config = { runtime: 'edge' };
