@@ -214,7 +214,7 @@
         {/if}
       </button>
     </div>
-    <p class="chat-footer">Powered by Claude · Answers may be imperfect</p>
+    <p class="chat-footer">Powered by Gemini · Answers may be imperfect</p>
   </div>
 {/if}
 

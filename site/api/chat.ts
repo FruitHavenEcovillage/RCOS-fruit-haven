@@ -1,8 +1,7 @@
-import Anthropic from '@anthropic-ai/sdk';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
 export const config = { runtime: 'nodejs' };
 
-// Vercel serverless function — runs server-side, API key never reaches the browser.
 export default async function handler(req: Request): Promise<Response> {
   if (req.method !== 'POST') {
     return new Response(JSON.stringify({ error: 'Method not allowed' }), {
@@ -11,7 +10,7 @@ export default async function handler(req: Request): Promise<Response> {
     });
   }
 
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = process.env.GOOGLE_AI_API_KEY;
   if (!apiKey) {
     return new Response(JSON.stringify({ error: 'API key not configured' }), {
       status: 500,
@@ -19,7 +18,11 @@ export default async function handler(req: Request): Promise<Response> {
     });
   }
 
-  let body: { message: string; history?: { role: 'user' | 'assistant'; content: string }[]; context?: string };
+  let body: {
+    message: string;
+    history?: { role: 'user' | 'assistant'; content: string }[];
+    context?: string;
+  };
   try {
     body = await req.json();
   } catch {
@@ -36,36 +39,32 @@ export default async function handler(req: Request): Promise<Response> {
     });
   }
 
-  const systemPrompt = `You are a helpful assistant for the Fruit Haven community's RCOS governance documentation site. You help community members and visitors understand the organization's structure, governance layers, proposals, bylaws, and other documentation.
+  const systemInstruction = `You are a helpful assistant for the Fruit Haven community's RCOS governance documentation site. You help community members and visitors understand the organization's structure, governance layers, proposals, bylaws, and other documentation.
 
-${body.context ? `You have access to the following Fruit Haven RCOS documentation:\n\n---\n${body.context}\n---\n\nWhen referencing a document, format links as [Title](URL) so users can click through.` : 'Answer questions about Fruit Haven\'s governance, community structure, and RCOS documentation as best you can.'}`;
+${body.context ? `You have access to the following Fruit Haven RCOS documentation:\n\n---\n${body.context}\n---\n\nWhen referencing a document, format links as [Title](URL) so users can click through.` : "Answer questions about Fruit Haven's governance, community structure, and RCOS documentation as best you can."}`;
 
-  const client = new Anthropic({ apiKey });
-
-  const messages: Anthropic.MessageParam[] = [
-    ...(body.history ?? []),
-    { role: 'user', content: body.message },
-  ];
-
-  const stream = await client.messages.stream({
-    model: 'claude-opus-4-8',
-    max_tokens: 1024,
-    thinking: { type: 'adaptive' },
-    system: systemPrompt,
-    messages,
+  const genAI = new GoogleGenerativeAI(apiKey);
+  const model = genAI.getGenerativeModel({
+    model: 'gemini-2.0-flash',
+    systemInstruction,
   });
+
+  // Convert history from our format to Gemini's format
+  const history = (body.history ?? []).map((m) => ({
+    role: m.role === 'assistant' ? 'model' : 'user',
+    parts: [{ text: m.content }],
+  }));
+
+  const chat = model.startChat({ history });
+  const result = await chat.sendMessageStream(body.message);
 
   const encoder = new TextEncoder();
   const readable = new ReadableStream({
     async start(controller) {
       try {
-        for await (const chunk of stream) {
-          if (
-            chunk.type === 'content_block_delta' &&
-            chunk.delta.type === 'text_delta'
-          ) {
-            controller.enqueue(encoder.encode(chunk.delta.text));
-          }
+        for await (const chunk of result.stream) {
+          const text = chunk.text();
+          if (text) controller.enqueue(encoder.encode(text));
         }
       } finally {
         controller.close();
