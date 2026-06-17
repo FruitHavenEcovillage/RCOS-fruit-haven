@@ -65,7 +65,7 @@ A vote that passes but is never written down is the same as no vote at all — a
 When a proposal passes:
 1. Meetings Organizer/Facilitator adds the proposal file to [proposals/passed/](/proposals/passed) within 7 days
 2. Affected artifacts in `layers/` are updated within 7 days
-3. [layers/6-evolution/02-version-history.md](/layers/6-evolution/02-version-history) is updated to record the change
+3. [layers/6-evolution/02-version-history](/layers/6-evolution/02-version-history) is updated to record the change
 4. Status fields in affected artifacts are updated from *Stub — not yet adopted* to *Active — adopted <YYYY-MM-DD>*
 
 ## Rejection
@@ -145,7 +145,7 @@ Any Full Member may propose a time-bounded experiment via Strategic decision. Ev
 - Rollback conditions and rollback process
 - Authorized decision path for starting, extending, modifying, or terminating the experiment
 
-Experiments expire automatically at the end of their defined duration unless explicitly renewed via a new proposal. Renewal requires a new Strategic vote. Results and learnings are recorded in the Learning Log ([layers/6-evolution/03-learning-log.md](/layers/6-evolution/03-learning-log)).
+Experiments expire automatically at the end of their defined duration unless explicitly renewed via a new proposal. Renewal requires a new Strategic vote. Results and learnings are recorded in the Learning Log ([layers/6-evolution/03-learning-log](/layers/6-evolution/03-learning-log)).
 
 All artifacts affected by an experiment MUST be explicitly labeled as experimental for the duration.
 

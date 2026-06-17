@@ -62,4 +62,4 @@ The primary purpose may only be changed through a Constitutional decision as def
 - **Adopted:** 2019-05-17
 - **Decision type:** Constitutional
 - **Version:** v1.0.0
-- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)
+- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws](/proposals/passed/2019-05-17_fh1-bylaws)

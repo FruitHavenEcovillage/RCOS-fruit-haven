@@ -80,4 +80,4 @@ An unstated boundary is no boundary at all. Explicit out-of-scope items protect 
 - **Adopted:** 2019-05-17
 - **Decision type:** Constitutional
 - **Version:** v1.0.0
-- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws), [proposals/passed/2019-05-17_federation-sovereignty.md](/proposals/passed/2019-05-17_federation-sovereignty)
+- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws](/proposals/passed/2019-05-17_fh1-bylaws), [proposals/passed/2019-05-17_federation-sovereignty](/proposals/passed/2019-05-17_federation-sovereignty)

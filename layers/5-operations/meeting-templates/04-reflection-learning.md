@@ -47,5 +47,5 @@ If both are discussed together, failures dominate and successes get underweighte
 - **Facilitator:**
 - **Attendees:**
 - **Notes:** [Summary posted to Telegram after the meeting]
-- **Learning Log entries triggered:** [List or "none" — Meetings Organizer/Facilitator updates [layers/6-evolution/03-learning-log.md](/layers/6-evolution/03-learning-log)]
+- **Learning Log entries triggered:** [List or "none" — Meetings Organizer/Facilitator updates [layers/6-evolution/03-learning-log](/layers/6-evolution/03-learning-log)]
 - **Future proposals added:** [Links or titles, or "none"]

@@ -74,12 +74,12 @@ Constraints on the ethical principles, dietary practices, and lifestyle guidelin
 
 | ID | Constraint | Enforcement mechanism | Added | Decision record |
 |---|---|---|---|---|
-| IC-009 | **Veganism:** No animal-derived foods may be brought onto the property, consumed, or harmed by anyone present. | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws) |
-| IC-010 | **Raw Foods:** The aspiration is to consume primarily raw foods. Long-term/indefinite consumption of cooked foods is not permitted. | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws) |
-| IC-011 | **Animals:** The keeping of domesticated farm animals and pets is prohibited. | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws) |
-| IC-012 | **Hygiene:** All residents must maintain general cleanliness of their body, clothing, and living quarters to prevent contagious issues (e.g. staph, scabies). | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws) |
-| IC-013 | **Substance Abuse:** Dependency or regular use of alcohol, marijuana, or mind-altering substances is prohibited. (Occasional/responsible plant-based spiritual use permitted). | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws) |
-| IC-014 | **Nudism:** Permitted, but must respect locals/neighbors by refraining from nudity when in sight of them. | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws) |
+| IC-009 | **Veganism:** No animal-derived foods may be brought onto the property, consumed, or harmed by anyone present. | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws](/proposals/passed/2019-05-17_fh1-bylaws) |
+| IC-010 | **Raw Foods:** The aspiration is to consume primarily raw foods. Long-term/indefinite consumption of cooked foods is not permitted. | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws](/proposals/passed/2019-05-17_fh1-bylaws) |
+| IC-011 | **Animals:** The keeping of domesticated farm animals and pets is prohibited. | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws](/proposals/passed/2019-05-17_fh1-bylaws) |
+| IC-012 | **Hygiene:** All residents must maintain general cleanliness of their body, clothing, and living quarters to prevent contagious issues (e.g. staph, scabies). | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws](/proposals/passed/2019-05-17_fh1-bylaws) |
+| IC-013 | **Substance Abuse:** Dependency or regular use of alcohol, marijuana, or mind-altering substances is prohibited. (Occasional/responsible plant-based spiritual use permitted). | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws](/proposals/passed/2019-05-17_fh1-bylaws) |
+| IC-014 | **Nudism:** Permitted, but must respect locals/neighbors by refraining from nudity when in sight of them. | Accountability Protocol (Layer 4) | 2019-05-17 | [proposals/passed/2019-05-17_fh1-bylaws](/proposals/passed/2019-05-17_fh1-bylaws) |
 
 ---
 
@@ -124,4 +124,4 @@ Identity constraints may only be added, modified, or removed through a Constitut
 - **Adopted:** 2019-05-17
 - **Decision type:** Constitutional
 - **Version:** v1.0.0
-- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)
+- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws](/proposals/passed/2019-05-17_fh1-bylaws)

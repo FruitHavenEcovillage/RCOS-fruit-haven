@@ -58,4 +58,4 @@ An area of the primary forest area on the property will be considered "Nature Re
 - **Adopted:** 2019-05-17
 - **Decision type:** Strategic
 - **Version:** v1.0.0
-- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws.md](/proposals/passed/2019-05-17_fh1-bylaws)
+- **Decision record:** [proposals/passed/2019-05-17_fh1-bylaws](/proposals/passed/2019-05-17_fh1-bylaws)
