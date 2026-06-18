@@ -183,7 +183,23 @@ When updating:
 
 ---
 
-## 6. Do Not Do
+## 6. Linking Conventions
+
+When writing markdown links to internal layer artifacts or proposal files, **never include the `.md` extension** in either the link text or the href. Use the path without extension in both places.
+
+**Correct:**
+```markdown
+[layers/1-membership/04-membership-state-registry](/layers/1-membership/04-membership-state-registry)
+```
+
+**Incorrect:**
+```markdown
+[layers/1-membership/04-membership-state-registry.md](/layers/1-membership/04-membership-state-registry)
+```
+
+---
+
+## 7. Do Not Do
 
 - Do not mark an artifact as Present based on intent or a draft
 - Do not skip version history when merging a passed proposal
