@@ -20,7 +20,7 @@ Conflict resolution only works if parties can trust the process. Naming the priv
 - **Required participants:** Parties to the conflict; assigned Facilitator (per Conflict Resolution Ladder selection rules)
 - **Optional participants:** A support person, by mutual written consent of all parties
 - **Cadence:** As needed; triggered by conflict intake, not scheduled
-- **Duration limit:** No fixed limit; typically 60–90 minutes; Facilitator may extend as needed
+- **Duration limit:** No fixed limit; Facilitator may extend as needed
 - **Facilitation:** Selected per Conflict Resolution Ladder (Layer 4) facilitator selection rules — not chosen by the parties themselves
 
 > **Privacy note:** Records from this meeting type are subject to the privacy and information access boundaries defined in the Conflict Resolution Ladder (Layer 4). They are not published to the general member record by default. Steps 2–4 are fully confidential — only parties and Facilitator may access records.
@@ -33,13 +33,13 @@ Conflict resolution only works if parties can trust the process. Naming the priv
 Jumping straight to solutions is how mediations fail — parties haven't felt heard, haven't checked understanding, and haven't separated needs from positions. The staged flow (perspectives, reflection, needs, options, decision) is what gives the conversation a fair chance of producing durable repair rather than imposed compromise.
 :::
 
-1. **Opening and ground rules** (10 min) — Facilitator confirms: consent to the process, confidentiality boundaries, anti-retaliation protections, and that either party may pause the session at any time
-2. **Each party shares their perspective** (15 min each, uninterrupted) — Facilitator holds the time boundary; no interruptions or rebuttals during this phase
-3. **Shared understanding check** (10 min) — Facilitator reflects back what was heard; parties confirm or correct; Facilitator identifies areas of common ground
-4. **Needs and requests** (10 min) — each party states what they need for resolution; no commitment required yet
-5. **Repair or agreement options** (20 min) — generate options together without committing; Facilitator guides toward workable paths
-6. **Decision or next step** (10 min) — agree on a repair plan, note escalation to the next ladder step, or adjourn with a clear timeline for the next session
-7. **Documentation** (5 min) — Facilitator records the outcome per the privacy rules in the Conflict Resolution Ladder; parties confirm the record is accurate
+1. **Opening and ground rules** — Facilitator confirms: consent to the process, confidentiality boundaries, anti-retaliation protections, and that either party may pause the session at any time
+2. **Each party shares their perspective** (uninterrupted) — Facilitator holds the time boundary; no interruptions or rebuttals during this phase
+3. **Shared understanding check** — Facilitator reflects back what was heard; parties confirm or correct; Facilitator identifies areas of common ground
+4. **Needs and requests** — each party states what they need for resolution; no commitment required yet
+5. **Repair or agreement options** — generate options together without committing; Facilitator guides toward workable paths
+6. **Decision or next step** — agree on a repair plan, note escalation to the next ladder step, or adjourn with a clear timeline for the next session
+7. **Documentation** — Facilitator records the outcome per the privacy rules in the Conflict Resolution Ladder; parties confirm the record is accurate
 
 ---
 

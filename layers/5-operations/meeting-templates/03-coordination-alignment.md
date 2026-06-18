@@ -19,8 +19,8 @@ Without a declared scope, a coordination meeting becomes a second Operations mee
 - **Decision scope:** Operational decisions only — cannot make Strategic or Constitutional decisions
 - **Required participants:** Role holders with active initiatives
 - **Optional participants:** All Full Members welcome
-- **Cadence:** Monthly or as needed when cross-role coordination is required
-- **Duration limit:** 60 minutes maximum
+- **Cadence:** _<to be defined>_
+- **Duration limit:** _<to be defined>_
 - **Facilitation:** Facilitator role holder; may be facilitated by any role holder if the Facilitator is unavailable
 
 ---
@@ -31,10 +31,10 @@ Without a declared scope, a coordination meeting becomes a second Operations mee
 Most cross-role friction shows up as either a missing update or a blocker nobody named. Front-loading both, before discussing next steps, makes the real coordination problems visible instead of leaving them to emerge indirectly.
 :::
 
-1. **Check-in** (5 min) — one word or sentence from each participant
-2. **Initiative status updates** (30 min) — each role holder briefly covers: what's in progress, what's completed since last time, what's needed from other roles
-3. **Blockers and dependencies** (15 min) — flag anything stalling progress across role boundaries; agree on owners and timelines for resolution
-4. **Next steps** (10 min) — confirm priorities and next actions with explicit owners
+1. **Check-in** — one word or sentence from each participant
+2. **Initiative status updates** — each role holder briefly covers: what's in progress, what's completed since last time, what's needed from other roles
+3. **Blockers and dependencies** — flag anything stalling progress across role boundaries; agree on owners and timelines for resolution
+4. **Next steps** — confirm priorities and next actions with explicit owners
 
 ---
 
@@ -43,7 +43,7 @@ Most cross-role friction shows up as either a missing update or a blocker nobody
 - **Date:**
 - **Facilitator:**
 - **Attendees:**
-- **Notes:** [Summary posted to Telegram after the meeting]
+- **Notes:**
 
 ---
 
