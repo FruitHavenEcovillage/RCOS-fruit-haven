@@ -24,7 +24,7 @@ To resolve existing ambiguity between ownership and membership, and to acknowled
 
 ## Affected Layers and Artifacts
 
-- Layer 1 — [layers/1-membership/04-membership-state-registry.md](/layers/1-membership/04-membership-state-registry)
+- Layer 1 — [layers/1-membership/04-membership-state-registry](/layers/1-membership/04-membership-state-registry)
 
 ## Change Type
 
