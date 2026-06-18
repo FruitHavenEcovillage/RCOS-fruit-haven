@@ -189,25 +189,25 @@
     </li>
 
     <li>
-      <button
-        type="button"
-        class="nav-link nav-group"
-        aria-expanded={layersOpen}
-        onclick={() => (layersOpen = !layersOpen)}
-      >
-        <span>RCOS Artifacts</span>
-        <span class="chevron" class:open={layersOpen}>▸</span>
-      </button>
+      <div class="layer-row">
+        <a
+          href="/layers"
+          class="nav-link proposals-link"
+          class:active={pathname === "/layers"}
+          onclick={onLinkClick}
+        >RCOS Artifacts</a>
+        <button
+          type="button"
+          class="layer-toggle"
+          aria-label={layersOpen ? "Hide RCOS Artifacts" : "Show RCOS Artifacts"}
+          aria-expanded={layersOpen}
+          onclick={() => (layersOpen = !layersOpen)}
+        >
+          <span class="chevron layer-chevron" class:open={layersOpen}>▸</span>
+        </button>
+      </div>
       {#if layersOpen}
         <ul class="nav-sublist">
-          <li>
-            <a
-              href="/layers"
-              class="nav-sublink"
-              class:active={pathname === "/layers"}
-              onclick={onLinkClick}>Overview</a
-            >
-          </li>
           {#each layerMeta as layer (layer.slug)}
             <li>
               <div class="layer-row">
