@@ -19,8 +19,8 @@ If a meeting can both discuss and decide, whoever is in the room that day gets t
 - **Decision scope:** Deliberation only — the binding decision is made via Community Meeting vote per the Decision Matrix; no governance decisions are made in the meeting itself
 - **Required participants:** All Full Members invited; proposer must be present
 - **Optional participants:** Applicants and Trial Members may observe at the Facilitator's discretion
-- **Cadence:** As needed during deliberation periods; may be held as part of the weekly Operations meeting or as a standalone session
-- **Duration limit:** 60 minutes maximum
+- **Cadence:** As needed during deliberation periods
+- **Duration limit:** _<to be defined>_
 - **Facilitation:** Facilitator role holder
 
 ---
@@ -31,11 +31,11 @@ If a meeting can both discuss and decide, whoever is in the room that day gets t
 Mixing factual questions with advocacy is how discussions go sideways — people argue past each other before they've even agreed on what the proposal says. Splitting clarification from deliberation keeps the conversation grounded in the proposal itself.
 :::
 
-1. **Check-in** (5 min) — one word or sentence from each participant
-2. **Proposal summary** (10 min) — proposer presents the proposal: what it changes, why, and what the alternatives considered were
-3. **Clarifying questions** (15 min) — factual questions only; no advocacy yet; Facilitator manages the queue
-4. **Open deliberation** (25 min) — members share perspectives, concerns, and support; Facilitator ensures all voices are heard
-5. **Summary of positions and next steps** (5 min) — Facilitator summarises key points of agreement and disagreement; confirms Community Meeting vote timeline
+1. **Check-in** — one word or sentence from each participant
+2. **Proposal summary** — proposer presents the proposal: what it changes, why, and what the alternatives considered were
+3. **Clarifying questions** — factual questions only; no advocacy yet; Facilitator manages the queue
+4. **Open deliberation** — members share perspectives, concerns, and support; Facilitator ensures all voices are heard
+5. **Summary of positions and next steps** — Facilitator summarises key points of agreement and disagreement; confirms Community Meeting vote timeline
 
 ---
 
@@ -44,7 +44,7 @@ Mixing factual questions with advocacy is how discussions go sideways — people
 - **Date:**
 - **Facilitator:**
 - **Attendees:**
-- **Notes:** [Summary posted to Telegram and forum after the meeting, linked to the proposal in Fruit Haven]
+- **Notes:**
 
 ---
 
@@ -53,8 +53,7 @@ Mixing factual questions with advocacy is how discussions go sideways — people
 - **Proposal reference:** [Link to proposal file in `proposals/`]
 - **Decision type:** Strategic / Constitutional
 - **Authority:** Full Members (collective)
-- **Mechanism / threshold:** Community Meeting — Unanimity minus one, with 2-week absentee review
+- **Mechanism / threshold:** Community Meeting — per Decision Matrix
 - **Outcome:** Passed / Rejected / Tabled
 - **Vote count (if applicable):**
 - **Effective date:**
-- **Proposal link (Fruit Haven):**

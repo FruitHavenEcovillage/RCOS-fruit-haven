@@ -15,15 +15,7 @@
 A change that arrives as a vague idea in chat cannot be evaluated, challenged, or rolled back later. Forcing every proposal through the same minimum shape — affected artifacts, rationale, risks, rollback — turns an opinion into a reviewable artifact and makes it impossible to slip a rule change past the community by accident.
 :::
 
-Any Full Member may propose a change to any RCOS artifact. Proposals are submitted and voted on at a Community Meeting (per the Governance Protocol, Layer 2) — not as repository PRs. After the vote concludes, the Meetings Organizer/Facilitator adds the proposal file to the repository. Every proposal must include:
-
-- Summary of the change
-- Affected layers and artifacts (with links)
-- Decision type (Operational / Strategic / Constitutional)
-- Rationale
-- Risks and mitigations
-- Rollback plan
-- Proposed effective date
+_<Who may propose, how proposals are submitted, and what every proposal must include — to be defined.>_
 
 ## How Proposals Are Classified
 
@@ -34,9 +26,9 @@ Any Full Member may propose a change to any RCOS artifact. Proposals are submitt
 Not every change deserves the same friction. Typo fixes should not need a supermajority; constitutional shifts should not pass quietly. Mapping proposals to decision types — and defaulting unclear cases upward — makes the cost of a change proportional to its blast radius and protects Layer 0 from being eroded through small moves.
 :::
 
-- **Operational:** wording corrections, formatting, and minor content updates to artifacts — no vote required; executed by the relevant role holder within delegated limits per the Role Registry (Layer 5)
+- **Operational:** wording corrections, formatting, and minor content updates to artifacts — no vote required
 - **Strategic:** changes to Layer 1–5 content that affect member rights, processes, or structures
-- **Constitutional:** changes to Layer 0 (purpose, scope, invariants, or identity constraints) or to the governance system itself (Layer 2)
+- **Constitutional:** changes to Layer 0 or to the governance system itself (Layer 2)
 
 > If classification is unclear, it defaults to the higher-impact type.
 
@@ -49,9 +41,7 @@ Not every change deserves the same friction. Typo fixes should not need a superm
 Without a floor on deliberation time, any change can be rushed through on a slow day when few members are paying attention. Mandatory minimums — longer for higher-impact changes — guarantee that members who are travelling, ill, or simply busy still get a real chance to read, object, or show up.
 :::
 
-- **Operational:** no deliberation required
-- **Strategic:** minimum 5-day deliberation period; deliberation happens in Telegram or forum; a Governance meeting may be called per the meeting template (Layer 5)
-- **Constitutional:** minimum 15-day deliberation period; deliberation in Telegram and forum; a Governance meeting is strongly recommended; 30-day ratification period after the vote passes
+_<Minimum deliberation periods per decision type — to be defined.>_
 
 ## Adoption and Publication
 
@@ -62,11 +52,7 @@ Without a floor on deliberation time, any change can be rushed through on a slow
 A vote that passes but is never written down is the same as no vote at all — and worse, it creates a gap where whoever remembers the outcome gets to define it. Tight, ordered publication steps close that gap and make "what was adopted" a matter of record, not of memory.
 :::
 
-When a proposal passes:
-1. Meetings Organizer/Facilitator adds the proposal file to [proposals/passed/](/proposals/passed) within 7 days
-2. Affected artifacts in `layers/` are updated within 7 days
-3. [layers/6-evolution/02-version-history](/layers/6-evolution/02-version-history) is updated to record the change
-4. Status fields in affected artifacts are updated from *Stub — not yet adopted* to *Active — adopted <YYYY-MM-DD>*
+_<Steps to file passed proposals, update affected artifacts, and record in version history — to be defined.>_
 
 ## Rejection
 
@@ -77,10 +63,7 @@ When a proposal passes:
 Rejected ideas carry as much signal as accepted ones — they show what the community considered and declined. Keeping rejections filed and accessible prevents the same proposal from reappearing under a new name every six months and gives future members a view of the paths not taken.
 :::
 
-When a proposal is rejected:
-1. Meetings Organizer/Facilitator adds the proposal file to [proposals/rejected/](/proposals/rejected) within 7 days
-2. No artifact changes are made
-3. The re-vote mechanism applies if new information emerges (per the Decision Matrix, Layer 2)
+_<Steps to file rejected proposals — to be defined.>_
 
 ## Transition and Migration
 
@@ -91,11 +74,7 @@ When a proposal is rejected:
 If new rules could silently rewrite existing agreements, membership would be meaningless — what you signed up for could be changed out from under you. Explicit transition rules guarantee that rights are not reduced retroactively and that people operating under the old rules are given time and notice before the ground shifts.
 :::
 
-When a rule change affects existing roles, agreements, or records:
-- Existing role holders are notified of any changes to their scope before the change takes effect
-- Existing members' rights may not be reduced without their consent or a Constitutional vote
-- Records that predate the change are not retroactively altered unless explicitly part of the proposal
-- A transition period may be defined in the proposal itself
+_<Notification, retroactive protection, and transition period rules — to be defined.>_
 
 ## Rollback
 
@@ -106,7 +85,7 @@ When a rule change affects existing roles, agreements, or records:
 A change that cannot be undone through the same path that created it is a trap. Requiring rollback to use the original decision type keeps the door open for correction without letting a single member quietly reverse a community-level decision by calling it a "fix."
 :::
 
-Any passed decision can be reversed through the same process as the original decision. Any Full Member may trigger a re-vote by submitting a written reasoned objection that was not considered during the original deliberation (per the Decision Matrix, Layer 2). Rollback uses the same decision type as the original decision.
+Any passed decision can be reversed through the same process as the original decision. Rollback uses the same decision type as the original decision.
 
 ## Emergency Changes
 
@@ -117,16 +96,7 @@ Any passed decision can be reversed through the same process as the original dec
 Some harms unfold faster than a vote can be convened. A narrow, well-guarded emergency path lets the community respond to genuine safety or platform failures without handing anyone a general-purpose override. The mandatory report, review, and ratification-or-rollback cycle is what keeps emergency powers from becoming ordinary powers.
 :::
 
-An emergency operational change may be made by the Meetings Organizer/Facilitator only if all of the following conditions are met:
-
-1. Immediate action is required to prevent safety harm or platform failure
-2. A Full Member vote cannot be convened in time
-3. The change does not override a Layer 0 invariant
-
-Emergency changes must be:
-- Reported to all Full Members within 48 hours
-- Reviewed at the next community meeting
-- Ratified via the appropriate decision type within 30 days, or automatically rolled back
+_<Conditions, authorized body, reporting requirements, and ratification-or-rollback cycle for emergency changes — to be defined.>_
 
 ## Experiments
 
@@ -137,25 +107,11 @@ Emergency changes must be:
 The community needs a way to try new things without having to permanently adopt them to test them. Experiments create that space — but only if they are time-bounded, labeled, and auto-expiring. Without those guardrails, an "experiment" becomes the fastest way to install a permanent rule with no real deliberation.
 :::
 
-Any Full Member may propose a time-bounded experiment via Strategic decision. Every experiment must define:
-- Scope (what is being tried and what it affects)
-- Duration (maximum 90 days)
-- Review checkpoints within the experiment duration (at minimum one midpoint check-in)
-- Success and failure criteria
-- Rollback conditions and rollback process
-- Authorized decision path for starting, extending, modifying, or terminating the experiment
-
-Experiments expire automatically at the end of their defined duration unless explicitly renewed via a new proposal. Renewal requires a new Strategic vote. Results and learnings are recorded in the Learning Log ([layers/6-evolution/03-learning-log](/layers/6-evolution/03-learning-log)).
-
-All artifacts affected by an experiment MUST be explicitly labeled as experimental for the duration.
-
-**Safety suspension:** If an experiment introduces a credible safety risk, coercion, or sustained harm, the Meetings Organizer/Facilitator may suspend the experiment immediately as an emergency protective action. The suspension must be reported to all Full Members within 48 hours and reviewed at the next community meeting. Post-hoc ratification or rollback follows the emergency change process above.
+_<What an experiment must define, maximum duration, renewal process, and safety suspension rule — to be defined.>_
 
 ## Decentralization Review
 
-> Source: [FH1 Community Bylaws](/proposals/passed/2019-05-17_fh1-bylaws) Art. 5 (Decentralization).
-
-The community shall periodically review points of centralization within its structures and determine how to decentralize, if deemed necessary or beneficial.
+_<Periodic review cadence for identifying and addressing points of centralization — to be defined.>_
 
 ---
 
