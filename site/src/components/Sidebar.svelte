@@ -261,15 +261,23 @@
     </li>
 
     <li>
-      <button
-        type="button"
-        class="nav-link nav-group"
-        aria-expanded={proposalsOpen}
-        onclick={() => (proposalsOpen = !proposalsOpen)}
-      >
-        <span>Proposals</span>
-        <span class="chevron" class:open={proposalsOpen}>▸</span>
-      </button>
+      <div class="layer-row">
+        <a
+          href="/proposals"
+          class="nav-link proposals-link"
+          class:active={isActive("/proposals")}
+          onclick={onLinkClick}
+        >Proposals</a>
+        <button
+          type="button"
+          class="layer-toggle"
+          aria-label={proposalsOpen ? "Hide proposal categories" : "Show proposal categories"}
+          aria-expanded={proposalsOpen}
+          onclick={() => (proposalsOpen = !proposalsOpen)}
+        >
+          <span class="chevron layer-chevron" class:open={proposalsOpen}>▸</span>
+        </button>
+      </div>
       {#if proposalsOpen}
         <ul class="nav-sublist">
           <li>
@@ -494,7 +502,8 @@
     gap: 0.15rem;
   }
 
-  .layer-link {
+  .layer-link,
+  .proposals-link {
     flex: 1;
     min-width: 0;
   }

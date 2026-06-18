@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const categories = [
+  {
+    title: 'Passed',
+    href: '/proposals/passed',
+    description: 'Proposals formally adopted by the community through the governance process. These decisions are binding and reflected in community agreements.',
+  },
+  {
+    title: 'Rejected',
+    href: '/proposals/rejected',
+    description: 'Proposals that were considered and declined. Kept as a record of community deliberation and the reasoning behind each decision.',
+  },
+  {
+    title: 'Future',
+    href: '/proposals/future',
+    description: 'Ideas and draft proposals deferred for future governance cycles. These are not yet active decisions but are tracked for upcoming consideration.',
+  },
+];
+---
+
+<BaseLayout title="Proposals" description="Community proposals — passed decisions, rejected motions, and ideas queued for future governance.">
+  <article class="prose">
+    <p class="eyebrow">Governance</p>
+    <h1>Proposals</h1>
+    <p class="lede">Formal proposals made to the Fruit Haven community, organized by outcome.</p>
+  </article>
+
+  <ul class="card-list">
+    {categories.map((cat) => (
+      <li>
+        <a href={cat.href} class="card">
+          <h3>{cat.title}</h3>
+          <p class="description">{cat.description}</p>
+          <span class="arrow">→</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
+
+<style>
+  .eyebrow {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+    margin: 0 0 0.25rem;
+  }
+  .lede {
+    font-size: 1.05rem;
+    color: var(--color-text-muted);
+  }
+  .card-list {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.85rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.15rem 1.15rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease, transform 150ms ease;
+    height: 100%;
+  }
+  .card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+  }
+  .card h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .description {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--color-text-muted);
+    flex: 1;
+  }
+  .arrow {
+    color: var(--color-primary);
+    font-size: 1rem;
+    align-self: flex-end;
+    margin-top: 0.25rem;
+  }
+  @media (max-width: 560px) {
+    .card-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
