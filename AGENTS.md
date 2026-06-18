@@ -197,6 +197,10 @@ When writing markdown links to internal layer artifacts or proposal files, **nev
 [layers/1-membership/04-membership-state-registry.md](/layers/1-membership/04-membership-state-registry)
 ```
 
+### Source document filenames
+
+All files added to `site/public/source-documents/` must use underscores instead of spaces (e.g. `FH_Membership_Transition_Proposal.pdf`, not `FH Membership transition Proposal .pdf`). This avoids URL encoding issues in links.
+
 ---
 
 ## 7. Do Not Do
