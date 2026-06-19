@@ -1,0 +1,77 @@
+---
+import { getSession } from 'auth-astro/server';
+import { SignIn, SignOut } from 'auth-astro/components';
+import Editor from '../../components/Editor.svelte';
+
+const session = await getSession(Astro.request);
+const { slug } = Astro.params;
+// By default we can test editing the README, or any slug mapped to site/src/pages
+const path = slug ? `site/src/pages/${slug}` : 'README.md';
+
+let initialContent = '';
+if (session && session.accessToken) {
+  try {
+    const owner = 'FruitHavenEcovillage';
+    const repo = 'RCOS-fruit-haven'; 
+    const branch = 'feature/wysiwyg-editor';
+    const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`;
+    
+    const res = await fetch(fileUrl, {
+      headers: {
+        Authorization: `Bearer ${session.accessToken}`,
+        Accept: 'application/vnd.github.v3+json',
+      }
+    });
+
+    if (res.ok) {
+      const data = await res.json();
+      initialContent = decodeURIComponent(escape(atob(data.content)));
+    } else {
+      console.error(`File ${path} not found or inaccessible`);
+      initialContent = `# New Document\n\nStart typing here...`;
+    }
+  } catch (err) {
+    console.error("Failed to load initial content", err);
+  }
+}
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WYSIWYG Editor - Fruit Haven</title>
+  </head>
+  <body class="bg-gray-50 min-h-screen text-gray-900 font-sans">
+    <main class="container mx-auto px-4 py-8 max-w-5xl">
+      <header class="flex justify-between items-center mb-8 border-b border-gray-200 pb-4">
+        <h1 class="text-3xl font-bold">WYSIWYG Editor</h1>
+        <div>
+          {session ? (
+            <div class="flex items-center gap-4">
+              <span class="text-sm text-gray-600">Logged in as <strong>{session.user?.name || session.user?.email}</strong></span>
+              <SignOut class="text-sm bg-white border border-gray-300 px-3 py-1.5 rounded hover:bg-gray-50 shadow-sm transition" />
+            </div>
+          ) : (
+            <SignIn provider="github" class="bg-gray-900 text-white px-5 py-2.5 rounded-md shadow hover:bg-black transition font-medium">Login with GitHub</SignIn>
+          )}
+        </div>
+      </header>
+
+      {session ? (
+        <div>
+          <div class="mb-6 flex justify-between items-center">
+            <p class="text-gray-600">Editing file: <code class="bg-gray-200 px-2 py-1 rounded text-sm text-gray-800">{path}</code></p>
+          </div>
+          <Editor client:only="svelte" content={initialContent} path={path} />
+        </div>
+      ) : (
+        <div class="text-center py-32 bg-white rounded-lg shadow-sm border border-gray-200">
+          <h2 class="text-2xl font-semibold mb-4 text-gray-800">Authentication Required</h2>
+          <p class="text-gray-600 mb-8 max-w-md mx-auto">You must be logged in with a GitHub account that has write access to the repository to edit content.</p>
+          <SignIn provider="github" class="bg-gray-900 text-white px-8 py-3 rounded-md shadow-md hover:bg-black transition text-lg font-medium">Login with GitHub</SignIn>
+        </div>
+      )}
+    </main>
+  </body>
+</html>
