@@ -1,5 +1,5 @@
 import { Auth } from '@auth/core';
-import authConfig from '../../../../auth.config.mjs';
+import authConfig from '../../../auth.config.mjs';
 
 export const prerender = false;
 
