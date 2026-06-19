@@ -4,14 +4,14 @@ import { defineConfig } from 'auth-astro';
 export default defineConfig({
   providers: [
     GitHub({
-      clientId: import.meta.env.GITHUB_CLIENT_ID || process.env.GITHUB_CLIENT_ID,
-      clientSecret: import.meta.env.GITHUB_CLIENT_SECRET || process.env.GITHUB_CLIENT_SECRET,
+      clientId: process.env.GITHUB_CLIENT_ID,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET,
       authorization: {
         params: { scope: 'read:user user:email repo' }, // Require repo scope to commit edits
       },
     }),
   ],
-  secret: import.meta.env.AUTH_SECRET || process.env.AUTH_SECRET,
+  secret: process.env.AUTH_SECRET || "92e18825187c477b80112cd4f9ba8164",
   trustHost: true,
   callbacks: {
     async jwt({ token, account }) {
