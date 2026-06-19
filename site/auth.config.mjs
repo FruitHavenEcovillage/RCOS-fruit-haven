@@ -7,6 +7,7 @@ const authSecret =
   'fruit-haven-wysiwyg-editor-temporary-fallback-secret';
 
 export default defineConfig({
+  basePath: '/auth',
   providers: [
     GitHub({
       clientId: process.env.GITHUB_CLIENT_ID,
