@@ -13,6 +13,10 @@ const { slug } = Astro.params;
 const path = slug ? `site/src/pages/${slug}` : 'README.md';
 
 try {
+  // Force Auth.js to find the secret in the environment at runtime
+  process.env.AUTH_SECRET = process.env.AUTH_SECRET || "92e18825187c477b80112cd4f9ba8164";
+  process.env.AUTH_TRUST_HOST = "true";
+
   session = await getSession(Astro.request);
 
   if (session && session.accessToken) {

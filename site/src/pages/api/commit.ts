@@ -4,6 +4,10 @@ import { getSession } from 'auth-astro/server';
 export const prerender = false;
 
 export const POST: APIRoute = async ({ request }) => {
+  // Force Auth.js to find the secret in the environment at runtime
+  process.env.AUTH_SECRET = process.env.AUTH_SECRET || "92e18825187c477b80112cd4f9ba8164";
+  process.env.AUTH_TRUST_HOST = "true";
+
   const session = await getSession(request);
   if (!session || !session.accessToken) {
     return new Response(JSON.stringify({ error: 'Unauthorized. Please log in.' }), { status: 401 });
