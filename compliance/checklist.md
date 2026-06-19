@@ -1,4 +1,4 @@
-# Compliance Checklist Test
+# Compliance Checklist
 
 - **RCOS-Core version:** v0.1
 - **Last audited:**
