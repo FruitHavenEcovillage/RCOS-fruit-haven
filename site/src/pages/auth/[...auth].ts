@@ -1,19 +1,16 @@
-import { AstroAuth } from 'auth-astro/server';
+import { Auth } from '@auth/core';
+import authConfig from '../../../../auth.config.mjs';
 
 export const prerender = false;
 
-// Force environment variables into the runtime right before the handlers
-if (!process.env.AUTH_SECRET) {
-  process.env.AUTH_SECRET = "92e18825187c477b80112cd4f9ba8164";
-}
-process.env.AUTH_TRUST_HOST = "true";
+const handler = async ({ request }: any) => {
+  if (!process.env.AUTH_SECRET) {
+    process.env.AUTH_SECRET = "92e18825187c477b80112cd4f9ba8164";
+  }
+  process.env.AUTH_TRUST_HOST = "true";
 
-const handler = AstroAuth();
-
-export const GET = async (context: any) => {
-  return handler.GET(context);
+  return Auth(request, authConfig);
 };
 
-export const POST = async (context: any) => {
-  return handler.POST(context);
-};
+export const GET = handler;
+export const POST = handler;
