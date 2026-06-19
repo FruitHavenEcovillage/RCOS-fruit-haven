@@ -5,14 +5,17 @@ import Editor from '../../components/Editor.svelte';
 
 export const prerender = false;
 
-const session = await getSession(Astro.request);
+let session = null;
+let initialContent = '';
+let errorMessage = null;
+let errorStack = null;
 const { slug } = Astro.params;
-// By default we can test editing the README, or any slug mapped to site/src/pages
 const path = slug ? `site/src/pages/${slug}` : 'README.md';
 
-let initialContent = '';
-if (session && session.accessToken) {
-  try {
+try {
+  session = await getSession(Astro.request);
+
+  if (session && session.accessToken) {
     const owner = 'FruitHavenEcovillage';
     const repo = 'RCOS-fruit-haven'; 
     const branch = 'feature/wysiwyg-editor';
@@ -32,9 +35,11 @@ if (session && session.accessToken) {
       console.error(`File ${path} not found or inaccessible`);
       initialContent = `# New Document\n\nStart typing here...`;
     }
-  } catch (err) {
-    console.error("Failed to load initial content", err);
   }
+} catch (err: any) {
+  console.error("Failed to load page data:", err);
+  errorMessage = err.message || String(err);
+  errorStack = err.stack || '';
 }
 ---
 
@@ -60,14 +65,32 @@ if (session && session.accessToken) {
         </div>
       </header>
 
-      {session ? (
+      {errorMessage && (
+        <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-8 rounded shadow-sm">
+          <h2 class="text-xl font-semibold text-red-700 mb-2">Server Error 500</h2>
+          <p class="text-red-600 mb-4">{errorMessage}</p>
+          <details class="text-sm text-red-500 bg-red-100 p-2 rounded">
+            <summary class="cursor-pointer font-medium">View Stack Trace</summary>
+            <pre class="mt-2 whitespace-pre-wrap">{errorStack}</pre>
+          </details>
+          <div class="mt-4 text-gray-700">
+            <p><strong>Common causes:</strong></p>
+            <ul class="list-disc ml-5 mt-2">
+              <li>Missing environment variables in Vercel: <code>GITHUB_CLIENT_ID</code>, <code>GITHUB_CLIENT_SECRET</code>, <code>AUTH_SECRET</code>, <code>AUTH_TRUST_HOST=true</code>.</li>
+              <li>Invalid GitHub Access Token.</li>
+            </ul>
+          </div>
+        </div>
+      )}
+
+      {!errorMessage && session ? (
         <div>
           <div class="mb-6 flex justify-between items-center">
             <p class="text-gray-600">Editing file: <code class="bg-gray-200 px-2 py-1 rounded text-sm text-gray-800">{path}</code></p>
           </div>
           <Editor client:only="svelte" content={initialContent} path={path} />
         </div>
-      ) : (
+      ) : !errorMessage ? (
         <div class="text-center py-32 bg-white rounded-lg shadow-sm border border-gray-200">
           <h2 class="text-2xl font-semibold mb-4 text-gray-800">Authentication Required</h2>
           <p class="text-gray-600 mb-8 max-w-md mx-auto">You must be logged in with a GitHub account that has write access to the repository to edit content.</p>
