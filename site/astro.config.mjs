@@ -11,6 +11,7 @@ import auth from 'auth-astro';
 
 export default defineConfig({
   site: 'https://fruithaven.example',
+  output: 'server',
   adapter: vercel(),
   integrations: [svelte(), mdx(), auth()],
   markdown: {
