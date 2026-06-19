@@ -72,10 +72,7 @@ try {
               <a href={signOutUrl} class="text-sm bg-white border border-gray-300 px-3 py-1.5 rounded hover:bg-gray-50 shadow-sm transition no-underline text-gray-900">Logout</a>
             </div>
           ) : (
-            <form action="/auth/signin/github" method="POST">
-              <input type="hidden" name="callbackUrl" value={`/edit/${slug || ''}`} />
-              <button type="submit" class="bg-gray-900 text-white px-5 py-2.5 rounded-md shadow hover:bg-black transition font-medium">Login with GitHub</button>
-            </form>
+            <button id="header-login" class="bg-gray-900 text-white px-5 py-2.5 rounded-md shadow hover:bg-black transition font-medium">Login with GitHub</button>
           )}
         </div>
       </header>
@@ -109,12 +106,27 @@ try {
         <div class="text-center py-32 bg-white rounded-lg shadow-sm border border-gray-200">
           <h2 class="text-2xl font-semibold mb-4 text-gray-800">Authentication Required</h2>
           <p class="text-gray-600 mb-8 max-w-md mx-auto">You must be logged in with a GitHub account that has write access to the repository to edit content.</p>
-          <form action="/auth/signin/github" method="POST">
-            <input type="hidden" name="callbackUrl" value={`/edit/${slug || ''}`} />
-            <button type="submit" class="bg-gray-900 text-white px-8 py-3 rounded-md shadow-md hover:bg-black transition text-lg font-medium">Login with GitHub</button>
-          </form>
+          <button id="main-login" class="bg-gray-900 text-white px-8 py-3 rounded-md shadow-md hover:bg-black transition text-lg font-medium">Login with GitHub</button>
         </div>
       ) : null}
     </main>
+
+    <script>
+      const initLogin = async () => {
+        try {
+          const { signIn } = await import("auth-astro/client");
+          const handleLogin = () => signIn("github", { callbackUrl: window.location.pathname });
+          
+          const headerLogin = document.getElementById("header-login");
+          if (headerLogin) headerLogin.onclick = handleLogin;
+          
+          const mainLogin = document.getElementById("main-login");
+          if (mainLogin) mainLogin.onclick = handleLogin;
+        } catch (e) {
+          console.error("Failed to load auth client", e);
+        }
+      };
+      initLogin();
+    </script>
   </body>
 </html>
