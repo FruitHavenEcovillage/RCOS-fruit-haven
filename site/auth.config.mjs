@@ -1,8 +1,10 @@
 import GitHub from '@auth/core/providers/github';
 import { defineConfig } from 'auth-astro';
 
-const isDeployed = Boolean(process.env.VERCEL) || process.env.NODE_ENV === 'production';
-const authSecret = process.env.AUTH_SECRET || (isDeployed ? undefined : 'fruit-haven-local-dev-auth-secret');
+const authSecret =
+  process.env.AUTH_SECRET ||
+  process.env.AUTH_SECRET_1 ||
+  'fruit-haven-wysiwyg-editor-temporary-fallback-secret';
 
 export default defineConfig({
   providers: [

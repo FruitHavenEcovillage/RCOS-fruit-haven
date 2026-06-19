@@ -1,6 +1,5 @@
 ---
 import { getSession } from 'auth-astro/server';
-import { SignIn, SignOut } from 'auth-astro/components';
 import authConfig from '../../../auth.config.mjs';
 import Editor from '../../components/Editor.svelte';
 import { getAuthEnvStatus } from '../../lib/auth-env';
@@ -67,10 +66,10 @@ try {
           {session ? (
             <div class="flex items-center gap-4">
               <span class="text-sm text-gray-600">Logged in as <strong>{session.user?.name || session.user?.email}</strong></span>
-              <SignOut class="text-sm bg-white border border-gray-300 px-3 py-1.5 rounded hover:bg-gray-50 shadow-sm transition" />
+              <button id="signout" class="text-sm bg-white border border-gray-300 px-3 py-1.5 rounded hover:bg-gray-50 shadow-sm transition">Logout</button>
             </div>
           ) : (
-            <SignIn provider="github" class="bg-gray-900 text-white px-5 py-2.5 rounded-md shadow hover:bg-black transition font-medium">Login with GitHub</SignIn>
+            <button id="signin" class="bg-gray-900 text-white px-5 py-2.5 rounded-md shadow hover:bg-black transition font-medium">Login with GitHub</button>
           )}
         </div>
       </header>
@@ -104,9 +103,15 @@ try {
         <div class="text-center py-32 bg-white rounded-lg shadow-sm border border-gray-200">
           <h2 class="text-2xl font-semibold mb-4 text-gray-800">Authentication Required</h2>
           <p class="text-gray-600 mb-8 max-w-md mx-auto">You must be logged in with a GitHub account that has write access to the repository to edit content.</p>
-          <SignIn provider="github" class="bg-gray-900 text-white px-8 py-3 rounded-md shadow-md hover:bg-black transition text-lg font-medium">Login with GitHub</SignIn>
+          <button id="signin-empty" class="bg-gray-900 text-white px-8 py-3 rounded-md shadow-md hover:bg-black transition text-lg font-medium">Login with GitHub</button>
         </div>
       ) : null}
     </main>
+    <script>
+      const { signIn, signOut } = await import('auth-astro/client');
+      document.querySelector('#signin')?.addEventListener('click', () => signIn('github'));
+      document.querySelector('#signin-empty')?.addEventListener('click', () => signIn('github'));
+      document.querySelector('#signout')?.addEventListener('click', () => signOut());
+    </script>
   </body>
 </html>
