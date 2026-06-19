@@ -13,6 +13,9 @@ let errorStack = null;
 let missingEnv = [];
 const { slug } = Astro.params;
 const path = slug ? `site/src/pages/${slug}` : 'README.md';
+const callbackUrl = Astro.url.href;
+const signInUrl = `/api/auth/signin?callbackUrl=${encodeURIComponent(callbackUrl)}`;
+const signOutUrl = `/api/auth/signout?callbackUrl=${encodeURIComponent(callbackUrl)}`;
 
 try {
   const authEnv = getAuthEnvStatus();
@@ -66,10 +69,10 @@ try {
           {session ? (
             <div class="flex items-center gap-4">
               <span class="text-sm text-gray-600">Logged in as <strong>{session.user?.name || session.user?.email}</strong></span>
-              <button id="signout" class="text-sm bg-white border border-gray-300 px-3 py-1.5 rounded hover:bg-gray-50 shadow-sm transition">Logout</button>
+              <a href={signOutUrl} class="text-sm bg-white border border-gray-300 px-3 py-1.5 rounded hover:bg-gray-50 shadow-sm transition no-underline text-gray-900">Logout</a>
             </div>
           ) : (
-            <button id="signin" class="bg-gray-900 text-white px-5 py-2.5 rounded-md shadow hover:bg-black transition font-medium">Login with GitHub</button>
+            <a href={signInUrl} class="bg-gray-900 text-white px-5 py-2.5 rounded-md shadow hover:bg-black transition font-medium no-underline">Login with GitHub</a>
           )}
         </div>
       </header>
@@ -103,15 +106,9 @@ try {
         <div class="text-center py-32 bg-white rounded-lg shadow-sm border border-gray-200">
           <h2 class="text-2xl font-semibold mb-4 text-gray-800">Authentication Required</h2>
           <p class="text-gray-600 mb-8 max-w-md mx-auto">You must be logged in with a GitHub account that has write access to the repository to edit content.</p>
-          <button id="signin-empty" class="bg-gray-900 text-white px-8 py-3 rounded-md shadow-md hover:bg-black transition text-lg font-medium">Login with GitHub</button>
+          <a href={signInUrl} class="bg-gray-900 text-white px-8 py-3 rounded-md shadow-md hover:bg-black transition text-lg font-medium no-underline">Login with GitHub</a>
         </div>
       ) : null}
     </main>
-    <script>
-      const { signIn, signOut } = await import('auth-astro/client');
-      document.querySelector('#signin')?.addEventListener('click', () => signIn('github'));
-      document.querySelector('#signin-empty')?.addEventListener('click', () => signIn('github'));
-      document.querySelector('#signout')?.addEventListener('click', () => signOut());
-    </script>
   </body>
 </html>
