@@ -2,7 +2,9 @@
 import { getSession } from 'auth-astro/server';
 import authConfig from '../../../auth.config.mjs';
 import Editor from '../../components/Editor.svelte';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAuthEnvStatus } from '../../lib/auth-env';
+import { cmsConfig, getGitHubFileUrl, isEditableMarkdownPath } from '../../lib/cms-config';
 
 export const prerender = false;
 
@@ -12,26 +14,29 @@ let errorMessage = null;
 let errorStack = null;
 let missingEnv = [];
 const { slug } = Astro.params;
-const path = slug ? `site/src/pages/${slug}` : 'README.md';
+const path = slug || '';
 const callbackUrl = Astro.url.href;
 const signInUrl = `/api/auth/signin?callbackUrl=${encodeURIComponent(callbackUrl)}`;
-const signOutUrl = `/api/auth/signout?callbackUrl=${encodeURIComponent(callbackUrl)}`;
+const signOutUrl = `/api/auth/signout?callbackUrl=${encodeURIComponent('/cms')}`;
 
 try {
   const authEnv = getAuthEnvStatus();
   missingEnv = authEnv.missing;
 
+  if (!isEditableMarkdownPath(path)) {
+    errorMessage = path
+      ? `This CMS can only edit Markdown files in layers/, proposals/, compliance/, or README.md. Requested: ${path}`
+      : 'Choose a document from the CMS dashboard before editing.';
+  }
+
   if (!authEnv.isConfigured) {
     errorMessage = `GitHub OAuth is not configured. Missing: ${missingEnv.join(', ')}`;
-  } else {
+  } else if (!errorMessage) {
     session = await getSession(Astro.request, authConfig);
   }
 
   if (session && session.accessToken) {
-    const owner = 'FruitHavenEcovillage';
-    const repo = 'RCOS-fruit-haven'; 
-    const branch = 'feature/wysiwyg-editor';
-    const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`;
+    const fileUrl = getGitHubFileUrl(path);
     
     const res = await fetch(fileUrl, {
       headers: {
@@ -42,7 +47,9 @@ try {
 
     if (res.ok) {
       const data = await res.json();
-      initialContent = decodeURIComponent(escape(atob(data.content)));
+      initialContent = new TextDecoder().decode(
+        Uint8Array.from(atob(data.content.replace(/\n/g, '')), (char) => char.charCodeAt(0)),
+      );
     } else {
       console.error(`File ${path} not found or inaccessible`);
       initialContent = `# New Document\n\nStart typing here...`;
@@ -55,78 +62,162 @@ try {
 }
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WYSIWYG Editor - Fruit Haven</title>
-  </head>
-  <body class="bg-gray-50 min-h-screen text-gray-900 font-sans">
-    <main class="container mx-auto px-4 py-8 max-w-5xl">
-      <header class="flex justify-between items-center mb-8 border-b border-gray-200 pb-4">
-        <h1 class="text-3xl font-bold">WYSIWYG Editor</h1>
-        <div>
-          {session ? (
-            <div class="flex items-center gap-4">
-              <span class="text-sm text-gray-600">Logged in as <strong>{session.user?.name || session.user?.email}</strong></span>
-              <a href={signOutUrl} class="text-sm bg-white border border-gray-300 px-3 py-1.5 rounded hover:bg-gray-50 shadow-sm transition no-underline text-gray-900">Logout</a>
-            </div>
-          ) : (
-            <button id="header-login" class="bg-gray-900 text-white px-5 py-2.5 rounded-md shadow hover:bg-black transition font-medium">Login with GitHub</button>
-          )}
-        </div>
-      </header>
-
-      {errorMessage && (
-        <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-8 rounded shadow-sm">
-          <h2 class="text-xl font-semibold text-red-700 mb-2">Server Error 500</h2>
-          <p class="text-red-600 mb-4">{errorMessage}</p>
-          <details class="text-sm text-red-500 bg-red-100 p-2 rounded">
-            <summary class="cursor-pointer font-medium">View Stack Trace</summary>
-            <pre class="mt-2 whitespace-pre-wrap">{errorStack}</pre>
-          </details>
-          <div class="mt-4 text-gray-700">
-            <p><strong>Common causes:</strong></p>
-            <ul class="list-disc ml-5 mt-2">
-              <li>Missing environment variables in Vercel: <code>GITHUB_CLIENT_ID</code>, <code>GITHUB_CLIENT_SECRET</code>, <code>AUTH_SECRET</code>, <code>AUTH_TRUST_HOST=true</code>.</li>
-              <li>Invalid GitHub Access Token.</li>
-            </ul>
-          </div>
-        </div>
-      )}
-
-      {!errorMessage && session ? (
-        <div>
-          <div class="mb-6 flex justify-between items-center">
-            <p class="text-gray-600">Editing file: <code class="bg-gray-200 px-2 py-1 rounded text-sm text-gray-800">{path}</code></p>
-          </div>
-          <Editor client:only="svelte" content={initialContent} path={path} />
-        </div>
+<BaseLayout title="Edit document" description="Edit Fruit Haven RCOS content.">
+  <section class="edit-head">
+    <div>
+      <p class="eyebrow">GitHub CMS</p>
+      <h1>WYSIWYG editor</h1>
+      <p>
+        Target: <code>{cmsConfig.owner}/{cmsConfig.repo}</code> on <code>{cmsConfig.branch}</code>.
+      </p>
+    </div>
+    <div class="session-panel">
+      <a href="/cms">All documents</a>
+      {session ? (
+        <>
+          <span>Signed in as <strong>{session.user?.name || session.user?.email}</strong></span>
+          <a href={signOutUrl}>Sign out</a>
+        </>
       ) : !errorMessage ? (
-        <div class="text-center py-32 bg-white rounded-lg shadow-sm border border-gray-200">
-          <h2 class="text-2xl font-semibold mb-4 text-gray-800">Authentication Required</h2>
-          <p class="text-gray-600 mb-8 max-w-md mx-auto">You must be logged in with a GitHub account that has write access to the repository to edit content.</p>
-          <button id="main-login" class="bg-gray-900 text-white px-8 py-3 rounded-md shadow-md hover:bg-black transition text-lg font-medium">Login with GitHub</button>
-        </div>
+        <a class="login" href={signInUrl}>Login with GitHub</a>
       ) : null}
-    </main>
+    </div>
+  </section>
 
-    <script>
-      const initLogin = async () => {
-        try {
-          const { signIn } = await import("auth-astro/client");
-          const handleLogin = () => signIn("github", { callbackUrl: window.location.pathname });
-          
-          const headerLogin = document.getElementById("header-login");
-          if (headerLogin) headerLogin.onclick = handleLogin;
-          
-          const mainLogin = document.getElementById("main-login");
-          if (mainLogin) mainLogin.onclick = handleLogin;
-        } catch (e) {
-          console.error("Failed to load auth client", e);
-        }
-      };
-      initLogin();
-    </script>
-  </body>
-</html>
+  {errorMessage && (
+    <div class="notice danger">
+      <h2>Editor unavailable</h2>
+      <p>{errorMessage}</p>
+      {errorStack && (
+        <details>
+          <summary>View stack trace</summary>
+          <pre>{errorStack}</pre>
+        </details>
+      )}
+      {missingEnv.length > 0 && (
+        <p>
+          Configure <code>{missingEnv.join(', ')}</code>, plus <code>AUTH_SECRET</code> in deployment.
+        </p>
+      )}
+    </div>
+  )}
+
+  {!errorMessage && session ? (
+    <div>
+      <p class="editing-path">Editing <code>{path}</code></p>
+      <Editor client:only="svelte" content={initialContent} path={path} />
+    </div>
+  ) : !errorMessage ? (
+    <div class="login-panel">
+      <h2>Authentication required</h2>
+      <p>Use a GitHub account with write access to edit and commit repository content.</p>
+      <a class="login" href={signInUrl}>Login with GitHub</a>
+    </div>
+  ) : null}
+
+  <style>
+    .edit-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .edit-head h1 {
+      margin: 0.1rem 0 0.4rem;
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 5vw, 2.7rem);
+      color: var(--color-primary-dark);
+    }
+    .edit-head p,
+    .editing-path,
+    .login-panel p {
+      color: var(--color-text-muted);
+      margin: 0;
+    }
+    .eyebrow {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 0.74rem;
+      letter-spacing: 0.08em;
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+    .session-panel {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+    .session-panel a,
+    .login {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.25rem;
+      padding: 0.45rem 0.75rem;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      background: var(--color-surface);
+      color: var(--color-text);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .login {
+      border-color: var(--color-primary);
+      background: var(--color-primary);
+      color: var(--color-surface);
+    }
+    .editing-path {
+      margin-bottom: 0.85rem;
+    }
+    code {
+      font-family: var(--font-mono);
+      font-size: 0.86em;
+      background: var(--color-surface-muted);
+      padding: 0.12em 0.35em;
+      border-radius: var(--radius-sm);
+    }
+    .notice,
+    .login-panel {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      background: var(--color-surface);
+      padding: 1.25rem;
+    }
+    .notice.danger {
+      border-color: color-mix(in srgb, var(--color-danger) 50%, var(--color-border));
+      color: var(--color-danger);
+    }
+    .notice h2,
+    .login-panel h2 {
+      margin: 0 0 0.45rem;
+      font-size: 1.25rem;
+      color: var(--color-text);
+    }
+    .notice pre {
+      overflow-x: auto;
+      white-space: pre-wrap;
+      background: var(--color-surface-muted);
+      padding: 0.75rem;
+      border-radius: var(--radius-sm);
+    }
+    .login-panel {
+      display: grid;
+      gap: 0.75rem;
+      justify-items: start;
+      max-width: 36rem;
+    }
+    @media (max-width: 720px) {
+      .edit-head {
+        flex-direction: column;
+      }
+      .session-panel {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</BaseLayout>

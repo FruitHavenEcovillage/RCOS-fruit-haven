@@ -1,0 +1,234 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getSession } from 'auth-astro/server';
+import { getCollection, getEntry } from 'astro:content';
+import authConfig from '../../auth.config.mjs';
+import { cmsConfig } from '../lib/cms-config';
+import { getAuthEnvStatus } from '../lib/auth-env';
+import { slugToTitle } from '../lib/titleCase';
+
+export const prerender = false;
+
+const authEnv = getAuthEnvStatus();
+const session = authEnv.isConfigured ? await getSession(Astro.request, authConfig) : null;
+const callbackUrl = Astro.url.href;
+const signInUrl = `/api/auth/signin?callbackUrl=${encodeURIComponent(callbackUrl)}`;
+const signOutUrl = `/api/auth/signout?callbackUrl=${encodeURIComponent('/cms')}`;
+
+const layers = await getCollection('layers');
+const proposals = await getCollection('proposals');
+const compliance = await getEntry('compliance', 'checklist');
+const future = await getEntry('future', 'future');
+
+const docs = [
+  ...layers.map((entry) => {
+    const [layer, ...rest] = entry.id.split('/');
+    const slug = rest.join('/');
+    const firstH1 = entry.body?.match(/^#\s+(.+)$/m)?.[1]?.trim();
+    const title = entry.data.title ?? firstH1 ?? slugToTitle(slug);
+    return {
+      title,
+      group: `Layer ${layer.split('-')[0]}`,
+      path: `layers/${entry.id}.md`,
+      viewHref: `/layers/${layer}/${slug}`,
+    };
+  }),
+  ...proposals.map((entry) => ({
+    title: entry.data.title,
+    group: `Proposals: ${entry.data.status}`,
+    path: `proposals/${entry.id}.md`,
+    viewHref: `/proposals/${entry.data.status}/${entry.id.split('/').pop()}`,
+  })),
+  ...(future
+    ? [{
+        title: 'Future proposals',
+        group: 'Proposals',
+        path: 'proposals/future.md',
+        viewHref: '/proposals/future',
+      }]
+    : []),
+  ...(compliance
+    ? [{
+        title: 'Compliance checklist',
+        group: 'Compliance',
+        path: 'compliance/checklist.md',
+        viewHref: '/compliance',
+      }]
+    : []),
+].sort((a, b) => a.group.localeCompare(b.group) || a.title.localeCompare(b.title));
+---
+
+<BaseLayout title="CMS" description="Edit Fruit Haven RCOS Markdown files.">
+  <section class="cms-head">
+    <div>
+      <p class="eyebrow">GitHub CMS</p>
+      <h1>Content editor</h1>
+      <p>
+        Edit adopted repository Markdown with GitHub login. Governance changes still need
+        the proposal and version-history records required by AGENTS.md.
+      </p>
+    </div>
+    <div class="session-panel">
+      {session ? (
+        <>
+          <span>Signed in as <strong>{session.user?.name || session.user?.email}</strong></span>
+          <a href={signOutUrl}>Sign out</a>
+        </>
+      ) : (
+        <a class="login" href={signInUrl}>Sign in with GitHub</a>
+      )}
+    </div>
+  </section>
+
+  {!authEnv.isConfigured && (
+    <div class="notice danger">
+      GitHub OAuth is not configured. Missing: {authEnv.missing.join(', ')}.
+    </div>
+  )}
+
+  <div class="repo-strip" aria-label="Repository target">
+    <span>{cmsConfig.owner}/{cmsConfig.repo}</span>
+    <span>Branch: {cmsConfig.branch}</span>
+  </div>
+
+  <section class="doc-list" aria-label="Editable documents">
+    {docs.map((doc) => (
+      <article class="doc-row">
+        <div>
+          <span class="doc-group">{doc.group}</span>
+          <h2>{doc.title}</h2>
+          <code>{doc.path}</code>
+        </div>
+        <div class="doc-actions">
+          <a href={doc.viewHref}>View</a>
+          <a class="edit" href={`/edit/${doc.path}`}>Edit</a>
+        </div>
+      </article>
+    ))}
+  </section>
+</BaseLayout>
+
+<style>
+  .cms-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .cms-head h1 {
+    margin: 0.1rem 0 0.5rem;
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 2.7rem);
+    color: var(--color-primary-dark);
+  }
+  .cms-head p {
+    max-width: 42rem;
+    margin: 0;
+    color: var(--color-text-muted);
+  }
+  .eyebrow,
+  .doc-group {
+    text-transform: uppercase;
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+  .session-panel {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width: min(100%, 18rem);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
+  .session-panel a,
+  .login,
+  .doc-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.25rem;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .login,
+  .doc-actions .edit {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: var(--color-surface);
+  }
+  .notice,
+  .repo-strip {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 0.85rem 1rem;
+    margin-bottom: 1rem;
+    background: var(--color-surface);
+  }
+  .notice.danger {
+    border-color: color-mix(in srgb, var(--color-danger) 50%, var(--color-border));
+    color: var(--color-danger);
+  }
+  .repo-strip {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+  .doc-list {
+    display: grid;
+    gap: 0.65rem;
+  }
+  .doc-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+  }
+  .doc-row h2 {
+    margin: 0.2rem 0;
+    font-size: 1.05rem;
+    color: var(--color-text);
+  }
+  .doc-row code {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    word-break: break-word;
+  }
+  .doc-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+  }
+  @media (max-width: 720px) {
+    .cms-head,
+    .doc-row {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .session-panel {
+      justify-content: flex-start;
+    }
+    .doc-actions {
+      width: 100%;
+    }
+    .doc-actions a {
+      flex: 1;
+    }
+  }
+</style>

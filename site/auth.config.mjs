@@ -1,13 +1,8 @@
 import GitHub from '@auth/core/providers/github';
 import { defineConfig } from 'auth-astro';
 
-const authSecret =
-  process.env.AUTH_SECRET ||
-  process.env.AUTH_SECRET_1 ||
-  'fruit-haven-wysiwyg-editor-temporary-fallback-secret';
-
 export default defineConfig({
-  basePath: '/auth',
+  prefix: '/api/auth',
   providers: [
     GitHub({
       clientId: process.env.GITHUB_CLIENT_ID,
@@ -17,7 +12,7 @@ export default defineConfig({
       },
     }),
   ],
-  secret: authSecret,
+  secret: process.env.AUTH_SECRET || process.env.AUTH_SECRET_1,
   trustHost: process.env.AUTH_TRUST_HOST === 'true' || Boolean(process.env.VERCEL),
   callbacks: {
     async jwt({ token, account }) {

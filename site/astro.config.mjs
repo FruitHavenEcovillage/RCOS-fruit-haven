@@ -13,7 +13,7 @@ export default defineConfig({
   site: 'https://fruithaven.example',
   output: 'server',
   adapter: vercel(),
-  integrations: [svelte(), mdx(), auth({ prefix: '/auth' })],
+  integrations: [svelte(), mdx(), auth()],
   markdown: {
     remarkPlugins: [remarkStripFirstH1, remarkDirective, remarkRcosDirectives],
     rehypePlugins: [rehypeTableWrap],

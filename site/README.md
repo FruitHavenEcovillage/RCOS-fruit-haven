@@ -21,6 +21,30 @@ npm run preview
 Vercel: set project root to `site/`. Build command `astro build`. Output
 directory `dist/`.
 
+## CMS
+
+The site includes a GitHub-backed Markdown CMS at `/cms`. It uses GitHub OAuth
+for login and commits edited Markdown through `/api/commit`.
+
+Required environment variables:
+
+- `GITHUB_CLIENT_ID`
+- `GITHUB_CLIENT_SECRET`
+- `AUTH_SECRET`
+
+Optional environment variables:
+
+- `AUTH_TRUST_HOST=true`
+- `CMS_GITHUB_OWNER` defaults to `FruitHavenEcovillage`
+- `CMS_GITHUB_REPO` defaults to `RCOS-fruit-haven`
+- `CMS_GITHUB_BRANCH` defaults to `main`
+
+Set the GitHub OAuth callback URL to:
+
+```text
+https://<your-domain>/api/auth/callback/github
+```
+
 ## Theming a fork
 
 Edit `src/styles/theme.css` — all colors, fonts, radii live there as CSS

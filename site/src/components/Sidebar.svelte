@@ -318,6 +318,15 @@
     </li>
 
     <li>
+      <a
+        href="/cms"
+        class="nav-link"
+        class:active={isActive("/cms") || isActive("/edit")}
+        onclick={onLinkClick}>CMS Editor</a
+      >
+    </li>
+
+    <li>
       <a href="/#faq" class="nav-link" onclick={onLinkClick}>FAQ</a>
     </li>
   </ul>

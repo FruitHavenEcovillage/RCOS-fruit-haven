@@ -2,8 +2,18 @@ import type { APIRoute } from 'astro';
 import { getSession } from 'auth-astro/server';
 import authConfig from '../../../auth.config.mjs';
 import { getAuthEnvStatus } from '../../lib/auth-env';
+import { cmsConfig, getGitHubContentUrl, getGitHubFileUrl, isEditableMarkdownPath } from '../../lib/cms-config';
 
 export const prerender = false;
+
+function encodeBase64(content: string): string {
+  const bytes = new TextEncoder().encode(content);
+  let binary = '';
+  for (const byte of bytes) {
+    binary += String.fromCharCode(byte);
+  }
+  return btoa(binary);
+}
 
 export const POST: APIRoute = async ({ request }) => {
   const authEnv = getAuthEnvStatus();
@@ -23,19 +33,17 @@ export const POST: APIRoute = async ({ request }) => {
   }
 
   const { path, content, message } = await request.json();
-  if (!path || !content) {
-    return new Response(JSON.stringify({ error: 'Missing path or content' }), { status: 400 });
+  if (!isEditableMarkdownPath(path)) {
+    return new Response(JSON.stringify({ error: 'Unsupported editable path.' }), { status: 400 });
+  }
+  if (typeof content !== 'string') {
+    return new Response(JSON.stringify({ error: 'Missing content.' }), { status: 400 });
   }
 
   const token = session.accessToken;
-  // TODO: Make these configurable via environment variables in Vercel
-  const owner = 'FruitHavenEcovillage';
-  const repo = 'RCOS-fruit-haven'; 
-  const branch = 'feature/wysiwyg-editor'; // The branch we are testing on
   
   try {
-    // 1. Get the current file SHA (Required to update an existing file via GitHub API)
-    const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`;
+    const fileUrl = getGitHubFileUrl(path);
     const getRes = await fetch(fileUrl, {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -49,11 +57,9 @@ export const POST: APIRoute = async ({ request }) => {
       sha = fileData.sha;
     }
 
-    // 2. Encode content to Base64 (Unicode safe)
-    const base64Content = btoa(unescape(encodeURIComponent(content)));
+    const base64Content = encodeBase64(content);
 
-    // 3. Commit the new file directly to GitHub
-    const putRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+    const putRes = await fetch(getGitHubContentUrl(path), {
       method: 'PUT',
       headers: {
         Authorization: `Bearer ${token}`,
@@ -63,7 +69,7 @@ export const POST: APIRoute = async ({ request }) => {
         message: message || `Update ${path} via CMS`,
         content: base64Content,
         sha: sha,
-        branch: branch 
+        branch: cmsConfig.branch 
       }),
     });
 
@@ -72,7 +78,7 @@ export const POST: APIRoute = async ({ request }) => {
       return new Response(JSON.stringify({ error: 'GitHub API Error', details: errorData }), { status: putRes.status });
     }
 
-    return new Response(JSON.stringify({ success: true, message: 'Commit successful!' }), { status: 200 });
+    return new Response(JSON.stringify({ success: true, message: `Committed ${path} to ${cmsConfig.branch}.` }), { status: 200 });
   } catch (error) {
     return new Response(JSON.stringify({ error: 'Internal Server Error', details: String(error) }), { status: 500 });
   }

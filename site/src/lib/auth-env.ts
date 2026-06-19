@@ -14,6 +14,10 @@ export function getAuthEnvStatus(): AuthEnvStatus {
     missing.push('GITHUB_CLIENT_SECRET');
   }
 
+  if (!process.env.AUTH_SECRET && !process.env.AUTH_SECRET_1) {
+    missing.push('AUTH_SECRET');
+  }
+
   return {
     isConfigured: missing.length === 0,
     missing,
