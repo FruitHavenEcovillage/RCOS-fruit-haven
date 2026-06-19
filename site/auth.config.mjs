@@ -1,8 +1,8 @@
 import GitHub from '@auth/core/providers/github';
 import { defineConfig } from 'auth-astro';
 
-const isProduction = process.env.NODE_ENV === 'production' || process.env.VERCEL_ENV === 'production';
-const authSecret = process.env.AUTH_SECRET || (isProduction ? undefined : 'fruit-haven-local-dev-auth-secret');
+const isDeployed = Boolean(process.env.VERCEL) || process.env.NODE_ENV === 'production';
+const authSecret = process.env.AUTH_SECRET || (isDeployed ? undefined : 'fruit-haven-local-dev-auth-secret');
 
 export default defineConfig({
   providers: [

@@ -1,6 +1,7 @@
 ---
 import { getSession } from 'auth-astro/server';
 import { SignIn, SignOut } from 'auth-astro/components';
+import authConfig from '../../../auth.config.mjs';
 import Editor from '../../components/Editor.svelte';
 import { getAuthEnvStatus } from '../../lib/auth-env';
 
@@ -21,7 +22,7 @@ try {
   if (!authEnv.isConfigured) {
     errorMessage = `GitHub OAuth is not configured. Missing: ${missingEnv.join(', ')}`;
   } else {
-    session = await getSession(Astro.request);
+    session = await getSession(Astro.request, authConfig);
   }
 
   if (session && session.accessToken) {

@@ -5,9 +5,9 @@ export type AuthEnvStatus = {
 
 export function getAuthEnvStatus(): AuthEnvStatus {
   const missing: string[] = [];
-  const isProduction = process.env.NODE_ENV === 'production' || process.env.VERCEL_ENV === 'production';
+  const isDeployed = Boolean(process.env.VERCEL) || process.env.NODE_ENV === 'production';
 
-  if (isProduction && !process.env.AUTH_SECRET) {
+  if (isDeployed && !process.env.AUTH_SECRET) {
     missing.push('AUTH_SECRET');
   }
 

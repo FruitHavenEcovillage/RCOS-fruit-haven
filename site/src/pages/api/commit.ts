@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getSession } from 'auth-astro/server';
+import authConfig from '../../../auth.config.mjs';
 import { getAuthEnvStatus } from '../../lib/auth-env';
 
 export const prerender = false;
@@ -16,7 +17,7 @@ export const POST: APIRoute = async ({ request }) => {
     );
   }
 
-  const session = await getSession(request);
+  const session = await getSession(request, authConfig);
   if (!session || !session.accessToken) {
     return new Response(JSON.stringify({ error: 'Unauthorized. Please log in.' }), { status: 401 });
   }
