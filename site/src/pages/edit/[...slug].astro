@@ -1,16 +1,33 @@
 ---
 import { getSession } from 'auth-astro/server';
-import { SignIn, SignOut } from 'auth-astro/components';
+import authConfig from '../../../auth.config.mjs';
 import Editor from '../../components/Editor.svelte';
+import { getAuthEnvStatus } from '../../lib/auth-env';
 
-const session = await getSession(Astro.request);
-const { slug } = Astro.params;
-// By default we can test editing the README, or any slug mapped to site/src/pages
-const path = slug ? `site/src/pages/${slug}` : 'README.md';
+export const prerender = false;
 
+let session = null;
 let initialContent = '';
-if (session && session.accessToken) {
-  try {
+let errorMessage = null;
+let errorStack = null;
+let missingEnv = [];
+const { slug } = Astro.params;
+const path = slug ? `site/src/pages/${slug}` : 'README.md';
+const callbackUrl = Astro.url.href;
+const signInUrl = `/api/auth/signin?callbackUrl=${encodeURIComponent(callbackUrl)}`;
+const signOutUrl = `/api/auth/signout?callbackUrl=${encodeURIComponent(callbackUrl)}`;
+
+try {
+  const authEnv = getAuthEnvStatus();
+  missingEnv = authEnv.missing;
+
+  if (!authEnv.isConfigured) {
+    errorMessage = `GitHub OAuth is not configured. Missing: ${missingEnv.join(', ')}`;
+  } else {
+    session = await getSession(Astro.request, authConfig);
+  }
+
+  if (session && session.accessToken) {
     const owner = 'FruitHavenEcovillage';
     const repo = 'RCOS-fruit-haven'; 
     const branch = 'feature/wysiwyg-editor';
@@ -30,9 +47,11 @@ if (session && session.accessToken) {
       console.error(`File ${path} not found or inaccessible`);
       initialContent = `# New Document\n\nStart typing here...`;
     }
-  } catch (err) {
-    console.error("Failed to load initial content", err);
   }
+} catch (err: any) {
+  console.error("Failed to load page data:", err);
+  errorMessage = err.message || String(err);
+  errorStack = err.stack || '';
 }
 ---
 
@@ -50,28 +69,52 @@ if (session && session.accessToken) {
           {session ? (
             <div class="flex items-center gap-4">
               <span class="text-sm text-gray-600">Logged in as <strong>{session.user?.name || session.user?.email}</strong></span>
-              <SignOut class="text-sm bg-white border border-gray-300 px-3 py-1.5 rounded hover:bg-gray-50 shadow-sm transition" />
+              <a href={signOutUrl} class="text-sm bg-white border border-gray-300 px-3 py-1.5 rounded hover:bg-gray-50 shadow-sm transition no-underline text-gray-900">Logout</a>
             </div>
           ) : (
-            <SignIn provider="github" class="bg-gray-900 text-white px-5 py-2.5 rounded-md shadow hover:bg-black transition font-medium">Login with GitHub</SignIn>
+            <form action="/auth/signin/github" method="POST">
+              <input type="hidden" name="callbackUrl" value={`/edit/${slug || ''}`} />
+              <button type="submit" class="bg-gray-900 text-white px-5 py-2.5 rounded-md shadow hover:bg-black transition font-medium">Login with GitHub</button>
+            </form>
           )}
         </div>
       </header>
 
-      {session ? (
+      {errorMessage && (
+        <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-8 rounded shadow-sm">
+          <h2 class="text-xl font-semibold text-red-700 mb-2">Server Error 500</h2>
+          <p class="text-red-600 mb-4">{errorMessage}</p>
+          <details class="text-sm text-red-500 bg-red-100 p-2 rounded">
+            <summary class="cursor-pointer font-medium">View Stack Trace</summary>
+            <pre class="mt-2 whitespace-pre-wrap">{errorStack}</pre>
+          </details>
+          <div class="mt-4 text-gray-700">
+            <p><strong>Common causes:</strong></p>
+            <ul class="list-disc ml-5 mt-2">
+              <li>Missing environment variables in Vercel: <code>GITHUB_CLIENT_ID</code>, <code>GITHUB_CLIENT_SECRET</code>, <code>AUTH_SECRET</code>, <code>AUTH_TRUST_HOST=true</code>.</li>
+              <li>Invalid GitHub Access Token.</li>
+            </ul>
+          </div>
+        </div>
+      )}
+
+      {!errorMessage && session ? (
         <div>
           <div class="mb-6 flex justify-between items-center">
             <p class="text-gray-600">Editing file: <code class="bg-gray-200 px-2 py-1 rounded text-sm text-gray-800">{path}</code></p>
           </div>
           <Editor client:only="svelte" content={initialContent} path={path} />
         </div>
-      ) : (
+      ) : !errorMessage ? (
         <div class="text-center py-32 bg-white rounded-lg shadow-sm border border-gray-200">
           <h2 class="text-2xl font-semibold mb-4 text-gray-800">Authentication Required</h2>
           <p class="text-gray-600 mb-8 max-w-md mx-auto">You must be logged in with a GitHub account that has write access to the repository to edit content.</p>
-          <SignIn provider="github" class="bg-gray-900 text-white px-8 py-3 rounded-md shadow-md hover:bg-black transition text-lg font-medium">Login with GitHub</SignIn>
+          <form action="/auth/signin/github" method="POST">
+            <input type="hidden" name="callbackUrl" value={`/edit/${slug || ''}`} />
+            <button type="submit" class="bg-gray-900 text-white px-8 py-3 rounded-md shadow-md hover:bg-black transition text-lg font-medium">Login with GitHub</button>
+          </form>
         </div>
-      )}
+      ) : null}
     </main>
   </body>
 </html>

@@ -1,8 +1,23 @@
 import type { APIRoute } from 'astro';
 import { getSession } from 'auth-astro/server';
+import authConfig from '../../../auth.config.mjs';
+import { getAuthEnvStatus } from '../../lib/auth-env';
+
+export const prerender = false;
 
 export const POST: APIRoute = async ({ request }) => {
-  const session = await getSession(request);
+  const authEnv = getAuthEnvStatus();
+  if (!authEnv.isConfigured) {
+    return new Response(
+      JSON.stringify({
+        error: 'GitHub OAuth is not configured.',
+        missing: authEnv.missing,
+      }),
+      { status: 503 },
+    );
+  }
+
+  const session = await getSession(request, authConfig);
   if (!session || !session.accessToken) {
     return new Response(JSON.stringify({ error: 'Unauthorized. Please log in.' }), { status: 401 });
   }
@@ -59,6 +74,6 @@ export const POST: APIRoute = async ({ request }) => {
 
     return new Response(JSON.stringify({ success: true, message: 'Commit successful!' }), { status: 200 });
   } catch (error) {
-    return new Response(JSON.stringify({ error: 'Internal Server Error' }), { status: 500 });
+    return new Response(JSON.stringify({ error: 'Internal Server Error', details: String(error) }), { status: 500 });
   }
 };

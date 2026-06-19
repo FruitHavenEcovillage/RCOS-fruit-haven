@@ -95,8 +95,6 @@
       <circle cx="11" cy="11" r="8"></circle>
       <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
     </svg>
-    <span class="search-text">Search documentation</span>
-    <span class="shortcut">Ctrl K</span>
   </button>
 
   {#if isOpen}
@@ -159,11 +157,11 @@
   .search-btn {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
-    padding: 0.4rem 0.75rem;
+    padding: 0.5rem;
     color: var(--color-text-muted);
     cursor: pointer;
     transition: all 0.2s ease;
@@ -172,20 +170,6 @@
   .search-btn:hover {
     color: var(--color-text);
     border-color: var(--color-text-muted);
-  }
-  
-  .search-text {
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-  
-  .shortcut {
-    font-size: 0.75rem;
-    background: var(--color-bg);
-    padding: 0.1rem 0.3rem;
-    border-radius: 4px;
-    border: 1px solid var(--color-border);
-    margin-left: 0.5rem;
   }
   
   .backdrop {
@@ -313,12 +297,6 @@
       top: 5vh;
       width: 95%;
       max-height: 90vh;
-    }
-    .shortcut {
-      display: none;
-    }
-    .search-text {
-      display: none;
     }
   }
 </style>
