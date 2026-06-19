@@ -11,6 +11,8 @@ export default defineConfig({
       },
     }),
   ],
+  secret: import.meta.env.AUTH_SECRET || process.env.AUTH_SECRET,
+  trustHost: true,
   callbacks: {
     async jwt({ token, account }) {
       // Persist the OAuth access_token to the token right after signin
