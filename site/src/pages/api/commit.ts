@@ -1,6 +1,8 @@
 import type { APIRoute } from 'astro';
 import { getSession } from 'auth-astro/server';
 
+export const prerender = false;
+
 export const POST: APIRoute = async ({ request }) => {
   const session = await getSession(request);
   if (!session || !session.accessToken) {

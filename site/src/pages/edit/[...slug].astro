@@ -3,6 +3,8 @@ import { getSession } from 'auth-astro/server';
 import { SignIn, SignOut } from 'auth-astro/components';
 import Editor from '../../components/Editor.svelte';
 
+export const prerender = false;
+
 const session = await getSession(Astro.request);
 const { slug } = Astro.params;
 // By default we can test editing the README, or any slug mapped to site/src/pages
