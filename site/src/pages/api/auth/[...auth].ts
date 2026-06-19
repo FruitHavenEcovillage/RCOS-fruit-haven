@@ -8,4 +8,12 @@ if (!process.env.AUTH_SECRET) {
 }
 process.env.AUTH_TRUST_HOST = "true";
 
-export const { GET, POST } = AstroAuth();
+const handler = AstroAuth();
+
+export const GET = async (context: any) => {
+  return handler.GET(context);
+};
+
+export const POST = async (context: any) => {
+  return handler.POST(context);
+};
