@@ -1,11 +1,12 @@
 # Compliance Checklist
 
 - **RCOS-Core version:** v0.1
-- **Last audited:** <YYYY-MM-DD>
-- **Audit method:** _<to be defined>_
+- **Last audited:**
+- **Audit method:**
 - **Overall status:** Not yet audited
 
 > **Status key:**
+>
 > - `Present` — file exists with substantive, adopted content
 > - `Draft` — file exists with substantive content; not yet formally adopted
 > - `Stub` — file exists but is a placeholder only; does not count as compliant
@@ -14,4 +15,6 @@
 
 ---
 
-_Compliance audit not yet completed. Update this file after formally auditing each artifact against RCOS-Core requirements._
+*Compliance audit not yet completed. Update this file after formally auditing each artifact against RCOS-Core requirements.*
+
+*test this chnage*
