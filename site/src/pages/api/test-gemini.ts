@@ -1,8 +1,12 @@
-export const config = { runtime: 'edge' };
+import type { APIRoute } from 'astro';
 
-export default async function handler() {
+export const prerender = false;
+
+export const GET: APIRoute = async () => {
   const apiKey = process.env.GROQ_API_KEY;
-  if (!apiKey) return new Response(JSON.stringify({ error: 'no key' }), { status: 500 });
+  if (!apiKey) {
+    return new Response(JSON.stringify({ error: 'no key' }), { status: 500 });
+  }
 
   const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
@@ -18,4 +22,4 @@ export default async function handler() {
   return new Response(JSON.stringify({ status: res.status, data }), {
     headers: { 'Content-Type': 'application/json' },
   });
-}
+};

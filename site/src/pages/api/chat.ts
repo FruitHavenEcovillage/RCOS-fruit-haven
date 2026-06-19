@@ -1,21 +1,19 @@
-export const config = { runtime: 'edge' };
+import type { APIRoute } from 'astro';
 
-export default async function handler(req) {
-  if (req.method === 'OPTIONS') {
-    return new Response(null, {
-      status: 204,
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'POST, OPTIONS',
-        'Access-Control-Allow-Headers': 'Content-Type',
-      },
-    });
-  }
+export const prerender = false;
 
-  if (req.method !== 'POST') {
-    return new Response(JSON.stringify({ error: 'Method not allowed' }), { status: 405 });
-  }
+export const OPTIONS: APIRoute = async () => {
+  return new Response(null, {
+    status: 204,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    },
+  });
+};
 
+export const POST: APIRoute = async ({ request }) => {
   const apiKey = process.env.GROQ_API_KEY;
   if (!apiKey) {
     return new Response(JSON.stringify({ error: 'API key not configured' }), { status: 500 });
@@ -23,7 +21,7 @@ export default async function handler(req) {
 
   let body;
   try {
-    body = await req.json();
+    body = await request.json();
   } catch {
     return new Response(JSON.stringify({ error: 'Invalid JSON' }), { status: 400 });
   }
@@ -38,9 +36,9 @@ export default async function handler(req) {
 
   const messages = [
     { role: 'system', content: systemPrompt },
-    ...(body.history ?? []).map((m) => ({
-      role: m.role === 'assistant' ? 'assistant' : 'user',
-      content: m.content,
+    ...(body.history ?? []).map((message: { role?: string; content: string }) => ({
+      role: message.role === 'assistant' ? 'assistant' : 'user',
+      content: message.content,
     })),
     { role: 'user', content: body.message },
   ];
@@ -61,13 +59,20 @@ export default async function handler(req) {
 
   if (!groqRes.ok) {
     const err = await groqRes.text();
-    return new Response(JSON.stringify({ error: `Groq error: ${err.slice(0, 300)}` }), { status: 502 });
+    return new Response(JSON.stringify({ error: `Groq error: ${err.slice(0, 300)}` }), {
+      status: 502,
+    });
   }
 
   const encoder = new TextEncoder();
   const readable = new ReadableStream({
     async start(controller) {
-      const reader = groqRes.body.getReader();
+      const reader = groqRes.body?.getReader();
+      if (!reader) {
+        controller.close();
+        return;
+      }
+
       const decoder = new TextDecoder();
       let buffer = '';
       try {
@@ -86,7 +91,7 @@ export default async function handler(req) {
               const text = parsed?.choices?.[0]?.delta?.content;
               if (text) controller.enqueue(encoder.encode(text));
             } catch {
-              // skip malformed chunks
+              // Skip malformed chunks from the upstream stream.
             }
           }
         }
@@ -103,4 +108,4 @@ export default async function handler(req) {
       'Access-Control-Allow-Origin': '*',
     },
   });
-}
+};
