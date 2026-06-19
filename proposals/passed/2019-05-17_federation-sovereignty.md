@@ -1,14 +1,8 @@
 ---
-title: "Federation Sovereignty Doctrine"
-date: 2019-05-17
-status: "passed"
-layers: [2]
-decision_type: "constitutional"
-vote_result: "Consensus achieved"
-summary: "Establishes the sovereignty and federation rules for Fruit Haven community areas."
----
 
-# Proposal: Federation Sovereignty Doctrine
+## title: "Community Sovereignty Doctrine" date: 2019-05-17 status: "passed" layers: \[2\] decision_type: "constitutional" vote_result: "Consensus achieved" summary: "Establishes the sovereignty and federation rules for Fruit Haven community areas."
+
+# Proposal: Community Sovereignty Doctrine
 
 - **Status:** Passed
 - **Submitted:** 2019-05-17
@@ -29,8 +23,8 @@ Establishes the sovereignty and federation rules for Fruit Haven community areas
 
 ## Change Type
 
-- [x] Permanent rule change
-- [ ] Time-bounded experiment
+- \[x\] Permanent rule change
+- \[ \] Time-bounded experiment
 
 ## Rationale
 
@@ -38,8 +32,7 @@ To explicitly define the relationships between different Fruit Haven communities
 
 ## Risks and Mitigations
 
-Risk: Communities may fracture or establish conflicting rules.
-Mitigation: The charter establishes clear supremacy guidelines, maintaining that the core charter takes precedence where [community bylaws](/source-documents/FH1_Community_Bylaws.pdf) conflict.
+Risk: Communities may fracture or establish conflicting rules. Mitigation: The charter establishes clear supremacy guidelines, maintaining that the core charter takes precedence where [community bylaws](/source-documents/FH1_Community_Bylaws.pdf) conflict.
 
 ## Transition and Migration Plan
 
