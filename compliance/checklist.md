@@ -1,4 +1,4 @@
-# Compliance Checklist
+# Compliance Checklist Test
 
 - **RCOS-Core version:** v0.1
 - **Last audited:**
@@ -16,5 +16,3 @@
 ---
 
 *Compliance audit not yet completed. Update this file after formally auditing each artifact against RCOS-Core requirements.*
-
-*test this chnage*
