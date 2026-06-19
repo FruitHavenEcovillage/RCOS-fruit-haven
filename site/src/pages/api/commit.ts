@@ -1,12 +1,20 @@
 import type { APIRoute } from 'astro';
 import { getSession } from 'auth-astro/server';
+import { getAuthEnvStatus } from '../../lib/auth-env';
 
 export const prerender = false;
 
 export const POST: APIRoute = async ({ request }) => {
-  // Force Auth.js to find the secret in the environment at runtime
-  process.env.AUTH_SECRET = process.env.AUTH_SECRET || "92e18825187c477b80112cd4f9ba8164";
-  process.env.AUTH_TRUST_HOST = "true";
+  const authEnv = getAuthEnvStatus();
+  if (!authEnv.isConfigured) {
+    return new Response(
+      JSON.stringify({
+        error: 'GitHub OAuth is not configured.',
+        missing: authEnv.missing,
+      }),
+      { status: 503 },
+    );
+  }
 
   const session = await getSession(request);
   if (!session || !session.accessToken) {
@@ -65,6 +73,6 @@ export const POST: APIRoute = async ({ request }) => {
 
     return new Response(JSON.stringify({ success: true, message: 'Commit successful!' }), { status: 200 });
   } catch (error) {
-    return new Response(JSON.stringify({ error: 'Internal Server Error' }), { status: 500 });
+    return new Response(JSON.stringify({ error: 'Internal Server Error', details: String(error) }), { status: 500 });
   }
 };

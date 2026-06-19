@@ -2,6 +2,7 @@
 import { getSession } from 'auth-astro/server';
 import { SignIn, SignOut } from 'auth-astro/components';
 import Editor from '../../components/Editor.svelte';
+import { getAuthEnvStatus } from '../../lib/auth-env';
 
 export const prerender = false;
 
@@ -9,15 +10,19 @@ let session = null;
 let initialContent = '';
 let errorMessage = null;
 let errorStack = null;
+let missingEnv = [];
 const { slug } = Astro.params;
 const path = slug ? `site/src/pages/${slug}` : 'README.md';
 
 try {
-  // Force Auth.js to find the secret in the environment at runtime
-  process.env.AUTH_SECRET = process.env.AUTH_SECRET || "92e18825187c477b80112cd4f9ba8164";
-  process.env.AUTH_TRUST_HOST = "true";
+  const authEnv = getAuthEnvStatus();
+  missingEnv = authEnv.missing;
 
-  session = await getSession(Astro.request);
+  if (!authEnv.isConfigured) {
+    errorMessage = `GitHub OAuth is not configured. Missing: ${missingEnv.join(', ')}`;
+  } else {
+    session = await getSession(Astro.request);
+  }
 
   if (session && session.accessToken) {
     const owner = 'FruitHavenEcovillage';

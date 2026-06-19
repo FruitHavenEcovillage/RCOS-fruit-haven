@@ -1,6 +1,9 @@
 import GitHub from '@auth/core/providers/github';
 import { defineConfig } from 'auth-astro';
 
+const isProduction = process.env.NODE_ENV === 'production' || process.env.VERCEL_ENV === 'production';
+const authSecret = process.env.AUTH_SECRET || (isProduction ? undefined : 'fruit-haven-local-dev-auth-secret');
+
 export default defineConfig({
   providers: [
     GitHub({
@@ -11,8 +14,8 @@ export default defineConfig({
       },
     }),
   ],
-  secret: process.env.AUTH_SECRET || "92e18825187c477b80112cd4f9ba8164",
-  trustHost: true,
+  secret: authSecret,
+  trustHost: process.env.AUTH_TRUST_HOST === 'true' || Boolean(process.env.VERCEL),
   callbacks: {
     async jwt({ token, account }) {
       // Persist the OAuth access_token to the token right after signin
