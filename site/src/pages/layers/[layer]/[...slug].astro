@@ -4,6 +4,8 @@ import layerMeta from '../../../data/layer-meta.json';
 import { getCollection, render } from 'astro:content';
 import { slugToTitle } from '../../../lib/titleCase';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const entries = await getCollection('layers');
   return entries.map((entry) => {

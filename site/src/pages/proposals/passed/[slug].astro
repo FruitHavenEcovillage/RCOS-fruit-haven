@@ -2,6 +2,8 @@
 import DocLayout from '../../../layouts/DocLayout.astro';
 import { getCollection, render } from 'astro:content';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const entries = await getCollection('proposals', (e) => e.data.status === 'passed');
   return entries.map((entry) => ({
