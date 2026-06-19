@@ -10,75 +10,63 @@
 
 ## Governance Constraints
 
-:::rcos{clauses="2.4.1, 2.4.2"}
-:::
+:::rcos{clauses="2.4.1, 2.4.2"} :::
 
-_<Governance constraints on how authority is held and exercised — to be defined.>_
+*&lt;Governance constraints on how authority is held and exercised — to be defined.&gt;*
 
-| ID | Constraint | Enforcement mechanism | Added | Decision record |
-|---|---|---|---|---|
-| IC-001 | _<to be defined>_ | _<to be defined>_ | <YYYY-MM-DD> | [link] |
+IDConstraintEnforcement mechanismAddedDecision recordIC-001\[link\]
+
+test edit
 
 ---
 
 ## Economic Constraints
 
-:::rcos{clauses="2.4.1, 2.4.2"}
-:::
+:::rcos{clauses="2.4.1, 2.4.2"} :::
 
-_<Economic constraints on how the community and its mechanisms may be used economically — to be defined.>_
+*&lt;Economic constraints on how the community and its mechanisms may be used economically — to be defined.&gt;*
 
-| ID | Constraint | Enforcement mechanism | Added | Decision record |
-|---|---|---|---|---|
+IDConstraintEnforcement mechanismAddedDecision record
 
 ---
 
 ## Ecological Constraints
 
-:::rcos{clauses="2.4.1, 2.4.2"}
-:::
+:::rcos{clauses="2.4.1, 2.4.2"} :::
 
-_<Ecological constraints on the community's relationship with ecosystems and biodiversity — to be defined.>_
+*&lt;Ecological constraints on the community's relationship with ecosystems and biodiversity — to be defined.&gt;*
 
-| ID | Constraint | Enforcement mechanism | Added | Decision record |
-|---|---|---|---|---|
+IDConstraintEnforcement mechanismAddedDecision record
 
 ---
 
 ## Structural and Cultural Constraints
 
-:::rcos{clauses="2.4.1, 2.4.2"}
-:::
+:::rcos{clauses="2.4.1, 2.4.2"} :::
 
-_<Structural and cultural constraints on the community's identity — to be defined.>_
+*&lt;Structural and cultural constraints on the community's identity — to be defined.&gt;*
 
-| ID | Constraint | Enforcement mechanism | Added | Decision record |
-|---|---|---|---|---|
+IDConstraintEnforcement mechanismAddedDecision record
 
 ---
 
 ## Ethics and Lifestyle Constraints
 
-_<Ethics and lifestyle constraints — to be defined.>_
+*&lt;Ethics and lifestyle constraints — to be defined.&gt;*
 
-| ID | Constraint | Enforcement mechanism | Added | Decision record |
-|---|---|---|---|---|
+IDConstraintEnforcement mechanismAddedDecision record
 
 ---
 
 ## Enforcement Principles
 
-:::rcos{clauses="2.4.3, 2.4.4"}
-:::
+:::rcos{clauses="2.4.3, 2.4.4"} :::
 
-:::rationale{title="Why require constraints to be testable and enforceable?"}
-Writing a constraint that cannot be acted on is performative — it creates the appearance of accountability without the substance. Testability means there is a defined process through which a member can raise a violation. If no such process exists, the constraint is an aspiration, not a rule. Making that distinction explicit here is what separates implicit culture from enforceable governance.
-:::
+:::rationale{title="Why require constraints to be testable and enforceable?"} Writing a constraint that cannot be acted on is performative — it creates the appearance of accountability without the substance. Testability means there is a defined process through which a member can raise a violation. If no such process exists, the constraint is an aspiration, not a rule. Making that distinction explicit here is what separates implicit culture from enforceable governance. :::
 
 Identity constraints MUST be testable and enforceable through defined processes, and MUST NOT be enforced implicitly or informally.
 
-| Constraint | Enforcement status | Notes |
-|---|---|---|
+ConstraintEnforcement statusNotes
 
 ---
 
@@ -90,7 +78,7 @@ Identity constraints may only be added, modified, or removed through a Constitut
 
 ## Ratification Record
 
-- **Adopted:** <YYYY-MM-DD>
+- **Adopted:**
 - **Decision type:** Constitutional
-- **Version:** <version>
-- **Decision record:** <link to decision record>
+- **Version:**
+- **Decision record:**
