@@ -29,7 +29,7 @@ const compliance = defineCollection({
 });
 
 const future = defineCollection({
-  loader: glob({ pattern: 'future.md', base: '../proposals' }),
+  loader: glob({ pattern: '{future.md,future/*.md}', base: '../proposals' }),
   schema: z.object({}).passthrough(),
 });
 
