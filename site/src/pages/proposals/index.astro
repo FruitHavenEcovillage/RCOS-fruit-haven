@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
 
 const categories = [
   {
@@ -18,6 +19,15 @@ const categories = [
     description: 'Ideas and draft proposals deferred for future governance cycles. These are not yet active decisions but are tracked for upcoming consideration.',
   },
 ];
+
+const latestProposals = (await getCollection('proposals'))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 6);
+
+const shortSummary = (summary: string) => {
+  const limit = 150;
+  return summary.length > limit ? `${summary.slice(0, limit).trim()}...` : summary;
+};
 ---
 
 <BaseLayout title="Proposals" description="Community proposals — passed decisions, rejected motions, and ideas queued for future governance.">
@@ -38,6 +48,49 @@ const categories = [
       </li>
     ))}
   </ul>
+
+  <section class="latest-tile" aria-labelledby="latest-decisions-title">
+    <header>
+      <div>
+        <h2 id="latest-decisions-title">Latest proposals</h2>
+        <span class="muted">Passed & rejected</span>
+      </div>
+      <a href="/proposals/passed" class="tile-link">Browse all</a>
+    </header>
+
+    {latestProposals.length > 0 ? (
+      <ul class="latest-list">
+        {latestProposals.map((proposal) => {
+          const slug = proposal.id.split('/').pop();
+          return (
+            <li>
+              <a href={`/proposals/${proposal.data.status}/${slug}`}>
+                <span class={`badge badge-${proposal.data.status}`}>{proposal.data.status}</span>
+                <span class="proposal-body">
+                  <span class="proposal-row">
+                    <span class="proposal-title">{proposal.data.title}</span>
+                    <time>{proposal.data.date.toISOString().slice(0, 10)}</time>
+                  </span>
+                  <span class="proposal-summary">{shortSummary(proposal.data.summary)}</span>
+                  <span class="meta">
+                    <span class={`chip type-${proposal.data.decision_type}`}>
+                      {proposal.data.decision_type}
+                    </span>
+                    {proposal.data.layers.map((layer) => (
+                      <span class="chip">Layer {layer}</span>
+                    ))}
+                    {proposal.data.vote_result && <span class="chip">Vote: {proposal.data.vote_result}</span>}
+                  </span>
+                </span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    ) : (
+      <p class="empty">No passed or rejected proposals yet.</p>
+    )}
+  </section>
 </BaseLayout>
 
 <style>
@@ -96,9 +149,162 @@ const categories = [
     align-self: flex-end;
     margin-top: 0.25rem;
   }
+  .latest-tile {
+    margin-top: 2.5rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 1.4rem;
+    box-shadow: var(--shadow-sm);
+  }
+  .latest-tile header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.9rem;
+  }
+  .latest-tile h2 {
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary-dark);
+  }
+  @media (prefers-color-scheme: dark) {
+    .latest-tile h2 {
+      color: var(--color-primary);
+    }
+  }
+  .muted {
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+  }
+  .tile-link {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  .latest-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .latest-list li {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 4%);
+    transition: border-color 150ms ease, background 150ms ease, box-shadow 150ms ease;
+  }
+  .latest-list li:hover {
+    border-color: color-mix(in srgb, var(--color-primary) 38%, transparent);
+    background: color-mix(in srgb, var(--color-primary) 3%, var(--color-surface));
+    box-shadow: 0 8px 18px -16px color-mix(in srgb, var(--color-primary) 35%, transparent);
+  }
+  .latest-list a {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.75rem;
+    padding: 0.85rem;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+  .proposal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 0;
+  }
+  .proposal-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
+  .proposal-title {
+    font-weight: 600;
+    line-height: 1.35;
+    min-width: 0;
+  }
+  .proposal-summary {
+    color: var(--color-text-muted);
+    font-size: 0.86rem;
+    line-height: 1.4;
+  }
+  .badge,
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .badge {
+    padding: 0.1rem 0.5rem;
+    font-size: 0.7rem;
+    min-width: 4.7rem;
+    height: 1.4rem;
+    margin-top: 0.05rem;
+  }
+  .badge-passed {
+    color: #116329;
+    background: #dafbe1;
+    border-color: #4ac26b;
+  }
+  .badge-rejected {
+    color: #8c1d18;
+    background: #ffebe9;
+    border-color: #ff9b94;
+  }
+  time {
+    color: var(--color-text-muted);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.82rem;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .chip {
+    padding: 0.15rem 0.5rem;
+    color: var(--color-text-muted);
+    font-size: 0.72rem;
+  }
+  .type-strategic {
+    color: var(--color-primary);
+    border-color: color-mix(in srgb, var(--color-primary) 40%, transparent);
+  }
+  .type-constitutional {
+    color: var(--color-accent);
+    border-color: color-mix(in srgb, var(--color-accent) 50%, transparent);
+  }
+  .empty {
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
   @media (max-width: 560px) {
     .card-list {
       grid-template-columns: 1fr;
+    }
+    .latest-tile header {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .latest-list a,
+    .proposal-row {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+    .latest-list a {
+      display: flex;
     }
   }
 </style>

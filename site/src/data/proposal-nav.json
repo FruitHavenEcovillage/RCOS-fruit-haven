@@ -1,0 +1,67 @@
+[
+  {
+    "status": "passed",
+    "title": "Passed",
+    "href": "/proposals/passed",
+    "items": [
+      {
+        "slug": "2026-05-28_transitional-membership",
+        "title": "Transitional Membership Pathway for Current Owners"
+      },
+      {
+        "slug": "2019-05-17_community-sovereignty-doctrine",
+        "title": "Community Sovereignty Doctrine"
+      },
+      {
+        "slug": "2019-05-17_fh1-bylaws",
+        "title": "FH1 Community Bylaws"
+      },
+      {
+        "slug": "2019-05-17_fh3-bylaws",
+        "title": "FH3 Community Bylaws"
+      }
+    ]
+  },
+  {
+    "status": "rejected",
+    "title": "Rejected",
+    "href": "/proposals/rejected",
+    "items": [
+      {
+        "slug": "2023-05-25_community-sovereignty-doctrine-v3",
+        "title": "Fruit Haven Community Sovereignty Doctrine v3"
+      }
+    ]
+  },
+  {
+    "status": "future",
+    "title": "Future",
+    "href": "/proposals/future",
+    "items": [
+      {
+        "slug": "2026-05-17_conflict-resolution",
+        "title": "Conflict Resolution Updates"
+      },
+      {
+        "slug": "2026-05-17_fh-federation",
+        "title": "FH Federation"
+      },
+      {
+        "slug": "2026-05-17_membership-states",
+        "title": "Membership States"
+      },
+      {
+        "slug": "2026-05-17_owner-responsibilities",
+        "title": "Responsibilities of Owners / Trustees"
+      },
+      {
+        "slug": "2026-05-17_participation-definition",
+        "title": "Definition of Participation in Community Governance"
+      },
+      {
+        "slug": "2026-05-17_roles-explicitness",
+        "title": "Roles Explicitness"
+      }
+    ]
+  }
+]

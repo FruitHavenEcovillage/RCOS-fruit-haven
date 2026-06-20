@@ -1,14 +1,32 @@
 <script lang="ts">
   import layerMeta from "../data/layer-meta.json";
   import layerArtifacts from "../data/layer-artifacts.json";
+  import proposalNav from "../data/proposal-nav.json";
 
   type Props = { pathname?: string };
   type LayerArtifact = { slug: string; title: string };
+  type ProposalStatus = "passed" | "rejected" | "future";
+  type ProposalNavItem = { slug: string; title: string };
+  type ProposalCategory = {
+    status: ProposalStatus;
+    title: string;
+    href: string;
+    items: ProposalNavItem[];
+  };
   const artifactsByLayer = layerArtifacts as Record<string, LayerArtifact[]>;
+  const proposalCategories = proposalNav as ProposalCategory[];
   let { pathname = "" }: Props = $props();
 
   let layersOpen = $state(pathname.startsWith("/layers"));
   let proposalsOpen = $state(pathname.startsWith("/proposals"));
+  let openProposalCategories = $state<Record<ProposalStatus, boolean>>(
+    Object.fromEntries(
+      proposalCategories.map((category) => [
+        category.status,
+        pathname === category.href || pathname.startsWith(`${category.href}/`),
+      ]),
+    ) as Record<ProposalStatus, boolean>,
+  );
   let openLayerArticles = $state<Record<string, boolean>>(
     Object.fromEntries(
       layerMeta.map((layer) => [
@@ -41,6 +59,21 @@
       ...openLayerArticles,
       [layerSlug]: !layerArticlesOpen(layerSlug),
     };
+  }
+
+  function proposalCategoryOpen(status: ProposalStatus): boolean {
+    return openProposalCategories[status] ?? false;
+  }
+
+  function toggleProposalCategory(status: ProposalStatus) {
+    openProposalCategories = {
+      ...openProposalCategories,
+      [status]: !proposalCategoryOpen(status),
+    };
+  }
+
+  function proposalHref(category: ProposalCategory, slug: string): string {
+    return `${category.href}/${slug}`;
   }
 
   function openDrawer() {
@@ -280,30 +313,50 @@
       </div>
       {#if proposalsOpen}
         <ul class="nav-sublist">
-          <li>
-            <a
-              href="/proposals/passed"
-              class="nav-sublink"
-              class:active={isActive("/proposals/passed")}
-              onclick={onLinkClick}>Passed</a
-            >
-          </li>
-          <li>
-            <a
-              href="/proposals/rejected"
-              class="nav-sublink"
-              class:active={isActive("/proposals/rejected")}
-              onclick={onLinkClick}>Rejected</a
-            >
-          </li>
-          <li>
-            <a
-              href="/proposals/future"
-              class="nav-sublink"
-              class:active={isActive("/proposals/future")}
-              onclick={onLinkClick}>Future</a
-            >
-          </li>
+          {#each proposalCategories as category (category.status)}
+            <li>
+              <div class="layer-row">
+                <a
+                  href={category.href}
+                  class="nav-sublink layer-link"
+                  class:active={isActive(category.href)}
+                  onclick={onLinkClick}>{category.title}</a
+                >
+                {#if category.items.length > 0}
+                  <button
+                    type="button"
+                    class="layer-toggle"
+                    aria-label={`${proposalCategoryOpen(category.status) ? "Hide" : "Show"} ${category.title.toLowerCase()} proposals`}
+                    aria-expanded={proposalCategoryOpen(category.status)}
+                    onclick={() => toggleProposalCategory(category.status)}
+                  >
+                    <span
+                      class="chevron layer-chevron"
+                      class:open={proposalCategoryOpen(category.status)}>â–¸</span
+                    >
+                  </button>
+                {/if}
+              </div>
+              {#if category.items.length > 0}
+                {#if proposalCategoryOpen(category.status)}
+                  <ul class="nav-artifact-list" aria-label={`${category.title} proposals`}>
+                    {#each category.items as proposal (proposal.slug)}
+                      <li>
+                        <a
+                          href={proposalHref(category, proposal.slug)}
+                          class="nav-artifact-link"
+                          class:active={pathname === proposalHref(category, proposal.slug)}
+                          onclick={onLinkClick}
+                        >
+                          {proposal.title}
+                        </a>
+                      </li>
+                    {/each}
+                  </ul>
+                {/if}
+              {/if}
+            </li>
+          {/each}
         </ul>
       {/if}
     </li>
@@ -468,10 +521,24 @@
   }
 
   .chevron {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.7rem;
+    height: 0.7rem;
     transition: transform 150ms ease;
-    font-size: 1.5rem;
     color: var(--color-text-muted);
-    line-height: 19px;
+    font-size: 0;
+    line-height: 1;
+  }
+  .chevron::before {
+    content: "";
+    display: block;
+    width: 0.36rem;
+    height: 0.36rem;
+    border-top: 1.7px solid currentColor;
+    border-right: 1.7px solid currentColor;
+    transform: rotate(45deg);
   }
   .chevron.open {
     transform: rotate(90deg);
@@ -536,7 +603,7 @@
     color: var(--color-text);
   }
   .layer-chevron {
-    font-size: 1.1rem;
+    font-size: 0;
   }
 
   .nav-artifact-list {
