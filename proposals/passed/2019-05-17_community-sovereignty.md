@@ -1,5 +1,5 @@
 ---
-title: "Federation Sovereignty Doctrine"
+title: "Community Sovereignty Doctrine"
 date: 2019-05-17
 status: "passed"
 layers: [2]
@@ -8,7 +8,7 @@ vote_result: "Consensus achieved"
 summary: "Establishes the sovereignty and federation rules for Fruit Haven community areas."
 ---
 
-# Proposal: Federation Sovereignty Doctrine
+# Proposal: Community Sovereignty Doctrine
 
 - **Status:** Passed
 - **Submitted:** 2019-05-17
