@@ -70,6 +70,7 @@
   }
 
   onMount(() => {
+    commitMessage = `Update ${path}`;
     editor = new Editor({
       element,
       extensions: [
@@ -138,7 +139,7 @@
 
       statusKind = 'success';
       statusMessage = data.message || 'Saved to GitHub.';
-      commitMessage = '';
+      commitMessage = `Update ${path}`;
       isDirty = false;
       previewMarkdown = markdown;
     } catch (err) {
