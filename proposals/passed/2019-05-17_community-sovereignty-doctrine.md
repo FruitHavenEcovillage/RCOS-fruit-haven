@@ -24,8 +24,8 @@ Establishes the sovereignty and federation rules for Fruit Haven community areas
 
 ## Affected Layers and Artifacts
 
-- Layer 2 — [layers/2-governance/04-federation-protocol.md](/layers/2-governance/04-federation-protocol)
-- Layer 2 — [layers/2-governance/02-governance-protocol.md](/layers/2-governance/02-governance-protocol)
+- Layer 2 — [layers/2-governance/04-federation-protocol](/layers/2-governance/04-federation-protocol)
+- Layer 2 — [layers/2-governance/02-governance-protocol](/layers/2-governance/02-governance-protocol)
 
 ## Change Type
 
