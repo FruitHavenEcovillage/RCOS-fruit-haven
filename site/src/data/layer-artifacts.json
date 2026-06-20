@@ -1,43 +1,43 @@
 {
   "0-identity": [
-    { "slug": "01-purpose-charter", "title": "Purpose Charter" },
-    { "slug": "02-scope-declaration", "title": "Scope Declaration" },
-    { "slug": "03-invariants-register", "title": "Invariants Register" },
-    { "slug": "04-identity-constraints-register", "title": "Identity Constraints Register" }
+    { "slug": "01-purpose-charter", "title": "1 Purpose Charter" },
+    { "slug": "02-scope-declaration", "title": "2 Scope Declaration" },
+    { "slug": "03-invariants-register", "title": "3 Invariants Register" },
+    { "slug": "04-identity-constraints-register", "title": "4 Identity Constraints Register" }
   ],
   "1-membership": [
-    { "slug": "01-membership-agreement", "title": "Membership Agreement" },
-    { "slug": "02-onboarding-protocol", "title": "Onboarding Protocol" },
-    { "slug": "03-exit-separation-protocol", "title": "Exit & Separation Protocol" },
-    { "slug": "04-membership-state-registry", "title": "Membership State Registry" }
+    { "slug": "01-membership-agreement", "title": "1 Membership Agreement" },
+    { "slug": "02-onboarding-protocol", "title": "2 Onboarding Protocol" },
+    { "slug": "03-exit-separation-protocol", "title": "3 Exit & Separation Protocol" },
+    { "slug": "04-membership-state-registry", "title": "4 Membership State Registry" }
   ],
   "2-governance": [
-    { "slug": "01-decision-matrix", "title": "Decision Matrix" },
-    { "slug": "02-governance-protocol", "title": "Governance Protocol" },
-    { "slug": "03-authority-registry", "title": "Authority Registry" },
-    { "slug": "04-federation-protocol", "title": "Federation Protocol" }
+    { "slug": "01-decision-matrix", "title": "1 Decision Matrix" },
+    { "slug": "02-governance-protocol", "title": "2 Governance Protocol" },
+    { "slug": "03-authority-registry", "title": "3 Authority Registry" },
+    { "slug": "04-federation-protocol", "title": "4 Federation Protocol" }
   ],
   "3-economy": [
-    { "slug": "01-internal-economy-protocol", "title": "Internal Economy Protocol" },
-    { "slug": "02-treasury-ruleset", "title": "Treasury Ruleset" },
-    { "slug": "03-land-allotment-protocol", "title": "Land Allotment Protocol" }
+    { "slug": "01-internal-economy-protocol", "title": "1 Internal Economy Protocol" },
+    { "slug": "02-treasury-ruleset", "title": "2 Treasury Ruleset" },
+    { "slug": "03-land-allotment-protocol", "title": "3 Land Allotment Protocol" }
   ],
   "4-conflict": [
-    { "slug": "01-conflict-resolution-ladder", "title": "Conflict Resolution Ladder" },
-    { "slug": "02-accountability-protocol", "title": "Accountability Protocol" }
+    { "slug": "01-conflict-resolution-ladder", "title": "1 Conflict Resolution Ladder" },
+    { "slug": "02-accountability-protocol", "title": "2 Accountability Protocol" }
   ],
   "5-operations": [
-    { "slug": "01-operations-manual", "title": "Operations Manual" },
-    { "slug": "02-role-registry", "title": "Role Registry" },
-    { "slug": "meeting-templates/01-operations", "title": "Meeting: Operations" },
-    { "slug": "meeting-templates/02-governance", "title": "Meeting: Governance" },
-    { "slug": "meeting-templates/03-coordination-alignment", "title": "Meeting: Coordination" },
-    { "slug": "meeting-templates/04-reflection-learning", "title": "Meeting: Reflection" },
-    { "slug": "meeting-templates/05-conflict-handling", "title": "Meeting: Conflict Handling" }
+    { "slug": "01-operations-manual", "title": "1 Operations Manual" },
+    { "slug": "02-role-registry", "title": "2 Role Registry" },
+    { "slug": "meeting-templates/01-operations", "title": "1 Meeting: Operations" },
+    { "slug": "meeting-templates/02-governance", "title": "2 Meeting: Governance" },
+    { "slug": "meeting-templates/03-coordination-alignment", "title": "3 Meeting: Coordination" },
+    { "slug": "meeting-templates/04-reflection-learning", "title": "4 Meeting: Reflection" },
+    { "slug": "meeting-templates/05-conflict-handling", "title": "5 Meeting: Conflict Handling" }
   ],
   "6-evolution": [
-    { "slug": "01-change-protocol", "title": "Change Protocol" },
-    { "slug": "02-version-history", "title": "Version History" },
-    { "slug": "03-learning-log", "title": "Learning Log" }
+    { "slug": "01-change-protocol", "title": "1 Change Protocol" },
+    { "slug": "02-version-history", "title": "2 Version History" },
+    { "slug": "03-learning-log", "title": "3 Learning Log" }
   ]
 }
