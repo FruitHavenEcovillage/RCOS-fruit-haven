@@ -18,6 +18,31 @@ export default defineConfig({
     process.env.NODE_ENV !== 'production' ||
     Boolean(process.env.VERCEL),
   callbacks: {
+    async signIn({ account }) {
+      if (account && account.provider === 'github') {
+        const owner = process.env.CMS_GITHUB_OWNER || 'FruitHavenEcovillage';
+        const repo = process.env.CMS_GITHUB_REPO || 'RCOS-fruit-haven';
+        try {
+          const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
+            headers: {
+              Authorization: `Bearer ${account.access_token}`,
+              Accept: 'application/vnd.github.v3+json',
+              'User-Agent': 'FruitHaven-CMS'
+            }
+          });
+          if (res.ok) {
+            const data = await res.json();
+            if (data.permissions && (data.permissions.push || data.permissions.admin)) {
+              return true;
+            }
+          }
+        } catch (err) {
+          console.error('Error checking permissions', err);
+        }
+        return '/cms/unauthorized';
+      }
+      return true;
+    },
     async jwt({ token, account }) {
       // Persist the OAuth access_token to the token right after signin
       if (account) {
