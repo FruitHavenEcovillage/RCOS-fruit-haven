@@ -28,7 +28,6 @@ To resolve existing ambiguity between ownership and membership, and to acknowled
 
 ## Change Type
 
-- [ ] Permanent rule change
 - [x] Time-bounded experiment
 
 ## Rationale

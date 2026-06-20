@@ -1,5 +1,5 @@
 ---
-title: "Fruit Haven Community Sovereignty Doctrine v3 (Rejected — never reached consensus vote)"
+title: "Community Sovereignty Doctrine v3 (Rejected — never reached consensus vote)"
 date: 2023-05-25
 status: "rejected"
 layers: [0, 2, 4]
@@ -8,7 +8,7 @@ vote_result: "Never formally put to a vote — author noted it was not ready to 
 summary: "A 2023 redraft of the federation-wide Community Sovereignty Doctrine covering community vision, cross-community access, property sovereignty, and banishment procedures. Never put to a vote; the unresolved community vision section (six competing options, no agreed text) blocked the draft from reaching the proposal stage."
 ---
 
-# Proposal: Fruit Haven Community Sovereignty Doctrine v3 (Rejected)
+# Proposal: Community Sovereignty Doctrine v3 (Rejected)
 
 - **Status:** Rejected — never formally put to a vote
 - **Submitted:** 2023-05-25 (last revision date on document)
