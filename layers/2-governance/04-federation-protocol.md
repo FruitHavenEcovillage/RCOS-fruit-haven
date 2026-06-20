@@ -1,4 +1,4 @@
-# Federation Protocol
+# 4 Federation Protocol
 
 - **Layer:** 2 — Governance & Decision Logic
 - **Status:** Stub — not yet adopted

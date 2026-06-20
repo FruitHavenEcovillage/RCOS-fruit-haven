@@ -1,4 +1,4 @@
-# Learning Log
+# 3 Learning Log
 
 - **Layer:** 6 — Evolution & Adaptation
 - **Status:** Active — updated when learnable events occur

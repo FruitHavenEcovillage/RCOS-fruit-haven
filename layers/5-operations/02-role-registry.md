@@ -1,4 +1,4 @@
-# Role Registry
+# 2 Role Registry
 
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Stub — not yet adopted

@@ -1,4 +1,4 @@
-# Onboarding Protocol
+# 2 Onboarding Protocol
 
 - **Layer:** 1 — Membership System
 - **Status:** Stub — not yet adopted

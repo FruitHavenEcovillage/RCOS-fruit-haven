@@ -1,4 +1,4 @@
-# Identity Constraints Register
+# 4 Identity Constraints Register
 
 - **Layer:** 0 — Identity & Scope
 - **Status:** Stub — not yet adopted

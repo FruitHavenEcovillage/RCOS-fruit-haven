@@ -1,4 +1,4 @@
-# Scope Declaration
+# 2 Scope Declaration
 
 - **Layer:** 0 — Identity & Scope
 - **Status:** Stub — not yet adopted

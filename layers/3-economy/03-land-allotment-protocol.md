@@ -1,4 +1,4 @@
-# Land Allotment Protocol
+# 3 Land Allotment Protocol
 
 - **Layer:** 3 — Economic & Resource System
 - **Status:** Stub — not yet adopted

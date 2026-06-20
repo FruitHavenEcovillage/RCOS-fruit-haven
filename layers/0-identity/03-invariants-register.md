@@ -1,4 +1,4 @@
-# Invariants Register
+# 3 Invariants Register
 
 - **Layer:** 0 — Identity & Scope
 - **Status:** Stub — not yet adopted

@@ -1,4 +1,4 @@
-# Authority Registry
+# 3 Authority Registry
 
 - **Layer:** 2 — Governance & Decision Logic
 - **Status:** Stub — not yet adopted

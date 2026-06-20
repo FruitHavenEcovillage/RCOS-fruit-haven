@@ -1,4 +1,4 @@
-# Meeting Template: Coordination & Alignment
+# 3 Meeting Template: Coordination & Alignment
 
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Stub — not yet adopted

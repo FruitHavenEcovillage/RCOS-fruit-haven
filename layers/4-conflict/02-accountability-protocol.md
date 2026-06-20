@@ -1,4 +1,4 @@
-# Accountability Protocol
+# 2 Accountability Protocol
 
 - **Layer:** 4 — Conflict, Repair & Accountability
 - **Status:** Stub — not yet adopted

@@ -1,4 +1,4 @@
-# Meeting Template: Operations
+# 1 Meeting Template: Operations
 
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Stub — not yet adopted

@@ -1,4 +1,4 @@
-# Governance Protocol
+# 2 Governance Protocol
 
 - **Layer:** 2 — Governance & Decision Logic
 - **Status:** Stub — not yet adopted

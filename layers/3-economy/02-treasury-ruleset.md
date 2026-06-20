@@ -1,4 +1,4 @@
-# Treasury Ruleset
+# 2 Treasury Ruleset
 
 - **Layer:** 3 — Economic & Resource System
 - **Status:** Stub — not yet adopted

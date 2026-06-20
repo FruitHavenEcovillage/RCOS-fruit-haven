@@ -1,4 +1,4 @@
-# Meeting Template: Governance
+# 2 Meeting Template: Governance
 
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Stub — not yet adopted

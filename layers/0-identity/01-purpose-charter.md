@@ -1,4 +1,4 @@
-# Purpose Charter
+# 1 Purpose Charter
 
 - **Layer:** 0 — Identity & Scope
 - **Status:** Stub — not yet adopted

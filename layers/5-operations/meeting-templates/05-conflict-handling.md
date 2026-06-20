@@ -1,4 +1,4 @@
-# Meeting Template: Conflict Handling
+# 5 Meeting Template: Conflict Handling
 
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Stub — not yet adopted

@@ -1,4 +1,4 @@
-# Internal Economy Protocol
+# 1 Internal Economy Protocol
 
 - **Layer:** 3 — Economic & Resource System
 - **Status:** Stub — not yet adopted

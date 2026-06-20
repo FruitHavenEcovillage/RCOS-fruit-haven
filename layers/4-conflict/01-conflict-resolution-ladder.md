@@ -1,4 +1,4 @@
-# Conflict Resolution Ladder
+# 1 Conflict Resolution Ladder
 
 - **Layer:** 4 — Conflict, Repair & Accountability
 - **Status:** Stub — not yet adopted

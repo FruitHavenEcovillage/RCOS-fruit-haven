@@ -1,4 +1,4 @@
-# Change Protocol
+# 1 Change Protocol
 
 - **Layer:** 6 — Evolution & Adaptation
 - **Status:** Stub — not yet adopted

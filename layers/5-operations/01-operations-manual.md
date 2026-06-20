@@ -1,4 +1,4 @@
-# Operations Manual
+# 1 Operations Manual
 
 - **Layer:** 5 — Operations & Coordination
 - **Status:** Stub — not yet adopted

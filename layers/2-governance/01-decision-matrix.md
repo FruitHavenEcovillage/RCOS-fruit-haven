@@ -1,4 +1,4 @@
-# Decision Matrix
+# 1 Decision Matrix
 
 - **Layer:** 2 — Governance & Decision Logic
 - **Status:** Stub — not yet adopted

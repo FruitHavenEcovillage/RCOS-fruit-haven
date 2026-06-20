@@ -1,4 +1,4 @@
-# Membership State Registry
+# 4 Membership State Registry
 
 - **Layer:** 1 — Membership System
 - **Status:** Stub — not yet adopted

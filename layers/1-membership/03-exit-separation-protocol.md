@@ -1,4 +1,4 @@
-# Exit & Separation Protocol
+# 3 Exit & Separation Protocol
 
 - **Layer:** 1 — Membership System
 - **Status:** Stub — not yet adopted

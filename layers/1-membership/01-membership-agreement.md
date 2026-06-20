@@ -1,4 +1,4 @@
-# Membership Agreement
+# 1 Membership Agreement
 
 - **Layer:** 1 — Membership System
 - **Status:** Stub — not yet adopted
