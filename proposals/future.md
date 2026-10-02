@@ -9,6 +9,16 @@ Governance and design decisions that are drafted or deferred — either awaiting
 
 ## Draft Proposals
 
+### Domesticated Animals and the responsibilities of their Stewards/Owners
+
+**Status:** Draft  
+**Decision type:** Constitutional — Full Members Vote  
+**Summary:** Introduces a bylaw amendment to allow for the responsible keeping of animals while respecting Fruit Haven's vegan vision, local environment, and animal welfare. Establishes guidelines for plant-based feeding, rehoming, and community oversight.  
+**Affected:** Community Bylaws (Layer 0)  
+**Proposal:** [proposals/future/2024-05-07_domesticated-animals](future/2024-05-07_domesticated-animals)
+
+---
+
 ### Membership States
 
 **Status:** Draft  
