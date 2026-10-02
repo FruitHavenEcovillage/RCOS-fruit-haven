@@ -147,3 +147,9 @@ All Fruit Haven Ecovillage Properties
 - **Mechanism:** Fruit Haven vote
 - **Vote link:** N/A
 - **Signatories / vote count:** N/A
+
+---
+
+## Source
+
+- [Domesticated Animals Proposal (Google Doc)](https://docs.google.com/document/d/1TcYESZ5hoPs8jH6A0kFwiejoBHWHiV2Ayvm-OZJKO9I/edit?tab=t.0)
