@@ -29,15 +29,6 @@ Governance and design decisions that are drafted or deferred — either awaiting
 
 ---
 
-### Transitional Membership Pathway for Current Owners
-
-**Status:** Draft  
-**Decision type:** Operational — Full Members Vote  
-**Summary:** Provides a transitional pathway for current property owners to be granted Active Member status for a 1-year period, during which they must fulfill membership requirements.  
-**Affected:** Layer 1 — [`layers/1-membership/04-membership-state-registry`](../layers/1-membership/04-membership-state-registry)  
-**Proposal:** [proposals/passed/2026-05-28_transitional-membership](passed/2026-05-28_transitional-membership)
-
----
 
 ### Roles Explicitness
 
