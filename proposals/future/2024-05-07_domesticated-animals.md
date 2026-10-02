@@ -2,7 +2,7 @@
 
 - **Status:** Draft
 - **Submitted:** 2024-05-07
-- **Submitted by:** Unknown
+- **Submitted by:** Rob R
 - **Decision type:** Constitutional
 - **Authorized decision path:** Consensus minus 1 of the entire ownership
 
