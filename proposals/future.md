@@ -111,3 +111,4 @@ Items raised alongside the draft proposals above that are not yet drafted as pro
 
 ## Source
 - [FH Membership Proposal (Google Doc)](https://docs.google.com/document/d/1-0FcjEpPhlVZBg0o_RDS4YPQYdr7-NdviYV3yk4JRNU/edit?tab=t.hbkmi61fve5i)
+- [Domesticated Animals Proposal (Google Doc)](https://docs.google.com/document/d/1TcYESZ5hoPs8jH6A0kFwiejoBHWHiV2Ayvm-OZJKO9I/edit?tab=t.0)
